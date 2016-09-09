@@ -30,6 +30,12 @@ class StudentsController < ApplicationController
     end
   end
 
+  def destroy
+    @student = Student.find(params[:id])
+    @student.destroy
+    redirect_to :root
+  end
+
   private
   def student_params
     params.require(:student).permit(:name, :age, :bio, :dream, :sponsored, :image, :gender)
