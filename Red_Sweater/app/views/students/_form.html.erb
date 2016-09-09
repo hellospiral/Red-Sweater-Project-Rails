@@ -9,12 +9,15 @@
   <%= f.text_field :bio, class: "form-control" %>
   <%= f.label :dream, 'When I grow up, I want to be a...' %>
   <%= f.text_field :dream, class: "form-control" %>
-  <%= f.label :dream, 'Sponsored? true or false?' %>
-  <%= f.text_field :sponsored %>
-  <%= f.hidden_field :sponsor_id, :value => 1 %>
+  <%= f.radio_button :sponsored, false %>
+  <%= f.label :sponsored_no, 'Not sponsored' %>
+  <%= f.radio_button :sponsored, true %>
+  <%= f.label :sponsored_yes, 'Sponsored!' %>
   <%= f.label :image, 'Image file name (without the .png)' %>
   <%= f.text_field :image, class: "form-control" %>
-  <%= f.label :gender, 'Boy or Girl' %>
-  <%= f.text_field :gender, class: "form-control" %><br>
-  <%= f.submit class: "btn btn-default" %>
+  <%= f.radio_button :gender, 'boy' %>
+  <%= f.label :gender_boy, 'boy' %>
+  <%= f.radio_button :gender, 'girl' %>
+  <%= f.label :gender_girl, 'girl' %>
+  <%= f.submit class: 'btn btn-default' %>
 <% end %>
