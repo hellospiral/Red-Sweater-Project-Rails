@@ -1,9 +1,12 @@
-<h1>Students</h1>
 <div class="col-sm-12 sponsor-students-images">
+  <h3>Students looking for sponsors</h3>
   <% @students.each do |student| %>
-    <div class="col-sm-3">
-      <%= image_tag("#{student.image}.jpg") %>
-      <h4>Name: <%= student.name %></h4>
+    <div class="col-sm-3 sponsor-students">
+      <%= image_tag("#{student.image}.png") %>
+      <h4><strong><%= student.name %></strong></h4>
+      <p><em><%= student.age %> year-old <%= student.gender %></em><br>
+      I want to become: A <%= student.dream %></p>
+      <%= link_to "Sponsor #{student.name}", students_path, :class => "btn btn-default" %>
     </div>
   <% end %>
 </div>

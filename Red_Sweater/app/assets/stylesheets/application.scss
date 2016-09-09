@@ -1,6 +1,43 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.sponsor-students-images {
-  margin-top: 200px;
+$body-type-grey: #6f6f6e;
+$yellow: #febe10;
+$hairline-grey: #dddddb;
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  color: $body-type-grey;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 3em;
+  color: $body-type-grey;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  margin-left: 1%;
+}
+
+// .sponsor-students-images {
+//   margin-bottom: 1em;
+//   width: 100%;
+// }
+.sponsor-students {
+  border: 1px solid $hairline-grey;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0 1% 2% 2%;
+  position: relative;
+  h4 {
+    margin-top: 5%;
+  }
+  img {
+    width: 95%;
+    // margin: 7% 2%;
+    position: abolute;
+    top: 0;
+    left: 0;
+  }
 }
