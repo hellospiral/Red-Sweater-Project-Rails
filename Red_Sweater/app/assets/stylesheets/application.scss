@@ -10,6 +10,11 @@ body {
   color: $body-type-grey;
 }
 
+label {
+  margin-top: 1em;
+}
+
+
 h3 {
   font-weight: 100;
   font-size: 3em;
@@ -39,5 +44,14 @@ h3 {
     position: abolute;
     top: 0;
     left: 0;
+  }
+}
+
+.sponsor-students:hover {
+  border: 1px solid $yellow;
+  .btn-default {
+    background-color: $yellow;
+    color: white;
+    border: 0;
   }
 }
