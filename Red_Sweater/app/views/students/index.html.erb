@@ -1,9 +1,9 @@
 <h1>Students</h1>
-
-<% @students.each do |student| %>
-  <div class="col-sm-3">
-    <%= image_tag("#{student.image}.jpg", :class => "student-image") %>
-    <h4><%= student.name %></h4>
-    <p><%= student.bio %></p>
-    <p><%= student.dream %></p>
-  </div>
+<div class="col-sm-12 sponsor-students-images">
+  <% @students.each do |student| %>
+    <div class="col-sm-3">
+      <%= image_tag("#{student.image}.jpg") %>
+      <h4>Name: <%= student.name %></h4>
+    </div>
+  <% end %>
+</div>
