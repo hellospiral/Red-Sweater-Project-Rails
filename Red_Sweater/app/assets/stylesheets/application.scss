@@ -64,3 +64,30 @@ img {
     border: 0;
   }
 }
+.admin-student-view {
+  border-radius: 10px;
+  border: 1px solid $hairline-grey;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 2% 1% 2% 2%;
+  position: relative;
+  h4 {
+    margin-top: 5%;
+  }
+  img {
+    width: 95%;
+    // margin: 7% 2%;
+    position: abolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.admin-student-view {
+  .btn-default:hover {
+    background-color: $yellow;
+    color: white;
+    border: 0;
+  }
+}
