@@ -24,10 +24,19 @@ h3 {
   margin-left: 1%;
 }
 
-// .sponsor-students-images {
-//   margin-bottom: 1em;
-//   width: 100%;
-// }
+img {
+  width: 100%;
+}
+
+.event-details {
+  height: 300px;
+  padding: 3em 1em;
+}
+
+.event {
+  margin-bottom: 1em;
+}
+
 .sponsor-students {
   border: 1px solid $hairline-grey;
   margin-bottom: 2%;

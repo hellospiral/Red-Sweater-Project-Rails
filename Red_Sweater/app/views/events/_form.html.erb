@@ -1,0 +1,28 @@
+<%= render "layouts/errors", :object => @event %>
+
+<%= form_for @event do |f| %>
+  <%= f.label :name, 'Event Name' %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :date, 'Date' %>
+  <%= f.text_field :date, class: "form-control" %>
+
+  <%= f.label :time, 'Time' %>
+  <%= f.time_field :time, class: "form-control" %>
+
+  <%= f.label :venu, 'Venu' %>
+  <%= f.text_field :venu, class: "form-control" %>
+
+  <%= f.label :address, 'Street address' %>
+  <%= f.text_field :address, class: "form-control" %>
+
+  <%= f.label :cost, 'Cost' %>
+  <%= f.text_field :cost, class: "form-control" %>
+
+  <%= f.label :image, 'Image name' %>
+  <%= f.text_field :image, class: "form-control" %>
+
+  <%= f.label :details, 'Details' %>
+  <%= f.text_area :details, class: "form-control" %><br>
+  <%= f.submit class: "btn btn-default" %>
+<% end %>
