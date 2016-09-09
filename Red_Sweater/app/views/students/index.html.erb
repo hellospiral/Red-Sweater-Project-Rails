@@ -1,0 +1,9 @@
+<h1>Students</h1>
+
+<% @students.each do |student| %>
+  <div class="col-sm-3">
+    <%= image_tag("#{student.image}.jpg", :class => "student-image") %>
+    <h4><%= student.name %></h4>
+    <p><%= student.bio %></p>
+    <p><%= student.dream %></p>
+  </div>
