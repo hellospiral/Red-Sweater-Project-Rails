@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
     if @student.save
+      flash[:notice]="Student successfully added!"
       redirect_to :root
     else
       render :new
@@ -24,6 +25,7 @@ class StudentsController < ApplicationController
   def update
     @student = Student.find(params[:id])
     if @student.update(student_params)
+      flash[:notice]="Student successfully updated!"
       redirect_to :root
     else
       render :edit
@@ -33,6 +35,7 @@ class StudentsController < ApplicationController
   def destroy
     @student = Student.find(params[:id])
     @student.destroy
+    flash[:alert]="This student has been removed"
     redirect_to :root
   end
 
