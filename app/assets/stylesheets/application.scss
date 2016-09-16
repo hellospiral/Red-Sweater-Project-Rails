@@ -5,10 +5,12 @@
 $body-type-grey: #6f6f6e;
 $yellow: #febe10;
 $hairline-grey: #dddddb;
+$text-blue: #2877A0;
 
 body {
   font-family: "proxima-nova", sans-serif;
   color: $body-type-grey;
+  padding-bottom: 70px;
 }
 
 label {
@@ -35,8 +37,12 @@ img {
 
 
 
-.col-sm-4 .login #login-block {
-  margin-top: 15%;
+.col-sm-4 .login {
+  margin-top: 25%;
+  height: 300px;
+  margin-left: 30%;
+  margin-right: auto;
+  background-color: white;
 }
 
 .event-details {
@@ -188,23 +194,35 @@ p {
 .nivo-activator {
   display: block;
 }
+
+.row-space {
+  margin-top: 20px;
+}
 /* 1.0 - UI Elements */
 /* Buttons */
 .btn {
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   transition: all 0.2s ease-in;
+  margin-top: 40px;
+}
+
+#small-logo {
+  width: 100px;
 }
 .btn.btn-secondary {
-  background: #2978a1;
-  color: #ffffff;
+  background: white;
+  color: $text-blue;
   overflow: hidden;
 }
 .btn.btn-secondary:hover {
-  background: #1f5a78;
-  color: #ffffff;
+  background: #f7f7f7;
+  color: $text-blue;
+  overflow: hidden;
+  margin-top: 40px;
+
 }
 .btn.btn-solid {
   position: relative;
@@ -237,6 +255,8 @@ p {
 }
 .btn.btn-solid:hover:after {
   height: 500%;
+  margin-top: 40px;
+
 }
 .btn.btn-min {
   font-size: 14px;
@@ -251,6 +271,8 @@ p {
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 40px;
+
 }
 .btn.btn-big i {
   margin-right: 12px;
@@ -673,12 +695,12 @@ header {
   .page-banner .section-name h2 {
   font-size: 48px;
   line-height: 58px;
-  margin-top: 80px;
+  margin-top: 75px;
   }
 }
 @media screen and (max-width: 500px) {
   .parallax-mask {
-  top: 25%;
+  top: 20%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1119,11 +1141,11 @@ form.comment-form.altered .field:last-child {
   position: relative;
 }
 .navigation .logo-wrap {
-  padding: 20px 15px;
+  padding: 0px 15px 15px 15px;
   width: 15%;
 }
 .navigation .menu-wrap {
-  padding: 28px 0 0;
+  padding: 0;
 }
 .navigation .menu-wrap .menu {
   float: right;
@@ -1253,6 +1275,7 @@ li.donateBtn a {
 
 .menu-notes {
   text-align: right;
+  height: 20px;
   li {
   margin-bottom: 0px;
   display: inline;
@@ -1399,7 +1422,7 @@ li.donateBtn a {
 
 /* focus */
 .focus-wrapper {
-  height: 670px;
+  height: 750px;
   padding: 85px 0 0px;
   background: #2978a1;
 }
@@ -1411,7 +1434,7 @@ li.donateBtn a {
 }
 .focus-wrapper h5 {
   color: #ffffff;
-  padding: 0;
+  padding: 20px 0 0 0;
 }
 .focusCopy {
   margin: 10px 0;
@@ -2102,14 +2125,15 @@ li.donateBtn a {
 }
 /* 13.0 - Footer*/
 footer {
-  padding: 85px 0 0;
+  padding: 20px 0;
   background: #1e2024;
+  height: 100px;
 }
 footer .title {
   color: #e5e5e5;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 500;
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
 }
 footer .about .social-media-icons a {
   position: relative;
@@ -2120,7 +2144,7 @@ footer .about .social-media-icons a {
   padding: 0 8px;
   margin: 0 2.5px;
   line-height: 28px;
-  font-size: 12px;
+  font-size: 10px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 3px;
   color: #e5e5e5;
@@ -2149,7 +2173,7 @@ footer .about .social-media-icons a:hover span {
 }
 footer .about p {
   color: #e5e5e5;
-  margin: 15px 0 35px;
+  // margin: 15px 0 35px;
 }
 footer .quick-links .links a {
   display: block;
@@ -2170,10 +2194,10 @@ footer .tags-outer .tags a {
   display: block;
   position: relative;
   float: left;
-  height: 35px;
+  height: 10px;
   padding: 0 15px;
   margin: 2.5px 2.5px;
-  line-height: 35px;
+  line-height: 25px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 3px;
   color: #e5e5e5;
@@ -2191,7 +2215,7 @@ footer .tags-outer .tags a:after {
   content: "";
   left: 0;
   top: 0;
-  height: 100%;
+  // height: 100%;
   width: 0;
   background: #fff;
   transition: width .5s ease;
@@ -2203,31 +2227,36 @@ footer .tags-outer .tags a:hover {
 footer .tags-outer .tags a:hover:after {
   width: 100%;
 }
-footer .subcribe p {
-  color: #e5e5e5;
-  margin: 0 0 25px;
-}
-footer .subcribe form .field input {
-  width: 65.5%;
-  height: 45px;
-  border-radius: 3px;
-  color: rgba(110, 110, 109, 0.85);
-  padding: 0 15px;
-  float: left;
-  margin-right: 10px;
-}
-footer .subcribe form .field button {
-  height: 45px;
-  padding: 0 28px;
-}
+// footer .subcribe p {
+//   color: #e5e5e5;
+//   margin: 0 0 25px;
+// }
+// footer .subcribe form .field input {
+//   width: 65.5%;
+//   height: 45px;
+//   border-radius: 3px;
+//   color: rgba(110, 110, 109, 0.85);
+//   padding: 0 15px;
+//   float: left;
+//   margin-right: 10px;
+// }
+// footer .subcribe form .field button {
+//   height: 45px;
+//   padding: 0 28px;
+// }
 footer .footer-bar {
-  margin-top: 85px;
+  margin-top: 0px;
   text-align: center;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   color: #e5e5e5;
   background: #161719;
-  padding: 25px 0;
+  padding: 15px 0;
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 footer .footer-bar h5 {
   font-family: 'proxima-nova', sans-serif;
@@ -2239,10 +2268,10 @@ footer .footer-bar h5 a {
 }
 @media screen and (max-width: 991px) {
   footer {
-    padding: 70px 0 0;
+    padding: 0;
   }
   footer .widget {
-    padding: 15px 0;
+    // padding: 15px 0;
   }
 }
 

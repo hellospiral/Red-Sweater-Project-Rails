@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :students
   resources :admin
   resources :events
-
+  resources :subscribers
   get "/pages/:page" => "pages#show"
-  root "pages#show", page: "home"
+  root "subscribers#new", page: "home"
 end
