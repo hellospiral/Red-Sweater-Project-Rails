@@ -1666,3 +1666,118 @@ Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms)
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-16 23:33:28 UTC], ["updated_at", 2016-09-16 23:33:28 UTC], ["image", "#<File:0x007ffb4cab4f88>"], ["time", "7pm, PST"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/events" for 127.0.0.1 at 2016-09-16 16:33:28 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (112.4ms)
+Completed 200 OK in 3988ms (Views: 3980.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-16 23:33:32 UTC], ["updated_at", 2016-09-16 23:33:32 UTC], ["image", "#<File:0x007ffb52d32c00>"], ["time", "7pm, PST"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/admin" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 2.7ms)
+Started GET "/events/2/edit" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  Rendered events/_form.html.erb (21.6ms)
+  Rendered events/edit.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 35ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+Started PATCH "/events/2" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"name"=>"Lunch in the Garden", "date"=>"2017-03-06", "time"=>"", "venu"=>"Sauvie Island Farms", "address"=>"1234 Garden Street Portland, OR 97204", "cost"=>"30", "image"=>"#<File:0x007ffb52d32c00>", "details"=>"Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."}, "commit"=>"Update Event", "id"=>"2"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "events" SET "name" = $1, "time" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["name", "Lunch in the Garden"], ["time", ""], ["updated_at", 2016-09-16 23:33:32 UTC], ["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "image", "gender") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-16 23:33:32 UTC], ["updated_at", 2016-09-16 23:33:32 UTC], ["image", "#<File:0x007ffb51249c90>"], ["gender", "boy"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/students" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "image", "gender") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-16 23:33:32 UTC], ["updated_at", 2016-09-16 23:33:32 UTC], ["image", "#<File:0x007ffb4ad118a0>"], ["gender", "boy"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/admin" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+Started GET "/students/2/edit" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  Rendered students/_form.html.erb (4.8ms)
+  Rendered students/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+Started PATCH "/students/2" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "student"=>{"name"=>"Shedrack Japh", "age"=>"16", "bio"=>"I want to go do school", "dream"=>"teacher", "sponsored"=>"false", "image"=>"#<File:0x007ffb4ad118a0>", "gender"=>"boy"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "students" SET "name" = $1, "updated_at" = $2 WHERE "students"."id" = $3[0m  [["name", "Shedrack Japh"], ["updated_at", 2016-09-16 23:33:32 UTC], ["id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-16 16:33:32 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+NewsletterSignupMailer#newsletter_confirmation: processed outbound mail in 0.2ms
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+NewsletterSignupMailer#newsletter_confirmation: processed outbound mail in 0.1ms
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+UserSignupMailer#signup_confirmation: processed outbound mail in 0.2ms
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+UserSignupMailer#signup_confirmation: processed outbound mail in 0.1ms
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
