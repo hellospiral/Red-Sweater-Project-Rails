@@ -22,7 +22,7 @@ class EventsController < ApplicationController
   def update
     @event = Event.find(params[:id])
     if @event.update(event_params)
-      redirect_to :root
+      redirect_to admin_index_path
     else
       render :index
     end

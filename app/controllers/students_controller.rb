@@ -26,7 +26,7 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     if @student.update(student_params)
       flash[:notice]="Student successfully updated!"
-      redirect_to :root
+      redirect_to admin_index_path
     else
       render :edit
     end
