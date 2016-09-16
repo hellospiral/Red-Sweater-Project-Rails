@@ -7,6 +7,6 @@ class User < ApplicationRecord
   after_create :send_welcome_message
 
   def send_welcome_message
-    ActionMailer.deliver_welcome_message(self)
+    UserSignupMailer.signup_confirmation(self).deliver
   end
 end
