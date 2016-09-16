@@ -15,6 +15,11 @@ label {
   margin-top: 1em;
 }
 
+.user-details {
+  font-size: 1em;
+  color: $body-type-grey;
+}
+
 h3 {
   font-weight: 100;
   font-size: 3em;
@@ -26,6 +31,12 @@ h3 {
 
 img {
   width: 100%;
+}
+
+
+
+.col-sm-4 .login #login-block {
+  margin-top: 15%;
 }
 
 .event-details {
@@ -622,7 +633,7 @@ header {
     background-size: cover;
   }
   position: relative;
-  margin-top: 100px;
+  // margin-top: 100px;
   height: auto;
   padding-top: 91px;
   background: url(../images/boyClassroom_1920x600.jpg) center center no-repeat;
@@ -1109,7 +1120,7 @@ form.comment-form.altered .field:last-child {
 }
 .navigation .logo-wrap {
   padding: 20px 15px;
-  width: 17%;
+  width: 15%;
 }
 .navigation .menu-wrap {
   padding: 28px 0 0;
@@ -1225,10 +1236,16 @@ form.comment-form.altered .field:last-child {
   margin-left: 20px;
 }
 
+.container-body {
+  position: relative;
+  top: 100px;
+  margin-left: 10%;
+}
+
 li.donateBtn {
   background-color: #ac2827;
   border-radius: 2px;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 li.donateBtn a {
   color: #ffffff!important;

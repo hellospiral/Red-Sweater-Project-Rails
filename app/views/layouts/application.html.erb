@@ -19,6 +19,19 @@
     <header>
       <nav class="navigation">
   			<div class="container">
+          <div class="row">
+            <ul class="menu">
+              <li><%= flash[:notice] %></li>
+              <li><%= flash[:alert] %></li>
+              <li>
+                <% if current_user != nil %>
+                  <p class="user-details">
+                    Logged in as <%= current_user.email %>
+                  </p>
+                <% end %>
+              </li>
+            </ul>
+          </div>
   				<div class="row">
   					<div class="logo-wrap col-md-3 col-xs-6">
   						<a href="/"><%= image_tag("RSPlogo_175x59.png") %></a>
@@ -48,27 +61,33 @@
                   <%= link_to "Sponsor", students_path %>
   							</li>
 
-  							<li>
-                  <%= link_to "Login", new_user_session_path %>
-  							</li>
-
+                <% if user_signed_in? %>
+                  <li>
+                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                  </li>
+                <% else %>
+                  <li>
+                  <%= link_to('Login', new_user_session_path)  %>
+                  </li>
+                <% end %>
   							<li>
                   <%= link_to "Create Account", new_user_registration_path %>
   							</li>
+
 
   							<li class="donateBtn">
   								<a href="donate.html">Donate</a>
   							</li>
   						</ul>
   					</div>
-  					<div class="col-md-1 col-xs-6">
+  					<!-- <div class="col-md-1 col-xs-6">
   						<div id="menu-toggle">
   							<i class="fa fa-bars"></i>
   						</div>
   						<div id="search-toggle">
   							<i class="fa fa-search"></i>
   						</div>
-  					</div>
+  					</div> -->
   				</div>
   			</div>
   		</nav>
@@ -100,10 +119,9 @@
           </ul> -->
       <!-- </div> -->
     </nav>
-    <!-- <div class="container"> -->
-      <%= flash[:notice] %>
-      <%= flash[:alert] %>
-      <!-- <%= yield %> -->
+    <div class="container-body">
+
+      <%= yield %>
     </div>
 
   </body>
