@@ -20,17 +20,31 @@
       <nav class="navigation">
   			<div class="container">
           <div class="row">
-            <ul class="menu">
-              <li><%= flash[:notice] %></li>
-              <li><%= flash[:alert] %></li>
-              <li>
-                <% if current_user != nil %>
-                  <p class="user-details">
-                    Logged in as <%= current_user.email %>
-                  </p>
+            <div class="menu">
+              <ul class="menu-notes">
+                <li><%= flash[:notice] %></li>
+                <li><%= flash[:alert] %></li>
+                <% if user_signed_in? %>
+                  <li>
+                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                  </li>
+                <% else %>
+                  <li>
+                  <%= link_to('Login', new_user_session_path)  %>
+                  </li>
+                  <li>
+                    <%= link_to "Create Account", new_user_registration_path %>
+                  </li>
                 <% end %>
-              </li>
-            </ul>
+                <li>
+                  <% if current_user != nil %>
+                    <p class="user-details">
+                      Logged in as <%= current_user.email %>
+                    </p>
+                  <% end %>
+                </li>
+              </ul>
+            </div>
           </div>
   				<div class="row">
   					<div class="logo-wrap col-md-3 col-xs-6">
@@ -38,7 +52,7 @@
   					</div>
   					<div class="menu-wrap col-md-8 ">
   						<ul class="menu">
-  							<!-- <li>
+  							<li>
   								<a href="who-we-are.html"><span>Who we are</span></a>
   								<ul class="submenu">
   									<li><a href="#">Item 1</a></li>
@@ -52,27 +66,16 @@
   									<li><a href="#">Item 4</a></li>
   									<li><a href="#">Item 5</a></li>
   								</ul>
-  							</li> -->
-  							<!-- <li>
+  							</li>
+  							<li>
   								<a href="get-involved.html">Get involved</a>
-  							</li> -->
+  							</li>
 
   							<li>
                   <%= link_to "Sponsor", students_path %>
   							</li>
 
-                <% if user_signed_in? %>
-                  <li>
-                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-                  </li>
-                <% else %>
-                  <li>
-                  <%= link_to('Login', new_user_session_path)  %>
-                  </li>
-                <% end %>
-  							<li>
-                  <%= link_to "Create Account", new_user_registration_path %>
-  							</li>
+
 
 
   							<li class="donateBtn">

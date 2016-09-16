@@ -1251,6 +1251,18 @@ li.donateBtn a {
   color: #ffffff!important;
 }
 
+.menu-notes {
+  text-align: right;
+  li {
+  margin-bottom: 0px;
+  display: inline;
+  padding-left: 10px;
+  }
+  margin-bottom: 0;
+  margin-top: 10px;
+
+}
+
 @media screen and (max-width: 991px) {
   .navigation.nav-scroll .menu-wrap {
     padding-top: 0;
