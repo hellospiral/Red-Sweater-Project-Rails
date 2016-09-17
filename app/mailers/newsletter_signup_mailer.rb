@@ -8,6 +8,6 @@ class NewsletterSignupMailer < ApplicationMailer
   def newsletter_confirmation(user)
     @user = user
 
-    mail to: user.email, subject: "Welcome! Thanks for joining us."
+    mail to: @user.email, subject: "Welcome! Thanks for joining us."
   end
 end

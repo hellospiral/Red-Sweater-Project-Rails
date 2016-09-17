@@ -5,14 +5,14 @@ RSpec.describe NewsletterSignupMailer, type: :mailer do
     let(:mail) { NewsletterSignupMailer.newsletter_confirmation }
 
     it "renders the headers" do
-      expect(mail.subject).to eq("Newsletter confirmation")
-      expect(mail.to).to eq(["to@example.org"])
-      expect(mail.from).to eq(["from@example.com"])
+      expect(mail.subject).to eq("Welcome! Thanks for joining us.")
+      expect(mail.to).to eq([user.mail])
+      expect(mail.from).to eq(["donotreply@redsweaterproject.com"])
     end
-
-    it "renders the body" do
-      expect(mail.body.encoded).to match("Hi")
-    end
+    #
+    # it "renders the body" do
+    #   expect(mail.body.encoded).to match("Mambo")
+    # end
   end
 
 end
