@@ -103,6 +103,7 @@
         null,
         1,
         2,
+        null,
         null
       ],
       "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/models/user_spec.rb": [
@@ -110,9 +111,15 @@
         null,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1474080984
+    "timestamp": 1474081496
   }
 }
