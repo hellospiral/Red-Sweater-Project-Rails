@@ -13,8 +13,11 @@
   <%= f.label :sponsored_no, 'Not sponsored' %>
   <%= f.radio_button :sponsored, true %>
   <%= f.label :sponsored_yes, 'Sponsored!' %><br>
-  <%= f.label :image, 'Image file name (without the .png)' %>
-  <%= f.text_field :image, class: "form-control" %>
+
+  <%= f.label :image, 'Image' %>
+  <%= f.file_field :image, class: "form-control" %>
+
+
   <%= f.radio_button :gender, 'boy' %>
   <%= f.label :gender_boy, 'boy' %>
   <%= f.radio_button :gender, 'girl' %>
