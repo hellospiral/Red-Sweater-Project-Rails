@@ -14,4 +14,10 @@ describe "event" do
     click_button 'Update Event'
     expect(page).to have_content 'Lunch in the Garden'
   end
+  it "deletes an event" do
+    FactoryGirl.create(:event)
+    visit admin_index_path
+    click_link 'Delete'
+    expect(page).to have_no_content 'Lunch in the garden'
+  end
 end

@@ -23,16 +23,20 @@ class StudentsController < ApplicationController
 
   def edit
     @student = Student.find(params[:id])
-    render :edit
+    respond_to do |format|
+      format.html {redirect_to admin_index_path}
+      format.js
+    end
   end
 
   def update
     @student = Student.find(params[:id])
     if @student.update(student_params)
       flash[:notice]="Student successfully updated!"
-      redirect_to admin_index_path
-    else
-      render :edit
+      respond_to do |format|
+        format.html {redirect_to admin_index_path}
+        format.js
+      end
     end
   end
 

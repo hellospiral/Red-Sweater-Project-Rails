@@ -3,6 +3,6 @@
   <h4><strong><%= student.name %></strong></h4>
   <p><em><%= student.age %> year-old <%= student.gender %></em><br>
   I want to become: A <%= student.dream %></p>
-  <%= link_to "Update", student_path(student), :class => "btn btn-default"%>
-  <%= link_to "Delete", student, method: :delete, :class => "btn btn-danger", :data => {:confirm => "Are you sure you want to remove this student from the sponsorship page?"}, remote: true %>
+  <%= link_to "Update", student_path(student)%>
+  <%= link_to "Delete", student, method: :delete, :data => {:confirm => "Are you sure you want to remove this student from the sponsorship page?"}, remote: true %>
 </div>

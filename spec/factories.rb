@@ -1,4 +1,10 @@
 FactoryGirl.define do
+  factory(:user) do
+    email('user@email.com')
+    password "password"
+    password_confirmation "password"
+  end
+
   factory(:student) do
     name('Shedrack Japhet')
     age(16)
