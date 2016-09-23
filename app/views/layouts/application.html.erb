@@ -19,24 +19,22 @@
     <header>
       <nav class="navigation">
   			<div class="container">
-          <div class="row">
-            <div class="menu">
-              <ul class="menu-notes">
+          <ul class="menu-notes">
                 <li><%= flash[:notice] %></li>
                 <li><%= flash[:alert] %></li>
                 <% if user_signed_in? %>
                   <li>
-                  <%= link_to('Log out', destroy_user_session_path, :method => :delete) %>
+                  <%= link_to('LOG OUT', destroy_user_session_path, :method => :delete) %>
                   </li>
                   <% if current_user.admin %>
                     <li><%= link_to('Admin dashboard', admin_index_path) %></li>
                   <% end %>
                 <% else %>
                   <li>
-                  <%= link_to('Login', new_user_session_path)  %>
+                  <%= link_to('LOG IN', new_user_session_path)  %>
                   </li>
                   <li>
-                    <%= link_to "Create Account", new_user_registration_path %>
+                    <%= link_to "CREATE ACCOUNT", new_user_registration_path %>
                   </li>
                 <% end %>
                 <li>
@@ -47,13 +45,15 @@
                   <% end %>
                 </li>
               </ul>
+          <div class="row">
+            <div class="menu">
             </div>
           </div>
   				<div class="row">
   					<div class="logo-wrap col-md-3 col-xs-6">
   						<a href="/"><%= image_tag("RSPlogo_175x59.png") %></a>
   					</div>
-  					<div class="menu-wrap col-md-8 ">
+  					<div class="menu-wrap col-md-10">
   						<ul class="menu">
   							<li>
   								<a href="#"><span>Who we are</span></a>
@@ -70,8 +70,7 @@
   									<li><a href="#">Item 5</a></li>
   								</ul>
   							</li>
-  							<li>
-  								<%= link_to 'Get involved', events_path %>
+  							<li><%= link_to 'Get involved', events_path %>
                   <ul class="submenu">
   									<li><%= link_to 'Events', events_path %></li>
   									<li><a href="#">Volunteer Vacations</a></li>
@@ -90,14 +89,11 @@
   							</li>
   						</ul>
   					</div>
-  					<!-- <div class="col-md-1 col-xs-6">
+  					<div class="col-md-1 col-xs-6">
   						<div id="menu-toggle">
   							<i class="fa fa-bars"></i>
   						</div>
-  						<div id="search-toggle">
-  							<i class="fa fa-search"></i>
-  						</div>
-  					</div> -->
+  					</div>
   				</div>
   			</div>
   		</nav>
@@ -132,48 +128,38 @@
     <div class="container-body">
       <%= yield %>
     </div>
-    <!-- Footer -->
-  <!-- <footer> -->
-    <!-- <div class="footer-bar"> -->
-      <!-- <div class="container">
+
+  <footer>
+    <div class="footer-bar">
+      <div class="container">
         <nav class="navbar fixed-bottom">
           <div class="row">
             <div class="col-md-6">
               <div class="about widget clearfix">
                 <%= image_tag("logo_horiz_grad_white.png", :class => "img-responsive", :id => "small-logo")%>
-                <p>At vero eos et accusamus et iusto odio dignis
-                simos ducimus  qui blanditiis praesentiumlo
-                volupt </p>
                 <div class="social-media-icons">
                   <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
                   <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 ">
               <div class="quick-links widget clearfix">
                 <div class="links">
-                  <a href="#"><i class="fa fa-angle-double-right"></i>Blog</a>
-                  <a href="#"><i class="fa fa-angle-double-right"></i>Events</a>
-                  <a href="#"><i class="fa fa-angle-double-right"></i>Jobs</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i>Blog</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i>Events</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i>Jobs</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i>Privacy Policy</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i>Contact</a>
+                <a href="#"><i class="fa fa-angle-double-right"></i>News-Reviews</a>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3 ">
-              <div class="quick-links widget clearfix">
-                <div class="links">
-                  <a href="#"><i class="fa fa-angle-double-right"></i>Privacy Policy</a>
-                  <a href="#"><i class="fa fa-angle-double-right"></i>Contact</a>
-                  <a href="#"><i class="fa fa-angle-double-right"></i>News-Reviews</a>
-                </div>
-              </div>
-            </div>
+              <h5> &copy; Copyright Red Sweater Project 2016 | All Rights Reserved</h5>
+
           </div>
         </div>
-          <h5> &copy; Copyright Red Sweater Project 2016 | All Rights Reserved</h5>
-        <! </div> -->
-      <!-- </nav>
-  </footer> -->
+        </div>
+      </nav>
+  </footer>
 </body>
 
 </html>

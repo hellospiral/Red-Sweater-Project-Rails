@@ -35,8 +35,6 @@ img {
   width: 100%;
 }
 
-
-
 .col-sm-4 .login {
   margin-top: 25%;
   height: 300px;
@@ -85,6 +83,8 @@ img {
     border: 0;
   }
 }
+
+
 .admin-student-view {
   border-radius: 10px;
   border: 1px solid $hairline-grey;
@@ -618,46 +618,41 @@ header {
 .content-box .foundings {
   margin: 20px 0 30px;
 }
-.content-box:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-}
-.content-box:hover .img-wrapper img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.content-box:hover .img-wrapper .overlay {
-  opacity: 1;
-}
-.content-box:hover .img-wrapper .overlay .btn {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
+// .content-box:hover {
+//   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+// }
+// .content-box:hover .img-wrapper img {
+//   -webkit-transform: scale(1.2);
+//   transform: scale(1.2);
+// }
+// .content-box:hover .img-wrapper .overlay {
+//   opacity: 1;
+// }
+// .content-box:hover .img-wrapper .overlay .btn {
+//   -webkit-transform: scale(1);
+//   transform: scale(1);
+// }
 /* Parallax Maks*/
 .parallax-mask {
   position: absolute;
   display: block;
-  top: 15%;
+  top: 12%;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 55%;
+  width: 50%;
   height: 75%;
-  background: rgba(36, 40, 47, 0.5);
+  background: rgba(15, 15, 15, 0.65);
   z-index: 1;
 }
+
 /* Page Banner */
 .page-banner {
-  .home {
-    background: url("boyClassroom_1920x600.jpg") center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
   position: relative;
-  // margin-top: 100px;
-  height: auto;
-  padding-top: 91px;
+  top: 0;
+  left: 0;
+  height: 400px;
+  padding-top: 87px;
   background: url(../images/boyClassroom_1920x600.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -667,31 +662,50 @@ header {
 .page-banner .section-name {
   position: relative;
   z-index: 10;
-  // top: -50px;
 }
 
 .page-banner .banner-content {
   font-family: 'Amatic SC', cursive;
   font-size: 56px;
   line-height: 66px;
-  margin-top: 15%;
-  color: #ffffff;
+  margin-top: 1%;
+  margin-bottom: 15%;
+  color: #fff;
 }
 
 .page-banner .banner-content h2,
-.page-banner .section-name h5 {
+.page-banner .section-name  {
   font-family: 'Amatic SC', cursive;
-  font-size: 56px;
-  line-height: 66px;
-  // margin-top: 55px;
-  color: #ffffff;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+  color: #fff;
+  margin-left: 12%;
+}
+
+.banner-content h5 {
+  font-family: 'Proxima-nova', sans-serif;
+  font-weight: medium;
+  color: white;
+  margin-left: 12%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 
 .page-banner .section-name h5 i {
   margin: 0 6px;
 }
+
 @media screen and (max-width: 992px) {
+  .col1, .col2, .col3 {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
   .page-banner .section-name h2 {
   font-size: 48px;
   line-height: 58px;
@@ -1260,28 +1274,33 @@ form.comment-form.altered .field:last-child {
 
 .container-body {
   position: relative;
-  top: 100px;
-  margin-left: 10%;
+  top: 95px;
 }
 
 li.donateBtn {
   background-color: #ac2827;
   border-radius: 2px;
   padding: 10px 10px;
+  margin-right: 0px;
 }
-li.donateBtn a {
+.menu li.donateBtn a {
   color: #ffffff!important;
+  margin-right: 0px;
 }
 
 .menu-notes {
   text-align: right;
   height: 20px;
+  margin-right: -9px;
+  color: $body-type-grey;
   li {
+  color: $body-type-grey;
   margin-bottom: 0px;
   display: inline;
   padding-left: 10px;
+  padding-right: 0px;
   }
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-top: 10px;
 
 }
@@ -1296,7 +1315,7 @@ li.donateBtn a {
   .navigation .menu-wrap {
     position: absolute;
     top: 100px;
-    right: 15px;
+    right: 0;
     width: 210px;
     padding: 0;
     background: #fff;
@@ -1416,14 +1435,14 @@ li.donateBtn a {
     padding-bottom: 50px;
   }
   .intro-wrapper p {
-    width: 100%;
+    width: 100%vw;
   }
 }
 
 /* focus */
 .focus-wrapper {
   height: 750px;
-  padding: 85px 0 0px;
+  padding-top: 85px;
   background: #2978a1;
 }
 .focus p {
@@ -1626,7 +1645,7 @@ li.donateBtn a {
   text-transform: uppercase;
 }
 .yellow-left {
-    padding: 60px 0 60px 30px;
+    padding: 60px 0;
 }
 @media screen and (max-width: 991px) {
   .subscribe-wrapper {
@@ -2176,32 +2195,31 @@ footer .about p {
   // margin: 15px 0 35px;
 }
 footer .quick-links .links a {
-  display: block;
-  float: none;
+  display: inline;
+  float: right;
   padding: 0 3px;
   margin: 10px 0px;
   color: #e5e5e5;
   transition: all 0.3s ease;
 }
 footer .quick-links .links a i {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 footer .quick-links .links a:hover {
   color: #ae2422;
-  margin-left: 5px;
 }
 footer .tags-outer .tags a {
   display: block;
   position: relative;
   float: left;
   height: 10px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 2.5px 2.5px;
   line-height: 25px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 3px;
   color: #e5e5e5;
-  transition: all .3s ease;
+  // transition: all .3s ease;
 }
 footer .tags-outer .tags a span {
   display: block;
@@ -2210,7 +2228,7 @@ footer .tags-outer .tags a span {
 }
 footer .tags-outer .tags a:after {
   z-index: 1;
-  display: block;
+  display: inline;
   position: absolute;
   content: "";
   left: 0;
@@ -2253,8 +2271,8 @@ footer .footer-bar {
   background: #161719;
   padding: 15px 0;
   width:100%;
-  height:100px;
-  position:absolute;
+  height: 5%;
+  position: absolute;
   bottom:0;
   left:0;
 }

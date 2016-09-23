@@ -1,11 +1,13 @@
 <!-- Banner -->
-<div class="page-banner home">
-  <div class="container">
-    <div class="parallax-mask"></div>
-    <div class="banner-content">
-      <h2>By 2020, the high school<br/>graduation rate in Mungere,<br />Tanzania will be up by <span style="color:#fdbe16;">200%</span></h2>
-      <div class="short-text">
+<div class="page-banner">
+  <div class="parallax-mask">
+    <div class="container">
+      <div class="banner-content">
+        <STRONG><h5>BECAUSE OF RED SWEATER PROJECT:</h5></STRONG>
+        <h2>By 2020, the high school<br/>graduation rate in Mungere,<br />Tanzania will be up by <span style="color:#fdbe16;">200%</span></h2>
+        <div class="short-text">
 
+        </div>
       </div>
     </div>
   </div>
@@ -109,11 +111,10 @@
 
   	<!-- Subscribe section -->
   	<div class="subscribe-wrapper">
-  		<div class="container-fluid">
+  		<div class="container">
   			<div class="section-name subscribe">
-    			<div class="row ">
+
     				<div class="col-md-6 yellow-left">
-    					<div class="subcribe widget clearfix">
     						<h2>Don't miss a thing</h2>
     						<p>Subscribe to our monthly newsletter to get valuable updates about the school.</p>
 
@@ -123,15 +124,15 @@
                   <%= f.email_field :email, class: "form-control" %>
                   <%= f.submit 'Subscribe', class: 'btn btn-min btn-solid' %>
                 <% end %>
+                <%= flash[:notice] %>
+                <%= flash[:alert] %>
 
     					</div>
     				</div>
   					<div class="col-md-6">
     					<div class="image-wrapper">
   							<%= image_tag("home_newsletter.png", :class => "img-responsive")%>
-    					</div>
-    				</div>
-    			</div>
+    			    </div>
   		  </div>
   	  </div>
     </div>

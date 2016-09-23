@@ -42578,3 +42578,1537 @@ Processing by AdminController#index as HTML
 Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for ::1 at 2016-09-16 23:11:16 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for ::1 at 2016-09-16 23:11:35 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2016-09-17 08:57:37 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (10.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (91.3ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 544ms (Views: 490.7ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-17 08:57:44 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (45.1ms)
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 514ms (Views: 491.5ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-09-17 08:57:57 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t584QeFS7kFJWg8ShbbMaVAifjU1Xfx1P7j2RI6xBJvhc0bTGI2yUkpREO9YRAQlA7Fy/9vF08pMF5Oh4dFkPw=="}
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-17 08:57:57 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 437ms (Views: 431.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-09-17 08:58:25 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (6.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 293ms (Views: 273.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/events" for ::1 at 2016-09-17 08:58:31 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 262ms (Views: 252.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/events" for ::1 at 2016-09-17 08:58:32 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (4.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 292ms (Views: 278.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/events" for ::1 at 2016-09-17 08:58:34 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 300ms (Views: 288.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/students" for ::1 at 2016-09-17 08:58:36 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (3.0ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 234ms (Views: 221.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 08:08:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (122.1ms)
+Completed 200 OK in 737ms (Views: 718.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-09-23 08:09:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 132ms (Views: 104.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-09-23 08:09:04 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-09-23 08:09:07 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-09-23 08:09:09 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 08:09:11 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 08:09:18 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 55ms (Views: 45.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 08:46:38 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-09-23 08:46:43 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 08:46:53 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/sign_in" for ::1 at 2016-09-23 08:47:30 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-09-23 08:47:38 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vZQb5CFqKrSyIU/bHhKvzY3+dB+po0WMPomv9k2s8xziHsehEYvOgnNWhIZG1RZv33RURZtSHmIZMJ/xRzFGyA==", "user"=>{"email"=>"admin@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-09-23 15:47:38 UTC], ["last_sign_in_at", 2016-09-17 04:26:55 UTC], ["sign_in_count", 8], ["updated_at", 2016-09-23 15:47:38 UTC], ["id", 13]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 151ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 08:47:38 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 08:47:41 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (22.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 56.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 08:50:23 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (8.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 1994ms (Views: 1991.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-09-23 08:52:09 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AQOb10B9L7C3BXqE0rAEcHaZSrqiBMSS/l8Nbcbr+EbGwVIHNkGVXdGgA7PXb8vtzDLDGygEDa3V8nB36xhFoQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 08:52:09 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 08:53:41 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:12:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1827ms (Views: 1825.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:13:55 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1822ms (Views: 1821.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:14:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1772ms (Views: 1771.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:14:30 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:15:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2098ms (Views: 2097.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:15:35 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1944ms (Views: 1942.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:22:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:22:30 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:23:21 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:23:52 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:24:10 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:25:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1979ms (Views: 1977.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:26:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1847ms (Views: 1845.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:26:38 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1950ms (Views: 1949.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:27:01 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1928ms (Views: 1926.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:27:52 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1889ms (Views: 1887.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:28:31 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  float": expected ";", was ": left;"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:656
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__4047675884577615587_70293076317660'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.7ms)
+Started GET "/" for ::1 at 2016-09-23 09:28:51 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  left": expected ";", was ": 0;"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:656
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__4047675884577615587_70293100269940'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.4ms)
+Started GET "/" for ::1 at 2016-09-23 09:29:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2005ms (Views: 2003.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:30:53 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1814ms (Views: 1812.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:31:45 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1946ms (Views: 1944.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:32:08 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1809ms (Views: 1808.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:34:11 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 2071ms (Views: 2068.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:35:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1838ms (Views: 1836.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:37:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:37:52 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 1915ms (Views: 1913.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:39:32 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1799ms (Views: 1798.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:41:47 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:48:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/subscribers" for ::1 at 2016-09-23 09:49:07 -0700
+Processing by SubscribersController#create as JS
+  Parameters: {"utf8"=>"✓", "subscriber"=>{"email"=>"julia@email.com"}, "commit"=>"Subscribe"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "subscribers" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "julia@email.com"], ["created_at", 2016-09-23 16:49:07 UTC], ["updated_at", 2016-09-23 16:49:07 UTC]]
+  Rendering newsletter_signup_mailer/newsletter_confirmation.html.erb within layouts/mailer
+  Rendered newsletter_signup_mailer/newsletter_confirmation.html.erb within layouts/mailer (0.4ms)
+  Rendering newsletter_signup_mailer/newsletter_confirmation.text.erb within layouts/mailer
+  Rendered newsletter_signup_mailer/newsletter_confirmation.text.erb within layouts/mailer (0.2ms)
+NewsletterSignupMailer#newsletter_confirmation: processed outbound mail in 212.4ms
+Sent mail to julia@email.com (35.5ms)
+Date: Fri, 23 Sep 2016 09:49:07 -0700
+From: donotreply@redsweaterproject.com
+To: julia@email.com
+Message-ID: <57e55d03a1d90_d1a3fee5d9122989106b@Julias-MacBook-Pro.local.mail>
+Subject: Welcome! Thanks for joining us.
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57e55d039fe5c_d1a3fee5d9122989097d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57e55d039fe5c_d1a3fee5d9122989097d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Mambo,
+
+Thank you for signing up for the Red Sweater Project newsletter! You can expect a monthly newsletter with all the new, exciting info about what's happening at the school.
+
+
+----==_mimepart_57e55d039fe5c_d1a3fee5d9122989097d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Mambo,</h3>
+
+<p>
+  Thank you for signing up for the Red Sweater Project newsletter! You can expect a brief, exciting monthly newsletter with all the updates about what's happening at the Mungere School.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57e55d039fe5c_d1a3fee5d9122989097d--
+
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 2.7ms)
+
+
+  
+NameError (undefined local variable or method `subscriber_new_path' for #<Subscriber:0x007fdcc2b27428>):
+  
+app/models/subscriber.rb:7:in `send_welcome_message'
+app/controllers/subscribers_controller.rb:9:in `create'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (43.0ms)
+Started GET "/" for ::1 at 2016-09-23 09:49:14 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:50:16 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1837ms (Views: 1836.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:50:37 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2014ms (Views: 2012.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:50:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1966ms (Views: 1964.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:51:10 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1853ms (Views: 1851.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:55:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1959ms (Views: 1957.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:55:38 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:56:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:56:14 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:56:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:56:39 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:57:16 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:57:40 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 09:59:08 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:00:26 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:01:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:01:11 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:01:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:01:48 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:01:58 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:02:19 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:03:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1858ms (Views: 1857.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:03:32 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1822ms (Views: 1821.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:03:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1944ms (Views: 1942.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:04:16 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1771ms (Views: 1769.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:04:53 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:05:51 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:06:22 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1885ms (Views: 1883.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:08:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1866ms (Views: 1864.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:08:57 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:09:34 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:10:07 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1922ms (Views: 1920.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:10:47 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1834ms (Views: 1832.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:11:17 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:11:53 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 1941ms (Views: 1939.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:12:42 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1873ms (Views: 1872.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:13:03 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1846ms (Views: 1844.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:13:25 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1850ms (Views: 1848.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:14:51 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 2032ms (Views: 2031.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:16:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:16:09 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:16:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:16:55 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:19:38 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1822ms (Views: 1820.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:19:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 1968ms (Views: 1966.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:20:47 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1912ms (Views: 1910.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:21:04 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 1955ms (Views: 1953.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:21:38 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1797ms (Views: 1795.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:22:39 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1985ms (Views: 1983.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:23:19 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1782ms (Views: 1780.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:23:58 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1977ms (Views: 1975.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:24:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1820ms (Views: 1818.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:25:28 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:27:14 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 1935ms (Views: 1933.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:28:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1833ms (Views: 1831.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:28:22 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:29:05 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:30:09 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:32:03 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:33:19 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:35:17 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1889ms (Views: 1888.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:35:33 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1713ms (Views: 1711.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:36:01 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1837ms (Views: 1835.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:36:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1898ms (Views: 1896.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:38:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1756ms (Views: 1754.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:38:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1903ms (Views: 1901.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:39:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:39:45 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:41:55 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1882ms (Views: 1880.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:42:52 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1903ms (Views: 1901.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:43:15 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2009ms (Views: 2007.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:43:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1817ms (Views: 1815.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:43:37 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1985ms (Views: 1983.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:44:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:44:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 10:46:45 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1868ms (Views: 1866.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:01:21 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:01:37 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:03:03 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:03:11 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:03:28 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:03:41 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:03:47 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:03:56 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:04:55 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:05:06 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:06:18 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1822ms (Views: 1820.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:07:20 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1828ms (Views: 1826.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:08:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1842ms (Views: 1841.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:08:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 1804ms (Views: 1802.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:09:19 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1828ms (Views: 1826.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:10:21 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1805ms (Views: 1803.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:10:56 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:11:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:11:32 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1922ms (Views: 1920.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:12:11 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:12:46 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1848ms (Views: 1846.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:14:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1924ms (Views: 1922.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:15:40 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:16:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1848ms (Views: 1846.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:17:22 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1948ms (Views: 1946.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:18:22 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1784ms (Views: 1782.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:19:14 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 2005ms (Views: 2003.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:20:01 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1821ms (Views: 1820.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:21:05 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 2049ms (Views: 2047.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:21:25 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1793ms (Views: 1792.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:21:34 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:23:10 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1922ms (Views: 1920.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:23:39 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1849ms (Views: 1847.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:23:57 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1964ms (Views: 1962.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:24:05 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1813ms (Views: 1811.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:24:24 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1961ms (Views: 1959.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:24:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1837ms (Views: 1836.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:24:45 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1973ms (Views: 1972.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:25:21 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1840ms (Views: 1839.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:25:33 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 1950ms (Views: 1948.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 11:25:47 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1817ms (Views: 1815.2ms | ActiveRecord: 0.0ms)
+
+
