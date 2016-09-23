@@ -1,6 +1,6 @@
 <%= render "layouts/errors", :object => @student %>
 
-<%= form_for @student do |f| %>
+<%= form_for @student, remote: true do |f| %>
   <%= f.label :name, 'Full Name' %>
   <%= f.text_field :name, class: "form-control" %>
   <%= f.label :age, 'Age' %>
@@ -24,3 +24,5 @@
   <%= f.label :gender_girl, 'girl' %>
   <%= f.submit class: 'btn btn-default' %>
 <% end %>
+
+<%= link_to 'Cancel', id: 'cancel' %>

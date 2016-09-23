@@ -19,32 +19,32 @@
     <header>
       <nav class="navigation">
   			<div class="container">
-          <ul class="menu-notes">
-                <li><%= flash[:notice] %></li>
-                <li><%= flash[:alert] %></li>
-                <% if user_signed_in? %>
-                  <li>
-                  <%= link_to('LOG OUT', destroy_user_session_path, :method => :delete) %>
-                  </li>
-                  <% if current_user.admin %>
-                    <li><%= link_to('Admin dashboard', admin_index_path) %></li>
+          <div class="row">
+            <ul class="menu-notes">
+                  <li><%= flash[:notice] %></li>
+                  <li><%= flash[:alert] %></li>
+                  <% if user_signed_in? %>
+                    <li>
+                      <% if current_user.admin %>
+                      <li><%= link_to('Admin dashboard', admin_index_path) %></li>
+                      <% end %>
+                      <% if current_user != nil && current_user.admin = false %>
+                          Logged in as <%= current_user.email %>
+                      <% end %>
+                    </li>
+                    <li>
+                    <%= link_to('LOG OUT', destroy_user_session_path, :method => :delete) %>
+                    </li>
+                  <% else %>
+                    <li>
+                    <%= link_to('LOG IN', new_user_session_path)  %>
+                    </li>
+                    <li>
+                      <%= link_to "CREATE ACCOUNT", new_user_registration_path %>
+                    </li>
                   <% end %>
-                <% else %>
-                  <li>
-                  <%= link_to('LOG IN', new_user_session_path)  %>
-                  </li>
-                  <li>
-                    <%= link_to "CREATE ACCOUNT", new_user_registration_path %>
-                  </li>
-                <% end %>
-                <li>
-                  <% if current_user != nil %>
-                    <p class="user-details">
-                      Logged in as <%= current_user.email %>
-                    </p>
-                  <% end %>
-                </li>
-              </ul>
+                </ul>
+              </div>
           <div class="row">
             <div class="menu">
             </div>
@@ -129,7 +129,7 @@
       <%= yield %>
     </div>
 
-  <footer>
+  <!-- <footer>
     <div class="footer-bar">
       <div class="container">
         <nav class="navbar fixed-bottom">
@@ -159,7 +159,7 @@
         </div>
         </div>
       </nav>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

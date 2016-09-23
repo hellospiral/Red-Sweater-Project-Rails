@@ -46538,3 +46538,800 @@ Processing by PagesController#show as HTML
 Completed 200 OK in 1907ms (Views: 1906.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2016-09-23 13:18:33 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:19:18 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:19:47 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1650ms (Views: 1649.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-23 13:19:53 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:20:08 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 52ms (Views: 42.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:20:42 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:21:40 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 1786ms (Views: 1784.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:21:58 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 1763ms (Views: 1760.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:22:27 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1767ms (Views: 1765.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:22:48 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1726ms (Views: 1724.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:23:48 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:24:12 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1650ms (Views: 1648.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:24:27 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1934ms (Views: 1931.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:24:43 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1819ms (Views: 1816.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:25:01 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1900ms (Views: 1898.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-23 13:25:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:25:18 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1807ms (Views: 1805.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:25:30 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1871ms (Views: 1868.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:25:45 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:26:00 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1876ms (Views: 1874.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:26:09 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1741ms (Views: 1739.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:26:29 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1776ms (Views: 1774.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:26:46 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1779ms (Views: 1777.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:27:43 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1779ms (Views: 1777.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:29:37 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1910ms (Views: 1908.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:31:12 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:36:25 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...nslateY(-25px);": expected selector or at-rule, was "}"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:1754
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__106734546004733585_70134340811280'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.4ms)
+Started GET "/students" for ::1 at 2016-09-23 13:37:14 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1660ms (Views: 1658.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:38:11 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1716ms (Views: 1714.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:39:33 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1755ms (Views: 1753.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:40:43 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1709ms (Views: 1707.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:41:52 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1807ms (Views: 1805.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:42:32 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:43:05 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:44:03 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1746ms (Views: 1744.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:44:10 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1639ms (Views: 1637.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:44:24 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1758ms (Views: 1755.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:44:34 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1717ms (Views: 1714.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:44:42 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1734ms (Views: 1732.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 13:44:55 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 1778ms (Views: 1776.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-09-23 13:45:08 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 64ms (Views: 49.9ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-09-23 13:45:15 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jc1LCWCwCh6ED2ch2t6RS2ya+iex7beozsp5g/SOduQZkF4JWxHYs3Ec48y8RoWiegeyTlhbMyNlx0dbt4Wk1g==", "user"=>{"email"=>"julia@email", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "julia@email"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 2.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jc1LCWCwCh6ED2ch2t6RS2ya+iex7beozsp5g/SOduQZkF4JWxHYs3Ec48y8RoWiegeyTlhbMyNlx0dbt4Wk1g==", "user"=>{"email"=>"julia@email", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 173ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-09-23 13:45:23 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HxBN3ARTwKwq5AFlLLKO+Xh0ZtxrEnoibjhv6vT8nYVtdlfi2ZyYxUvcO5/LJ/EGCew9xlaM8dSY2nYnkhYE0A==", "user"=>{"email"=>"julia@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "julia@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-09-23 20:45:23 UTC], ["last_sign_in_at", 2016-09-17 02:07:14 UTC], ["sign_in_count", 3], ["updated_at", 2016-09-23 20:45:23 UTC], ["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 134ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:45:23 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:48:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:49:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:50:13 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:51:06 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:51:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1823ms (Views: 1820.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:52:45 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1774ms (Views: 1772.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:52:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:53:28 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:53:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1768ms (Views: 1766.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:54:03 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1761ms (Views: 1759.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:54:17 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1732ms (Views: 1730.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:54:32 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1767ms (Views: 1765.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 13:54:43 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 200 OK in 1726ms (Views: 1724.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-09-23 14:12:49 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1SmA/XR5tKrfqogKmsImv0CTeoPW03BppiEowmGjro+FRmm2knoUtzAurusJyv7p9KP4rYCvhPe1Dp2s0/ySjg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 14:12:49 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-09-23 14:12:52 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-09-23 14:12:55 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"otEYNkmvGgD8u/otqlqMybDZw2a3u5na9KToL3MDslLgsTt1uPTxpHXQArtCtqe31CzZYHv+VXNBud8SFw3iXg==", "user"=>{"email"=>"admin@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2016-09-23 21:12:55 UTC], ["last_sign_in_at", 2016-09-23 15:47:38 UTC], ["sign_in_count", 9], ["updated_at", 2016-09-23 21:12:55 UTC], ["id", 13]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 129ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 14:12:55 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:12:58 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (15.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 48.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:13:51 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (9.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:14:24 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 14:14:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/5/edit" for ::1 at 2016-09-23 14:14:47 -0700
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering students/edit.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  Rendered students/_form.html.erb (7.0ms)
+  Rendered students/edit.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:16:33 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:17:12 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:17:26 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (11.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 1899ms (Views: 1897.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:17:44 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 1804ms (Views: 1802.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:18:00 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (7.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 1970ms (Views: 1967.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 14:18:07 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 14:18:16 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-23 14:18:18 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for ::1 at 2016-09-23 14:18:24 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:18:28 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:19:01 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (7.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 68.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:19:27 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (9.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:20:15 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students/new" for ::1 at 2016-09-23 14:23:56 -0700
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.3ms)
+  Rendered students/_form.html.erb (3.4ms)
+  Rendered students/new.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 14:36:57 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:37:39 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (10.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:42:02 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 57.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/students/new" for ::1 at 2016-09-23 14:42:04 -0700
+Processing by StudentsController#new as JS
+  Rendering students/new.js.erb
+  Rendered layouts/_errors.html.erb (0.2ms)
+  Rendered students/_form.html.erb (4.1ms)
+  Rendered students/new.js.erb (5.8ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new?id=cancel" for ::1 at 2016-09-23 14:42:13 -0700
+Processing by StudentsController#new as HTML
+  Parameters: {"id"=>"cancel"}
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 14:42:13 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/students/new" for ::1 at 2016-09-23 14:42:16 -0700
+Processing by StudentsController#new as JS
+  Rendering students/new.js.erb
+  Rendered layouts/_errors.html.erb (0.2ms)
+  Rendered students/_form.html.erb (3.3ms)
+  Rendered students/new.js.erb (4.9ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+

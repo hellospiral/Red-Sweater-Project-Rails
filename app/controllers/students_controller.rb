@@ -5,6 +5,10 @@ class StudentsController < ApplicationController
 
   def new
     @student = Student.new
+    respond_to do |format|
+      format.html {redirect_to admin_index_path}
+      format.js
+    end
   end
 
   def create
