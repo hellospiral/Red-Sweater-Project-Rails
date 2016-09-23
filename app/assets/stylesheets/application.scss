@@ -7,6 +7,10 @@ $yellow: #febe10;
 $hairline-grey: #dddddb;
 $text-blue: #2877A0;
 
+hr {
+  color: $yellow;
+}
+
 body {
   font-family: "proxima-nova", sans-serif;
   color: $body-type-grey;
@@ -204,8 +208,7 @@ p {
   display: inline-block;
   border-radius: 4px;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 400;
-  transition: all 0.2s ease-in;
+  font-weight: 600;
   margin-top: 40px;
 }
 
@@ -226,9 +229,13 @@ p {
 }
 .btn.btn-solid {
   position: relative;
-  background: #2877a0;
-  color: #ffffff;
+  border-radius: 6px;
+  background: $text-blue;
+  color: #fff;
   overflow: hidden;
+}
+.btn.btn-solid:hover {
+  background: #277096;
 }
 .btn.btn-solid i,
 .btn.btn-solid span {
@@ -247,14 +254,14 @@ p {
   background: #000;
   z-index: 1;
   opacity: .08;
-  transition: height 0.8s ease;
+  // transition: height 0.8s ease;
   -webkit-transition: height 0.8s ease;
   -o-transition: height 0.8s ease;
   -moz-transition: height 0.8s ease;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  // transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 .btn.btn-solid:hover:after {
-  height: 500%;
+  background: #f7f7f7;
   margin-top: 40px;
 
 }
@@ -269,7 +276,7 @@ p {
   padding: 0 25px;
   line-height: 45px;
   font-family: 'proxima-nova', sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
   margin-top: 40px;
 
@@ -645,6 +652,22 @@ header {
   background: rgba(15, 15, 15, 0.65);
   z-index: 1;
 }
+.title-mask {
+  .banner-content h2 {
+    padding-top: 1%;
+  }
+  position: absolute;
+  display: block;
+  top: 75%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 25%;
+  background: rgba(15, 15, 15, 0.65);
+  z-index: 1;
+}
+
 
 /* Page Banner */
 .page-banner {
@@ -1410,10 +1433,18 @@ li.donateBtn {
 
 /* intro */
 .intro-wrapper {
-  height: 520px;
-  padding: 100px 0 105px;
+  img{
+    width: auto;
+    height: 300px;
+  }
+  display: flex;
+  height: 400px;
+  padding: 100px 0 105px 0;
   background: #ffffff;
 }
+
+
+
 @media screen and (max-width: 991px) {
   .intro-wrapper {
     height: 780px;
@@ -2144,6 +2175,9 @@ li.donateBtn {
 }
 /* 13.0 - Footer*/
 footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   padding: 20px 0;
   background: #1e2024;
   height: 100px;
