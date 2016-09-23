@@ -15,14 +15,14 @@
   <%= f.label :sponsored_yes, 'Sponsored!' %><br>
 
   <%= f.label :image, 'Image' %>
-  <%= f.file_field :image, class: "form-control" %>
+  <%= f.file_field :image%>
 
 
   <%= f.radio_button :gender, 'boy' %>
   <%= f.label :gender_boy, 'boy' %>
   <%= f.radio_button :gender, 'girl' %>
-  <%= f.label :gender_girl, 'girl' %>
-  <%= f.submit class: 'btn btn-default' %>
+  <%= f.label :gender_girl, 'girl' %><br>
+  <%= f.submit 'Add student', class: 'btn btn-default' %>
 <% end %>
-
+<br>
 <%= link_to 'Cancel', id: 'cancel' %>

@@ -14,10 +14,10 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
     if @student.save
-      flash[:notice]="Student successfully added!"
-      redirect_to :root
-    else
-      render :new
+      respond_to do |format|
+        format.html { redirect_to admin_index_path }
+        format.js
+      end
     end
   end
 
@@ -37,10 +37,12 @@ class StudentsController < ApplicationController
   end
 
   def destroy
-    @student = Student.find(params[:id])
-    @student.destroy
+    @student = Student.destroy(params[:id])
     flash[:alert]="This student has been removed"
-    redirect_to :root
+    respond_to do |format|
+      format.html { redirect_to admin_index_path }
+      format.js
+    end
   end
 
   private
