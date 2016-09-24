@@ -49557,3 +49557,1055 @@ Processing by StudentsController#edit as JS
 Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/admin" for ::1 at 2016-09-23 19:27:58 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students/4/edit" for ::1 at 2016-09-23 19:28:00 -0700
+Processing by StudentsController#edit as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering students/edit.js.erb
+  Rendered layouts/_errors.html.erb (0.6ms)
+  Rendered students/_form.html.erb (6.2ms)
+  Rendered students/edit.js.erb (8.6ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/students/4" for ::1 at 2016-09-23 19:28:11 -0700
+Processing by StudentsController#update as JS
+  Parameters: {"utf8"=>"✓", "student"=>{"name"=>"Zacharia Yakoni", "age"=>"17", "bio"=>"I want to go do school", "dream"=>"unicorn", "sponsored"=>"false", "gender"=>"boy"}, "commit"=>"Update Student", "id"=>"4"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "students" SET "dream" = $1, "updated_at" = $2 WHERE "students"."id" = $3[0m  [["dream", "unicorn"], ["updated_at", 2016-09-24 02:28:11 UTC], ["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering students/update.js.erb
+  Rendered students/_student.html.erb (0.9ms)
+  Rendered students/update.js.erb (2.5ms)
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin" for ::1 at 2016-09-23 19:28:14 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/students/new" for ::1 at 2016-09-23 19:28:24 -0700
+Processing by StudentsController#new as JS
+  Rendering students/new.js.erb
+  Rendered layouts/_errors.html.erb (0.2ms)
+  Rendered students/_form.html.erb (3.6ms)
+  Rendered students/new.js.erb (5.2ms)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for ::1 at 2016-09-23 19:28:56 -0700
+Processing by StudentsController#create as JS
+  Parameters: {"utf8"=>"✓", "student"=>{"name"=>"Hingyi", "age"=>"35", "bio"=>"being so awesome and stuff", "dream"=>"a florist/massage therapist/painter/healer!", "sponsored"=>"true", "gender"=>"boy"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Hingyi"], ["age", 35], ["bio", "being so awesome and stuff"], ["dream", "a florist/massage therapist/painter/healer!"], ["sponsored", true], ["created_at", 2016-09-24 02:28:56 UTC], ["updated_at", 2016-09-24 02:28:56 UTC], ["gender", "boy"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering students/create.js.erb
+  Rendered students/_student.html.erb (1.0ms)
+  Rendered students/create.js.erb (2.9ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/original/missing.png.png" for ::1 at 2016-09-23 19:28:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [57 times] (11.1ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.7ms)
+Started DELETE "/students/20" for ::1 at 2016-09-23 19:29:15 -0700
+Processing by StudentsController#destroy as JS
+  Parameters: {"id"=>"20"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering students/destroy.js.erb
+  Rendered students/destroy.js.erb (0.3ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 19:29:33 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (7.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 53ms (Views: 45.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/subscribers" for ::1 at 2016-09-23 19:29:43 -0700
+Processing by SubscribersController#create as JS
+  Parameters: {"utf8"=>"✓", "subscriber"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "subscribers" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", ""], ["created_at", 2016-09-24 02:29:43 UTC], ["updated_at", 2016-09-24 02:29:43 UTC]]
+  Rendering newsletter_signup_mailer/newsletter_confirmation.html.erb within layouts/mailer
+  Rendered newsletter_signup_mailer/newsletter_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering newsletter_signup_mailer/newsletter_confirmation.text.erb within layouts/mailer
+  Rendered newsletter_signup_mailer/newsletter_confirmation.text.erb within layouts/mailer (0.3ms)
+NewsletterSignupMailer#newsletter_confirmation: processed outbound mail in 156.3ms
+Sent mail to  (7.8ms)
+Date: Fri, 23 Sep 2016 19:29:43 -0700
+From: donotreply@redsweaterproject.com
+Message-ID: <57e5e517900df_25223fbfc228fd2c1965@Julias-MacBook-Pro.local.mail>
+Subject: Welcome! Thanks for joining us.
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57e5e5178e745_25223fbfc228fd2c1951a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57e5e5178e745_25223fbfc228fd2c1951a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Mambo,
+
+Thank you for signing up for the Red Sweater Project newsletter! You can expect a monthly newsletter with all the new, exciting info about what's happening at the school.
+
+
+----==_mimepart_57e5e5178e745_25223fbfc228fd2c1951a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>Mambo,</h3>
+
+<p>
+  Thank you for signing up for the Red Sweater Project newsletter! You can expect a brief, exciting monthly newsletter with all the updates about what's happening at the Mungere School.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57e5e5178e745_25223fbfc228fd2c1951a--
+
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 0.9ms)
+
+
+  
+ArgumentError (An SMTP To address is required to send a message. Set the message smtp_envelope_to, to, cc, or bcc address.):
+  
+app/models/subscriber.rb:6:in `send_welcome_message'
+app/controllers/subscribers_controller.rb:9:in `create'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.5ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (39.2ms)
+Started DELETE "/users/sign_out" for ::1 at 2016-09-23 19:29:54 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EN6tsD2DksfcpXP46YWljKyXgAVwd27Yhtc9hf9RGqHgj53J3GJoCsa8pU7hQ1KE22cfqjFWYTKe7E5UrakqxQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 19:29:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-09-23 19:30:11 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-23 19:30:18 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 19:30:43 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-23 22:36:42 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-23 22:36:53 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:34:16 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 2264ms (Views: 2260.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:35:42 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1886ms (Views: 1886.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:36:39 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1846ms (Views: 1845.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:37:16 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1848ms (Views: 1847.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:37:49 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1883ms (Views: 1882.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:38:46 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1868ms (Views: 1867.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:39:17 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1874ms (Views: 1873.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:39:47 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:41:00 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1809ms (Views: 1808.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:41:38 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1881ms (Views: 1880.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:41:48 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1831ms (Views: 1830.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:41:58 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1851ms (Views: 1850.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:42:05 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1870ms (Views: 1869.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:42:38 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1882ms (Views: 1881.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:43:10 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:44:33 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1795ms (Views: 1795.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:44:52 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1901ms (Views: 1900.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:46:41 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1877ms (Views: 1877.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:48:24 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1889ms (Views: 1888.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:48:34 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1927ms (Views: 1926.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:48:49 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1916ms (Views: 1915.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:49:07 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1876ms (Views: 1876.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:49:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1862ms (Views: 1862.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:49:38 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1913ms (Views: 1912.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:50:00 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1874ms (Views: 1873.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:50:40 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1901ms (Views: 1900.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:51:04 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1875ms (Views: 1874.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:52:18 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:52:26 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1815ms (Views: 1814.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:58:37 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:2789
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092902608900'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.8ms)
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 09:59:05 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1928ms (Views: 1927.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:00:24 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1776ms (Views: 1775.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:00:51 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1926ms (Views: 1926.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:03:48 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1832ms (Views: 1831.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:04:25 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1915ms (Views: 1915.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:05:11 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1764ms (Views: 1764.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:08:48 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2057ms (Views: 2056.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:09:08 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1746ms (Views: 1745.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:09:25 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1793ms (Views: 1792.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:10:05 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1760ms (Views: 1760.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:10:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1990ms (Views: 1989.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:11:11 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:11:32 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1794ms (Views: 1793.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:12:12 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1926ms (Views: 1925.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:12:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1774ms (Views: 1773.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:13:56 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "    flex-wrap": expected ";", was ": column;"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:24
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092828181960'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.8ms)
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:14:15 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1869ms (Views: 1868.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:15:00 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1790ms (Views: 1789.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:15:40 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1843ms (Views: 1843.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:16:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2125ms (Views: 2124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:16:47 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1854ms (Views: 1853.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:17:02 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2100ms (Views: 2100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:17:14 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1918ms (Views: 1917.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:17:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2074ms (Views: 2073.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:17:46 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1897ms (Views: 1896.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:18:02 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2072ms (Views: 2071.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:18:17 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1913ms (Views: 1912.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:18:55 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:20:39 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1887ms (Views: 1886.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:21:29 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1789ms (Views: 1789.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:22:47 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:30:21 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:31:42 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:31:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1961ms (Views: 1961.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:32:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1801ms (Views: 1800.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:32:38 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1802ms (Views: 1801.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:32:50 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1802ms (Views: 1802.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:33:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2028ms (Views: 2027.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:33:30 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:34:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:34:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1810ms (Views: 1809.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:35:11 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:40:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:41:54 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1928ms (Views: 1927.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:42:42 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:43:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:44:44 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1909ms (Views: 1908.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:45:36 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1952ms (Views: 1952.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:45:55 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1797ms (Views: 1796.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:46:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2054ms (Views: 2053.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:47:15 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1779ms (Views: 1778.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:49:33 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1962ms (Views: 1961.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:50:28 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1803ms (Views: 1802.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:51:51 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2024ms (Views: 2023.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:52:22 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1799ms (Views: 1798.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:54:50 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2095ms (Views: 2094.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:55:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1780ms (Views: 1779.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:56:05 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1977ms (Views: 1976.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:57:38 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1888ms (Views: 1887.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:58:40 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1935ms (Views: 1934.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:58:57 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1801ms (Views: 1800.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 10:59:49 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1895ms (Views: 1894.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:00:43 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1794ms (Views: 1793.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:01:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1993ms (Views: 1991.9ms | ActiveRecord: 0.0ms)
+
+
