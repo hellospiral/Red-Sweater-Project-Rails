@@ -50609,3 +50609,1696 @@ Processing by PagesController#show as HTML
 Completed 200 OK in 1993ms (Views: 1991.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:09:30 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:10:00 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:10:43 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1919ms (Views: 1918.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:12:01 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2071ms (Views: 2070.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:12:39 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1872ms (Views: 1872.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:12:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1918ms (Views: 1917.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:13:33 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1872ms (Views: 1871.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:13:47 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1898ms (Views: 1897.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:14:05 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1777ms (Views: 1776.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:14:54 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1928ms (Views: 1927.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:15:02 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:15:12 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1898ms (Views: 1897.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:15:25 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1918ms (Views: 1917.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:15:40 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1757ms (Views: 1757.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:18:30 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:18:55 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1881ms (Views: 1880.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:19:41 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:20:31 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1814ms (Views: 1813.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:21:16 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1943ms (Views: 1942.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:25:36 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:26:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:27:04 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:27:21 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:42:43 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/ourfocus_innovation.png" for ::1 at 2016-09-24 11:42:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/ourfocus_innovation.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [57 times] (20.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.0ms)
+Started GET "/pages/ourfocusflex" for ::1 at 2016-09-24 11:43:01 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocusflex"}
+  Rendering pages/ourfocusflex.html.erb within layouts/application
+  Rendered pages/ourfocusflex.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:43:22 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:43:54 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template pages/ourfocus with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Julia/Desktop/Red-Sweater-Project-Rails/app/views"
+  * "/Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views"
+):
+  
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (47.6ms)
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:44:08 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:45:01 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:47:37 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-image:": expected expression (e.g. 1px, bold), was "}"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:123
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092920918760'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.0ms)
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:48:22 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-image:": expected expression (e.g. 1px, bold), was "}"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:123
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092943060460'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.3ms)
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:49:09 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-image:": expected expression (e.g. 1px, bold), was "}"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:123
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092696115780'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.7ms)
+Started GET "/" for ::1 at 2016-09-24 11:49:15 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-image:": expected expression (e.g. 1px, bold), was "}"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:123
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092922365280'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.0ms)
+Started GET "/" for ::1 at 2016-09-24 11:49:15 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-image:": expected expression (e.g. 1px, bold), was "}"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:123
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092914025720'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.9ms)
+Started GET "/" for ::1 at 2016-09-24 11:49:44 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1847ms (Views: 1846.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:51:50 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1902ms (Views: 1900.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:51:55 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:53:15 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1856ms (Views: 1856.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:53:20 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:53:54 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 1929ms (Views: 1927.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:54:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:54:25 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1800ms (Views: 1799.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:54:29 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:54:33 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:54:35 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:54:36 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:54:56 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 1879ms (Views: 1876.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 11:54:58 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 11:55:05 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:43:44 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:43:57 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:45:21 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1966ms (Views: 1966.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:45:32 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2108ms (Views: 2107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:45:44 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1896ms (Views: 1895.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:45:58 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2161ms (Views: 2160.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:46:54 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:47:24 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:47:55 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1864ms (Views: 1863.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:48:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 12:48:52 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 12:50:41 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2024ms (Views: 2022.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:50:48 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:51:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1960ms (Views: 1960.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:51:27 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2147ms (Views: 2147.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:51:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1929ms (Views: 1928.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:52:25 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2133ms (Views: 2132.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:52:40 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1909ms (Views: 1908.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:53:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:54:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2161ms (Views: 2160.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:54:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2053ms (Views: 2052.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:55:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2125ms (Views: 2125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:55:38 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1894ms (Views: 1893.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:55:47 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2157ms (Views: 2157.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:56:13 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1940ms (Views: 1939.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:56:43 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:56:55 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:57:56 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:59:17 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 2591ms (Views: 2589.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 12:59:43 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1986ms (Views: 1985.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:00:18 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2225ms (Views: 2224.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:00:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1992ms (Views: 1991.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:02:49 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10662ms (Views: 10661.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:05:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10926ms (Views: 10924.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:05:52 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10087ms (Views: 10086.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:06:29 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9989ms (Views: 9985.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:07:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 10444ms (Views: 10442.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:07:53 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9546ms (Views: 9545.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 13:16:09 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-09-24 13:16:18 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2016-09-24 13:16:30 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:16:33 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 13:16:35 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:22:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:23:24 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2246ms (Views: 2245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:24:13 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1862ms (Views: 1862.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:24:51 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2041ms (Views: 2040.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:25:33 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1949ms (Views: 1949.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:26:31 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1873ms (Views: 1872.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:27:18 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1898ms (Views: 1898.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:28:53 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1900ms (Views: 1899.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:30:23 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1954ms (Views: 1954.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:30:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1915ms (Views: 1914.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:32:06 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2019ms (Views: 2018.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:33:32 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2209ms (Views: 2208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:35:07 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1860ms (Views: 1860.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:35:50 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2028ms (Views: 2028.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:38:28 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2046ms (Views: 2045.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:38:52 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2091ms (Views: 2090.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:40:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1903ms (Views: 1902.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:41:13 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2027ms (Views: 2026.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:42:28 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1875ms (Views: 1875.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:43:01 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2087ms (Views: 2086.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:43:25 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1885ms (Views: 1884.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:43:44 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:46:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 911ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after ".": expected class name, was "2col-right-text"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:58
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092860019400'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.9ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.5ms)
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:46:53 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 866ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after ".": expected class name, was "2col-right-text"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:58
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092918447080'
+app/controllers/pages_controller.rb:3:in `show'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.1ms)
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:47:44 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1996ms (Views: 1995.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:48:21 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2087ms (Views: 2087.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:50:22 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2120ms (Views: 2120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:51:41 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2136ms (Views: 2135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:51:57 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1916ms (Views: 1915.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:53:18 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2227ms (Views: 2226.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:54:19 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:54:46 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:55:02 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1968ms (Views: 1968.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:55:31 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1973ms (Views: 1972.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:59:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1960ms (Views: 1959.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 13:59:45 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1967ms (Views: 1966.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:00:30 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:01:00 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:01:45 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1946ms (Views: 1946.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:02:07 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1954ms (Views: 1953.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:02:30 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1961ms (Views: 1960.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:03:39 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1937ms (Views: 1936.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:05:01 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:06:47 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1943ms (Views: 1942.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:08:20 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1946ms (Views: 1945.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:08:36 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1956ms (Views: 1955.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:09:54 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:11:09 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:16:35 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1927ms (Views: 1926.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:16:51 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1968ms (Views: 1967.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:17:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1942ms (Views: 1941.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:17:30 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:17:49 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1928ms (Views: 1927.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:18:03 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1939ms (Views: 1938.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:18:28 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1994ms (Views: 1993.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:19:28 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1928ms (Views: 1927.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:19:33 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:21:17 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1558ms (Views: 1557.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:21:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1877ms (Views: 1875.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:22:18 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1788ms (Views: 1786.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:25:58 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:32:05 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:34:30 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1852ms (Views: 1850.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:34:53 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1849ms (Views: 1847.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:36:01 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:36:29 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:37:20 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 1836ms (Views: 1834.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:37:46 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1895ms (Views: 1893.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:38:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1833ms (Views: 1832.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:39:17 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1838ms (Views: 1836.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:40:40 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1874ms (Views: 1872.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:41:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 1854ms (Views: 1852.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:42:04 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 2055ms (Views: 2053.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:43:52 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1835ms (Views: 1833.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:44:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1831ms (Views: 1829.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:44:21 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1803ms (Views: 1801.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:44:29 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:46:05 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 769ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after ".flex .blue .": expected class name, was "3col"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:134
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092706615020'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.0ms)
+Started GET "/" for ::1 at 2016-09-24 14:46:21 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 535ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after ".flex .blue .": expected class name, was "3col"):
+    10:     <script src="https://use.typekit.net/rbv5wsv.js"></script>
+    11:     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    12: 
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/stylesheets/application.scss:134
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1968827329165987239_70092944119720'
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.3ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.6ms)
+Started GET "/" for ::1 at 2016-09-24 14:46:44 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1873ms (Views: 1872.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:46:51 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:47:28 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 1920ms (Views: 1917.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:47:30 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:47:31 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:48:17 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 1777ms (Views: 1776.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:52:25 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:52:56 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:53:10 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-24 14:53:49 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/ourfocus" for ::1 at 2016-09-24 14:54:45 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+

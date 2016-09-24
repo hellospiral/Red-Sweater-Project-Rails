@@ -1,5 +1,5 @@
 <!-- Banner -->
-<div class="page-banner">
+<div class="page-banner home">
   <div class="parallax-mask">
     <div class="container">
       <div class="banner-content">
@@ -14,69 +14,57 @@
 </div>
 
     <!-- Intro -->
-    <div class="intro-wrapper">
-    		<div class="section-name intro">
-    			<div class="row">
-    				<div class="col-md-offset-2 col-md-8 col-md-offset-2">
-    				<h2>Helping Kids Go To School</h2>
-    						<p class="first">Red Sweater Project creates high quality middle and high schools for kids in rural East Africa.</p>
-    						<p>Superman has his cape, and Zoro has his mask. For these kids, a school uniform is transformational. Putting on a red sweater means having the opportunity to learn, and to better their community.</p>
-    					<div class="btns-wrapper">
-    						<a href="#" class="btn btn-big btn-solid"><span>Check out the school</span></a>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    </div>
+    <div class="flex">
+    	<div class="flex-item-1col">
+				<h2>HELPING KIDS GO TO SCHOOL</h2>
+						<p class="first">Red Sweater Project creates high quality middle and high schools for kids in rural East Africa.</p>
+						<p>Superman has his cape, and Zoro has his mask. For these kids, a school uniform is transformational. Putting on a red sweater means having the opportunity to learn, and to better their community.</p>
+				<div class="btns-wrapper">
+					<a href="#" class="btn btn-big btn-solid"><span>Check out the school</span></a>
+				</div>
+				</div>
+			</div>
 
     <!-- Focus-->
-    	<div class="focus-wrapper">
-    		<div class="container">
-    		<div class="section-name focus">
-    				<h2>A Clear Focus</h2>
+    	<div class="flex blue three">
+    		<div class="flex-item-intro">
+    				<h2>A CLEAR FOCUS</h2>
     				<p class="description">An education from a Red Sweater Project school is unique in 3 distinct ways:</p>
-    				<div class="row row-space">
-    					<div class="col-md-4 col-xs-6 tm-wrapper">
-    						<div>
-    							<div class="img-wrapper">
-    								<%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
-    							</div>
-    							<div class="focusCopy">
-    								<h5><strong>1. QUALITY EDUCATION</strong></h5>
-    								<p>makes a big difference. It’s not enough to build buildings. Our certified teaching staff brings the classroom to life.</p>
-    							</div>
-                  <div class="btns-wrapper">
-        						<a href="#" class="btn btn-big btn-secondary"><span>Learn more about our focus</span></a>
-        					</div>
-    						</div>
-    					</div>
-    					<div class="col-md-4 col-xs-6 tm-wrapper">
-    						<div>
-    							<div class="img-wrapper">
-										<%= image_tag("home_OurFocus_equality.png", :class => "img-responsive")%>
-    							</div>
-    							<div class="focusCopy">
-    								<h5><strong>2. GENDER EQUALITY</strong></h5>
-    								<p>isn’t learned in a book. It’s cultivated and experienced first-hand.</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-4 col-xs-6 tm-wrapper">
-    						<div>
-    							<div class="img-wrapper">
-										<%= image_tag("home_OurFocus_innovation.png", :class => "img-responsive")%>
-    							</div>
-    							<div class="focusCopy">
-    								<h5><strong>3. RESPONSIBLE INNOVATION</strong></h5>
-    								<p>means making sure our impact in the local and global community is a positive one.</p>
-    							</div>
-    						</div>
-    					</div>
-
+          </div>
+        </div>
+        <div class="flex blue">
+      		<div class="flex-item-3col">
+						<div class="img-wrapper">
+							<%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+						</div>
+						<div class="focusCopy">
+							<h5><strong>1. QUALITY EDUCATION</strong></h5>
+							<p>makes a big difference. It’s not enough to build buildings. Our certified teaching staff brings the classroom to life.</p>
+						</div>
+            <div class="btns-wrapper">
+  						<a href="#" class="btn btn-big btn-secondary"><span>Learn more about our focus</span></a>
+  					</div>
+					</div>
+          <div class="flex-item-3col">
+  				  <div class="img-wrapper">
+    					<%=image_tag("home_OurFocus_equality.png", :class => "img-responsive")%>
+  			    </div>
+    				<div class="focusCopy">
+    					<h5><strong>2. GENDER EQUALITY</strong></h5>
+    					<p>isn’t learned in a book. It’s cultivated and experienced first-hand.</p>
     				</div>
-    		</div>
-    	</div>
-    </div>
+          </div>
+
+          <div class="flex-item-3col">
+						<div class="img-wrapper">
+							<%= image_tag("home_OurFocus_innovation.png", :class => "img-responsive")%>
+						</div>
+						<div class="focusCopy">
+							<h5><strong>3. RESPONSIBLE INNOVATION</strong></h5>
+							<p>means making sure our impact in the local and global community is a positive one.</p>
+						</div>
+    			</div>
+				</div>
 
 <!-- Slider section -->
 <!-- <div class="slider-wrapper">
@@ -109,29 +97,19 @@
 
 
   	<!-- Subscribe section -->
-  	<div class="subscribe-wrapper">
-  		<div class="container">
-  			<div class="section-name subscribe">
-
-    				<div class="col-md-6 yellow-left">
-    						<h2>Don't miss a thing</h2>
-    						<p>Subscribe to our monthly newsletter to get valuable updates about the school.</p>
-
-
-                <%= form_for @subscriber, remote: true do |f| %>
-                  <%= f.label :email, 'Email' %>
-                  <%= f.email_field :email, class: "form-control" %>
-                  <%= f.submit 'Subscribe', class: 'btn btn-min btn-solid' %>
-                <% end %>
-                <%= flash[:notice] %>
-                <%= flash[:alert] %>
-
-    					</div>
-    				</div>
-  					<div class="col-md-6">
-    					<div class="image-wrapper">
-  							<%= image_tag("home_newsletter.png", :class => "img-responsive")%>
-    			    </div>
-  		  </div>
+    <div class="flex">
+      <div class="flex-item-2col yellow-bottom-left">
+        <div class="twocol-left-text">
+					<h2>DON'T MISS A THING</h2>
+					<p>Subscribe to our monthly newsletter to get valuable updates about the school.</p>
+          <%= form_for @subscriber, remote: true do |f| %>
+            <%= f.label :email, 'Email' %>
+            <%= f.email_field :email, class: "form-control" %>
+            <%= f.submit 'Subscribe', class: 'btn btn-min btn-solid' %>
+          <% end %>
+          <%= flash[:notice] %>
+          <%= flash[:alert] %>
+        </div>
+    	</div>
+      <div class="flex-item-2col ourfocus_donate">
   	  </div>
-    </div>
