@@ -7,4 +7,9 @@ class Volunteer < ApplicationRecord
   def address
     self.city + " " + self.country
   end
+
+  def mapNotes
+    self.name + " | " + self.city + ", " + self.country
+
+  end
 end
