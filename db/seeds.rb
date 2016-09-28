@@ -18,3 +18,4 @@ Event.create(name: "Tea in the Garden", date: "06/03/2017", time: "7pm, PST", ve
 Volunteer.create(current: true, city: "Philadelphia", country: "USA", name: "Chuck", title: "Teacher", bio: "So awesome. I'm Chuck.")
 Volunteer.create(current: true, city: "Seattle", country: "USA", name: "Georgia", title: "Teacher", bio: "I'm way better than Chuck.")
 Volunteer.create(current: false, city: "Paris", country: "France", name: "Jean-Chuck", title: "Le Teacher", bio: "Je suis super-cool.")
+Volunteer.create(current: false, city: "Rome", country: "USA", name: "Jean-Chuck", title: "Le Teacher", bio: "Je suis super-cool.")
