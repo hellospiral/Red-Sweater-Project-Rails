@@ -16,4 +16,11 @@
       </div>
     <% end %>
   </div>
+  <div class="col-sm-12">
+    <% @instagram.each do |instagram| %>
+    <div class="col-sm-2">
+      <%= image_tag instagram.images.standard_resolution.url %>
+    </div>
+    <% end %>
+  </div>
 </div>

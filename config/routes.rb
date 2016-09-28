@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :events
   resources :subscribers
   resources :volunteers
+  resources :galleries, :only => [:index]
 
   get "/pages/:page" => "pages#show"
   root "subscribers#new", page: "home"

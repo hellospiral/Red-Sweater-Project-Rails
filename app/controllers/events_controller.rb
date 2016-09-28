@@ -1,5 +1,7 @@
+
 class EventsController < ApplicationController
   def index
+    @instagram = Instagram.user_recent_media("7174789", {:count => 3})
     @events = Event.all
   end
   def new

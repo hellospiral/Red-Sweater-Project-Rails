@@ -10,6 +10,5 @@ class Volunteer < ApplicationRecord
 
   def mapNotes
     self.name + " | " + self.city + ", " + self.country
-
   end
 end

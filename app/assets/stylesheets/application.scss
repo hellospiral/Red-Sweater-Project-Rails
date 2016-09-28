@@ -18,6 +18,12 @@ body {
   padding-bottom: 70px;
 }
 
+.col-sm-12 {
+  img {
+    width: 100%;
+  }
+}
+
 #map-container {
    height: 400px;
    border-radius: 16px 16px;

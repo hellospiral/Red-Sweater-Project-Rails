@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'paperclip', '~> 4.1'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'instagram'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -25,6 +26,7 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'letter_opener'
   gem 'dotenv-rails'
+
 end
 
 group :development do
