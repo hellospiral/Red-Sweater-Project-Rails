@@ -22,6 +22,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'letter_opener'
+  gem 'geocoder'
+  gem 'geocoder'
 end
 
 group :development do
