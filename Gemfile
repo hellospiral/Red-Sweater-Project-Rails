@@ -11,6 +11,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'paperclip', '~> 4.1'
+gem 'geocoder'
+gem 'gmaps4rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -22,8 +24,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'letter_opener'
-  gem 'geocoder'
-  gem 'geocoder'
+  gem 'dotenv-rails'
 end
 
 group :development do

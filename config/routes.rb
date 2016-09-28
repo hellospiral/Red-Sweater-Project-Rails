@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :admin
   resources :events
   resources :subscribers
+  resources :volunteers
 
   get "/pages/:page" => "pages#show"
   root "subscribers#new", page: "home"
