@@ -6,7 +6,7 @@ describe "student" do
     visit students_path
     expect(page).to have_content "Shedrack Japhet"
   end
-  it "updates an existing student" do
+  it "updates an existing student", js: true do
     FactoryGirl.create(:student)
     user = FactoryGirl.create(:user)
     user.admin = true
@@ -22,7 +22,7 @@ describe "student" do
     click_button 'Update Student'
     expect(page).to have_content 'Shedrack Japh'
   end
-  it 'deletes a student' do
+  it 'deletes a student', js: true do
     FactoryGirl.create(:student)
     user = FactoryGirl.create(:user)
     user.admin = true
