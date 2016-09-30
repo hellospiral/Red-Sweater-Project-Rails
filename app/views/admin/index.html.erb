@@ -14,7 +14,7 @@
       </div>
       <% @students.each do |student| %>
         <div class="col-sm-3 admin-student-view" id="student_<%= student.id %>">
-          <%= image_tag("#{student.image}.png") %>
+          <%= image_tag("#{student.image_file_name}") %>
           <h4><strong><%= student.name %></strong></h4>
           <p><em><%= student.age %> year-old <%= student.gender %></em><br>
           I want to become: A <%= student.dream %></p>
