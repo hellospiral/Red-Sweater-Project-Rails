@@ -40467,3 +40467,1903 @@ Content-Transfer-Encoding: 7bit
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL[0m
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-30 19:55:54 UTC], ["updated_at", 2016-09-30 19:55:54 UTC], ["image", "#<File:0x007f85f39a7c68>"], ["time", "7pm, PST"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/events" for 127.0.0.1 at 2016-09-30 12:55:54 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (133.1ms)
+Completed 200 OK in 4771ms (Views: 4076.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[34m          SELECT schemaname || '.' || tablename
+          FROM pg_tables
+          WHERE 
+            tablename !~ '_prt_' AND 
+            tablename <> 'schema_migrations' AND 
+            schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (4.1ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'Red_Sweater_test'[0m
+  [1m[35m (16.2ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-30 19:55:59 UTC], ["updated_at", 2016-09-30 19:55:59 UTC], ["image", "#<File:0x007f85edb2c080>"], ["time", "7pm, PST"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 1.3ms)
+Started GET "/events/1/edit" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.4ms)
+  Rendered events/_form.html.erb (38.9ms)
+  Rendered events/edit.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+Started PATCH "/events/1" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"name"=>"Lunch in the Garden", "date"=>"2017-03-06", "time"=>"", "venu"=>"Sauvie Island Farms", "address"=>"1234 Garden Street Portland, OR 97204", "cost"=>"30", "image"=>"#<File:0x007f85edb2c080>", "details"=>"Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."}, "commit"=>"Update Event", "id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "events" SET "name" = $1, "time" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["name", "Lunch in the Garden"], ["time", ""], ["updated_at", 2016-09-30 19:55:59 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (14.8ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-30 19:55:59 UTC], ["updated_at", 2016-09-30 19:55:59 UTC], ["image", "#<File:0x007f85f54ded60>"], ["time", "7pm, PST"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+Started DELETE "/events/1" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (14.3ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+Started GET "/pages/ourfocus" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.7ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+Started GET "/pages/theschool" for 127.0.0.1 at 2016-09-30 12:55:59 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"theschool"}
+  Rendering pages/theschool.html.erb within layouts/application
+  Rendered pages/theschool.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (14.8ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1wan6ol.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1wan6ol.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1wan6ol.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/7e4afdb30bf255210767d690fbbabb4b20160930-25023-i98qlp'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1rlvlfz.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:00 UTC], ["updated_at", 2016-09-30 19:56:00 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:55:59 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:00 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+Started GET "/students" for 127.0.0.1 at 2016-09-30 12:56:00 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.9ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (20.1ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-w5cqrs.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-w5cqrs.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-w5cqrs.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/a15a10ff2cc2fd3dede64d12993573d820160930-25023-12a6deh'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-2z34a5.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:00 UTC], ["updated_at", 2016-09-30 19:56:00 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:00 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/students" for 127.0.0.1 at 2016-09-30 12:56:00 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.7ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-rpnj8p.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-rpnj8p.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-rpnj8p.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/40fd72eb93f0a44d9159a3b0343bbda020160930-25023-1viuxcn'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-21dzmk.png'
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:00 UTC], ["updated_at", 2016-09-30 19:56:00 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:00 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$ezp11reXW54ga0BJrrT4DenEbWVNi9EtB1XdpVRw5F1aCu.g0JjJu"], ["created_at", 2016-09-30 19:56:00 UTC], ["updated_at", 2016-09-30 19:56:00 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.4ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.4ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 338.6ms
+Sent mail to user@email.com (22.5ms)
+Date: Fri, 30 Sep 2016 12:56:01 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec3511b9cf_61bf3fc2f585e204812@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec351170a6_61bf3fc2f585e2047f1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec351170a6_61bf3fc2f585e2047f1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec351170a6_61bf3fc2f585e2047f1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec351170a6_61bf3fc2f585e2047f1--
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2016-09-30 19:56:01 UTC], ["admin", true], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:02 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-fe6157200e2589ec85a0043059d34ddb894b139f4815c8c6714b099b10d69339.css" for 127.0.0.1 at 2016-09-30 12:56:02 -0700
+Started GET "/assets/application-cd90360385c21e96a0f786a9de2352ab3805d31437900743f2ac9bb447e69713.js" for 127.0.0.1 at 2016-09-30 12:56:02 -0700
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:08 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:08 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34m          SELECT schemaname || '.' || tablename
+          FROM pg_tables
+          WHERE 
+            tablename !~ '_prt_' AND 
+            tablename <> 'schema_migrations' AND 
+            schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'Red_Sweater_test'[0m
+  [1m[35m (15.5ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1s0whc3.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1s0whc3.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1s0whc3.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/bb394cd7b2b048a012ed8507d6952ff120160930-25023-1b4ajw1'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25023-1uw1z1s.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:10 UTC], ["updated_at", 2016-09-30 19:56:10 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:10 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$2ZdWhoubDazT/cYD.jXftOStWWzfdWjjxb3qe1K2NPLPAQSWmnJ6m"], ["created_at", 2016-09-30 19:56:10 UTC], ["updated_at", 2016-09-30 19:56:10 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.5ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.3ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 15.4ms
+Sent mail to user@email.com (3.7ms)
+Date: Fri, 30 Sep 2016 12:56:10 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec35abd189_61bf3fc2f585e2041096@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec35abc85b_61bf3fc2f585e204930";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec35abc85b_61bf3fc2f585e204930
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec35abc85b_61bf3fc2f585e204930
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec35abc85b_61bf3fc2f585e204930--
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2016-09-30 19:56:10 UTC], ["admin", true], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:10 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:11 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:11 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:11 UTC], ["last_sign_in_at", 2016-09-30 19:56:11 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:11 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:58461/
+Completed 302 Found in 14ms (ActiveRecord: 1.9ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:11 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 1.5ms)
+Started DELETE "/students/1" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by StudentsController#destroy as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/Julia/Desktop/Red-Sweater-Project-Rails/public/system/students/images/000/000/001/original/shedrackjaphet.png
+[paperclip] deleting /Users/Julia/Desktop/Red-Sweater-Project-Rails/public/system/students/images/000/000/001/medium/shedrackjaphet.png
+  Rendering students/destroy.js.erb
+  Rendered students/destroy.js.erb (0.3ms)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34m          SELECT schemaname || '.' || tablename
+          FROM pg_tables
+          WHERE 
+            tablename !~ '_prt_' AND 
+            tablename <> 'schema_migrations' AND 
+            schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.9ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'Red_Sweater_test'[0m
+  [1m[35m (15.0ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"unicorn@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "unicorn@email.com"], ["encrypted_password", "$2a$04$Vx0y9xzWKKx3AytxNWKFMOqjch0uyfczgLdylDqbngRuGZzN1UBO."], ["created_at", 2016-09-30 19:56:12 UTC], ["updated_at", 2016-09-30 19:56:12 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.4ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 15.5ms
+Sent mail to unicorn@email.com (3.1ms)
+Date: Fri, 30 Sep 2016 12:56:12 -0700
+From: donotreply@redsweaterproject.com
+To: unicorn@email.com
+Message-ID: <57eec35c4a0ec_61bf3fc2f585e20412ab@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec35c498f5_61bf3fc2f585e20411ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec35c498f5_61bf3fc2f585e20411ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec35c498f5_61bf3fc2f585e20411ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec35c498f5_61bf3fc2f585e20411ad--
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-09-30 19:56:12 UTC], ["last_sign_in_at", 2016-09-30 19:56:12 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", 2016-09-30 19:56:12 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 33ms (ActiveRecord: 1.8ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (14.5ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"unicorn@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "unicorn@email.com"], ["encrypted_password", "$2a$04$f4czwqISsiPHDm.Mgxte0usu.ruU./Gam2IRq07BR1u07Yo/W4InK"], ["created_at", 2016-09-30 19:56:12 UTC], ["updated_at", 2016-09-30 19:56:12 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 14.3ms
+Sent mail to unicorn@email.com (3.5ms)
+Date: Fri, 30 Sep 2016 12:56:12 -0700
+From: donotreply@redsweaterproject.com
+To: unicorn@email.com
+Message-ID: <57eec35c6536f_61bf3fc2f585e204147d@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec35c64909_61bf3fc2f585e204131c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec35c64909_61bf3fc2f585e204131c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec35c64909_61bf3fc2f585e204131c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec35c64909_61bf3fc2f585e204131c--
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-09-30 19:56:12 UTC], ["last_sign_in_at", 2016-09-30 19:56:12 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", 2016-09-30 19:56:12 UTC], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 33ms (ActiveRecord: 2.0ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"unicorn@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2016-09-30 19:56:12 UTC], ["sign_in_count", 2], ["updated_at", 2016-09-30 19:56:12 UTC], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 12ms (ActiveRecord: 1.1ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.4ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$PdSHb4KssFppV9fQoHpasuR36aZI.n3Jld/pEu4bOP9Db8cH//JPq"], ["created_at", 2016-09-30 19:56:12 UTC], ["updated_at", 2016-09-30 19:56:12 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 14.6ms
+Sent mail to user@email.com (3.8ms)
+Date: Fri, 30 Sep 2016 12:56:12 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec35c89af0_61bf3fc2f585e20416d2@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec35c891c1_61bf3fc2f585e20415a7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec35c891c1_61bf3fc2f585e20415a7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec35c891c1_61bf3fc2f585e20415a7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec35c891c1_61bf3fc2f585e20415a7--
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:12 UTC], ["last_sign_in_at", 2016-09-30 19:56:12 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:12 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.8ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$gwz3UNBr5/Ce1.2VAml3cugJy9.8goQrv7R6GzZs3TcgJ6M9Nrxva"], ["created_at", 2016-09-30 19:56:12 UTC], ["updated_at", 2016-09-30 19:56:12 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.4ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.3ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 14.9ms
+Sent mail to user@email.com (3.0ms)
+Date: Fri, 30 Sep 2016 12:56:12 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec35ca3a99_61bf3fc2f585e20418a0@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec35ca3207_61bf3fc2f585e2041794";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec35ca3207_61bf3fc2f585e2041794
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec35ca3207_61bf3fc2f585e2041794
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec35ca3207_61bf3fc2f585e2041794--
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2016-09-30 19:56:12 UTC], ["admin", true], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:12 UTC], ["last_sign_in_at", 2016-09-30 19:56:12 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:12 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:12 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.7ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.1ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers", "public"."ar_internal_metadata" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "unicorn@email.com"], ["encrypted_password", "$2a$04$P4PMM/1N6KU.iNVZ/deTSeJs8dNzPEJ7rkvbcRhaSAhzcdHcuEMU2"], ["created_at", 2016-09-30 19:56:12 UTC], ["updated_at", 2016-09-30 19:56:12 UTC], ["admin", true]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.3ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 14.7ms
+Sent mail to unicorn@email.com (3.5ms)
+Date: Fri, 30 Sep 2016 12:56:12 -0700
+From: donotreply@redsweaterproject.com
+To: unicorn@email.com
+Message-ID: <57eec35cd3c2f_61bf3fc2f585e2042051@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec35cd32b4_61bf3fc2f585e2041941";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec35cd32b4_61bf3fc2f585e2041941
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec35cd32b4_61bf3fc2f585e2041941
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec35cd32b4_61bf3fc2f585e2041941--
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.9ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-30 19:56:27 UTC], ["updated_at", 2016-09-30 19:56:27 UTC], ["image", "#<File:0x007fd4490b4530>"], ["time", "7pm, PST"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/events" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (131.6ms)
+Completed 200 OK in 531ms (Views: 255.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34m          SELECT schemaname || '.' || tablename
+          FROM pg_tables
+          WHERE 
+            tablename !~ '_prt_' AND 
+            tablename <> 'schema_migrations' AND 
+            schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (0.9ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'Red_Sweater_test'[0m
+  [1m[35m (17.2ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-30 19:56:27 UTC], ["updated_at", 2016-09-30 19:56:27 UTC], ["image", "#<File:0x007fd4412501d0>"], ["time", "7pm, PST"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 1.5ms)
+Started GET "/events/1/edit" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (0.5ms)
+  Rendered events/_form.html.erb (15.8ms)
+  Rendered events/edit.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+Started PATCH "/events/1" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"name"=>"Lunch in the Garden", "date"=>"2017-03-06", "time"=>"", "venu"=>"Sauvie Island Farms", "address"=>"1234 Garden Street Portland, OR 97204", "cost"=>"30", "image"=>"#<File:0x007fd4412501d0>", "details"=>"Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."}, "commit"=>"Update Event", "id"=>"1"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "events" SET "name" = $1, "time" = $2, "updated_at" = $3 WHERE "events"."id" = $4[0m  [["name", "Lunch in the Garden"], ["time", ""], ["updated_at", 2016-09-30 19:56:27 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/admin
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.3ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("name", "date", "venu", "address", "cost", "details", "created_at", "updated_at", "image", "time") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Tea in the Garden"], ["date", Mon, 06 Mar 2017], ["venu", "Sauvie Island Farms"], ["address", "1234 Garden Street Portland, OR 97204"], ["cost", 30], ["details", "Come join us for a light tea and lunch featuring fresh veggies from Sauvie Island Farms. All proceeds benefit Red Sweater Project."], ["created_at", 2016-09-30 19:56:27 UTC], ["updated_at", 2016-09-30 19:56:27 UTC], ["image", "#<File:0x007fd44134a568>"], ["time", "7pm, PST"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+Started DELETE "/events/1" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 1.9ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (16.9ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+Started GET "/pages/ourfocus" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"ourfocus"}
+  Rendering pages/ourfocus.html.erb within layouts/application
+  Rendered pages/ourfocus.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.2ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+Started GET "/pages/theschool" for 127.0.0.1 at 2016-09-30 12:56:27 -0700
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"theschool"}
+  Rendering pages/theschool.html.erb within layouts/application
+  Rendered pages/theschool.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-upr7du.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-upr7du.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-upr7du.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/4aafff84d90eb1f8b8e415a1aed896d620160930-25060-be5cw2'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-173oprc.png'
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:28 UTC], ["updated_at", 2016-09-30 19:56:28 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:27 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:28 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+Started GET "/students" for 127.0.0.1 at 2016-09-30 12:56:28 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (13.9ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.4ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1ayp4l9.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1ayp4l9.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1ayp4l9.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/987fb037ac483ecf8035666bad3eeca620160930-25060-1ph663r'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-t0xvj6.png'
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:28 UTC], ["updated_at", 2016-09-30 19:56:28 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/students" for 127.0.0.1 at 2016-09-30 12:56:28 -0700
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.9ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-19eubdu.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-19eubdu.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-19eubdu.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/90bd3365b884f589adf017687d6fa4e120160930-25060-1lf9klv'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-139ggxb.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:28 UTC], ["updated_at", 2016-09-30 19:56:28 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$ZXa7rCOXrmMzo0gbefG5yO8LzprXzt5aLDXXy7WiBKkgHKWqMcGfG"], ["created_at", 2016-09-30 19:56:28 UTC], ["updated_at", 2016-09-30 19:56:28 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.4ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 121.5ms
+Sent mail to user@email.com (5.9ms)
+Date: Fri, 30 Sep 2016 12:56:28 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec36cdd564_61e43fea20c5220074084@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec36cdc55e_61e43fea20c5220073948";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec36cdc55e_61e43fea20c5220073948
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec36cdc55e_61e43fea20c5220073948
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec36cdc55e_61e43fea20c5220073948--
+
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2016-09-30 19:56:28 UTC], ["admin", true], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:29 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-fe6157200e2589ec85a0043059d34ddb894b139f4815c8c6714b099b10d69339.css" for 127.0.0.1 at 2016-09-30 12:56:29 -0700
+Started GET "/assets/application-cd90360385c21e96a0f786a9de2352ab3805d31437900743f2ac9bb447e69713.js" for 127.0.0.1 at 2016-09-30 12:56:29 -0700
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:33 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:33 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:33 UTC], ["last_sign_in_at", 2016-09-30 19:56:33 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:33 UTC], ["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:58503/
+Completed 302 Found in 14ms (ActiveRecord: 2.4ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:33 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:56:33 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 1.1ms)
+Started GET "/students/1/edit" for 127.0.0.1 at 2016-09-30 12:56:34 -0700
+Processing by StudentsController#edit as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/edit.js.erb
+  Rendered layouts/_errors.html.erb (0.4ms)
+  Rendered students/_form.html.erb (5.5ms)
+  Rendered students/edit.js.erb (8.1ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 1.4ms)
+Started PATCH "/students/1" for 127.0.0.1 at 2016-09-30 12:56:34 -0700
+Processing by StudentsController#update as JS
+  Parameters: {"utf8"=>"✓", "student"=>{"name"=>"Shedrack Japh", "age"=>"16", "bio"=>"I want to go do school", "dream"=>"teacher", "sponsored"=>"false", "gender"=>"boy"}, "commit"=>"Update Student", "id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "students" SET "name" = $1, "updated_at" = $2 WHERE "students"."id" = $3[0m  [["name", "Shedrack Japh"], ["updated_at", 2016-09-30 19:56:34 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering students/update.js.erb
+  Rendered students/_student.html.erb (1.5ms)
+  Rendered students/update.js.erb (4.7ms)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34m          SELECT schemaname || '.' || tablename
+          FROM pg_tables
+          WHERE 
+            tablename !~ '_prt_' AND 
+            tablename <> 'schema_migrations' AND 
+            schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35m (1.5ms)[0m  [1m[34mselect table_name from information_schema.views where table_schema = 'Red_Sweater_test'[0m
+  [1m[35m (19.2ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1lzcizj.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1lzcizj.png[0]'
+Command :: convert '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1lzcizj.png[0]' -auto-orient -resize "x300" -crop "300x300+55+0" +repage '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/bc6803f9cdf52bb6efb5e6a00752fc6d20160930-25060-j9h4bo'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/dw/8bt2d2qs46j2vvjnvt96zghm0000gn/T/e869cfaa1f5ef38e1e9c3162680e853320160930-25060-1a0yu5h.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "age", "bio", "dream", "sponsored", "created_at", "updated_at", "gender", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shedrack Japhet"], ["age", 16], ["bio", "I want to go do school"], ["dream", "teacher"], ["sponsored", false], ["created_at", 2016-09-30 19:56:34 UTC], ["updated_at", 2016-09-30 19:56:34 UTC], ["gender", "boy"], ["image_file_name", "shedrackjaphet.png"], ["image_content_type", "image/png"], ["image_file_size", 1064329], ["image_updated_at", 2016-09-30 19:56:34 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$.16ylcL5Xu2aJrnO29gx3OdfATWD4e0EQQuPLuSOVhgotexe1wZ/W"], ["created_at", 2016-09-30 19:56:34 UTC], ["updated_at", 2016-09-30 19:56:34 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.8ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 17.3ms
+Sent mail to user@email.com (3.5ms)
+Date: Fri, 30 Sep 2016 12:56:34 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec3726ef48_61e43fea20c5220074231@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec3726e565_61e43fea20c522007418";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec3726e565_61e43fea20c522007418
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec3726e565_61e43fea20c522007418
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec3726e565_61e43fea20c522007418--
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2016-09-30 19:56:34 UTC], ["admin", true], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:34 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:35 UTC], ["last_sign_in_at", 2016-09-30 19:56:35 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:35 UTC], ["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:58503/
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+Started GET "/admin" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered admin/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 1.1ms)
+Started DELETE "/students/1" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by StudentsController#destroy as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/Julia/Desktop/Red-Sweater-Project-Rails/public/system/students/images/000/000/001/original/shedrackjaphet.png
+[paperclip] deleting /Users/Julia/Desktop/Red-Sweater-Project-Rails/public/system/students/images/000/000/001/medium/shedrackjaphet.png
+  Rendering students/destroy.js.erb
+  Rendered students/destroy.js.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (17.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"unicorn@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "unicorn@email.com"], ["encrypted_password", "$2a$04$igb5YdryOVzyPvzJpgg7Uuo6m/tTeXVD3o8pjH9QtflIlgqFXUOgG"], ["created_at", 2016-09-30 19:56:35 UTC], ["updated_at", 2016-09-30 19:56:35 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 14.1ms
+Sent mail to unicorn@email.com (3.5ms)
+Date: Fri, 30 Sep 2016 12:56:35 -0700
+From: donotreply@redsweaterproject.com
+To: unicorn@email.com
+Message-ID: <57eec373edae1_61e43fea20c52200744e2@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec373ed239_61e43fea20c522007435";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec373ed239_61e43fea20c522007435
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec373ed239_61e43fea20c522007435
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec373ed239_61e43fea20c522007435--
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-09-30 19:56:35 UTC], ["last_sign_in_at", 2016-09-30 19:56:35 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", 2016-09-30 19:56:35 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 32ms (ActiveRecord: 1.8ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:35 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.3ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/registrations/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"unicorn@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "unicorn@email.com"], ["encrypted_password", "$2a$04$nMunf.Qu8dzuzQ4rZwel7.C/f/BGCuEuwG2cEbAwvQhIwLTuZC0LG"], ["created_at", 2016-09-30 19:56:36 UTC], ["updated_at", 2016-09-30 19:56:36 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 14.5ms
+Sent mail to unicorn@email.com (2.8ms)
+Date: Fri, 30 Sep 2016 12:56:36 -0700
+From: donotreply@redsweaterproject.com
+To: unicorn@email.com
+Message-ID: <57eec37413202_61e43fea20c522007461e@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec37412aba_61e43fea20c5220074546";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec37412aba_61e43fea20c5220074546
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec37412aba_61e43fea20c5220074546
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec37412aba_61e43fea20c5220074546--
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-09-30 19:56:36 UTC], ["last_sign_in_at", 2016-09-30 19:56:36 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", 2016-09-30 19:56:36 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 31ms (ActiveRecord: 1.8ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"unicorn@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2016-09-30 19:56:36 UTC], ["sign_in_count", 2], ["updated_at", 2016-09-30 19:56:36 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.5ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$aViyV50UyOer/L0KQOA/Feb05VTys6HtphXtXPR3ItUF90QekXMEK"], ["created_at", 2016-09-30 19:56:36 UTC], ["updated_at", 2016-09-30 19:56:36 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 13.2ms
+Sent mail to user@email.com (3.3ms)
+Date: Fri, 30 Sep 2016 12:56:36 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec37433efc_61e43fea20c52200748d7@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec374336a8_61e43fea20c5220074787";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec374336a8_61e43fea20c5220074787
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec374336a8_61e43fea20c5220074787
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec374336a8_61e43fea20c5220074787--
+
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:36 UTC], ["last_sign_in_at", 2016-09-30 19:56:36 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:36 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 12ms (ActiveRecord: 0.9ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (16.3ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@email.com"], ["encrypted_password", "$2a$04$Mdr1NVvhr.R8jh0i9gjZY.N8tkheMFsg/NNX8BVPlNMqpzTTGhFSS"], ["created_at", 2016-09-30 19:56:36 UTC], ["updated_at", 2016-09-30 19:56:36 UTC]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 13.0ms
+Sent mail to user@email.com (2.7ms)
+Date: Fri, 30 Sep 2016 12:56:36 -0700
+From: donotreply@redsweaterproject.com
+To: user@email.com
+Message-ID: <57eec3744eca0_61e43fea20c522007509e@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec3744e572_61e43fea20c52200749f8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec3744e572_61e43fea20c52200749f8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec3744e572_61e43fea20c52200749f8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec3744e572_61e43fea20c52200749f8--
+
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", 2016-09-30 19:56:36 UTC], ["admin", true], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/Julia/.gem/ruby/2.2.2/gems/devise-4.2.0/app/views/devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2016-09-30 19:56:36 UTC], ["last_sign_in_at", 2016-09-30 19:56:36 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", 2016-09-30 19:56:36 UTC], ["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2016-09-30 12:56:36 -0700
+Processing by SubscribersController#new as HTML
+  Parameters: {"page"=>"home"}
+  Rendering subscribers/new.html.erb within layouts/application
+  Rendered subscribers/new.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (16.6ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.4ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.5ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (16.4ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "unicorn@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "admin") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "unicorn@email.com"], ["encrypted_password", "$2a$04$jA5VK85MtJh79WAfkG7sAOr84cYQhroCWZaH04ct39.UtGnDB.L5q"], ["created_at", 2016-09-30 19:56:36 UTC], ["updated_at", 2016-09-30 19:56:36 UTC], ["admin", true]]
+  Rendering user_signup_mailer/signup_confirmation.html.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.html.erb within layouts/mailer (0.3ms)
+  Rendering user_signup_mailer/signup_confirmation.text.erb within layouts/mailer
+  Rendered user_signup_mailer/signup_confirmation.text.erb within layouts/mailer (0.2ms)
+UserSignupMailer#signup_confirmation: processed outbound mail in 12.8ms
+Sent mail to unicorn@email.com (3.0ms)
+Date: Fri, 30 Sep 2016 12:56:36 -0700
+From: donotreply@redsweaterproject.com
+To: unicorn@email.com
+Message-ID: <57eec3747f20b_61e43fea20c52200752f1@Julias-MacBook-Pro.local.mail>
+Subject: Account Confirmation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_57eec3747ea5b_61e43fea20c52200751b0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_57eec3747ea5b_61e43fea20c52200751b0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+If you want to go fast, go alone. If you want to go far, go together
+
+Thank you for creating an account on redsweaterproject.com.
+
+
+----==_mimepart_57eec3747ea5b_61e43fea20c52200751b0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h3>If you want to go fast, go alone. If you want to go far, go together</h3>
+
+<p>
+  Thank you for creating an account on redsweaterproject.com.
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_57eec3747ea5b_61e43fea20c52200751b0--
+
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.8ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users", "public"."volunteers" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "positions" DISABLE TRIGGER ALL;ALTER TABLE "sponsors" DISABLE TRIGGER ALL;ALTER TABLE "students" DISABLE TRIGGER ALL;ALTER TABLE "subscribers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "volunteers" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.9ms)[0m  [1m[35mTRUNCATE TABLE "public"."events", "public"."ar_internal_metadata", "public"."volunteers", "public"."positions", "public"."sponsors", "public"."students", "public"."subscribers", "public"."users" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "positions" ENABLE TRIGGER ALL;ALTER TABLE "sponsors" ENABLE TRIGGER ALL;ALTER TABLE "students" ENABLE TRIGGER ALL;ALTER TABLE "volunteers" ENABLE TRIGGER ALL;ALTER TABLE "subscribers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m

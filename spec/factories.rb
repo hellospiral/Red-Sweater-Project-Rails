@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :position do
+    
+  end
   factory(:user) do
     email('user@email.com')
     password "password"

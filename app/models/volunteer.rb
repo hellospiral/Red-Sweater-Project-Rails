@@ -1,5 +1,6 @@
 class Volunteer < ApplicationRecord
-
+  has_many :positions
+  
   geocoded_by :address
 
   after_validation :geocode

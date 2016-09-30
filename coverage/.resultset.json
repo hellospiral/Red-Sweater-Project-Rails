@@ -21,6 +21,9 @@
         1,
         1,
         null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/features/student_pages_spec.rb": [
@@ -154,6 +157,13 @@
         2,
         null
       ],
+      "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/models/position_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
       "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/models/student_spec.rb": [
         1,
         null,
@@ -174,8 +184,15 @@
         null,
         null,
         null
+      ],
+      "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/models/volunteer_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
       ]
     },
-    "timestamp": 1475260732
+    "timestamp": 1475265396
   }
 }
