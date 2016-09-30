@@ -1,15 +1,15 @@
-
-Student.create(name: "Mwandawa Ramadhani", age: 15, bio: "I want to go do school", dream: "teacher", sponsored: false, gender: "girl")
-
-Student.create(name: "Mwajabu Kilango", age: 13, bio: "I want to go do school", dream: "nurse", sponsored: false, gender: "girl")
-
-Student.create(name: "Shedrack Japhet", age: 16, bio: "I want to go do school", dream: "teacher", sponsored: false, gender: "boy")
-
-Student.create(name: "Zacharia Yakoni", age: 17, bio: "I want to go do school", dream: "tour guide", sponsored: false, gender: "boy")
-
-Student.create(name: "Raphael Joeli", age: 16, bio: "I want to go do school", dream: "doctor", sponsored: false, gender: "boy")
-
-Student.create(name: "Emmanuel Andrea", age: 14, bio: "I want to go do school", dream: "pilot", sponsored: false, gender: "boy")
+#
+# Student.create(name: "Mwandawa Ramadhani", age: 15, bio: "I want to go do school", dream: "teacher", sponsored: false, gender: "girl")
+#
+# Student.create(name: "Mwajabu Kilango", age: 13, bio: "I want to go do school", dream: "nurse", sponsored: false, gender: "girl")
+#
+# Student.create(name: "Shedrack Japhet", age: 16, bio: "I want to go do school", dream: "teacher", sponsored: false, gender: "boy")
+#
+# Student.create(name: "Zacharia Yakoni", age: 17, bio: "I want to go do school", dream: "tour guide", sponsored: false, gender: "boy")
+#
+# Student.create(name: "Raphael Joeli", age: 16, bio: "I want to go do school", dream: "doctor", sponsored: false, gender: "boy")
+#
+# Student.create(name: "Emmanuel Andrea", age: 14, bio: "I want to go do school", dream: "pilot", sponsored: false, gender: "boy")
 
 Event.create(name: "The Holiday Ball", date: "01/03/2017", time: "7pm, PST", venu: "Portland Art Museum", address: "1234 Art Street Portland, OR 97204", cost: 30, details: "Come join us for a formal night where we'll be screening the new documentary Girl by Ashley Holmer", image: "event.jpg")
 
@@ -19,3 +19,8 @@ Volunteer.create(current: true, city: "Philadelphia", country: "USA", name: "Chu
 Volunteer.create(current: true, city: "Seattle", country: "USA", name: "Georgia", title: "Teacher", bio: "I'm way better than Chuck.")
 Volunteer.create(current: false, city: "Paris", country: "France", name: "Jean-Chuck", title: "Le Teacher", bio: "Je suis super-cool.")
 Volunteer.create(current: false, city: "Rome", country: "USA", name: "Jean-Chuck", title: "Le Teacher", bio: "Je suis super-cool.")
+
+Position.create(title: "English/ESL Teacher", available: true, details: "", term: "Term II: July-Dec 2016", stipend: 0, location: "Tanzania")
+Position.create(title: "Math Teacher", available: true, details: "", term: "Term II: July-Dec 2016", stipend: 0, location: "Tanzania")
+Position.create(title: "Physics Teacher", available: true, details: "", term: "Term II: July-Dec 2016", stipend: 0, location: "Tanzania")
+Position.create(title: "Office and Accounts Manager", available: true, details: "", term: "May 1, 2016 - March 30, 2017", stipend: 300, location: "Tanzania")

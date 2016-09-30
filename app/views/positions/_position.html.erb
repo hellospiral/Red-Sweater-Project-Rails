@@ -1,0 +1,10 @@
+<div class="col-sm-3" id="position_<%= position.id %>">
+  <p><strong><%= position.title %></strong></p>
+  <p><%= position.location %></p>
+  <p><%= position.term %></p>
+  <% if position.stipend != 0 %>
+    <p>This position offers a monthly stipend of: $<%= position.stipend%>
+    </p>
+  <% end %>
+  <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %>
+</div>

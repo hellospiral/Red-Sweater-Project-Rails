@@ -1,3 +1,7 @@
 class Position < ApplicationRecord
-  belongs_to :volunteer
+  has_one :volunteer
+  validates :title, :presence => true
+  validates :term, :presence => true
+
+
 end

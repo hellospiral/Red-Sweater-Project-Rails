@@ -160,8 +160,13 @@
       "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/models/position_spec.rb": [
         1,
         null,
+        null,
         1,
         2,
+        2,
+        2,
+        2,
+        null,
         null
       ],
       "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/models/student_spec.rb": [
@@ -193,6 +198,6 @@
         null
       ]
     },
-    "timestamp": 1475265396
+    "timestamp": 1475265736
   }
 }

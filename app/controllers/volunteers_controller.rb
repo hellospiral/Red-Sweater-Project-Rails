@@ -2,6 +2,7 @@ class VolunteersController < ApplicationController
 
   def index
     @volunteers = Volunteer.all
+    @positions = Position.all
     @hash = Gmaps4rails.build_markers(@volunteers) do |volunteer, marker|
       marker.lat volunteer.latitude
       marker.lng volunteer.longitude

@@ -8,7 +8,8 @@
       <div class="row">
         <h2>Edit students and Events</h2>
         <%= link_to "Add a student |", new_student_path, remote: true %>
-        <%= link_to "Add an event", new_event_path %>
+        <%= link_to "Add an event |", new_event_path %>
+        <%= link_to "Add a position", new_position_path, remote: true %>
         <br>
         <br>
       </div>
@@ -49,5 +50,29 @@
         <hr>
       </div>
     <% end %>
+  </div>
+</div>
+<div class="flex col-sm-12">
+  <div class="flex-item-2col" id="admin-positions-list">
+    <h2>Edit Positions</h2>
+    <% if @positions.any?%>
+      <ul>
+        <% @positions.each do |position| %>
+          <div class="col-sm-3" id="position_<%= position.id %>">
+            <p><strong><%= position.title %></strong></p>
+            <p><%= position.location %></p>
+            <p><%= position.term %></p>
+            <% if position.stipend != 0 %>
+              <p>This position offers a monthly stipend of: $<%= position.stipend%>
+              </p>
+            <% end %>
+            <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %>
+          </div>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+  <div class="flex-item-2col" id="position-change-form" >
+
   </div>
 </div>
