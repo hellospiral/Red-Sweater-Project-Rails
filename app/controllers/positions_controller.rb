@@ -36,6 +36,15 @@ class PositionsController < ApplicationController
     end
   end
 
+  def destroy
+    @position = Position.destroy(params[:id])
+    flash[:alert]="This position has been removed"
+    respond_to do |format|
+      format.html { redirect_to admin_index_path }
+      format.js
+    end
+  end
+
   private
   def position_params
     params.require(:position).permit(:title, :available, :details, :term, :stipend, :location)

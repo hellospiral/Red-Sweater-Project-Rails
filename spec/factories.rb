@@ -1,7 +1,5 @@
 FactoryGirl.define do
-  factory :position do
-    
-  end
+
   factory(:user) do
     email('user@email.com')
     password "password"
@@ -16,6 +14,11 @@ FactoryGirl.define do
     sponsored(false)
     image{ File.new("#{Rails.root}/public/images/shedrackjaphet.png")}
     gender("boy")
+  end
+
+  factory(:position) do
+    title('Science Teacher')
+    term('Jan--Dec 2017')
   end
 
   factory(:event) do

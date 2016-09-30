@@ -67,6 +67,7 @@
               </p>
             <% end %>
             <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %>
+            <%= link_to "Delete #{position.title}", position_path(position), :data => {:confirm => "Are you sure you want to remove this position?", method: :delete}, remote: true %>
           </div>
         <% end %>
       </ul>
