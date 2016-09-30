@@ -1,0 +1,214 @@
+<div class="page-banner ourfocus">
+  <div class="title-mask">
+    <div class="container">
+      <div class="banner-content">
+        <h2>THE SCHOOL</h2>
+        <div class="short-text">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flex">
+  <div class="flex-item-1col">
+    <p>The Mungere School is the first middle and high school available to kids in the rural community of Mungere, Tanzania. Every year upwards of 200 families apply for one of the 30 available spots in the incoming class. The Mungere campus serves over 240 students each year, with students in form 2, 3, 4, 5, and 6 (grades 6-12).
+    </p>
+    <h5><strong>THE AVERAGE FAMILY CAN'T AFFORD TO SEND THEIR KIDS TO SCHOOL</strong></h5>
+    <p>Primary school in Tanzania is free, but secondary school (middle and high school) costs about $500/year, when the average family only makes $530/year.</p>
+    <p>Even when families make sacrifices to send a child to school, there is no gaurentee of the quality of education. All formal tests in Tanzania are in English, and it's not uncommon for private secondary schools to teach in Swahili due to teacher shortages. For students living in rural areas, going to school can also mean traveling great distances, which can be dangerous and exhausting.
+    </p>
+    <h5><strong>AFFORDABLE AND ACCESSIBLE</strong></h5>
+    <p>Families pay a $15/year tuition. While it doesn't cover all expenses, tuition pays for operating costs at the school, and solidifies each family's commitment to their child's education. The school is centrally located within the village, protecting students from the vulnerability of travel, and giving them more time to study.</p>
+    <h5><strong>SOMETIMES IT REALLY DOES TAKE A VILLAGE</strong></h5>
+    <p>The Parent Action commity as well as the local tribal government are activley involved with the school. Meetings are held regularly to share ideas, and problem solve as a community.</p>
+  </div>
+</div>
+
+<!-- <div class="col-sm-12">
+  <% @instagram.each do |instagram| %>
+  <div class="col-sm-2">
+    <%= image_tag instagram.images.standard_resolution.url %>
+  </div>
+  <% end %>
+</div>
+
+<div id="instafeed">
+
+</div> -->
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '<%=ENV['INSTAGRAM_USER_ID']%>',
+        accessToken: '<%=ENV['INSTAGRAM_ACCESS_TOKEN']%>',
+        // filter: function(image) {
+        //     return image.tags.indexOf('HAPPINESS') >= 0;
+        // }
+    });
+    feed.run();
+</script>
+
+<div class="flex blue">
+  <div class="flex-item-1col">
+    <h2>PREPARED FOR SUCCESS</h2>
+    <h5><strong>Our students work hard for... a competitive, high quality education</strong></h5>
+    <ul>
+      <li>• Our volunteer teachers hold MA degrees, and have completed ESL training. They come from around the world, and bring a global perspective to the classroom. We've had superb teachers from such disparate places as: China, Ireland, the United States, Mexico, and Australia.</li>
+      <li>• Mungere students consistently score in the top quarter of schools in the region and in the top 2 in the district (out of 10 schools) in government issued tests.</li>
+      <li>• The Tanzania Ministry of Education has recognized Red Sweater Project as a successful school model that gets results.
+      an atmosphere that promotes gender equality</li>
+      <li>• Boys and girls learn together in the classrooms, and in our athletics program. This approach builds the confidence of female students, and teaches all of the students that everyone has strengths, and they are not defined or limited by gender. </li>
+    </ul>
+    <h5><strong>Sustainably designed, modern facilities</strong></h5>
+    <ul>
+      <li>• Solar power throughout campus has been made possible by the volunteer efforts of Engineers without Borders</li>
+      <li>• Individual solar-powered lanterns for students to use for late night studying</li>
+      <li>• Buildings designed to keep students and faculty cool in the heat and warm when it's cold out without the use of consumable fuels.</li>
+    </ul>
+    <h5><strong>Health care, health education, and sanitation services</strong></h5>
+    <ul>
+      <li>• Clean drinking water is available for all students</li>
+      <li>• Health outreach helps to boost health and prevent disease within the community</li>
+      <li>• If a student gets sick, they're treated. Some of the illnesses commonly treated include: malaria, typhoid and pneumonia</li>
+      <li>• Fresh, nutritious food from our organic school garden and dining facilities, which serves two meals each school day</li>
+      <li>• Campus is equipped with composting toilets and handwashing stations</li>
+    </ul>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="flex-item-intro">
+    <h2>HANDS-ON LEARNING</h2>
+    <p class="description">
+      In addition to their studies in the classroom, students at the Mungere School have the opportunity to participate in our hands-on programs.
+    </p>
+  </div>
+</div>
+<div class="flex">
+  <div class="flex-item-3col">
+    <div class="img-wrapper">
+      <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+    </div>
+    <div class="focusCopy">
+      <h5><strong>SMALL BUSINESS SKILLS</strong></h5>
+      <p><em>The James B. Nicholson store</em></p>
+      <ul>
+        <li>• Provides a valued resource for the entire community, where local families can purchase goods and sundries. The next closest market is a 3 mile walk away, and is only open on select days</li>
+        <li>• Is the first ever solar-powered mobile phone and lantern charging station for community members</li>
+        <li>• Gives students the opportunity to apply math and economics coursework to real life scenarios</li>
+        <li>• Creates income for the Mungere School to off-set operational costs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex-item-3col">
+    <div class="img-wrapper">
+      <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+    </div>
+    <div class="focusCopy">
+      <h5><strong>NUTRITION AND AGRICULTURE</strong></h5>
+      <p><em>The Mungere School Garden</em></p>
+      <ul>
+        <li>• Produces organic food for school meals, reducing operational costs and increasing campus sustainability</li>
+        <li>• Provides hands-on experience for agriculture class coursework. Many of our students come from pastorial tribes, and the knowledge they gain from garden work is directly applied to their own family's gardening practices.</li>
+        <li>• Creates income. Produce is sold at the school store to fund ongoing operations, while providing affordable, nutritious food to the local community. </li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex-item-3col">
+    <div class="img-wrapper">
+      <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+    </div>
+    <div class="focusCopy">
+      <h5><strong>LEADERSHIP AND TEAMWORK</strong></h5>
+      <p><em>The Mungere Athletics Program</em></p>
+      <p>
+        Sometimes lessons in teamwork, dedication and respect are taught best by doing. That's why time for athletics is built into each school week, and encouraged outside of class.
+      </p>
+      <p>
+        Tasiana is a prime example. She is the first girl in the region to play on an all boys soccer team, and has been recognized by her fellow classmates as well as FIFA for her skills and leadership on the soccer pitch.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="flex" id="map-container">
+  <div class="flex-item-1col" id="map">
+  </div>
+</div>
+<div class="flex blue">
+  <div class="flex-item-1col">
+    <h2>ABOUT TANZANIA, EAST AFRICA</h2>
+    <p>
+      Tanzania is an East African country known for its beautiful wilderness areas. They include the Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the lush tropical islands of Zanzibar and Mafia Marine Park.
+    </p><br>
+    <p>
+      The Mungere School is located just an hour and a half from Kilimanjaro airport, next to the great rift wall. Swahili is the national language of Tanzania, but by the time students graduate from Mungere, they are trilingual, speaking English, Swahili and their native tribal tongue such as Kimasai, Kirangi or Kichagga.
+    </p>
+    <br>
+    <p>
+      <a href="#">Download our Africa factsheet</a>
+    </p>
+    <p>
+      <a href="#">See some beautiful photos by National Geographic</a>
+    </p>
+  </div>
+</div>
+<div class="flex">
+  <div class="flex-item-2col yellow-bottom-left">
+    <div class="twocol-left-text">
+      <h2>OUR FOCUS</h2>
+      <p>Quality education, gender equality and responsible innovation .Learn how our focus is making an impact in Mungere Village.</p>
+      <div class="btns-wrapper">
+        <a href="ourfocus" class="btn btn-big btn-secondary"><span>LEARN ABOUT OUR FOCUS</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="flex-item-2col ourfocus_donate">
+    <div class="twocol-right-text">
+      <h2>INVEST IN A BETTER WORLD</h2>
+      <p>Sending a girl in the developing world to secondary school has a higher return on investment than any other effort.*
+      </p>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Choose your gift
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">25</a></li>
+          <li><a href="#">50</a></li>
+          <li><a href="#">100</a></li>
+          <li><a href="#">500</a></li>
+          <li><a href="#">1000</a></li>
+        </ul>
+        <p class="quote-source">
+          <a href="*HTTP://IIPDIGITAL.USEMBASSY.GOV/ST/ENGLISH/PUBLICATION/2011/06/20110624094
+          700AIDAN0.9995037.HTML#AXZZ3XPFM408W">*STATISTIC SOURCE</a>
+        </p>
+        <div class="btns-wrapper btn-yellow">
+          <a href="#" class="btn btn-big btn-solid"><span>DONATE</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+handler = Gmaps.build('Google');
+handler.buildMap({ provider: {disableDefaultUI: true}, internal: {id: 'map'}}, function(){
+  markers = handler.addMarkers([
+    {
+      "lat": -3.35,
+      "lng": 35.85,
+      // "picture": {
+      //   "url": "/images/RSPlogo_175x59.png",
+      //   "width":  32,
+      //   "height": 32
+      // },
+      "infowindow": "Mungere School"
+    }
+  ]);
+  handler.bounds.extendWith(markers);
+  handler.fitMapToBounds();
+  handler.getMap().setZoom(6);
+});
+</script>

@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   resources :subscribers
   resources :volunteers
   resources :positions
-  
-  resources :galleries, :only => [:index]
+
+  resources :schools, :only => [:index]
 
   get "/pages/:page" => "pages#show"
   root "subscribers#new", page: "home"
