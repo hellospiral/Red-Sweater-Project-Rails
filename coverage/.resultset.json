@@ -1,6 +1,28 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/features/navigation_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Julia/Desktop/Red-Sweater-Project-Rails/spec/features/student_pages_spec.rb": [
         1,
         null,
@@ -59,6 +81,26 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         1,
         1,
@@ -134,6 +176,6 @@
         null
       ]
     },
-    "timestamp": 1475259208
+    "timestamp": 1475260732
   }
 }

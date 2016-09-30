@@ -25,4 +25,24 @@ describe "user" do
     click_on "Log in"
     expect(page).to have_content "LOG OUT"
   end
+  it "won't allow a user who is not an admin to see the admin dashboard" do
+    FactoryGirl.create(:user)
+    visit root_path
+    click_on 'LOG IN'
+    fill_in 'Email', :with => "user@email.com"
+    fill_in 'Password', :with => "password"
+    click_on 'Log in'
+    expect(page).to have_no_content "Admin dashboard"
+  end
+  it "will allow a user to see the admin dashboard if they are an admin" do
+    user = FactoryGirl.create(:user)
+    user.admin = true
+    user.save
+    visit root_path
+    click_on 'LOG IN'
+    fill_in 'Email', :with => "user@email.com"
+    fill_in 'Password', :with => "password"
+    click_on 'Log in'
+    expect(page).to have_content "Admin dashboard"
+  end
 end
