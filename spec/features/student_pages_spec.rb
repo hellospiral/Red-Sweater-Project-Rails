@@ -18,7 +18,8 @@ describe "student" do
     click_on 'Log in'
     click_on 'Admin dashboard'
     click_link "Update Shedrack Japhet"
-    fill_in 'Name', :with => 'Shedrack Japh'
+    save_and_open_screenshot
+    fill_in 'Full Name', :with => 'Shedrack Japh'
     click_button 'Update Student'
     expect(page).to have_content 'Shedrack Japh'
   end

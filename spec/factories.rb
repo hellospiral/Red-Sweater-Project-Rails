@@ -1,5 +1,9 @@
 FactoryGirl.define do
-
+  factory(:position) do
+    title('Science Teacher')
+    term('Jan--Dec 2017')
+  end
+  
   factory(:user) do
     email('user@email.com')
     password "password"
@@ -16,10 +20,7 @@ FactoryGirl.define do
     gender("boy")
   end
 
-  factory(:position) do
-    title('Science Teacher')
-    term('Jan--Dec 2017')
-  end
+
 
   factory(:event) do
     name("Tea in the Garden")

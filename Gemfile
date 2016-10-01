@@ -26,7 +26,7 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'letter_opener'
   gem 'dotenv-rails'
-  gem 'poltergeist'
+  gem 'poltergeist', '~> 1.10.0'
   gem 'database_cleaner'
 end
 
