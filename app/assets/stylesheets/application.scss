@@ -291,7 +291,7 @@ body {
 .nav > li > a {
     z-index: 510;
     height: 30px;
-    padding: 0 20px;
+    padding: 10px 20px;
     line-height: 30px;
 
     font-family: "proxima-nova", sans-serif;
@@ -337,6 +337,7 @@ body {
 #menu-icon {
   width: 30px;
   margin-left: 20px;
+  margin-top: 15px;
 }
 
 .nav > li:hover > div {
@@ -1306,8 +1307,8 @@ header {
 }
 .logo-wrap {
   padding: 0px 50px 15px 15px;
-  width: 5%;
-  display: block;
+  width: 50%;
+
 }
 
 .navigation .menu-wrap .menu > li {
@@ -1448,7 +1449,9 @@ li.donateBtn {
     font-weight: bold;
   }
   margin-bottom: 0px;
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-right: 40px;
 }
 
 @media screen and (max-width: 991px) {

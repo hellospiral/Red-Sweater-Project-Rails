@@ -29,7 +29,7 @@
                   <% if user_signed_in? %>
                     <li>
                       <% if current_user.admin %>
-                      <li><%= link_to('Admin dashboard', admin_index_path) %></li>
+                      <li><%= link_to('ADMIN DASHBOARD', admin_index_path) %></li>
                       <% end %>
                       <% if current_user != nil && current_user.admin = false %>
                           Logged in as <%= current_user.email %>
