@@ -49,48 +49,68 @@
                   <% end %>
                 </ul>
               </div>
-          <div class="row">
-            <div class="menu">
-            </div>
-          </div>
-  				<div class="row">
-  					<div class="logo-wrap col-md-3 col-xs-6">
-  						<a href="/"><%= image_tag("RSPlogo_175x59.png") %></a>
-  					</div>
-  					<div class="menu-wrap col-md-10">
-  						<ul class="menu">
-  							<li><%= link_to 'Our Focus', "/pages/ourfocus" %></li>
+  				<div class="row main-nav">
+  						<ul class="nav">
+                <li><a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png") %></a></li>
                   <li>
-                    <%= link_to 'The School', schools_path %></li>
-  								<!-- <ul class="submenu">
-                    <li><a href="pages/ourfocus">Our Focus</a></li>
-  									<li><a href="#">Item 2</a></li>
-  									<li><a href="#" class="active">Item 3</a></li>
-  								</ul> -->
+                    <%= link_to 'WHO WE ARE', schools_path %></li>
   							</li>
   							<li>
-  								<a href="#">What We Do</a>
-  								<ul class="submenu">
-  									<li><a href="#">Item 4</a></li>
-  									<li><a href="#">Item 5</a></li>
-  								</ul>
+  								<a href="#">WHAT WE DO</a>
   							</li>
-  							<li><%= link_to 'Get involved', volunteers_path %>
-                  <ul class="submenu">
-  									<li><%= link_to 'Events', events_path %></li>
-  									<li><a href="#">Volunteer Vacations</a></li>
-  								</ul>
+  							<li><%= link_to 'GET INVOLVED', volunteers_path %>
   							</li>
-
   							<li>
-                  <%= link_to "Sponsor", students_path %>
+                  <%= link_to "SPONSOR", students_path %>
   							</li>
+                <li class="">
+                  <a href="#">DONATE</a>
+                </li>
+  							<li>
+                  <%=image_tag("icon-menu_34x40.png", id: "menu-icon")%>
+                  <div class="mega-menu">
+                    <div class="nav-column">
+                        <h3>WHO WE ARE</h3>
+                        <ul>
+                          <li><a href="#">The Red Sweater</a></li>
+                          <li><%= link_to 'Our focus', "pages/ourfocus" %></li>
+                          <li><a href="#">Our story</a></li>
+                          <li><a href="#">The team</a></li>
+                          <li><a href="#">News + Reviews</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="nav-column">
+                        <h3>WHAT WE DO</h3>
+                        <ul>
+                          <li><%= link_to 'The School', schools_path %></li>
+                          <li><a href="#">The vision</a></li>
+                          <li><a href="#">Featured stories</a></li>
+                          <li><%= link_to 'FAQ', "pages/faq" %></li>
+                          <li><a href="#">Blog</a></li>
+                        </ul>
 
+                        <h3>GET INVOLVED</h3>
+                        <ul>
+                          <li><a href="#">Donate</a></li>
+                          <li><a href="#">Sponsor</a></li>
+                          <li><a href="#">Volunteer</a></li>
+                          <li><a href="#">Get Creative</a></li>
+                          <li><%= link_to 'Events', events_path %></li>
+                          <li><a href="#">Shop and Support</a></li>
+                        </ul>
+                    </div>
 
-
-  							<li class="donateBtn">
-  								<a href="#">Donate</a>
+                    <div class="nav-column">
+                        <h3>SPONSOR</h3>
+                        <ul>
+                          <li><%= link_to 'Sponsor a student', students_path %></li>
+                          <li><a href="#">Sponsor a cause on campus</a></li>
+                        </ul>
+                        <h3>DONATE</h3>
+                        <h3>CONTACT</h3>
+                    </div>
+                  </div>
   							</li>
   						</ul>
   					</div>
@@ -100,36 +120,9 @@
   						</div>
   					</div>
   				</div>
-  			</div>
+  			<!-- </div> -->
   		</nav>
   	</header>
-    <!-- <nav id="navbar" class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <%= link_to "Red Sweater Project", root_path, class: "navbar-brand" %>
-        </div>
-
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Sponsor", students_path %></li>
-            <li><%= link_to "Events", events_path %></li>
-          </ul>
-          <ul class="nav navbar-right"> -->
-            <!-- <li><%= link_to "Admin", admin_index_path %></li> -->
-            <!-- <li class="dropdown">
-              <a href="/admin" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><%= link_to "Admin dashboard", admin_index_path %></li>
-                <li role="separator" class="divider"></li>
-                <li><%= link_to "Add a student who needs sponsorship", new_student_path %></li>
-                <li><%= link_to "Add an event", new_event_path %></li>
-                <li role="separator" class="divider"></li>
-                <li><%= link_to "All events", events_path %></li>
-                <li><%= link_to "All students", admin_index_path %></li>
-              </ul>
-            </li>
-          </ul> -->
-      <!-- </div> -->
-    </nav>
     <div class="container-body">
       <%= yield %>
     </div>
