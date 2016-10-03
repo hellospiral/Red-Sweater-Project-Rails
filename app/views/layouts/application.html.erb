@@ -21,9 +21,8 @@
   <body>
 
     <header>
-      <nav class="navigation">
-  			<div class="container">
-          <div class="row">
+  			<!-- <div class="container"> -->
+          <div class="navigation">
             <ul class="menu-notes">
                   <li><%= flash[:notice] %></li>
                   <li><%= flash[:alert] %></li>
@@ -48,12 +47,11 @@
                     </li>
                   <% end %>
                 </ul>
-              </div>
   				<div class="row main-nav">
+            <a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png") %></a>
   						<ul class="nav">
-                <li><a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png") %></a></li>
-                  <li>
-                    <%= link_to 'WHO WE ARE', schools_path %></li>
+                <li>
+                  <%= link_to 'WHO WE ARE', schools_path %></li>
   							</li>
   							<li>
   								<a href="#">WHAT WE DO</a>
@@ -68,6 +66,8 @@
                 </li>
   							<li>
                   <%=image_tag("icon-menu_34x40.png", id: "menu-icon")%>
+
+
                   <div class="mega-menu">
                     <div class="nav-column">
                         <h3>WHO WE ARE</h3>
@@ -89,7 +89,8 @@
                           <li><%= link_to 'FAQ', "pages/faq" %></li>
                           <li><a href="#">Blog</a></li>
                         </ul>
-
+                      </div>
+                    <div class="nav-column">
                         <h3>GET INVOLVED</h3>
                         <ul>
                           <li><a href="#">Donate</a></li>
@@ -113,15 +114,14 @@
                   </div>
   							</li>
   						</ul>
-  					</div>
-  					<div class="col-md-1 col-xs-6">
+  					<!-- </div> -->
+  					<!-- <div class="col-md-1 col-xs-6">
   						<div id="menu-toggle">
   							<i class="fa fa-bars"></i>
   						</div>
-  					</div>
-  				</div>
-  			<!-- </div> -->
-  		</nav>
+  					</div> -->
+  			</div>
+  		<!-- </nav> -->
   	</header>
     <div class="container-body">
       <%= yield %>
