@@ -189,6 +189,7 @@ body {
     width: 60%;
     padding: 5%;
     flex-shrink: 1;
+    margin-bottom: 5%;
   }
 
   .flex-item-image {
@@ -470,7 +471,7 @@ h3 {
   margin-left: 1%;
   margin-right: 1%;
   padding: 0 2% 2% 2%;
-  position: relative;
+  // position: relative;
   h4 {
     margin-top: 5%;
   }
@@ -480,6 +481,10 @@ h3 {
     border-radius: 5px;
 
   }
+}
+
+.flex .center {
+  justify-content: center;
 }
 
 .sponsor-students:hover {
@@ -735,6 +740,14 @@ header {
 
 .ourfocus {
   background: url(../images/ourfocus_banner.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.redsweater {
+  background: url(../images/redsweater_banner.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

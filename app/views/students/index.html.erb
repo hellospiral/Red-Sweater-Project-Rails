@@ -41,26 +41,23 @@
       <hr>
 
   <div class="container">
-    <div class="section-name intro">
-      <div class="row">
-        <h2>Students looking for sponsors</h2>
-          <% @students.each do |student| %>
-            <div class="col-sm-3 sponsor-students">
-              <%= image_tag("#{student.image}.png") %>
-              <h4><strong><%= student.name %></strong></h4>
-              <p><em><%= student.age %> year-old <%= student.gender %></em><br>
-              I want to become: A <%= student.dream %></p>
-              <% if student.sponsored %>
-                <p><strong>Sponsored!</strong></p>
-              <% else %>
-                <%= link_to "Sponsor #{student.name}", students_path, :class => "btn btn-default" %>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
+    <h2>Students looking for sponsors</h2>
+    <div class="row">
+        <% @students.each do |student| %>
+          <div class="col-sm-3 sponsor-students">
+            <%= image_tag("#{student.image}.png") %>
+            <h4><strong><%= student.name %></strong></h4>
+            <p><em><%= student.age %> year-old <%= student.gender %></em><br>
+            I want to become: <br>A <%= student.dream %></p>
+            <% if student.sponsored %>
+              <p><strong>Sponsored!</strong></p>
+            <% else %>
+              <%= link_to "Sponsor #{student.name}", students_path, :class => "btn btn-default" %>
+            <% end %>
+          </div>
+        <% end %>
       </div>
   </div>
-</div>
 
 <div class="flex bottom-twocol">
   <div class="flex-item-2col yellow-bottom-left">
