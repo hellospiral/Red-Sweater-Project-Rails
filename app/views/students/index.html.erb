@@ -41,7 +41,7 @@
       <hr>
 
   <div class="container">
-    <h2>Students looking for sponsors</h2>
+    <h2>STUDENTS LOOKING FOR SPONSORS</h2>
     <div class="row">
         <% @students.each do |student| %>
           <div class="col-sm-3 sponsor-students">
@@ -59,10 +59,40 @@
       </div>
   </div>
 
+  <div class="flex">
+    <div class="flex-item-1col">
+      <h2>SPONSOR A GOOD CAUSE ON CAMPUS</h2>
+      <h5><strong>Choose your gift amount and your cause</strong></h5>
+      <p>
+        There are several projects underway  at the Mungere Schools that need the support of sponsors like you. Commit to a yearly lump sum, or a monthly donation to support the cause of your choosing. Project sponsorships are year-long commitments with the option to continue sponsorship of the same project, or update your gift to go toward another project on campus.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <h2>GOOD CAUSES ON CAMPUS</h2>
+    <div class="row">
+      <% if @goodcauses.any? %>
+        <% @goodcauses.each do |cause| %>
+          <div class="col-sm-3 sponsor-students">
+            <%= image_tag("#{cause.image}.png") %>
+            <h4><strong><%= cause.name %></strong></h4>
+            <p>Cost to completion: <br>
+              $<%= cause.cost %></p>
+              <%= link_to "Sponsor #{cause.name}", students_path, :class => "btn btn-default" %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+  </div>
+
+
 <div class="flex bottom-twocol">
   <div class="flex-item-2col yellow-bottom-left">
     <div class="twocol-left-text">
-      <h2>TRUE STORIES FROM STUDENTS AND STAFF</h2>
+      <h2>STORIES FROM STUDENTS AND STAFF</h2>
       <p>Explore true stories to learn more about our students and staff, and the work being done at the Mungere School.</p>
       <div class="btns-wrapper">
         <a href="#" class="btn btn-big btn-secondary"><span>READ FEATURED STORIES</span></a>

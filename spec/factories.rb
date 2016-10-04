@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :goodcause do
+    
+  end
   factory(:position) do
     title('Science Teacher')
     term('Jan--Dec 2017')

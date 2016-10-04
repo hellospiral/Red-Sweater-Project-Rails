@@ -6,13 +6,13 @@
 
     <div class="col-sm-9" id="admin-students-list">
       <div class="row">
-        <h2>Edit students and Events</h2>
+        <h2>Admin Dashboard</h2>
         <%= link_to "Add a student |", new_student_path, remote: true %>
         <%= link_to "Add an event |", new_event_path %>
-        <%= link_to "Add a position", new_position_path, remote: true %>
-        <br>
-        <br>
+        <%= link_to "Add a position |", new_position_path, remote: true %>
+        <%= link_to "Add a Good Cause on Campus", new_goodcause_path, remote: true %>
       </div>
+      <br>
       <% @students.each do |student| %>
         <div class="col-sm-3 admin-student-view" id="student_<%= student.id %>">
           <%= image_tag("#{student.image_file_name}") %>
@@ -52,6 +52,7 @@
     <% end %>
   </div>
 </div>
+
 <div class="flex col-sm-12">
   <div class="flex-item-2col" id="admin-positions-list">
     <h2>Edit Positions</h2>
@@ -75,5 +76,23 @@
   </div>
   <div class="flex-item-2col" id="position-change-form" >
 
+  </div>
+</div>
+<div class="flex">
+  <div class="flex-item-1col" id="admin-causes-list">
+    <h2>Edit Good Causes on Campus</h2>
+    <% if @goodcauses.any?%>
+      <ul>
+        <% @goodcauses.each do |goodcause| %>
+          <div class="col-sm-3" id="goodcause_<%= goodcause.id %>">
+            <p><strong><%= goodcause.name %></strong></p>
+            <p>Cost to completion: $<%= goodcause.cost %></p>
+            <p><%= goodcause.details %></p>
+            <%= link_to "Update #{goodcause.name}", edit_goodcause_path(goodcause), remote: true %>
+            <%= link_to "Delete #{goodcause.name}", goodcause_path(goodcause), :data => {:confirm => "Are you sure you want to remove this cause?", method: :delete}, remote: true %>
+          </div>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
 </div>
