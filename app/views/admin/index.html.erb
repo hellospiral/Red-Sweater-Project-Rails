@@ -12,18 +12,18 @@
     <div class="dropdown">
       <p class="dropbtn">EDIT EXISTING CONTENT</p>
       <div class="dropdown-content">
-        <li><%= link_to "students", new_student_path, remote: true %></li>
-        <li><%= link_to "events", new_event_path, remote: true %></li>
-        <li><%= link_to "positions", new_position_path, remote: true %></li>
-        <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+        <li><a href="#students-content">Students</a></li>
+        <li><a href="#events-section">events</a></li>
+        <li><a href="#positions-section">positions</a></li>
+        <li><a href="#causes-section">causes</a></li>
       </div>
     </div>
   </ul>
 </div>
 
-  <div class="intro-wrapper">
+<br>
+  <div class="intro-wrapper" id="students-content">
     <div class="col-sm-9" id="admin-students-list">
-      <br>
       <h2 class="admin-student-headline">EDIT STUDENTS</h2>
       <% @students.each do |student| %>
         <div class="col-sm-3 admin-student-view" id="student_<%= student.id %>">
@@ -42,10 +42,9 @@
     </div>
   </div>
 
-
 <div class="section-name intro">
   <div class="col-sm-9" id="admin-events-list">
-    <hr>
+    <hr id="events-section">
     <h2>EDIT EVENTS</h2>
     <% @events.each do |event| %>
       <div class="col-sm-3 admin-student-view" id="event_<%= event.id %>">
@@ -65,7 +64,7 @@
 
 <div class="section-name intro">
   <div class="col-sm-9" id="admin-positions-list">
-    <hr>
+    <hr id="positions-section">
     <h2>EDIT POSITIONS</h2>
     <% if @positions.any?%>
       <ul>
@@ -85,12 +84,12 @@
       </ul>
     <% end %>
   </div>
-  <div class="flex-item-2col" id="position-change-form" >
+  <div class="col-sm-3" id="position-change-form" >
   </div>
 </div>
 <div class="section-name intro">
   <div class="col-sm-9" id="admin-causes-list">
-    <hr>
+    <hr id="causes-section">
     <h2>EDIT CAUSES</h2>
     <% if @goodcauses.any?%>
       <ul>

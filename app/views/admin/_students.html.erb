@@ -1,0 +1,20 @@
+<div class="intro-wrapper">
+  <div class="col-sm-9" id="admin-students-list">
+    <br>
+    <h2 class="admin-student-headline">EDIT STUDENTS</h2>
+    <% @students.each do |student| %>
+      <div class="col-sm-3 admin-student-view" id="student_<%= student.id %>">
+        <%= image_tag("#{student.image_file_name}") %>
+        <h4><strong><%= student.name %></strong></h4>
+        <p><em><%= student.age %> year-old <%= student.gender %></em><br>
+        I want to become: A <%= student.dream %></p>
+        <hr>
+        <%= link_to "Update #{student.name}", edit_student_path(student), remote: true %><br>
+        <%= link_to "Delete", student_path(student), :data => {:confirm => "Are you sure you want to remove this student from the sponsorship page?", method: :delete}, remote: true %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-sm-3" id="change-form" >
+
+  </div>
+</div>
