@@ -1,10 +1,14 @@
 <div class="row">
   <ul class="flex admin-nav">
     <li><h2 class="admin-headline">Welcome back, Ashley</h2></li>
-    <li><%= link_to "students", new_student_path, remote: true %></li>
-    <li><%= link_to "events", new_event_path %></li>
-    <li><%= link_to "positions", new_position_path, remote: true %></li>
-    <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+    <div class="dropdown">
+      <p class="dropbtn">Edit</p>
+      <div class="dropdown-content">
+        <li><%= link_to "students", new_student_path, remote: true %></li>
+        <li><%= link_to "events", new_event_path %></li>
+        <li><%= link_to "positions", new_position_path, remote: true %></li>
+        <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+      </div>
   </ul>
 </div>
 <div class="container">
