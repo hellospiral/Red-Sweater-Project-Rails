@@ -1,18 +1,18 @@
+<div class="row">
+  <ul class="flex admin-nav">
+    <li><h2 class="admin-headline">Welcome back, Ashley</h2></li>
+    <li><%= link_to "students", new_student_path, remote: true %></li>
+    <li><%= link_to "events", new_event_path %></li>
+    <li><%= link_to "positions", new_position_path, remote: true %></li>
+    <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+  </ul>
+</div>
 <div class="container">
 
-
-<div class="section-name intro">
   <div class="intro-wrapper">
-
-    <div class="col-sm-9" id="admin-students-list">
-      <div class="row">
-        <h2>Admin Dashboard</h2>
-        <%= link_to "Add a student |", new_student_path, remote: true %>
-        <%= link_to "Add an event |", new_event_path %>
-        <%= link_to "Add a position |", new_position_path, remote: true %>
-        <%= link_to "Add a Good Cause on Campus", new_goodcause_path, remote: true %>
-      </div>
+    <div class="col-sm-12" id="admin-students-list">
       <br>
+      <h2 class="admin-headline">EDIT STUDENTS</h2>
       <% @students.each do |student| %>
         <div class="col-sm-3 admin-student-view" id="student_<%= student.id %>">
           <%= image_tag("#{student.image_file_name}") %>
@@ -29,37 +29,33 @@
 
     </div>
   </div>
-</div>
 
 
 <div class="section-name intro">
-  <div class="col-sm-12" events>
-    <h2>Upcoming events</h2>
+  <div class="col-sm-9">
+    <hr>
+    <h2>EDIT EVENTS</h2>
     <% @events.each do |event| %>
-      <div class="col-sm-12 event">
-        <div class="col-sm-6">
+      <div class="col-sm-3 admin-student-view">
           <%= image_tag("#{ event.image }") %>
-        </div>
-        <div class="col-sm-6 event-details">
           <h4><strong><%= event.name %></strong></h4>
           <p><%= event.time %><%= event.date %>
           <%= event.details %></p>
           <%= link_to "Update #{event.name}", edit_event_path(event), :class => "btn btn-default" %>
           <%= link_to "Delete", event_path(event), :class => "btn btn-danger", :data => {:confirm => "Are you sure you want to remove this event from the events page?", :method => "delete"} %>
-        </div>
-        <hr>
       </div>
     <% end %>
   </div>
 </div>
 
-<div class="flex col-sm-12">
-  <div class="flex-item-2col" id="admin-positions-list">
-    <h2>Edit Positions</h2>
+<div class="section-name intro">
+  <div class="col-sm-9" id="admin-positions-list">
+    <hr>
+    <h2>EDIT POSITIONS</h2>
     <% if @positions.any?%>
       <ul>
         <% @positions.each do |position| %>
-          <div class="col-sm-3" id="position_<%= position.id %>">
+          <div class="col-sm-3 admin-student-view" id="position_<%= position.id %>">
             <p><strong><%= position.title %></strong></p>
             <p><%= position.location %></p>
             <p><%= position.term %></p>
@@ -67,7 +63,7 @@
               <p>This position offers a monthly stipend of: $<%= position.stipend%>
               </p>
             <% end %>
-            <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %>
+            <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %><br>
             <%= link_to "Delete #{position.title}", position_path(position), :data => {:confirm => "Are you sure you want to remove this position?", method: :delete}, remote: true %>
           </div>
         <% end %>
@@ -75,16 +71,16 @@
     <% end %>
   </div>
   <div class="flex-item-2col" id="position-change-form" >
-
   </div>
 </div>
-<div class="flex">
-  <div class="flex-item-1col" id="admin-causes-list">
-    <h2>Edit Good Causes on Campus</h2>
+<div class="section-name intro">
+  <div class="col-sm-9" id="admin-causes-list">
+    <hr>
+    <h2>EDIT CAUSES</h2>
     <% if @goodcauses.any?%>
       <ul>
         <% @goodcauses.each do |goodcause| %>
-          <div class="col-sm-3" id="goodcause_<%= goodcause.id %>">
+          <div class="col-sm-3 admin-student-view" id="goodcause_<%= goodcause.id %>">
             <p><strong><%= goodcause.name %></strong></p>
             <p>Cost to completion: $<%= goodcause.cost %></p>
             <p><%= goodcause.details %></p>
@@ -95,4 +91,8 @@
       </ul>
     <% end %>
   </div>
+  <div class="flex-item-2col" id="cause-change-form" >
+
+  </div>
+</div>
 </div>
