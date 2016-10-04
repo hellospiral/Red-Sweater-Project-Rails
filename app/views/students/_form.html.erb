@@ -1,5 +1,6 @@
 <%= render "layouts/errors", :object => @student %>
 
+<h5>STUDENTS</h5>
 <%= form_for @student, remote: true do |f| %>
   <%= f.label :name, 'Full Name' %>
   <%= f.text_field :name, class: "form-control" %>

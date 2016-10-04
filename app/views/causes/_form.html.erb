@@ -1,6 +1,6 @@
 
 <%= render "layouts/errors", :object => @goodcause %>
-
+<h5>CAUSES</h5>
 <%= form_for @goodcause, remote: true  do |f| %>
   <%= f.label :name, 'Cause Name' %>
   <%= f.text_field :name, class: "form-control" %>

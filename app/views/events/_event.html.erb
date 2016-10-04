@@ -1,0 +1,6 @@
+    <%= image_tag("#{ event.image }") %>
+    <h4><strong><%= event.name %></strong></h4>
+    <p><%= event.time %><%= event.date %>
+    <%= event.details %></p>
+    <%= link_to "Update #{event.name}", edit_event_path(event), :class => "btn btn-default" %>
+    <%= link_to "Delete", event_path(event), :class => "btn btn-danger", :data => {:confirm => "Are you sure you want to remove this event from the events page?", :method => "delete"} %>

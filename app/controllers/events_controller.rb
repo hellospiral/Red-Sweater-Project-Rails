@@ -6,34 +6,45 @@ class EventsController < ApplicationController
   end
   def new
     @event = Event.new
+    respond_to do |format|
+      format.html {redirect_to admin_index_path}
+      format.js
+    end
   end
   def create
     @event = Event.new(event_params)
     if @event.save
-      flash[:notice]="Event successfully added!"
-      redirect_to events_path
-    else
-      render :new
+      respond_to do |format|
+        format.html { redirect_to admin_index_path }
+        format.js
+      end
     end
   end
   def edit
     @event = Event.find(params[:id])
-    render :edit
+    respond_to do |format|
+      format.html {redirect_to admin_index_path}
+      format.js
+    end
   end
 
   def update
     @event = Event.find(params[:id])
     if @event.update(event_params)
-      redirect_to admin_index_path
-    else
-      render :index
+      flash[:notice]="Student successfully updated!"
+      respond_to do |format|
+        format.html {redirect_to admin_index_path}
+        format.js
+      end
     end
   end
 
   def destroy
-    @event = Event.find(params[:id])
-    @event.destroy
-    redirect_to admin_index_path
+    @event = Event.destroy(params[:id])
+    respond_to do |format|
+      format.html { redirect_to admin_index_path }
+      format.js
+    end
   end
 
   private

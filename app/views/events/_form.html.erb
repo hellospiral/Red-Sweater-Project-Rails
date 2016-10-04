@@ -1,6 +1,7 @@
 <%= render "layouts/errors", :object => @event %>
 
-<%= form_for @event do |f| %>
+<h5>EVENTS</h5>
+<%= form_for @event, remote: true do |f| %>
   <%= f.label :name, 'Event Name' %>
   <%= f.text_field :name, class: "form-control" %>
 
