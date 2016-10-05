@@ -11,6 +11,7 @@ $text-red: #e61e26;
 hr {
   border-color: $yellow;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 body {
@@ -25,10 +26,35 @@ body {
   }
 }
 
+.etsy {
+  padding: 0;
+  margin: 2% 2%;
+  height: 550px;
+  a { text-decoration: none; }
+  img {
+    padding-bottom: 10%;
+  }
+  .price {
+    line-height: 2em;
+    color: $text-blue;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.etsy:hover {
+  background-color: whitesmoke;
+}
+
 .admin-headline {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 20px;
   letter-spacing: 1px;
   font-weight: 200;
   padding-bottom: 0;
@@ -36,17 +62,19 @@ body {
 }
 
 .admin-student-headline {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .flex.admin-nav {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 96px;
+  z-index: 1000;
   left: 0;
   width: 100%;
   align-items: center;
   justify-content: flex-end;;
   padding: 0 3%;
+  height: 30px;
   background-color: $text-blue;
   margin-top: 5px;
   li a {
@@ -61,7 +89,7 @@ body {
 .dropbtn {
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 12px;
     border: none;
     cursor: pointer;
 }
@@ -79,6 +107,8 @@ body {
     z-index: 800;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin-top: 0;
 }
 
 .dropdown-content li {
@@ -261,7 +291,7 @@ body {
   }
 
   .flex-item-1col {
-    width: 60%;
+    width: 70%;
     padding: 5%;
     flex-shrink: 1;
     margin-bottom: 5%;
@@ -718,7 +748,7 @@ h3 {
 }
 
 
-.admin-student-view {
+.admin-student-view, .admin-events-view, .admin-causes-view {
   border-radius: 10px;
   border: 1px solid $hairline-grey;
   margin-bottom: 2%;
@@ -726,17 +756,37 @@ h3 {
   margin-right: 1%;
   padding: 2% 1% 2% 2%;
   position: relative;
+  #students {
+    height: 325px;
+  }
   h4 {
     margin-top: 5%;
   }
   img {
     width: 95%;
-    // margin: 7% 2%;
-    position: abolute;
+    padding-bottom: 10px;
     top: 0;
     left: 0;
   }
+  p {
+  padding-bottom: 10px;
+  }
+  a {
+    line-height: 1.5em;
+    text-decoration: none;
+  }
 }
+
+.admin-events-view {
+  height: 375px;
+}
+.admin-student-view {
+  height: 325px;
+}
+.admin-causes-view {
+  height: 500px;
+}
+
 
 .admin-student-view {
   .btn-default:hover {

@@ -65,7 +65,7 @@
                   <a href="#">DONATE</a>
                 </li>
   							<li>
-                  <%=image_tag("icon-menu_34x40.png", id: "menu-icon")%>
+                  <%=image_tag("icon-menu_notext.png", id: "menu-icon")%>
 
 
                   <div class="mega-menu">
@@ -73,7 +73,7 @@
                         <h3>WHO WE ARE</h3>
                         <ul>
                           <li><a href="/pages/redsweater">The Red Sweater</a></li>
-                          <li><%= link_to 'Our focus', "pages/ourfocus" %></li>
+                          <li><%= link_to 'Our focus', "/pages/ourfocus" %></li>
                           <li><a href="/pages/ourstory">Our story</a></li>
                           <li><a href="/pages/theteam">The team</a></li>
                           <li><a href="/pages/news-reviews">News + Reviews</a></li>
@@ -98,7 +98,7 @@
                           <li><%= link_to 'Volunteer', volunteers_path %></li>
                           <li><%= link_to 'Get creative', "pages/getcreative" %></li>
                           <li><%= link_to 'Events', events_path %></li>
-                          <li><a href="#">Shop and Support</a></li>
+                          <li><%= link_to 'Shop + Support', products_path %></li>
                         </ul>
                     </div>
 

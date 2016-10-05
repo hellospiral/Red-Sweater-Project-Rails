@@ -23,7 +23,7 @@
 
 <br>
   <div class="intro-wrapper" id="students-content">
-    <div class="col-sm-9" id="admin-students-list">
+    <div class="col-sm-8" id="admin-students-list">
       <h2 class="admin-student-headline">EDIT STUDENTS</h2>
       <% @students.each do |student| %>
         <div class="col-sm-3 admin-student-view" id="student_<%= student.id %>">
@@ -31,7 +31,6 @@
           <h4><strong><%= student.name %></strong></h4>
           <p><em><%= student.age %> year-old <%= student.gender %></em><br>
           I want to become: A <%= student.dream %></p>
-          <hr>
           <%= link_to "Update #{student.name}", edit_student_path(student), remote: true %><br>
           <%= link_to "Delete", student_path(student), :data => {:confirm => "Are you sure you want to remove this student from the sponsorship page?", method: :delete}, remote: true %>
         </div>
@@ -43,17 +42,17 @@
   </div>
 
 <div class="section-name intro">
-  <div class="col-sm-9" id="admin-events-list">
+  <div class="col-sm-8" id="admin-events-list">
     <hr id="events-section">
     <h2>EDIT EVENTS</h2>
     <% @events.each do |event| %>
-      <div class="col-sm-3 admin-student-view" id="event_<%= event.id %>">
+      <div class="col-sm-3 admin-events-view" id="event_<%= event.id %>">
           <%= image_tag("#{ event.image }") %>
           <h4><strong><%= event.name %></strong></h4>
           <p><%= event.time %><%= event.date %>
           <%= event.details %></p>
-          <%= link_to "Update #{event.name}", edit_event_path(event), :class => "btn btn-default", remote: true %>
-          <%= link_to "Delete", event_path(event), :class => "btn btn-danger", :data => {:confirm => "Are you sure you want to remove this event from the events page?", :method => "delete"}, remote: true %>
+          <%= link_to "Update #{event.name}", edit_event_path(event), remote: true %><br>
+          <%= link_to "Delete", event_path(event), :data => {:confirm => "Are you sure you want to remove this event from the events page?", :method => "delete"}, remote: true %>
       </div>
     <% end %>
   </div>
@@ -63,7 +62,7 @@
 </div>
 
 <div class="section-name intro">
-  <div class="col-sm-9" id="admin-positions-list">
+  <div class="col-sm-8" id="admin-positions-list">
     <hr id="positions-section">
     <h2>EDIT POSITIONS</h2>
     <% if @positions.any?%>
@@ -88,15 +87,16 @@
   </div>
 </div>
 <div class="section-name intro">
-  <div class="col-sm-9" id="admin-causes-list">
+  <div class="col-sm-8" id="admin-causes-list">
     <hr id="causes-section">
     <h2>EDIT CAUSES</h2>
     <% if @goodcauses.any?%>
       <ul>
         <% @goodcauses.each do |goodcause| %>
-          <div class="col-sm-3 admin-student-view" id="goodcause_<%= goodcause.id %>">
+          <div class="col-sm-3 admin-causes-view" id="goodcause_<%= goodcause.id %>">
+            <%= image_tag("#{goodcause.image}") %>
             <p><strong><%= goodcause.name %></strong></p>
-            <p>Cost to completion: $<%= goodcause.cost %></p>
+            <p><em>Cost to completion: $<%= goodcause.cost %></em></p>
             <p><%= goodcause.details %></p>
             <%= link_to "Update #{goodcause.name}", edit_goodcause_path(goodcause), remote: true %>
             <%= link_to "Delete #{goodcause.name}", goodcause_path(goodcause), :data => {:confirm => "Are you sure you want to remove this cause?", method: :delete}, remote: true %>
@@ -105,7 +105,7 @@
       </ul>
     <% end %>
   </div>
-  <div class="flex-item-2col" id="cause-change-form" >
+  <div class="col-sm-3" id="cause-change-form" >
 
   </div>
 </div>

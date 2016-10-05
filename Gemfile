@@ -14,6 +14,9 @@ gem 'paperclip', '~> 4.1'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'instagram'
+gem 'etsy'
+gem 'dotenv-rails'
+
 
 group :development, :test do
   gem 'byebug', platform: :mri

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :volunteers
   resources :positions
   resources :goodcauses
-
+  resources :products, :only => [:index]
   resources :schools, :only => [:index]
 
   get "/pages/:page" => "pages#show"

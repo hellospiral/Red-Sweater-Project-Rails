@@ -1,0 +1,5 @@
+<p><strong><%= goodcause.name %></strong></p>
+<p>Cost to completion: $<%= goodcause.cost %></p>
+<p><%= goodcause.details %></p>
+<%= link_to "Update #{goodcause.name}", edit_goodcause_path(goodcause), remote: true %>
+<%= link_to "Delete #{goodcause.name}", goodcause_path(goodcause), :data => {:confirm => "Are you sure you want to remove this cause?", method: :delete}, remote: true %>
