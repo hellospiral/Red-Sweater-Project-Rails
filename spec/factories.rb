@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :post do
+    
+  end
   factory :goodcause do
     
   end

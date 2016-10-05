@@ -151,6 +151,12 @@ body {
   margin-top: 10%;
 }
 
+.post-content {
+  p {
+    padding-bottom: 10px;
+  }
+}
+
 // 3 COLUMN FLEXBOX
 
 @media screen and (max-width: 700px) {

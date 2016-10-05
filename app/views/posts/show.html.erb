@@ -1,0 +1,8 @@
+<div class="flex blog-content">
+  <div class="flex-item-1col">
+    <h2><%= @post.title %></h2>
+    <p><em><%= @post.author %></em></p>
+    <h5><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  <div class="post-content"><%= raw @post.body %></div>
+  </div>
+</div>

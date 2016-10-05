@@ -16,6 +16,8 @@ gem 'gmaps4rails'
 gem 'instagram'
 gem 'etsy'
 gem 'dotenv-rails'
+gem 'ckeditor'
+gem 'simple_form'
 
 
 group :development, :test do
@@ -28,7 +30,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'letter_opener'
-  gem 'dotenv-rails'
   gem 'poltergeist', '~> 1.10.0'
   gem 'database_cleaner'
 end
