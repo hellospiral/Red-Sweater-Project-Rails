@@ -1,5 +1,7 @@
 <div class="flex blog-content">
   <div class="flex-item-1col">
+    <%= link_to 'See all posts', posts_path %>
+    <%= image_tag(@post.image, :class => "flex-item-image")  %>
     <h2><%= @post.title %></h2>
     <p><em><%= @post.author %></em></p>
     <h5><%= @post.created_at.strftime('%b %d, %Y') %></h5>

@@ -7,6 +7,11 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    if current_user.blog
+      render :new
+    else
+      redirect_to :root_path
+    end
   end
 
   def create
@@ -48,7 +53,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :author)
+    params.require(:post).permit(:title, :body, :author, :image, :quote)
   end
 
   def find_post

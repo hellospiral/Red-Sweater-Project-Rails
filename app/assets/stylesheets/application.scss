@@ -155,7 +155,10 @@ body {
   p {
     padding-bottom: 10px;
   }
+
 }
+
+
 
 // 3 COLUMN FLEXBOX
 
@@ -305,12 +308,18 @@ body {
 
   .flex-item-image {
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 0;
     // height: 25%vh;
     width: 100%;
     img {
       width: 100%;
     }
+  }
+}
+
+.col-sm-8 {
+  img {
+    width: 100%;
   }
 }
 
