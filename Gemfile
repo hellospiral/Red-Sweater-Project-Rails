@@ -18,6 +18,7 @@ gem 'etsy'
 gem 'dotenv-rails'
 gem 'ckeditor'
 gem 'simple_form'
+gem 'paypal-sdk-rest'
 
 
 group :development, :test do
