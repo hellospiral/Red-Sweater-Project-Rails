@@ -16,6 +16,7 @@
         <li><a href="#events-section">events</a></li>
         <li><a href="#positions-section">positions</a></li>
         <li><a href="#causes-section">causes</a></li>
+        <li><a href="#blog-posts-section">blog posts</a></li>
       </div>
     </div>
   </ul>
@@ -108,4 +109,20 @@
   <div class="col-sm-3" id="cause-change-form" >
 
   </div>
+</div>
+<div class="section-name intro">
+  <div class="col-sm-8">
+    <hr id="blog-posts-section">
+    <h2>EDIT BLOG POSTS</h2>
+    <% if @posts.any? %>
+    <ul>
+      <% @posts.each do |post| %>
+        <li><h5><%= post.created_at.strftime('%b %d, %Y') %></h5><%= post.title %>, <em><%= post.author %></em></li>
+        <%= link_to "Update", edit_post_path(post), remote: true %> |
+        <%= link_to "Delete", post_path(post), :data => {:confirm => "Are you sure you want to remove this blog post?", method: :delete}, remote: true %>
+      <% end %>
+    </ul>
+    <% end %>
+  </div>
+
 </div>

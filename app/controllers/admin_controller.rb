@@ -4,5 +4,6 @@ class AdminController < ApplicationController
     @events = Event.all
     @positions = Position.all
     @goodcauses = Goodcause.all
+    @posts = Post.all
   end
 end

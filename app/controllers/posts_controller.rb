@@ -6,11 +6,11 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
-    if current_user.blog
+    if current_user.blog = true
+      @post = Post.new
       render :new
     else
-      redirect_to :root_path
+      redirect_to posts_path 
     end
   end
 
