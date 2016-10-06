@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :find_post, only: [:edit, :update, :show, :delete]
+  before_action :find_post, only: [:edit, :update, :show, :destroy]
 
   def index
     @posts = Post.all
@@ -10,7 +10,7 @@ class PostsController < ApplicationController
       @post = Post.new
       render :new
     else
-      redirect_to posts_path 
+      redirect_to posts_path
     end
   end
 
@@ -26,15 +26,19 @@ class PostsController < ApplicationController
   end
 
   def edit
+    respond_to do |format|
+      format.html {redirect_to admin_index_path}
+      format.js
+    end
   end
 
   def update
     if @post.update_attributes(post_params)
       flash[:notice] = "Successfully updated post!"
-      redirect_to post_path(@posts)
-    else
-      flash[:alert] = "Error updating post!"
-      render :edit
+      respond_to do |format|
+        format.html {redirect_to admin_index_path}
+        format.js
+      end
     end
   end
 
@@ -44,9 +48,10 @@ class PostsController < ApplicationController
   def destroy
     if @post.destroy
       flash[:notice] = "Successfully deleted post!"
-      redirect_to posts_path
-    else
-      flash[:alert] = "Error updating post!"
+      respond_to do |format|
+        format.html { redirect_to admin_index_path }
+        format.js
+      end
     end
   end
 
