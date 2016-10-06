@@ -53,6 +53,16 @@
   				<div class="row main-nav">
             <a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png")%></a>
   						<ul class="nav">
+                <!-- <li><div class="dropdown">
+                  <li class="dropbtn">WHO WE ARE</p>
+                  <ul class="dropdown-content">
+                    <li><%= link_to "students", new_student_path, remote: true %></li>
+                    <li><%= link_to "events", new_event_path, remote: true %></li>
+                    <li><%= link_to "positions", new_position_path, remote: true %></li>
+                    <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+                  </ul>
+                </div>
+  							</li> -->
                 <li>
                   <%= link_to 'WHO WE ARE', schools_path %></li>
   							</li>
@@ -67,7 +77,32 @@
                 <li class="">
                   <a href="#">DONATE</a>
                 </li>
-  							<li>
+
+<!-- REFERENCE CODE
+                <div class="dropdown">
+                  <p class="dropbtn">ADD NEW CONTENT</p>
+                  <div class="dropdown-content">
+                    <li><%= link_to "students", new_student_path, remote: true %></li>
+                    <li><%= link_to "events", new_event_path, remote: true %></li>
+                    <li><%= link_to "positions", new_position_path, remote: true %></li>
+                    <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <p class="dropbtn">EDIT EXISTING CONTENT</p>
+                  <div class="dropdown-content">
+                    <li><a href="#students-content">Students</a></li>
+                    <li><a href="#events-section">events</a></li>
+                    <li><a href="#positions-section">positions</a></li>
+                    <li><a href="#causes-section">causes</a></li>
+                    <li><a href="#blog-posts-section">blog posts</a></li>
+                  </div>
+                </div>
+reference code end -->
+
+
+
+                <li>
                   <%=image_tag("icon-menu_notext.png", id: "menu-icon")%>
 
 

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :admin
   resources :events
   resources :subscribers
-  resources :volunteers
+  resources :volunteers, :only => [:index]
   resources :positions
   resources :goodcauses
   resources :products, :only => [:index]
