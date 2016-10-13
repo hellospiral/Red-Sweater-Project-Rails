@@ -21,34 +21,36 @@
     <header>
   			<!-- <div class="container"> -->
       <div class="navigation">
-        <ul class="page-canvas">
-          <li><%= flash[:notice] %></li>
-          <li><%= flash[:alert] %></li>
-          <% if user_signed_in? %>
-            <li>
-              <% if current_user.admin %>
-              <li><%= link_to('ADMIN DASHBOARD', admin_index_path) %></li>
-              <% end %>
-              <% if current_user.blog = true %>
-                <li><%= link_to('NEW BLOG POST', new_post_path)%></li>
-              <% end %>
-              <% if current_user != nil && current_user.admin = false %>
-                  Logged in as <%= current_user.email %>
-              <% end %>
-            </li>
-            <li>
-            <%= link_to('LOG OUT', destroy_user_session_path, :method => :delete) %>
-            </li>
-          <% else %>
-            <li>
-            <%= link_to('LOG IN', new_user_session_path)  %>
-            </li>
-            <li>
-              <%= link_to "CREATE ACCOUNT", new_user_registration_path %>
-            </li>
+        <% if user_signed_in? %>
+          <ul class="admin-nav">
+            <li class="flash"><%= flash[:notice] %></li>
+            <li class="flash"><%= flash[:alert] %></li>
+            <% if user_signed_in? %>
+              <li>
+                <% if current_user.admin %>
+                <li><%= link_to('ADMIN DASHBOARD', admin_index_path) %></li>
+                <% end %>
+                <% if current_user.blog = true %>
+                  <li><%= link_to('NEW BLOG POST', new_post_path)%></li>
+                <% end %>
+                <% if current_user != nil && current_user.admin = false %>
+                    Logged in as <%= current_user.email %>
+                <% end %>
+              </li>
+              <li>
+              <%= link_to('LOG OUT', destroy_user_session_path, :method => :delete) %>
+              </li>
+            <% else %>
+              <!-- <li>
+              <%= link_to('LOG IN', new_user_session_path)  %>
+              </li>
+              <li>
+                <%= link_to "CREATE ACCOUNT", new_user_registration_path %>
+              </li> -->
+            <% end %>
+          </ul>
           <% end %>
-        </ul>
-  				<div class="row main-nav">
+  				<div class="main-nav">
             <a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png")%></a>
   						<ul class="nav">
                 <!-- <li><div class="dropdown">

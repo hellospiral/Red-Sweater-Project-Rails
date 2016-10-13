@@ -1,5 +1,8 @@
 class SubscribersController < ApplicationController
 
+  def index
+  end
+
   def new
     @subscriber = Subscriber.new
   end

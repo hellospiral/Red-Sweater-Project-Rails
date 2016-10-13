@@ -176,34 +176,34 @@ body {
 
 
 // 3 COLUMN FLEXBOX
+.flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+}
 
 @media screen and (max-width: 700px) {
-  .flex {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
-  }
-
   .flex-item-3col {
-    width: 90%;
+    width: 100%;
     padding: 5%;
   }
-
   .flex-item-3col img {
     width: 100%;
     padding: 0px;
     border-radius: 10px;
   }
+
+  .flex-item-2col {
+    width: 90%;
+    padding: 5%;
+  }
+  .flex-item-2col img {
+    width: 100%;
+    padding: 0px;
+  }
 }
 
 @media screen and (min-width: 701px) {
-  .flex {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
-
-  }
-
   .flex-item-3col {
     width: 250px;
     padding: 3% 1%;
@@ -213,37 +213,6 @@ body {
     width: 100%;
     padding: 0px;
     border-radius: 10px;
-  }
-}
-
-
-
-// 2 column flex
-
-@media screen and (max-width: 700px) {
-  .flex {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
-  }
-
-  .flex-item-2col {
-    width: 90%;
-    padding: 5%;
-  }
-
-  .flex-item-2col img {
-    width: 100%;
-    padding: 0px;
-  }
-}
-
-@media screen and (min-width: 701px) {
-  .flex {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
-
   }
 
   .flex-item-2col {
@@ -262,6 +231,9 @@ body {
     padding: 0px;
   }
 }
+
+
+
 
 .yellow-bottom-left {
   background-color: $yellow;
@@ -306,19 +278,11 @@ body {
 
 
 @media screen and (min-width: 801px) {
-  .flex {
-    display: flex;
-    // flex-wrap: nowrap;
-    // flex-wrap: column;
-    // flex-direction: column;
-    justify-content: center;
-  }
 
   .flex-item-1col {
-    width: 70%;
-    padding: 5%;
+    max-width: 700px;
+    padding: 60px 0;
     flex-shrink: 1;
-    margin-bottom: 5%;
   }
 
   .flex-item-image {
@@ -395,6 +359,7 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 500;
     height: 75px;
     width: 100%;
@@ -402,11 +367,9 @@ body {
 
 .main-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: nowrap;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .main-nav.first-child {
@@ -424,13 +387,9 @@ body {
 
 .nav > li > a {
     z-index: 510;
-    height: 30px;
-    padding: 10px 20px;
-    line-height: 30px;
-
     font-family: "proxima-nova", sans-serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 1em;
     color: #6f6f6f;
 
     -webkit-transition: all .3s ease;
@@ -471,7 +430,6 @@ body {
 #menu-icon {
   width: 30px;
   margin-left: 20px;
-  margin-top: 15px;
 }
 
 .nav > li:hover > div {
@@ -613,7 +571,7 @@ li {
   border-radius: 4px;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #small-logo {
@@ -649,7 +607,6 @@ li {
   font-family: 'proxima-nova', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 40px;
 
 }
 .btn.btn-big i {
@@ -979,14 +936,15 @@ header {
 }
 
 .logo-wrap {
-  padding: 0px 50px 15px 15px;
+  padding: 0px 20px 0 15px;
   width: 50%;
-
+  display: flex;
+  align-items: center;
 }
 
 .container-body {
   position: relative;
-  top: 95px;
+  top: 75px;
   max-width: 960;
 }
 
@@ -1007,18 +965,25 @@ li.donateBtn {
   }
 }
 
-
+.flash {
+  color: white;
+  padding-right: 20px;
+}
 .navigation > ul {
-  text-align: right;
-  height: 20px;
-  color: $body-type-grey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 2em;
+  background-color: #333;
   li {
-    color: $body-type-grey;
-    margin: 0 0 40px 0;
     display: inline;
-    padding: 10px 0 15px 20px;
-    font-size: .7em;
-    font-weight: bold;
+    a {
+      color: white;
+      margin: 0 0 10px 0;
+      padding: 20px 10px 0 0;
+      font-size: .7em;
+      font-weight: bold;
+    }
   }
 }
 
