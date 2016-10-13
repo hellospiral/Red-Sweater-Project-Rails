@@ -194,7 +194,36 @@ body {
   padding-top: 0;
 }
 
-
+.mobile-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  display: none;
+  justify-content: flex-end;
+  align-content: flex-end;
+  background-color: #000; opacity: 0.92; filter: alpha(opacity=.86);    color: white;
+  li {
+    padding: 10px 20px;
+    min-width: 300px;
+    a { color: white;
+      text-decoration: none;
+    }
+  }
+  li:hover {
+    background-color: #666;
+    a {
+      color: $yellow;
+    }
+  }
+  hr {
+    border-color: white;
+    opacity: .5;
+    margin: 10px 20px;
+  }
+  strong {
+    color: $yellow;
+  }
+}
 
 @media screen and (max-width: 730px) {
   .logo-wrap img {
@@ -206,37 +235,7 @@ body {
     display: block;
     z-index: 1000;
     width: 30px;
-  }
-
-  .mobile-menu {
-    position: absolute;
-    top: 45px;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    background-color: #000; opacity: 0.96; filter: alpha(opacity=.86);    color: white;
-    li {
-      padding: 10px 20px;
-      min-width: 300px;
-      a { color: white;
-        text-decoration: none;
-      }
-    }
-    li:hover {
-      background-color: #666;
-      a {
-        color: $yellow;
-      }
-    }
-    hr {
-      border-color: white;
-      opacity: .5;
-      margin: 10px 20px;
-    }
-    strong {
-      color: $yellow;
-    }
+    margin: 0 15px;
   }
 
   .nav {
@@ -505,12 +504,6 @@ body {
   margin-left: 20px;
 }
 
-#mobile-menu-icon {
-  width: 30px;
-  height: auto;
-  margin-right: 15px;
-  align-self: center;
-}
 
 .nav > li:hover > div {
     opacity: 1;
