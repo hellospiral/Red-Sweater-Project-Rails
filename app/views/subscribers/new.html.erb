@@ -97,19 +97,22 @@
 
 
   	<!-- Subscribe section -->
-    <div class="flex">
-      <div class="flex-item-2col yellow-bottom-left">
-        <div class="twocol-left-text">
-					<h2>DON'T MISS A THING</h2>
-					<p>Subscribe to our monthly newsletter to get valuable updates about the school.</p>
-          <%= form_for @subscriber, remote: true do |f| %>
-            <%= f.label :email, 'Email' %>
-            <%= f.email_field :email, class: "form-control" %>
-            <%= f.submit 'Subscribe', class: 'btn btn-min btn-solid' %>
-          <% end %>
-          <%= flash[:notice] %>
-          <%= flash[:alert] %>
+    <div class="ourfocus_donate">
+      <div class="shadow">
+        <div class="flex page-canvas ">
+          <div class="flex-item-2col">
+    					<h2>DON'T MISS A THING</h2>
+    					<p>Subscribe to our monthly newsletter to get valuable updates about the school.</p>
+              <%= form_for @subscriber, remote: true do |f| %>
+                <%= f.label :email, 'Email' %>
+                <%= f.email_field :email, class: "form-control" %>
+                <%= f.submit 'Subscribe', class: 'btn btn-solid' %>
+              <% end %>
+              <%= flash[:notice] %>
+              <%= flash[:alert] %>
+        	</div>
+          <div class="flex-item-2col">
+          </div>
         </div>
-    	</div>
-      <div class="flex-item-2col ourfocus_donate">
-  	  </div>
+      </div>
+    </div>
