@@ -149,13 +149,14 @@ body {
 
 #map-container {
    height: 500px;
-   width: 75%;
+   width: 50%;
    border-radius: 6px 6px;
    border-color: #fff;
    border-style: solid;
    box-shadow: 2px 2px 10px #B1B1B1;
-   margin: 25px 10% 25px 10%;
+   margin: 60px auto 0 auto;
    border-width: 7px;
+   background-color: white;
  }
  #map{
    height: 485px;
@@ -236,7 +237,7 @@ body {
   .logo-wrap img {
     width: 100px;
   }
-  .btn, .btn-secondary {
+  .btn, .btn-secondary, .btn-solid {
     width: 100%;
     max-width: 350px;
   }
@@ -264,7 +265,7 @@ body {
     max-width: 960;
   }
 
-  .flex-item-3col {
+  .flex-item-3col, .flex-item-2col {
     width: 100%;
     max-width: 350px;
     padding: 0 10px;
@@ -277,9 +278,26 @@ body {
   }
 
   .flex-item-2col {
-    width: 100%;
-    padding: 5%;
+    padding: 20px 0;
+    p {
+      width: 330px;
+    }
   }
+
+  .flex-item-2col:last-of-type {
+    overflow: auto;
+    width: 100vw;
+    max-width: 100vw;
+    height: 40vh;
+  }
+
+  .shadow.mobile {
+    display: flex;
+  }
+  .shadow.nonmobile {
+    display: none;
+  }
+
   .flex-item-2col img {
     width: 100%;
     padding: 0px;
@@ -295,21 +313,29 @@ body {
   .flex-item-image {
     margin: 0;
     padding: 0;
-    // height: 25%vh;
+    height: 100px;
     width: 100%;
     img {
       width: 100%;
     }
   }
   .page-canvas.btns-wrapper  {
-    padding-bottom: 60px;
-    margin: 0 auto;
+    // padding-bottom: 60px;
+    // margin: 0 auto;
   }
   .mobile-hr {
     border-color: white;
     display: flex;
   }
+  .btn, input {
+    min-width: 250px;
+    max-width: 350px;
+  }
 }
+
+  .page-canvas > .twocol-left-text {
+    margin-left: 0;
+  }
 
 @media screen and (min-width: 731px) {
 
@@ -366,11 +392,27 @@ body {
   .flex-item-2col {
     width: 50vw;
     padding: 60px 30px 60px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .flex-item-2col:nth-child(1){
+    padding-left: 20px;
+  }
+
+  .flex-item-2col:first-of-type {
+    padding-left: 0;
   }
 
   .flex-item-2col img {
     width: 100%;
     padding: 0px;
+  }
+
+  .shadow.mobile {
+    display: none;
+  }
+  .shadow.nonmobile {
+    display: flex;
   }
 
   .flex-item-1col {
@@ -381,7 +423,7 @@ body {
 
   .flex-item-image {
     margin: 0;
-    padding: 0 0 20px 0;
+    padding: 0;
     width: 100%;
     img {
       width: 100%;
@@ -412,6 +454,14 @@ body {
     color: white;
   }
 }
+.no-top-pad {
+  padding: 0 30px 0 0;
+}
+
+.twocol-left-text {
+  width: 480px;
+  margin: 0 auto 0 0;
+}
 
 .ourfocus_donate {
   color: white;
@@ -419,6 +469,7 @@ body {
   p {
     color: white;
   }
+  height: 100%;
   background: url(../images/ourfocus_donate.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -441,6 +492,7 @@ body {
   height: auto;
   letter-spacing: .5px;
   color: white;
+  padding: 0 0 60px 0;
   li, p, a {
     font-weight: 300;
     color: white;
@@ -633,8 +685,11 @@ h3 {
   font-weight: 700;
 }
 h4 {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 42px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 h5 {
   font-size: 16px;
@@ -689,7 +744,11 @@ li {
   background: white;
   color: $text-blue;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-left: 0;
+}
+
+.with-bottom-padding {
+  margin-bottom: 40px;
 }
 
 .btn.btn-solid {
@@ -698,7 +757,7 @@ li {
   font-weight: 500;
   background: $text-blue;
   color: #fff;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .btn.btn-solid:hover {
   background: #277096;
@@ -892,7 +951,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 1em 0 1em 0;
+  padding: 0;
   width: 100%;
   max-height: 60%;
   background: rgba(15, 15, 15, 0.65);
@@ -924,6 +983,12 @@ header {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 15px;
+  height: auto;
+}
+
+.title-only {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .title-mask {
@@ -1063,7 +1128,6 @@ footer .footer-bar {
   position: absolute;
   bottom:0;
   left:0;
-  margin-top: 0px;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   color: #e5e5e5;
@@ -1087,7 +1151,7 @@ footer .footer-bar {
 }
 
 footer .copyright {
-  width: 500px;
+  width: 1000px;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   font-size: 12px;

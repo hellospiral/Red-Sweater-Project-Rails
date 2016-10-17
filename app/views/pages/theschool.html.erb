@@ -1,16 +1,12 @@
 <div class="page-banner ourfocus">
-  <div class="title-mask">
-    <div class="container">
-      <div class="banner-content">
-        <h2>THE SCHOOL</h2>
-        <div class="short-text">
-
-        </div>
-      </div>
+  <div class="shadow-box">
+    <div class="banner-content page-canvas title-only">
+      <h2>THE SCHOOL</h2>
     </div>
   </div>
 </div>
-<div class="flex">
+
+<div class="flex page-canvas">
   <div class="flex-item-1col">
     <p>The Mungere School is the first middle and high school available to kids in the rural community of Mungere, Tanzania. Every year upwards of 200 families apply for one of the 30 available spots in the incoming class. The Mungere campus serves over 240 students each year, with students in form 2, 3, 4, 5, and 6 (grades 6-12).
     </p>
@@ -25,110 +21,139 @@
   </div>
 </div>
 
+<!-- <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '<%=ENV['INSTAGRAM_USER_ID']%>',
+        accessToken: '<%=ENV['INSTAGRAM_ACCESS_TOKEN']%>',
+        filter: function(image) {
+            return image.tags.indexOf('HAPPINESS') >= 0;
+        }
+    });
+    feed.run();
+</script> -->
 
-<div class="flex blue">
-  <div class="flex-item-1col">
-    <h2>PREPARED FOR SUCCESS</h2>
-    <h5><strong>Our students work hard for... a competitive, high quality education</strong></h5>
-    <ul>
-      <li>• Our volunteer teachers hold MA degrees, and have completed ESL training. They come from around the world, and bring a global perspective to the classroom. We've had superb teachers from such disparate places as: China, Ireland, the United States, Mexico, and Australia.</li>
-      <li>• Mungere students consistently score in the top quarter of schools in the region and in the top 2 in the district (out of 10 schools) in government issued tests.</li>
-      <li>• The Tanzania Ministry of Education has recognized Red Sweater Project as a successful school model that gets results.
-      an atmosphere that promotes gender equality</li>
-      <li>• Boys and girls learn together in the classrooms, and in our athletics program. This approach builds the confidence of female students, and teaches all of the students that everyone has strengths, and they are not defined or limited by gender. </li>
-    </ul>
-    <h5><strong>Sustainably designed, modern facilities</strong></h5>
-    <ul>
-      <li>• Solar power throughout campus has been made possible by the volunteer efforts of Engineers without Borders</li>
-      <li>• Individual solar-powered lanterns for students to use for late night studying</li>
-      <li>• Buildings designed to keep students and faculty cool in the heat and warm when it's cold out without the use of consumable fuels.</li>
-    </ul>
-    <h5><strong>Health care, health education, and sanitation services</strong></h5>
-    <ul>
-      <li>• Clean drinking water is available for all students</li>
-      <li>• Health outreach helps to boost health and prevent disease within the community</li>
-      <li>• If a student gets sick, they're treated. Some of the illnesses commonly treated include: malaria, typhoid and pneumonia</li>
-      <li>• Fresh, nutritious food from our organic school garden and dining facilities, which serves two meals each school day</li>
-      <li>• Campus is equipped with composting toilets and handwashing stations</li>
-    </ul>
-  </div>
-</div>
-
-<div class="flex">
-  <div class="flex-item-intro">
-    <h2>HANDS-ON LEARNING</h2>
-    <p class="description">
-      In addition to their studies in the classroom, students at the Mungere School have the opportunity to participate in our hands-on programs.
-    </p>
-  </div>
-</div>
-<div class="flex">
-  <div class="flex-item-3col">
-    <div class="img-wrapper">
-      <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
-    </div>
-    <div class="focusCopy">
-      <h5><strong>SMALL BUSINESS SKILLS</strong></h5>
-      <p><em>The James B. Nicholson store</em></p>
+<div class="blue">
+  <div class="flex page-canvas">
+    <div class="flex-item-1col">
+      <h2>PREPARED FOR SUCCESS</h2>
+      <h5><strong>Our students work hard for... a competitive, high quality education</strong></h5>
       <ul>
-        <li>• Provides a valued resource for the entire community, where local families can purchase goods and sundries. The next closest market is a 3 mile walk away, and is only open on select days</li>
-        <li>• Is the first ever solar-powered mobile phone and lantern charging station for community members</li>
-        <li>• Gives students the opportunity to apply math and economics coursework to real life scenarios</li>
-        <li>• Creates income for the Mungere School to off-set operational costs</li>
+        <li>• Our volunteer teachers hold MA degrees, and have completed ESL training. They come from around the world, and bring a global perspective to the classroom. We've had superb teachers from such disparate places as: China, Ireland, the United States, Mexico, and Australia.</li>
+        <li>• Mungere students consistently score in the top quarter of schools in the region and in the top 2 in the district (out of 10 schools) in government issued tests.</li>
+        <li>• The Tanzania Ministry of Education has recognized Red Sweater Project as a successful school model that gets results.
+        an atmosphere that promotes gender equality</li>
+        <li>• Boys and girls learn together in the classrooms, and in our athletics program. This approach builds the confidence of female students, and teaches all of the students that everyone has strengths, and they are not defined or limited by gender. </li>
+      </ul>
+      <h5><strong>Sustainably designed, modern facilities</strong></h5>
+      <ul>
+        <li>• Solar power throughout campus has been made possible by the volunteer efforts of Engineers without Borders</li>
+        <li>• Individual solar-powered lanterns for students to use for late night studying</li>
+        <li>• Buildings designed to keep students and faculty cool in the heat and warm when it's cold out without the use of consumable fuels.</li>
+      </ul>
+      <h5><strong>Health care, health education, and sanitation services</strong></h5>
+      <ul>
+        <li>• Clean drinking water is available for all students</li>
+        <li>• Health outreach helps to boost health and prevent disease within the community</li>
+        <li>• If a student gets sick, they're treated. Some of the illnesses commonly treated include: malaria, typhoid and pneumonia</li>
+        <li>• Fresh, nutritious food from our organic school garden and dining facilities, which serves two meals each school day</li>
+        <li>• Campus is equipped with composting toilets and handwashing stations</li>
       </ul>
     </div>
   </div>
-  <div class="flex-item-3col">
-    <div class="img-wrapper">
-      <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+</div>
+
+
+  <div class="page-canvas">
+    <div class="flex">
+      <div class="flex-item-1col intro">
+        <h2>HANDS-ON LEARNING</h2>
+        <p class="description">
+          In addition to their studies in the classroom, students at the Mungere School have the opportunity to participate in our hands-on programs.
+        </p>
+      </div>
+  </div>
+  <div class="flex">
+    <div class="flex-item-3col">
+      <div class="img-wrapper">
+        <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+      </div>
+      <div class="focusCopy">
+        <h5><strong>SMALL BUSINESS SKILLS</strong></h5>
+        <p><em>The James B. Nicholson store</em></p>
+        <ul>
+          <li>• Provides a valued resource for the entire community, where local families can purchase goods and sundries. The next closest market is a 3 mile walk away, and is only open on select days</li>
+          <li>• Is the first ever solar-powered mobile phone and lantern charging station for community members</li>
+          <li>• Gives students the opportunity to apply math and economics coursework to real life scenarios</li>
+          <li>• Creates income for the Mungere School to off-set operational costs</li>
+        </ul>
+      </div>
     </div>
-    <div class="focusCopy">
-      <h5><strong>NUTRITION AND AGRICULTURE</strong></h5>
-      <p><em>The Mungere School Garden</em></p>
-      <ul>
-        <li>• Produces organic food for school meals, reducing operational costs and increasing campus sustainability</li>
-        <li>• Provides hands-on experience for agriculture class coursework. Many of our students come from pastorial tribes, and the knowledge they gain from garden work is directly applied to their own family's gardening practices.</li>
-        <li>• Creates income. Produce is sold at the school store to fund ongoing operations, while providing affordable, nutritious food to the local community. </li>
-      </ul>
+    <div class="flex-item-3col">
+      <div class="img-wrapper">
+        <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+      </div>
+      <div class="focusCopy">
+        <h5><strong>NUTRITION AND AGRICULTURE</strong></h5>
+        <p><em>The Mungere School Garden</em></p>
+        <ul>
+          <li>• Produces organic food for school meals, reducing operational costs and increasing campus sustainability</li>
+          <li>• Provides hands-on experience for agriculture class coursework. Many of our students come from pastorial tribes, and the knowledge they gain from garden work is directly applied to their own family's gardening practices.</li>
+          <li>• Creates income. Produce is sold at the school store to fund ongoing operations, while providing affordable, nutritious food to the local community. </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-item-3col">
+      <div class="img-wrapper">
+        <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+      </div>
+      <div class="focusCopy">
+        <h5><strong>LEADERSHIP AND TEAMWORK</strong></h5>
+        <p><em>The Mungere Athletics Program</em></p>
+        <p>
+          Sometimes lessons in teamwork, dedication and respect are taught best by doing. That's why time for athletics is built into each school week, and encouraged outside of class.
+        </p>
+        <p>
+          Tasiana is a prime example. She is the first girl in the region to play on an all boys soccer team, and has been recognized by her fellow classmates as well as FIFA for her skills and leadership on the soccer pitch.
+        </p>
+      </div>
     </div>
   </div>
-  <div class="flex-item-3col">
-    <div class="img-wrapper">
-      <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+  <div class="flex">
+    <div class="btns-wrapper with-bottom-padding">
+      <%= link_to 'Sponsor a program on campus', "students_path", :class => "btn btn-solid" %>
     </div>
-    <div class="focusCopy">
-      <h5><strong>LEADERSHIP AND TEAMWORK</strong></h5>
-      <p><em>The Mungere Athletics Program</em></p>
+  </div>
+</div>
+
+
+<div class="blue">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <h2>ABOUT TANZANIA, EAST AFRICA</h2>
       <p>
-        Sometimes lessons in teamwork, dedication and respect are taught best by doing. That's why time for athletics is built into each school week, and encouraged outside of class.
+        Tanzania is an East African country known for its beautiful wilderness areas. They include the Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the lush tropical islands of Zanzibar and Mafia Marine Park.
+      </p><br>
+      <p>
+        The Mungere School is located just an hour and a half from Kilimanjaro airport, next to the great rift wall. Swahili is the national language of Tanzania, but by the time students graduate from Mungere, they are trilingual, speaking English, Swahili and their native tribal tongue such as Kimasai, Kirangi or Kichagga.
+      </p>
+      <br>
+      <p>
+        <a href="#">Download our Africa factsheet</a>
       </p>
       <p>
-        Tasiana is a prime example. She is the first girl in the region to play on an all boys soccer team, and has been recognized by her fellow classmates as well as FIFA for her skills and leadership on the soccer pitch.
+        <a href="#">See some beautiful photos by National Geographic</a>
       </p>
     </div>
+    <div class="page-canvas flex-item-2col" id="map-container">
+      <div id="map">
+      </div>
+    </div>
   </div>
+
+
 </div>
-<div class="flex" id="map-container">
-  <div class="flex-item-1col school-map" id="map"></div>
-</div>
-<div class="flex blue">
-  <div class="flex-item-1col">
-    <h2>ABOUT TANZANIA, EAST AFRICA</h2>
-    <p>
-      Tanzania is an East African country known for its beautiful wilderness areas. They include the Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the lush tropical islands of Zanzibar and Mafia Marine Park.
-    </p><br>
-    <p>
-      The Mungere School is located just an hour and a half from Kilimanjaro airport, next to the great rift wall. Swahili is the national language of Tanzania, but by the time students graduate from Mungere, they are trilingual, speaking English, Swahili and their native tribal tongue such as Kimasai, Kirangi or Kichagga.
-    </p>
-    <br>
-    <p>
-      <a href="#">Download our Africa factsheet</a>
-    </p>
-    <p>
-      <a href="#">See some beautiful photos by National Geographic</a>
-    </p>
-  </div>
-</div>
+
 <div class="flex">
   <div class="flex-item-2col yellow-bottom-left">
     <div class="twocol-left-text">
@@ -167,17 +192,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: '<%=ENV['INSTAGRAM_USER_ID']%>',
-        accessToken: '<%=ENV['INSTAGRAM_ACCESS_TOKEN']%>',
-        // filter: function(image) {
-        //     return image.tags.indexOf('HAPPINESS') >= 0;
-        // }
-    });
-    feed.run();
-</script>
 
 <script type="text/javascript">
 handler = Gmaps.build('Google');
