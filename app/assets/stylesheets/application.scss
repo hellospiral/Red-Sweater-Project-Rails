@@ -194,6 +194,10 @@ body {
   justify-content: space-between;
   padding-top: 0;
 }
+.dropdown-menu {
+  top: 60px;
+  width: 100%;
+}
 
 .mobile-menu {
   position: absolute;
@@ -205,7 +209,7 @@ body {
   background-color: #000; opacity: 0.92; filter: alpha(opacity=.86);    color: white;
   li {
     padding: 10px 20px;
-    min-width: 400px;
+    min-width: 300px;
     width: 100vw;
     a { color: white;
       text-decoration: none;
