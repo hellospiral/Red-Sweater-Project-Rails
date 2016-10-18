@@ -1,4 +1,4 @@
-<div class="page-banner ourfocus">
+<!-- <div class="page-banner ourfocus">
   <div class="shadow-box">
     <div class="banner-content page-canvas title-only">
       <h2>THE SCHOOL</h2>
@@ -19,7 +19,7 @@
     <h5><strong>SOMETIMES IT REALLY DOES TAKE A VILLAGE</strong></h5>
     <p>The Parent Action commity as well as the local tribal government are activley involved with the school. Meetings are held regularly to share ideas, and problem solve as a community.</p>
   </div>
-</div>
+</div> -->
 
 <!-- <script type="text/javascript">
     var feed = new Instafeed({
@@ -33,7 +33,7 @@
     feed.run();
 </script> -->
 
-<div class="blue">
+<!-- <div class="blue">
   <div class="flex page-canvas">
     <div class="flex-item-1col">
       <h2>PREPARED FOR SUCCESS</h2>
@@ -59,6 +59,9 @@
         <li>• Fresh, nutritious food from our organic school garden and dining facilities, which serves two meals each school day</li>
         <li>• Campus is equipped with composting toilets and handwashing stations</li>
       </ul>
+      <div class="btns-wrapper">
+        <a href="/pages/ourfocus" class="btn btn-secondary"><span>Learn more about our focus</span></a>
+      </div>
     </div>
   </div>
 </div>
@@ -90,6 +93,7 @@
       </div>
     </div>
     <div class="flex-item-3col">
+      <hr class="mobile-hr yellow-hr">
       <div class="img-wrapper">
         <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
       </div>
@@ -104,6 +108,7 @@
       </div>
     </div>
     <div class="flex-item-3col">
+      <hr class="mobile-hr yellow-hr">
       <div class="img-wrapper">
         <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
       </div>
@@ -133,11 +138,8 @@
       <h2>ABOUT TANZANIA, EAST AFRICA</h2>
       <p>
         Tanzania is an East African country known for its beautiful wilderness areas. They include the Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the lush tropical islands of Zanzibar and Mafia Marine Park.
-      </p><br>
-      <p>
         The Mungere School is located just an hour and a half from Kilimanjaro airport, next to the great rift wall. Swahili is the national language of Tanzania, but by the time students graduate from Mungere, they are trilingual, speaking English, Swahili and their native tribal tongue such as Kimasai, Kirangi or Kichagga.
       </p>
-      <br>
       <p>
         <a href="#">Download our Africa factsheet</a>
       </p>
@@ -150,48 +152,53 @@
       </div>
     </div>
   </div>
-
-
 </div>
 
-<div class="flex">
-  <div class="flex-item-2col yellow-bottom-left">
-    <div class="twocol-left-text">
-      <h2>OUR FOCUS</h2>
-      <p>Quality education, gender equality and responsible innovation .Learn how our focus is making an impact in Mungere Village.</p>
-      <div class="btns-wrapper">
-        <a href="/pages/ourfocus" class="btn btn-big btn-secondary"><span>LEARN ABOUT OUR FOCUS</span></a>
-      </div>
-    </div>
-  </div>
-  <div class="flex-item-2col ourfocus_donate">
-    <div class="twocol-right-text">
-      <h2>INVEST IN A BETTER WORLD</h2>
-      <p>Sending a girl in the developing world to secondary school has a higher return on investment than any other effort.*
-      </p>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Choose your gift
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">25</a></li>
-          <li><a href="#">50</a></li>
-          <li><a href="#">100</a></li>
-          <li><a href="#">500</a></li>
-          <li><a href="#">1000</a></li>
-        </ul>
-        <p class="quote-source">
-          <a href="*HTTP://IIPDIGITAL.USEMBASSY.GOV/ST/ENGLISH/PUBLICATION/2011/06/20110624094
-          700AIDAN0.9995037.HTML#AXZZ3XPFM408W">*STATISTIC SOURCE</a>
+<div class="yellow">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>INVEST IN A <br>BETTER WORLD</h2>
+        <p>Sending a girl in the developing world to secondary school has a higher return on investment than any other effort.*
         </p>
-        <div class="btns-wrapper btn-yellow">
-          <a href="#" class="btn btn-big btn-solid"><span>DONATE</span></a>
-        </div>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Choose your gift
+            <span class="caret"></span>
+          </button>
+          <div class="btns-wrapper">
+            <a href="#" class="btn btn-solid"><span>DONATE</span></a>
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">25</a></li>
+            <li><a href="#">50</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">500</a></li>
+            <li><a href="#">1000</a></li>
+          </ul>
+          <p class="quote-source">
+            <a href="*HTTP://IIPDIGITAL.USEMBASSY.GOV/ST/ENGLISH/PUBLICATION/2011/06/20110624094
+            700AIDAN0.9995037.HTML#AXZZ3XPFM408W">*STATISTIC SOURCE</a>
+          </p>
+      </div>
+    </div>
+  </div>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col ourfocus_donate">
       </div>
     </div>
   </div>
 </div>
+<div class="shadow mobile">
+  <div class="flex-item-2col ourfocus_donate">
+  </div>
+</div>
+
+
+
+
+
+
 
 <script type="text/javascript">
 handler = Gmaps.build('Google');
@@ -199,7 +206,7 @@ handler.buildMap({ provider: {disableDefaultUI: true}, internal: {id: 'map'}}, f
   markers = handler.addMarkers([
     {
       "lat": -3.35,
-      "lng": 35.85,
+      "lng": 35.85, -->
       // "picture": {
       //   "url": "/images/RSPlogo_175x59.png",
       //   "width":  32,
@@ -212,4 +219,4 @@ handler.buildMap({ provider: {disableDefaultUI: true}, internal: {id: 'map'}}, f
   handler.fitMapToBounds();
   handler.getMap().setZoom(6);
 });
-</script>
+<!-- </script> -->

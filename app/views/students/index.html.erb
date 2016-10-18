@@ -1,19 +1,14 @@
 <div class="page-banner sponsor">
-  <div class="parallax-mask">
-    <div class="container">
-      <div class="banner-content">
-        <h2>We are <span style="color:#fdbe16;">so proud</span><br/>of our sponsored<br />student, Ashura</h2>
-        <h5>Don and Jessie A.</h5>
-        <div class="short-text">
-
-        </div>
-      </div>
+  <div class="shadow-box">
+    <div class="banner-content page-canvas">
+      <h2>"We are <span style="color:#fdbe16;">so proud</span> of our sponsored student, Ashura"</h2>
+      <p><strong class="white-text">--Don and Jessie A.</strong></p>
     </div>
   </div>
 </div>
 
     <!-- Intro -->
-    <div class="flex">
+    <div class="flex page-canvas">
     	<div class="flex-item-1col">
 				<h2>SPONSOR A STUDENT</h2>
         <h5><strong>$125 per month or $1,500 a year</strong></h5>
@@ -40,23 +35,25 @@
 
       <hr>
 
-  <div class="container">
-    <h2>STUDENTS LOOKING FOR SPONSORS</h2>
-    <div class="row">
-        <% @students.each do |student| %>
-          <div class="col-sm-3 sponsor-students">
-            <%= image_tag("#{student.image}.png") %>
-            <h4><strong><%= student.name %></strong></h4>
-            <p><em><%= student.age %> year-old <%= student.gender %></em><br>
-            I want to become: <br>A <%= student.dream %></p>
-            <% if student.sponsored %>
-              <p><strong>Sponsored!</strong></p>
-            <% else %>
-              <%= link_to "Sponsor #{student.name}", students_path, :class => "btn btn-default" %>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
+  <div class="flex page-canvas">
+    <div class="flex-item-1col intro">
+      <h2>STUDENTS LOOKING FOR SPONSORS</h2>
+    </div>
+  </div>
+  <div class="flex page-canvas items-wrap">
+    <% @students.each do |student| %>
+      <div class="flex-item-3col sponsor-students">
+        <%= image_tag("#{student.image}.png") %>
+          <h5><strong><%= student.name %></strong></h5>
+          <p><em><%= student.age %> year-old <%= student.gender %></em><br>
+          I want to become: <br>A <%= student.dream %></p>
+          <% if student.sponsored %>
+            <p><strong>Sponsored!</strong></p>
+          <% else %>
+            <%= link_to "Sponsor", students_path, :class => "btn btn-yellow" %>
+          <% end %>
+        </div>
+    <% end %>
   </div>
 
   <div class="flex">
