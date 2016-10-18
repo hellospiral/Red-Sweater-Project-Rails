@@ -37,7 +37,7 @@
 
   <div class="flex page-canvas">
     <div class="flex-item-1col intro">
-      <h2>STUDENTS LOOKING FOR SPONSORS</h2>
+      <h2>SPONSOR A STUDENT</h2>
     </div>
   </div>
   <div class="flex page-canvas items-wrap">
@@ -56,7 +56,8 @@
     <% end %>
   </div>
 
-  <div class="flex">
+<div class="blue">
+  <div class="flex page-canvas">
     <div class="flex-item-1col">
       <h2>SPONSOR A GOOD CAUSE ON CAMPUS</h2>
       <h5><strong>Choose your gift amount and your cause</strong></h5>
@@ -65,36 +66,49 @@
       </p>
     </div>
   </div>
+</div>
 
-  <hr>
-
-  <div class="container" id="causes">
+<div class="flex page-canvas">
+  <div class="flex-item-1col intro">
     <h2>GOOD CAUSES ON CAMPUS</h2>
-    <div class="row">
-      <% if @goodcauses.any? %>
-        <% @goodcauses.each do |cause| %>
-          <div class="col-sm-3 sponsor-students">
-            <%= image_tag("#{cause.image}.png") %>
-            <h4><strong><%= cause.name %></strong></h4>
-            <p>Cost to completion: <br>
-              $<%= cause.cost %></p>
-              <%= link_to "Sponsor #{cause.name}", students_path, :class => "btn btn-default" %>
-          </div>
-          <% end %>
-        <% end %>
-      </div>
   </div>
+</div>
+<div class="flex page-canvas items-wrap">
+  <% if @goodcauses.any? %>
+    <% @goodcauses.each do |cause| %>
+      <div class="flex-item-3col sponsor-students">
+        <%= image_tag("#{cause.image}.png") %>
+        <h5><strong><%= cause.name %></strong></h5>
+        <p>Cost to completion: <br>
+          $<%= cause.cost %></p>
+          <%= link_to "Sponsor", students_path, :class => "btn btn-yellow" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
 
 
-<div class="flex bottom-twocol">
-  <div class="flex-item-2col yellow-bottom-left">
-    <div class="twocol-left-text">
-      <h2>STORIES FROM STUDENTS AND STAFF</h2>
-      <p>Explore true stories to learn more about our students and staff, and the work being done at the Mungere School.</p>
-      <div class="btns-wrapper">
-        <a href="/posts" class="btn btn-big btn-secondary"><span>EXPLORE THE BLOG</span></a>
+<div class="yellow">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>STORIES FROM STUDENTS AND STAFF</h2>
+        <p>
+          Explore true stories to learn more about our students and staff, and the work being done at the Mungere School.
+        </p>
+        <div class="btns-wrapper">
+          <a href="#" class="btn btn-secondary">EXPLORE THE BLOG</a>
+        </div>
+      </div>
+    </div>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col sponsor_bottom">
       </div>
     </div>
   </div>
+  </div>
+</div>
+<div class="shadow mobile">
   <div class="flex-item-2col sponsor_bottom">
   </div>
+</div>

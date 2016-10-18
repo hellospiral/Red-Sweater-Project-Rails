@@ -232,6 +232,10 @@ body {
     justify-content: center;
   }
 
+  .flex.page-canvas.items-wrap {
+    justify-content: center;
+  }
+
   .logo-wrap img {
     width: 100px;
   }
@@ -548,6 +552,7 @@ body {
   padding-bottom: 0;
   margin-bottom: 0;
   max-width: 960px;
+  margin-left: 0;
 }
 
 .flex-item-image {
@@ -563,6 +568,7 @@ body {
 
 .flex.page-canvas.items-wrap {
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .yellow {
@@ -581,21 +587,24 @@ body {
   margin: 0 auto 0 0;
 }
 
-.ourfocus_donate {
+.ourfocus_donate, .sponsor_bottom {
   color: white;
   text-shadow: 2px 2px 8px #333;
   p {
     color: white;
   }
   height: 100%;
+  .btn, li {
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+.ourfocus_donate {
   background: url(../images/ourfocus_donate.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .btn, li {
-    text-shadow: 0 0 0 #000;
-  }
 }
 
 .col-sm-8 {
