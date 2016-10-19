@@ -629,7 +629,12 @@ body {
   #tim-arrow-up,
   #rachel-arrow-up,
   #zoe-arrow-up,
-  #board-ada-arrow-up
+  #board-ada-arrow-up,
+  #board-sarah-arrow-up,
+  #board-alan-arrow-up,
+  #board-erika-arrow-up,
+  #advisory-jenny-arrow-up
+  #advisory-arrow-up
    {
     display: none;
   }
@@ -640,7 +645,7 @@ body {
   height: 100px;
 }
 
-#staff, #staff-arrow-up, #board, #board-arrow-up {
+#staff, #staff-arrow-up, #board, #board-arrow-up, #advisory-arrow-up, #advisory {
   display: none;
 }
 .no-margin-bottom {
@@ -655,7 +660,11 @@ body {
 #tim-details,
 #rachel-details,
 #zoe-details,
-#board-ada-details
+#board-ada-details,
+#board-sarah-details,
+#board-alan-details,
+#board-erika-details,
+#advisory-jenny-details
 {
   display: none;
 }
