@@ -586,6 +586,9 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  .article {
+    width: 100%;
+  }
   .social-media-icons {
     display: flex;
     justify-content: space-between;
@@ -675,6 +678,10 @@ body {
 }
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
 }
 
 #ashley-details,
