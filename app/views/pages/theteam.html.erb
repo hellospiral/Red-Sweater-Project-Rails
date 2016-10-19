@@ -6,20 +6,26 @@
     </div>
   </div>
 </div>
-
 <div class="flex">
   <div class="page-canvas">
-      <div class="flex-item-staff">
-        <h2>STAFF</h2>
-      </div>
+    <div class="flex-item-staff staff">
       <hr class="no-margin-bottom">
-    <div class="flex-item-staff">
-      <div>
+      <div class="social-media-icons">
+        <h2 class="yellow-text">STAFF</h2>
+        <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "staff-arrow-down")%>
+        <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "staff-arrow-up")%>
+
+        </div>
+      </div>
+
+<!-- STAFF MEMBERS -->
+    <div class="flex-item-staff" id="staff">
+        <hr class="no-margin-bottom">
         <div class="social-media-icons">
-        <%= image_tag("event_detroit.jpg", :class => "staff-photo")%>
+          <%= image_tag("staff/ashley.jpg", :class => "staff-photo")%>
           <div class="title">
             <div class="name">
-              <h5 class="no-top-pad">Ashley Holmer, </h5>
+              <h5 class="no-top-pad">Ashley Holmer </h5>
               <p><em>
                 Founder and Executive Director
               </em></p>
@@ -31,21 +37,364 @@
             <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "ashley-arrow-down")%>
             <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "ashley-arrow-up")%>
         </div>
-        <hr>
+
+        <hr class="no-margin-bottom">
         <div class="social-media-icons">
-        <%= image_tag("event_detroit.jpg", :class => "staff-photo")%>
-          <div>
-            <h5 class="no-top-pad">Ashley Holmer, </h5>
-            <p><em>
-              Founder and Executive Director
-            </em></p>
-            <p>
-              In 2005, Ashley Holmer moved from Portland, Oregon, to Tanzania to work as an English teacher and soccer coach in a Maasai village. Toward the end of her year-long post, the leaders of a nearby village offered 20 acres of donated land on which to build the community’s first secondary school. Ten years later and Ashley has opened two secondary schools in rural areas of the country and serves as an advocate for girl’s education in Tanzania and around the world.
+          <%= image_tag("staff/ada.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Ada Banasik </h5>
+              <p><em>
+                Programs Director, Volunteer
+              </em></p>
+            </div>
+            <p id="ada-details">
+              As Programs Director, Ada Banasik manages the organization's volunteer and sponsorship programs. She also serves on the Board of Directors. An environmental engineer with over 9 years of experience in stormwater treatment, remedial design, low-impact development, construction management, and field investigations, Banasik oversees the design and implementation of all water and sanitation projects.
             </p>
           </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "ada-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "ada-arrow-up")%>
         </div>
+
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/joyce.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Joyce Kinyange, MA</h5>
+              <p><em>
+                Communications & Marketing Manager
+              </em></p>
+            </div>
+            <p id="joyce-details">
+              Fluent in four languages, Ms. Kinyange brings her expertise to the Red Sweater Project team in the areas of non-profit coordination, grant writing, language studies and law.
+
+              Ms. Kinyange currently serves as Country Coordinator for IPSL Tanzania, managing in-country study abroad programs. Having served as an online coordinator and camp director for the Center for Applied Second Language Studies, Joyce headed up pilot programs and databases including the training of new clients. She has also assisted with program management at the NPO Clinic Law School, the Domestic Violence Clinic Law School at her alma mater, and Womenspace.
+
+              Ms. Kinyange graduated cum laude with her Bachelor of Arts in International Studies (2011) and her Masters of Arts in Peace Studies, Conflict and Dispute Resolution (2013)  from the University of Oregon. She is a recipient of the John Haines African Student Scholarship and International Dean's Excellency Award.
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "joyce-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "joyce-arrow-up")%>
+        </div>
+
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/lindsay.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Lindsay Pour, MSc</h5>
+              <p><em>
+                Entrepreneurship &amp; Sustainability Coordinator, Volunteer
+              </em></p>
+            </div>
+            <p id="lindsay-details">
+              With over six years of experience in program administration and management, Lindsay Pour is responsible for spearheading the creation of developmental models focused on sustainability and entrepreneurial concepts. This includes financial sustainability planning as well as revenue-generating program development.
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "lindsay-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "lindsay-arrow-up")%>
+        </div>
+
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/julia.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Julia Dickey</h5>
+              <p><em>
+                Creative Director, Volunteer
+              </em></p>
+            </div>
+            <p id="julia-details">
+              Julia Dickey joins the staff of Red Sweater Project having worked with some of the most prominent designers and firms in the industry. She handles organizational design related to print and web, including event planning and execution, branding, and promotional materials.
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "julia-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "julia-arrow-up")%>
+        </div>
+
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/tim.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Tim Sexton</h5>
+              <p><em>
+                IT Director, Volunteer
+              </em></p>
+            </div>
+            <p id="tim-details">
+              With over 17 years of experience in various technology roles, Tim Sexton oversees and consults to the technological direction of Red Sweater Project. In addition to this role, he serves Mungere Secondary School as a hands-on health professional to both students and local community members. Sexton currently manages his technology consulting business, Databridge Solutions, which has been operating for the past 10 years.
+
+              Mr. Sexton received his Bachelor of Arts in Applied Physics from Rutgers University (1995) and is currently finishing his clinical work for Medical Assisting in Portland, Oregon.
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "tim-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "tim-arrow-up")%>
+        </div>
+
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/rachel.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Rachel Clark</h5>
+              <p><em>
+                Ambassador Program Liaison, Volunteer
+              </em></p>
+            </div>
+            <p id="rachel-details">
+              With over 15 years of experience in relationship development and program management in the biotech sector, Rachel Clark's role as Ambassador Liaison is to align supporters with the mission and goals of the organization. Clark's additional area of interest is in public health.
+
+              In 2012, she worked in Tanzania with the organization as a Community Health Officer, where she conducted public health resources assessments and also taught health and hygiene classes at Mungere Secondary School. Clark has delivered hundreds of scientific lectures on various infectious disease topics and is a member of the American Public Health Association, Infectious Disease Society of America, American Society of Microbiology and Association for Professionals in Infection Control and Epidemiology.
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "rachel-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "rachel-arrow-up")%>
+        </div>
+
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/zoe.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Zoe Keve</h5>
+              <p><em>
+                Programs Assistant Intern, Volunteer
+              </em></p>
+            </div>
+            <p id="zoe-details">
+              Zoe Keve joins Red Sweater Project pursuing outreach activities, data management, grant research and writing. Previously working with the Institute for Environmental Solutions, Keve brings experience in project management, grant writing, donor outreach and volunteer coordination. Her environmental science background combines experience in environmental policy research, educational outreach, water quality testing and system maintenance.
+
+              Ms. Keve received her Bacholors of Arts in Environmental Science from Colorado College (2009). Her undergraduate work included study at the University of Dar es Salaam in Tanzania, focusing on the Kiswahili language, ecology of the Serengeti and pursuing field research in the Ngorongoro Conservation Area surveying the shifting microeconomic trends of the Maasai tribespeople.
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "zoe-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "zoe-arrow-up")%>
+        </div>
+
+
+
+      </div>
+  <!-- BOARD OF DIRECTORS -->
+
+    <div class="flex-item-staff">
+
+      <hr class="no-margin-bottom">
+      <div class="social-media-icons">
+        <h2 class="yellow-text">BOARD OF DIRECTORS</h2>
+        <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "board-arrow-down")%>
+        <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "board-arrow-up")%>
       </div>
 
+      <div class="flex-item-staff" id="board">
+        <hr class="no-margin-bottom">
+        <div class="social-media-icons">
+          <%= image_tag("staff/ada.jpg", :class => "staff-photo")%>
+          <div class="title">
+            <div class="name">
+              <h5 class="no-top-pad">Ada Banasik </h5>
+              <p><em>
+                Qualifying Skills/Expertise
+              </em></p>
+            </div>
+            <p id="board-ada-details">
+              Ada Banasik is an environmental engineer with over 9 years of experience in stormwater treatment, remedial design, low-impact development, construction management, and field investigations.
+
+              In addition to being a Board Member, Ms. Banasik serves as Red Sweater Project's Programs Director, managing the volunteer and sponsorship programs, and oversees the design and implementation of Mungere's water and sanitation projects. As member of the Portland Professionals Chapter of Engineers Without Borders (EWB), Ms. Banasik was involved in the design and implementation of composting toilets and rainwater harvesting projects in both Ecuador and Tanzania and currently serves as a liason between EWB and Red Sweater Project.
+
+            </p>
+          </div>
+            <%= image_tag("arrow-down.svg", :class => "arrow-down", :id => "board-ada-arrow-down")%>
+            <%= image_tag("arrow-up.svg", :class => "arrow-down", :id => "board-ada-arrow-up")%>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
+
+
+
+<div class="yellow">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>WHAT MAKES THE SCHOOL UNIQUE?</h2>
+        <p>
+          It’s a long way from Tanzania, East Africa, to Detroit. Hear how our founder, Ashley Holmer, first saw the potential in a red sweater. And explore our timeline to see how far we’ve come since 2005.
+        </p>
+        <div class="btns-wrapper">
+          <a href="#" class="btn btn-secondary"><span>LEARN HOW IT ALL BEGAN</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col ourfocus_donate">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="shadow mobile">
+  <div class="flex-item-2col ourfocus_donate">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+
+  $('#ashley-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#ashley-details').toggle(700);
+    $('#ashley-arrow-down').hide();
+    $('#ashley-arrow-up').show();
+  });
+  $('#ashley-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#ashley-details').toggle(700);
+    $('#ashley-arrow-down').show();
+    $('#ashley-arrow-up').hide();
+  });
+
+  $('#ada-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#ada-details').toggle(700);
+    $('#ada-arrow-down').hide();
+    $('#ada-arrow-up').show();
+  });
+  $('#ada-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#ada-details').toggle(700);
+    $('#ada-arrow-down').show();
+    $('#ada-arrow-up').hide();
+  });
+  $('#joyce-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#joyce-details').toggle(700);
+    $('#joyce-arrow-down').hide();
+    $('#joyce-arrow-up').show();
+  });
+  $('#joyce-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#joyce-details').toggle(700);
+    $('#joyce-arrow-down').show();
+    $('#joyce-arrow-up').hide();
+  });
+  $('#lindsay-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#lindsay-details').toggle(700);
+    $('#lindsay-arrow-down').hide();
+    $('#lindsay-arrow-up').show();
+  });
+  $('#lindsay-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#lindsay-details').toggle(700);
+    $('#lindsay-arrow-down').show();
+    $('#lindsay-arrow-up').hide();
+  });
+
+  $('#julia-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#julia-details').toggle(700);
+    $('#julia-arrow-down').hide();
+    $('#julia-arrow-up').show();
+  });
+  $('#julia-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#julia-details').toggle(700);
+    $('#julia-arrow-down').show();
+    $('#julia-arrow-up').hide();
+  });
+
+  $('#tim-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#tim-details').toggle(700);
+    $('#tim-arrow-down').hide();
+    $('#tim-arrow-up').show();
+  });
+  $('#tim-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#tim-details').toggle(700);
+    $('#tim-arrow-down').show();
+    $('#tim-arrow-up').hide();
+  });
+
+  $('#rachel-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#rachel-details').toggle(700);
+    $('#rachel-arrow-down').hide();
+    $('#rachel-arrow-up').show();
+  });
+  $('#rachel-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#rachel-details').toggle(700);
+    $('#rachel-arrow-down').show();
+    $('#rachel-arrow-up').hide();
+  });
+
+  $('#zoe-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#zoe-details').toggle(700);
+    $('#zoe-arrow-down').hide();
+    $('#zoe-arrow-up').show();
+  });
+  $('#zoe-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#zoe-details').toggle(700);
+    $('#zoe-arrow-down').show();
+    $('#zoe-arrow-up').hide();
+  });
+
+  $('#staff-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#staff').toggle(700);
+    $('#staff-arrow-down').hide();
+    $('#staff-arrow-up').show();
+  });
+  $('#staff-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#staff').toggle(700);
+    $('#staff-arrow-down').show();
+    $('#staff-arrow-up').hide();
+  });
+
+  // BOARD MEMBERS
+
+  $('#board-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#board').toggle(700);
+    $('#board-arrow-down').hide();
+    $('#board-arrow-up').show();
+  });
+  $('#board-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#board').toggle(700);
+    $('#board-arrow-down').show();
+    $('#board-arrow-up').hide();
+  });
+
+  $('#board-ada-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#board-ada-details').toggle(700);
+    $('#board-ada-arrow-down').hide();
+    $('#board-ada-arrow-up').show();
+  });
+  $('#board-ada-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#board-ada-details').toggle(700);
+    $('#board-ada-arrow-down').show();
+    $('#board-ada-arrow-up').hide();
+  });
+
+});
+</script>
