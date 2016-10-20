@@ -33,6 +33,7 @@ group :development, :test do
   gem 'letter_opener'
   gem 'poltergeist', '~> 1.10.0'
   gem 'database_cleaner'
+  gem 'stripe'
 end
 
 group :development do

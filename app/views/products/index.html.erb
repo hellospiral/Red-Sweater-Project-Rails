@@ -33,7 +33,7 @@
       <% @listings.each do |listing| %>
       <div class="flex-item-3col space-around">
 
-        <a href="<%= listing.url %>">
+        <a href="<%= listing.url %>" target="_blank">
         <%= image_tag(listing.images.first.full) %>
         <h5><%=listing.title%></h5>
         <p class="price">$<%= listing.price %></p>
