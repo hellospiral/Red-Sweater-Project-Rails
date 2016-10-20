@@ -11,8 +11,10 @@ Rails.application.routes.draw do
   resources :goodcauses
   resources :products, :only => [:index]
   resources :schools, :only => [:index]
+  resources :contacts, :only => [:new, :create]
   resources :posts
 
   get "/pages/:page" => "pages#show"
+  get "/contacts" => "contacts#new"
   root "subscribers#new", page: "home"
 end

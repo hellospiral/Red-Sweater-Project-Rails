@@ -1,0 +1,80 @@
+<!-- Banner -->
+<div class="page-banner team">
+  <div class="shadow-box">
+    <div class="banner-content page-canvas title-only">
+      <h2>CONTACT</h2>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="page-canvas">
+  <div class="flex">
+    <div class="flex-item-staff">
+      <hr class="no-margin-bottom">
+      <div class="social-media-icons">
+        <h2 class="yellow-text">CONTACT US</h2>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="page-canvas">
+  <hr class="no-margin-top">
+  <div class="flex">
+    <h5 class="alert-success"><%= flash[:notice] %></h5>
+    <div class="flex-item-2col">
+      <h2>WE'D LOVE TO HEAR FROM YOU</h2>
+      <p>
+        If you have a question about giving to Red Sweater Project, please read our <a href="pages/faq"><strong>FAQs</strong></a>. If you have additional questions or suggestions, fill out the form below and we will get back to you as soon as possible.
+      </p>
+
+
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <%= f.input :name, :required => true, :input_html => { :wrap => :soft, :rows => 2}, :label => 'Your name:', :label_html => { :class => 'type' } %>
+        <%= f.input :email, :required => true %>
+        <%= f.input :message, :as => :text, :required => true %>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <%= f.button :submit, 'Send message', :class=> "btn btn-solid" %>
+      <% end %>
+    </div>
+    <div class="blue rounded flex">
+      <div>
+        <h5>MAILING ADDRESS</h5>
+        <h5>Oregon Headquarters:</h5>
+        <p>
+          1000 SW Forest Meadows Way <br/>Lake Oswego, OR 97034
+        </p>
+        <h5>Letters for students should be sent to:</h5>
+        <p>
+          PO BOX 123TanzaniaEast Africa
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="yellow">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>DON'T MISS THE LATEST</h2>
+        <p>
+          It’s a long way from Tanzania, East Africa, to Detroit. Hear how our founder, Ashley Holmer, first saw the potential in a red sweater. And explore our timeline to see how far we’ve come since 2005.
+        </p>
+        <div class="btns-wrapper">
+          <a href="#" class="btn btn-secondary"><span>CHECK OUT THE BLOG</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col ourfocus_donate">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="shadow mobile">
+  <div class="flex-item-2col ourfocus_donate">
+  </div>
+</div>

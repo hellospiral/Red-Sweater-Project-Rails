@@ -23,7 +23,7 @@
       <div class="navigation">
         <% if user_signed_in? %>
           <ul class="admin-nav">
-            <li class="flash"><%= flash[:notice] %></li>
+            <!-- <li class="flash"><%= flash[:notice] %></li> -->
             <li class="flash"><%= flash[:alert] %></li>
             <% if user_signed_in? %>
               <li>
@@ -146,7 +146,7 @@ reference code end -->
                         <li><a href="/students#causes">Sponsor a cause on campus</a></li>
                       </ul>
                       <h3>DONATE</h3>
-                      <h3>CONTACT</h3>
+                      <h3><%= link_to 'CONTACT', contacts_path %></h3>
                     </div>
                   </div>
   							</li>

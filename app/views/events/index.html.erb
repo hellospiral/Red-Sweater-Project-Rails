@@ -1,26 +1,64 @@
-<div class="section-name intro">
-  <div class="col-sm-12" events>
-    <h2>Upcoming events</h2>
+<!-- Banner -->
+<div class="page-banner events">
+  <div class="shadow-box">
+    <div class="banner-content page-canvas title-only">
+      <h2>If you want to go fast,
+        <span class="yellow-text">go alone</span><br>
+      If you want to go far,
+      <span class="yellow-text">go together</span></h2>
+    </div>
+  </div>
+</div>
+
+<div class="flex page-canvas">
+  <div class="flex-item-1col intro">
+    <h2>UPCOMING EVENTS</h2>
+  </div>
+</div>
+<div class="page-canvas">
+  <% if @events.any? %>
     <% @events.each do |event| %>
-      <div class="col-sm-12 event">
-        <div class="col-sm-6">
-          <%= image_tag("#{ event.image }")%>
+      <div class="flex">
+        <div class="flex-item-2col">
+            <%= image_tag("#{ event.image }")%>
         </div>
-        <div class="col-sm-6 event-details">
-          <h4><strong><%= event.name %></strong></h4>
-          <p><%= event.time %><%= event.date %>
-          <%= event.details %></p>
-          <%= link_to "Add to cart", students_path, :class => "btn btn-default" %>
+        <div class="flex-item-2col">
+          <div>
+            <h5><%= event.name %></h5>
+            <p><%= event.time %></p>
+            <p><%= event.date.strftime("%B %d, %Y") %></p>
+            <br>
+            <p><%= event.details %></p>
+            <%= link_to "Add to cart", students_path, :class => "btn btn-solid" %>
+          </div>
+          <hr class="mobile-hr yellow-hr">
         </div>
-        <hr>
       </div>
     <% end %>
-  </div>
-  <div class="col-sm-12">
-    <% @instagram.each do |instagram| %>
-    <div class="col-sm-2">
-      <%= image_tag instagram.images.standard_resolution.url %>
+  <% end %>
+</div>
+
+<div class="yellow">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>DON'T MISS THE LATEST</h2>
+        <p>
+          It’s a long way from Tanzania, East Africa, to Detroit. Hear how our founder, Ashley Holmer, first saw the potential in a red sweater. And explore our timeline to see how far we’ve come since 2005.
+        </p>
+        <div class="btns-wrapper">
+          <a href="#" class="btn btn-secondary"><span>CHECK OUT THE BLOG</span></a>
+        </div>
+      </div>
     </div>
-    <% end %>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col ourfocus_donate">
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="shadow mobile">
+  <div class="flex-item-2col ourfocus_donate">
   </div>
 </div>
