@@ -1,24 +1,17 @@
-<div class="container">
-  <div class="blog-content flex">
-    <% @posts.each do |post| %>
-      <div class="flex-item-3col">
-        <%= image_tag("#{post.image}")%>
-        <div>
-          <h6><%= post.created_at.strftime('%b %d, %Y') %></h6>
-          <h2><%= post.title %></h2>
-          <p><em><%= post.author %></em></p><br>
-          <p><%= post.quote %></p>
-        </div>
-        <!-- <div>
-          <%= raw(post.body).truncate(358) %></p>
-        </div> -->
+<div class="flex page-canvas items-wrap">
+  <% @posts.each do |post| %>
+    <div class="flex-item-3col space-around">
+      <%= image_tag("#{post.image}")%>
 
-        <div><br>
-          <%= link_to "READ MORE", post_path(post) %>
-        </div>
-        <br>
-        <hr>
+      <div>
+        <h6><%= post.created_at.strftime('%b %d, %Y') %></h6>
+        <h2><%= post.title %></h2>
+        <p><em><%= post.author %></em></p><br>
+        <p><%= post.quote %></p>
       </div>
-    <% end %>
-  </div>
+      <div><br>
+        <%= link_to "READ MORE", post_path(post) %>
+      </div>
+    </div>
+  <% end %>
 </div>

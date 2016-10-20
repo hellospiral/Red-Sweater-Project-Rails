@@ -1,37 +1,44 @@
 <div class="page-banner redsweater">
-  <div class="title-mask">
-    <div class="container">
-      <div class="banner-content">
-        <h2>SHOP + SUPPORT</h2>
-        <div class="short-text">
-        </div>
-      </div>
+  <div class="shadow-box">
+    <div class="banner-content page-canvas title-only">
+      <h2>SHOP + SUPPORT</h2>
     </div>
   </div>
 </div>
 
 <!-- Intro -->
-<div class="flex">
+<div class="flex page-canvas">
   <div class="flex-item-1col">
     <h2>LOVE TANZANIA</h2>
+        <h5>Shop our Etsy Store and show your support</h5>
         <p>Browse jewelry hand-crafted by local artists in Tanzania, or pick up some gear to support the Mungere Red Rhinos! For every purchase made, 100% of profits go directly to programs at the Mungere School campus.</p>
+        <br>
+        <h5>Add Red Sweater Project to your Amazon Smile account</h5>
+        <p>
+          Amazon will donate x% of your future purchases at no charge to you!
+          <ul>
+            <ol>1. Visit <a href="#">smile.amazon.com</a></ol>
+            <ol>2. Click on <strong>Your Account</strong></ol>
+            <ol>3. Select <strong>Your AmazonSmile</strong> from the dropdown-menu</ol>
+            <ol>4. Click the <strong>Change Charit</strong>y button, and choose Red Sweater Project</ol>
+
+          </ul>
+        </p>
         <hr>
     </div>
   </div>
 
-
-<div class="container">
-  <div class="col-sm-12">
+  <div class="flex page-canvas">
     <% if @listings.any? %>
       <% @listings.each do |listing| %>
-      <div class="col-sm-3 etsy">
+      <div class="flex-item-3col space-around">
+
         <a href="<%= listing.url %>">
         <%= image_tag(listing.images.first.full) %>
-        <p><%=listing.title%></p>
+        <h5><%=listing.title%></h5>
         <p class="price">$<%= listing.price %></p>
-      </a>
+        </a>
       </div>
       <% end %>
     <% end %>
   </div>
-</div>

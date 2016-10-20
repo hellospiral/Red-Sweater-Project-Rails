@@ -1,10 +1,56 @@
-<div class="flex blog-content">
-  <div class="flex-item-1col">
-    <%= link_to 'See all posts', posts_path %>
-    <%= image_tag(@post.image, :class => "flex-item-image")  %>
-    <h2><%= @post.title %></h2>
-    <p><em><%= @post.author %></em></p>
-    <h5><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-    <div class="post-content"><%= raw @post.body %></div>
+<div class="page-canvas">  
+  <div class="flex">
+    <div class="flex-item-2col">
+      <%= image_tag(@post.image, :class => "flex-item-image")  %>
+      <br/>
+      <br/>
+      <p>&#8592;<%= link_to 'See all posts', posts_path %></p>
+    </div>
+    <div class="flex-item-2col">
+      <p><strong><%= @post.created_at.strftime('%b %d, %Y') %></strong> 	&nbsp;| 	&nbsp;<%= @post.author %><br/></p>
+      <br/>
+      <br/>
+      <h2><%= @post.title %></h2><br/>
+
+      <div class="post-content"><%= raw @post.body %></div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="yellow">
+  <div class="flex page-canvas">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>BE A DONOR</h2>
+        <p>Help us to get kids into red sweaters, and off to school. Every dollar makes a difference.
+        </p>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Choose your gift
+            <span class="caret"></span>
+          </button>
+          <div class="btns-wrapper">
+            <a href="#" class="btn btn-solid"><span>DONATE</span></a>
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">25</a></li>
+            <li><a href="#">50</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">500</a></li>
+            <li><a href="#">1000</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col ourfocus_donate">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="shadow mobile">
+  <div class="flex-item-2col ourfocus_donate">
   </div>
 </div>
