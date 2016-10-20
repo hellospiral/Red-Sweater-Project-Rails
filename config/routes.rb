@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :products, :only => [:index]
   resources :schools, :only => [:index]
   resources :contacts, :only => [:new, :create]
+  resources :charges
   resources :posts
 
   get "/pages/:page" => "pages#show"

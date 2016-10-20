@@ -1,2 +1,5 @@
-Stripe.api_key="sk_test_f2WoZSMfbJ3yiZcHYEYDrKOi"
-STRIPE_PUBLIC_KEY = "pk_test_tr8I0ZKidqfkHNXZTVbgiIuD"
+Rails.configuration.stripe = {
+  :publishable_key => ENV['PUBLISHABLE_KEY'],
+  :secret_key      => ENV['SECRET_KEY']
+}
+Stripe.api_key = Rails.configuration.stripe[:secret_key]
