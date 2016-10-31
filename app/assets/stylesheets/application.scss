@@ -300,7 +300,7 @@ body {
   .flex-item-2col img {
     width: 100%;
     padding: 0px;
-    height: auto;
+    height: 100%;
   }
 
   .flex-item-1col {
@@ -1365,6 +1365,18 @@ text-align: left;
   z-index: 1;
 }
 
+.flex-item-2col.blue-donate {
+  background: $text-blue;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  p {
+    color: white;
+  }
+}
+
 /* Page Banner */
 .page-banner {
   display: flex;
@@ -1378,6 +1390,13 @@ text-align: left;
 
 .home {
   background: url(../images/boyClassroom_1920x600.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.donate {
+  background: url(../images/culture_club_margin.png) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

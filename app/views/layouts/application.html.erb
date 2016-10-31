@@ -76,7 +76,7 @@
                   <%= link_to "SPONSOR", students_path %>
   							</li>
                 <li class="">
-                  <%= link_to "DONATE", charges_path %>
+                  <%= link_to "DONATE", new_charge_path %>
                 </li>
 
 <!-- REFERENCE CODE
@@ -111,9 +111,9 @@ reference code end -->
                       <h3>WHO WE ARE</h3>
                       <ul>
                         <li><a href="/pages/redsweater">The Red Sweater</a></li>
-                        <li><%= link_to 'Our focus', "/pages/ourfocus" %></li>
-                        <li><a href="/pages/ourstory">Our story</a></li>
-                        <li><a href="/pages/theteam">The team</a></li>
+                        <li><%= link_to 'Our Focus', "/pages/ourfocus" %></li>
+                        <li><a href="/pages/ourstory">Our Story</a></li>
+                        <li><a href="/pages/theteam">The Team</a></li>
                       </ul>
                     </div>
 
@@ -134,7 +134,7 @@ reference code end -->
                         <li><a href="#">Donate</a></li>
                         <li><%= link_to 'Sponsor', students_path %></li>
                         <li><%= link_to 'Volunteer', volunteers_path %></li>
-                        <li><%= link_to 'Get creative', "pages/getcreative" %></li>
+                        <li><%= link_to 'Get Creative', "pages/getcreative" %></li>
                         <li><%= link_to 'Events', events_path %></li>
                         <li><%= link_to 'Shop + Support', products_path %></li>
                       </ul>
@@ -143,11 +143,11 @@ reference code end -->
                     <div class="nav-column">
                       <h3>SPONSOR</h3>
                       <ul>
-                        <li><%= link_to 'Sponsor a student', students_path %></li>
-                        <li><a href="/students#causes">Sponsor a cause on campus</a></li>
+                        <li><%= link_to 'Sponsor a Student', students_path %></li>
+                        <li><a href="/students#causes">Invest in campus</a></li>
                       </ul>
                       <h3>DONATE</h3>
-                      <h3><%= link_to 'CONTACT', contacts_path %></h3>
+                      <h3><%= link_to 'CONNECT WITH US', contacts_path %></h3>
                     </div>
                   </div>
   							</li>
@@ -160,8 +160,8 @@ reference code end -->
                     <li><strong>WHO WE ARE</strong></li>
                     <li><a href="/pages/redsweater">The Red Sweater</a></li>
                     <li><%= link_to 'Our focus', "/pages/ourfocus" %></li>
-                    <li><a href="/pages/ourstory">Our story</a></li>
-                    <li><a href="/pages/theteam">The team</a></li>
+                    <li><a href="/pages/ourstory">Our Story</a></li>
+                    <li><a href="/pages/theteam">The Team</a></li>
                     <hr>
                     <li><strong>WHAT WE DO</strong></li>
                     <li><%= link_to 'The School', schools_path %></li>
@@ -175,11 +175,17 @@ reference code end -->
                     <li><a href="#">Donate</a></li>
                     <li><%= link_to 'Sponsor', students_path %></li>
                     <li><%= link_to 'Volunteer', volunteers_path %></li>
-                    <li><%= link_to 'Get creative', "pages/getcreative" %></li>
+                    <li><%= link_to 'Get Creative', "pages/getcreative" %></li>
                     <li><%= link_to 'Events', events_path %></li>
                     <li><%= link_to 'Shop + Support', products_path %></li>
+                    <li><%= link_to 'Visit', "pages/redrhinotours" %></li>
                     <hr>
                     <li><strong>CONTACT</strong></li>
+                    <div class="social-media-icons">
+                      <a href="#"><%= image_tag("twitter-icon.png", :class => "img-responsive")%></a>
+                      <a href="#"><%= image_tag("facebook-icon.png", :class => "img-responsive")%></a>
+                      <a href="#"><%= image_tag("facebook-icon.png", :class => "img-responsive")%></a>
+                    </div>
 
                   </ul>
                 </div>
@@ -207,6 +213,7 @@ reference code end -->
     </div>
     <div class="social-media-icons">
       <a href="#"><%= image_tag("twitter-icon.png", :class => "img-responsive")%></a>
+      <a href="#"><%= image_tag("facebook-icon.png", :class => "img-responsive")%></a>
       <a href="#"><%= image_tag("facebook-icon.png", :class => "img-responsive")%></a>
     </div>
     <h5 class="copyright"> &copy;Copyright Red Sweater Project 2016  |  All Rights Reserved  | Site by JD Design</h5>
