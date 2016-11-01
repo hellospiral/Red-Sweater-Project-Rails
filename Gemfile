@@ -40,7 +40,6 @@ source 'https://rubygems.org'
 
 group :production do
   gem 'pg', '~> 0.18'
-  gem 'rails_12factor'
 end
 
 ruby '2.2.2'
