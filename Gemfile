@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
-
 
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
@@ -44,3 +42,5 @@ group :production do
   gem 'pg', '~> 0.18'
   gem 'rails_12factor'
 end
+
+ruby '2.2.2'
