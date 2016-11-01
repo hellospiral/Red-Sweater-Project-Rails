@@ -15,5 +15,7 @@ test:
 production:
   <<: *default
   database: Red_Sweater_production
+  adapter: postgresql
+  host: ENV['DATABASE_URL']
   username: Red_Sweater
-  password: <%= ENV['RED_SWEATER_DATABASE_PASSWORD'] %>
+  password: 
