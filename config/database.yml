@@ -17,4 +17,4 @@ production:
   database: Red_Sweater_production
   adapter: postgresql
   username: Red_Sweater
-  password:
+  password: <%= ENV['RED-SWEATER_DATABASE_PASSWORD'] %>
