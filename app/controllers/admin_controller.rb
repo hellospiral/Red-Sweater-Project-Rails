@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
-  before_action :authenticate_user!
-  
+  # before_action :authenticate_user!
+
   def index
     @students = Student.all
     @events = Event.all
