@@ -168,7 +168,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (3.6.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -306,7 +305,6 @@ DEPENDENCIES
   pg (~> 0.18)
   poltergeist (~> 1.10.0)
   pry
-  puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   rspec-rails
   sass-rails (~> 5.0)
