@@ -34,13 +34,14 @@
         <a href="">Download change request form PDF (1MB )</a>
       </p>
     <div class="donation-details">
+      <hr>
       <h2>DONATION DETAILS</h2><br/>
-      <!-- <form class="donate-left" action="" method="">
+      <form class="donation-type" action="" method="">
         <label for="donation-type">Donation type</label><br/>
-        <input type="radio" name="donation-type" value="one-time">One-time</input><br/>
-        <input type="radio" name="donation-type" value="monthly">Monthly</input><br/>
-        <input type="radio" name="donation-type" value="annual">Annual</input><br/>
-      </form> -->
+        <input type="radio" name="donation-type" value="one-time"> One-time</input><br/>
+        <input type="radio" name="donation-type" value="monthly"> Monthly</input><br/>
+        <input type="radio" name="donation-type" value="annual"> Annual</input><br/>
+      </form>
       <%= form_tag charges_path, class:"donate-left" do %>
         <div id="error_explanation">
           <% if flash[:error].present? %>
@@ -56,6 +57,11 @@
         </article>
         <button id='donateButton' class="btn btn-solid">Donate</button>
       <% end %>
+    </div>
+    <div class="">
+      <p>
+        All gifts received in the United States are 100% tax-deductible. Red Sweater Project is a registered 501(c)3 non-profit organization in the United States, EIN #27-5222528, and a registered Non-governmental Organization in the United Republic of Tanzania, NGO #5912.
+      </p>
     </div>
   </div>
 
