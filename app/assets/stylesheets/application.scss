@@ -362,6 +362,17 @@ body {
   }
 }
 
+.donate-right {
+  h2 {
+    font-family: 'Amatic SC', cursive;
+  }
+  width: 40%;
+  color: white;
+  margin-bottom: 2em;
+  margin-right: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 660px) {
   .footer-bar > .links {
     width: 100vw;
@@ -1365,9 +1376,11 @@ text-align: left;
   z-index: 1;
 }
 
-.flex-item-2col.blue-donate {
-  background: $text-blue;
-  padding: 20px;
+.blue-donate {
+  background-color: $text-blue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -1375,6 +1388,43 @@ text-align: left;
   p {
     color: white;
   }
+  h2 {
+    text-align: left;
+  }
+}
+
+.blue-donate, .lt-blue-donate {
+  h5 {
+    padding-top: 0;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+.lt-blue-donate {
+  background-color: $text-blue; opacity: 0.75; filter: alpha(opacity=.86);
+  padding: 20px;
+  padding-bottom: 60px;
+  hr {
+    border: .5px solid white;
+  }
+}
+
+.donate-left {
+  width: 70%;
+  p {
+    padding-bottom: 0;
+
+  }
+  form input {
+    text-align: left;
+  }
+}
+
+form.donate-left {
+  width: 100%;
 }
 
 /* Page Banner */
