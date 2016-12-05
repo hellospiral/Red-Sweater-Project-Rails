@@ -676,12 +676,12 @@ body {
   #advisory-frank-arrow-up,
   #advisory-james-arrow-up,
   #advisory-vanessa-arrow-up,
-  #advisory-arrow-up,
-  #check-arrow-up img
+  #advisory-arrow-up
    {
     display: none;
   }
 }
+
 
 .staff {
   margin: 60px 0 0 0;
@@ -731,9 +731,16 @@ body {
 #advisory-james-details,
 #advisory-vanessa-details,
 #advisory-tony-details,
-#check-donation-details
+#check-donation-details,
+#change-donation,
+#check-arrow-up,
+#change-arrow-up
 {
   display: none;
+}
+
+.donation-details {
+  padding-top: 30px;
 }
 
 .flex.page-canvas.items-wrap {
@@ -1380,9 +1387,7 @@ text-align: left;
 
 .blue-donate {
   background-color: $text-blue;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
+  padding: 60px 20px 40px 20px;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -1407,8 +1412,7 @@ text-align: left;
 
 .lt-blue-donate {
   background-color: $text-blue; opacity: 0.75; filter: alpha(opacity=.86);
-  padding: 20px;
-  padding-bottom: 60px;
+  padding: 40px 20px 60px 20px;
   hr {
     border: .5px solid white;
   }

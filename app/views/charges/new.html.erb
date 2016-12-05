@@ -15,7 +15,8 @@
     </p>
       <br>
       <br>
-    <p class="arrow-down" id="check-arrow-down"><strong>TO DONATE BY CHECK</strong><%= image_tag("arrow-down.svg", )%></p>
+    <p class="arrow-down" id="check-arrow-down"><strong>TO DONATE BY CHECK</strong><%= image_tag("arrow-down.svg")%></p>
+    <p class="arrow-up" id="check-arrow-up"><strong>TO DONATE BY CHECK</strong><%= image_tag("arrow-up.svg")%></p>
 
     <br>
     <p id="check-donation-details">
@@ -26,18 +27,20 @@
       <br/>
     </p>
 
-    <p><strong>TO CHANGE AN EXISTING DONATION</strong><br/>
-      Send a change request form to <a href="mailto:donate@redsweaterprojec.org">donate@redsweaterproject.org</a>. Or mail the printed form to the address above. <br/><br/>
-      <a href="">Download change request form PDF (1MB )</a>
-    </p>
+    <p class="arrow-down" id="change-arrow-down"><strong>TO CHANGE AN EXISTING DONATION</strong><%= image_tag("arrow-down.svg")%></p>
+    <p class="arrow-up" id="change-arrow-up"><strong>TO CHANGE AN EXISTING DONATION</strong><%= image_tag("arrow-up.svg")%></p>
+      <p id="change-donation">
+        Send a change request form to <a href="mailto:donate@redsweaterprojec.org">donate@redsweaterproject.org</a>. Or mail the printed form to the address above. <br/><br/>
+        <a href="">Download change request form PDF (1MB )</a>
+      </p>
     <div class="donation-details">
       <h2>DONATION DETAILS</h2><br/>
-      <form class="donate-left" action="" method="">
+      <!-- <form class="donate-left" action="" method="">
         <label for="donation-type">Donation type</label><br/>
         <input type="radio" name="donation-type" value="one-time">One-time</input><br/>
         <input type="radio" name="donation-type" value="monthly">Monthly</input><br/>
         <input type="radio" name="donation-type" value="annual">Annual</input><br/>
-      </form>
+      </form> -->
       <%= form_tag charges_path, class:"donate-left" do %>
         <div id="error_explanation">
           <% if flash[:error].present? %>
@@ -56,45 +59,44 @@
     </div>
   </div>
 
-  <div class="donate-right">
-    <div class="blue-donate">
-    <h5>EVERY GIFT MAKES A DIFFERENCE</h5>
-    <p class="white-text">
-      Using solar power and creating our own compost at the school are just a few of the ways we work to keep our overhead low so every dollar can have the greatest impact in the lives of our students.
-    </p>
-    <hr class="hairline-grey">
+    <div class="donate-right">
+      <div class="blue-donate">
+      <h5>EVERY GIFT MAKES A DIFFERENCE</h5>
+      <p class="white-text">
+        Using solar power and creating our own compost at the school are just a few of the ways we work to keep our overhead low so every dollar can have the greatest impact in the lives of our students.
+      </p>
+    </div>
+    <div class="lt-blue-donate">
+      <h5>HOW MUCH OF A DIFFERENCE CAN YOU MAKE?</h5>
+      <br>
+      <h5>$25</h5>
+      <ul>
+        <li>• Feeds a student for a month</li>
+        <li>• Cures 5 cases of malaria, keeping kids out of hospitals and in the classroom</li>
+        <li>• Stocks our library with 6 new textbooks</li>
+      </ul>
+      <hr>
+      <h5>$50</h5>
+      <ul>
+        <li>• Feeds a student for a month</li>
+        <li>• Gives the students access to  safe drinking water.  000 liters of safe drinking water to the community </li>
+        <li></li>
+      </ul>
+      <hr>
+      <h5>$100</h5>
+      <ul>
+        <li>• Cultivates an acre of the school, providing fresh veggies for school lunches</li>
+        <li>• Provides a desk and a chair for a student</li>
+        <li>• Allows our kids to travel and compete with other teams in the region. Including track, soccer, and debate</li>
+      </ul>
+      <hr>
+      <h5>$500</h5>
+      <ul>
+        <li>• Sends a class on an educational adventure. Allows kids to venture out of the village for educational field trips, and hands on learning</li>
+        <li>• Support our wonderful, highly trained, and dedicated Tanzanian staff--they make it all possible</li>
+      </ul>
+    </div>
   </div>
-  <div class="lt-blue-donate">
-    <h5>HOW MUCH OF A DIFFERENCE CAN YOU MAKE?</h5>
-    <br>
-    <h5>$25</h5>
-    <ul>
-      <li>• Feeds a student for a month</li>
-      <li>• Cures 5 cases of malaria, keeping kids out of hospitals and in the classroom</li>
-      <li>• Stocks our library with 6 new textbooks</li>
-    </ul>
-    <hr>
-    <h5>$50</h5>
-    <ul>
-      <li>• Feeds a student for a month</li>
-      <li>• Gives the students access to  safe drinking water.  000 liters of safe drinking water to the community </li>
-      <li></li>
-    </ul>
-    <hr>
-    <h5>$100</h5>
-    <ul>
-      <li>• Cultivates an acre of the school, providing fresh veggies for school lunches</li>
-      <li>• Provides a desk and a chair for a student</li>
-      <li>• Allows our kids to travel and compete with other teams in the region. Including track, soccer, and debate</li>
-    </ul>
-    <hr>
-    <h5>$500</h5>
-    <ul>
-      <li>• Sends a class on an educational adventure. Allows kids to venture out of the village for educational field trips, and hands on learning</li>
-      <li>• Support our wonderful, highly trained, and dedicated Tanzanian staff--they make it all possible</li>
-    </ul>
-  </div>
-</div>
 </div>
 
 
@@ -140,18 +142,31 @@ $(window).on('popstate', function() {
   handler.close();
 });
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
-  $('#check-arrow-down').click(function(event) {
-    event.preventDefault();
-    $('#check-donation-details').toggle(700);
-    $('#check-arrow-down').hide();
-    $('#check-arrow-up').show();
-  });
-  $('#check-arrow-up').click(function(event) {
-    event.preventDefault();
-    $('#check-donation-details').toggle(700);
-    $('#check-arrow-down').show();
-    $('#check-arrow-up').hide();
+    $('#check-arrow-down').click(function(event) {
+      event.preventDefault();
+      $('#check-donation-details').toggle(700);
+      $('#check-arrow-down').hide();
+      $('#check-arrow-up').show();
+    });
+    $('#check-arrow-up').click(function(event) {
+      event.preventDefault();
+      $('#check-donation-details').toggle(700);
+      $('#check-arrow-down').show();
+      $('#check-arrow-up').hide();
+    })
+    $('#change-arrow-down').click(function(event) {
+      event.preventDefault();
+      $('#change-donation').toggle(700);
+      $('#change-arrow-down').hide();
+      $('#change-arrow-up').show();
+    });
+    $('#change-arrow-up').click(function(event) {
+      event.preventDefault();
+      $('#change-donation').toggle(700);
+      $('#change-arrow-down').show();
+      $('#change-arrow-up').hide();
+    })
   });
 </script>
