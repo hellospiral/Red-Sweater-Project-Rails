@@ -9,28 +9,34 @@
 </div>
 
 <div class="flex page-canvas">
-  <div class="flex-item-2col donate-left">
+  <div class="donate-left">
     <p>
       Your tax-deductible gift will support the incredible students at the Mungere School, helping them to complete their high school education as well as providing hands-on classes in organic agriculture and business.
+    </p>
       <br>
       <br>
-    <strong>TO DONATE BY CHECK</strong><br>
+    <p class="arrow-down" id="check-arrow-down"><strong>TO DONATE BY CHECK</strong><%= image_tag("arrow-down.svg", )%></p>
+
+    <br>
+    <p id="check-donation-details">
       Fill out our donation form, and sending it along with your gift to:<br>
-      <em>Red Sweater Project <br>
-      1000 SW Forest Meadows Way <br>
-      Lake Oswego, OR 97034 <br></em>
-      <br>
-    <strong>TO CHANGE AN EXISTING DONATION</strong><br>
-      Send a change request form to <a href="mailto:donate@redsweaterprojec.org">donate@redsweaterproject.org</a>. Or mail the printed form to the address above. <br><br>
+      <em>Red Sweater Project <br/>
+      1000 SW Forest Meadows Way <br/>
+      Lake Oswego, OR 97034 <br/></em>
+      <br/>
+    </p>
+
+    <p><strong>TO CHANGE AN EXISTING DONATION</strong><br/>
+      Send a change request form to <a href="mailto:donate@redsweaterprojec.org">donate@redsweaterproject.org</a>. Or mail the printed form to the address above. <br/><br/>
       <a href="">Download change request form PDF (1MB )</a>
     </p>
     <div class="donation-details">
-      <h2>DONATION DETAILS</h2><br>
+      <h2>DONATION DETAILS</h2><br/>
       <form class="donate-left" action="" method="">
-        <label for="donation-type">Donation type</label><br>
-        <input type="radio" name="donation-type" value="one-time">One-time</input><br>
-        <input type="radio" name="donation-type" value="monthly">Monthly</input><br>
-        <input type="radio" name="donation-type" value="annual">Annual</input><br>
+        <label for="donation-type">Donation type</label><br/>
+        <input type="radio" name="donation-type" value="one-time">One-time</input><br/>
+        <input type="radio" name="donation-type" value="monthly">Monthly</input><br/>
+        <input type="radio" name="donation-type" value="annual">Annual</input><br/>
       </form>
       <%= form_tag charges_path, class:"donate-left" do %>
         <div id="error_explanation">
@@ -133,4 +139,19 @@ $('#donateButton').on('click', function(e) {
 $(window).on('popstate', function() {
   handler.close();
 });
+
+$(document).ready(function() {
+
+  $('#check-arrow-down').click(function(event) {
+    event.preventDefault();
+    $('#check-donation-details').toggle(700);
+    $('#check-arrow-down').hide();
+    $('#check-arrow-up').show();
+  });
+  $('#check-arrow-up').click(function(event) {
+    event.preventDefault();
+    $('#check-donation-details').toggle(700);
+    $('#check-arrow-down').show();
+    $('#check-arrow-up').hide();
+  });
 </script>

@@ -676,7 +676,8 @@ body {
   #advisory-frank-arrow-up,
   #advisory-james-arrow-up,
   #advisory-vanessa-arrow-up,
-  #advisory-arrow-up
+  #advisory-arrow-up,
+  #check-arrow-up img
    {
     display: none;
   }
@@ -729,7 +730,8 @@ body {
 #advisory-frank-details,
 #advisory-james-details,
 #advisory-vanessa-details,
-#advisory-tony-details
+#advisory-tony-details,
+#check-donation-details
 {
   display: none;
 }
@@ -1416,11 +1418,17 @@ text-align: left;
   width: 70%;
   p {
     padding-bottom: 0;
-
+    img {
+    width: 20px;
+    padding-left: 7px;
+    }
   }
+  padding-top: 60px;
+  padding-right: 30px;
   form input {
     text-align: left;
   }
+
 }
 
 form.donate-left {
