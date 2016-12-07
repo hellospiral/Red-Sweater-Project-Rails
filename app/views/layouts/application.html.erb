@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>    
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <title>Red Sweater Project</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -42,66 +42,46 @@
               <%= link_to('LOG OUT', destroy_user_session_path, :method => :delete) %>
               </li>
             <% else %>
-              <!-- <li>
-              <%= link_to('LOG IN', new_user_session_path)  %>
-              </li>
-              <li>
-                <%= link_to "CREATE ACCOUNT", new_user_registration_path %>
-              </li> -->
             <% end %>
           </ul>
-          <% end %>
+        <% end %>
   				<div class="main-nav">
             <a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png")%></a>
-  						<ul class="nav">
-                <!-- <li><div class="dropdown">
-                  <li class="dropbtn">WHO WE ARE</p>
-                  <ul class="dropdown-content">
-                    <li><%= link_to "students", new_student_path, remote: true %></li>
-                    <li><%= link_to "events", new_event_path, remote: true %></li>
-                    <li><%= link_to "positions", new_position_path, remote: true %></li>
-                    <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
+  						<ul id= "nav" class="nav">
+                <li class="topnav"><%= link_to 'WHO WE ARE', schools_path %>
+                  <ul>
+                    <li><%= link_to "The Red Sweater", "/pages/redsweater" %></li>
+                    <li><%= link_to "Our Focus", "/pages/ourfocus" %></li>
+                    <li><%= link_to "Our Story", "/pages/ourstory" %></li>
+                    <li><%= link_to "The Team", "/pages/theteam" %></li>
                   </ul>
-                </div>
-  							</li> -->
-                <li>
-                  <%= link_to 'WHO WE ARE', schools_path %></li>
   							</li>
-  							<li>
-  								<a href="#">WHAT WE DO</a>
+                <li class="topnav"><%= link_to 'WHAT WE DO', schools_path %>
+                  <ul>
+                    <li><%= link_to "The School", schools_path %></li>
+                    <li><%= link_to "FAQ", "/pages/faq" %></li>
+                    <li><%= link_to "Blog", posts_path %></li>
+                    <li><%= link_to "News + Reviews", "/pages/news-reviews" %></li>
+                  </ul>
   							</li>
-  							<li><%= link_to 'GET INVOLVED', volunteers_path %>
+                <li class="topnav"><%= link_to 'GET INVOLVED', schools_path %>
+                  <ul>
+                    <li><%= link_to 'Volunteer', volunteers_path %></li>
+                    <li><%= link_to 'Get Creative', "/pages/getcreative" %></li>
+                    <li><%= link_to 'Events', events_path %></li>
+                    <li><%= link_to 'Shop + Support', products_path %></li>
+                    <li><%= link_to 'Visit', "/pages/redrhinotours" %></li>
+                  </ul>
   							</li>
-  							<li>
-                  <%= link_to "SPONSOR", students_path %>
-  							</li>
+                <li class="topnav"><%= link_to 'SPONSOR', students_path %>
+                  <ul>
+                    <li><%= link_to 'Sponsor a Student', students_path %></li>
+                    <li><a href="/students#causes">Invest in campus</a></li>
+                  </ul>
+                </li>
                 <li class="">
                   <%= link_to "DONATE", new_charge_path %>
                 </li>
-
-<!-- REFERENCE CODE
-                <div class="dropdown">
-                  <p class="dropbtn">ADD NEW CONTENT</p>
-                  <div class="dropdown-content">
-                    <li><%= link_to "students", new_student_path, remote: true %></li>
-                    <li><%= link_to "events", new_event_path, remote: true %></li>
-                    <li><%= link_to "positions", new_position_path, remote: true %></li>
-                    <li><%= link_to "causes", new_goodcause_path, remote: true %></li>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <p class="dropbtn">EDIT EXISTING CONTENT</p>
-                  <div class="dropdown-content">
-                    <li><a href="#students-content">Students</a></li>
-                    <li><a href="#events-section">events</a></li>
-                    <li><a href="#positions-section">positions</a></li>
-                    <li><a href="#causes-section">causes</a></li>
-                    <li><a href="#blog-posts-section">blog posts</a></li>
-                  </div>
-                </div>
-reference code end -->
-
-
 
                 <li>
                   <%=image_tag("icon-menu_notext.png", id: "menu-icon")%>
@@ -121,8 +101,6 @@ reference code end -->
                       <h3>WHAT WE DO</h3>
                       <ul>
                         <li><%= link_to 'The School', schools_path %></li>
-                        <!-- <li><a href="#">The vision</a></li> -->
-                        <!-- <li><a href="/pages/featuredstory">Featured stories</a></li> -->
                         <li><%= link_to 'FAQ', "/pages/faq" %></li>
                         <li><%= link_to 'Blog', "/posts" %></li>
                         <li><a href="/pages/news-reviews">News + Reviews</a></li>
@@ -131,8 +109,6 @@ reference code end -->
                     <div class="nav-column">
                       <h3>GET INVOLVED</h3>
                       <ul>
-                        <li><a href="#">Donate</a></li>
-                        <li><%= link_to 'Sponsor', students_path %></li>
                         <li><%= link_to 'Volunteer', volunteers_path %></li>
                         <li><%= link_to 'Get Creative', "/pages/getcreative" %></li>
                         <li><%= link_to 'Events', events_path %></li>
