@@ -519,6 +519,17 @@ body {
     margin: 10px 20px;
   }
 
+  .focus-items div {
+    opacity: 0;
+    position: relative;
+    transform: translateX(20px);
+    transition: all 0.7s ease-in-out;
+    &.is-showing {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
   .flex-item-3col.space-around {
     height: 600px;
   }
@@ -902,7 +913,7 @@ body {
 #nav li:hover ul{
     left:0;
     width: 140px;
-    padding-top: 16px;
+    padding-top: 15px;
 }
 
 
@@ -1500,19 +1511,23 @@ form.donate-left {
   width: 100%;
 }
 
+
 /* Page Banner */
 .page-banner {
   display: flex;
   align-items: flex-end;
   position: relative;
+  height: 400px;
   top: 0;
   left: 0;
-  height: 400px;
   padding-top: 87px;
 }
 
 .home {
-  background: url(../images/boyClassroom_1920x600.jpg) center center no-repeat;
+  position: relative;
+  background: url(../images/21hats.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
