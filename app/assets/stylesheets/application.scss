@@ -1523,6 +1523,14 @@ form.donate-left {
   padding-top: 87px;
 }
 
+.common-threads {
+  height: 200px;
+  background: url(../images/redsweater_commonthread.png) top center no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+
+}
+
 .home {
   position: relative;
   background: url(../images/21hats.jpg) center center no-repeat;
@@ -1533,8 +1541,14 @@ form.donate-left {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.home, .donate, .events, .creative, .tours, .sponsor, .ourfocus, .volunteer, .team {
+
+}
+
 .donate {
   background: url(../images/culture_club_margin.png) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1542,6 +1556,7 @@ form.donate-left {
 }
 .events {
   background: url(../images/group_wave.jpg) center bottom no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1550,6 +1565,7 @@ form.donate-left {
 
 .creative {
   background: url(../images/kili.jpg) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1557,6 +1573,7 @@ form.donate-left {
 }
 .tours {
   background: url(../images/redrhinotours.jpg) center bottom no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1565,6 +1582,7 @@ form.donate-left {
 
 .sponsor {
   background: url(../images/sponsor_sarahletter.jpg) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1573,6 +1591,7 @@ form.donate-left {
 
 .sponsor_bottom {
   background: url(../images/IMG_7055.jpg) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1581,6 +1600,7 @@ form.donate-left {
 
 .ourfocus {
   background: url(../images/ourfocus_banner.jpg) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1588,6 +1608,7 @@ form.donate-left {
 }
 .volunteer {
   background: url(../images/volunteer_banner.png) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1595,6 +1616,7 @@ form.donate-left {
 }
 .team {
   background: url(../images/leadership_banner.jpg) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1603,6 +1625,7 @@ form.donate-left {
 
 .redsweater {
   background: url(../images/redsweater_banner.jpg) center center no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
