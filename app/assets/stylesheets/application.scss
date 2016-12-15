@@ -1533,8 +1533,10 @@ form.donate-left {
 
 .home {
   position: relative;
-  background: url(../images/21hats.jpg) center center no-repeat;
-  background-size: cover;
+  background-image: url(../images/21hats.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
