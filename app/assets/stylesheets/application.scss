@@ -1546,7 +1546,7 @@ form.donate-left {
 }
 
 .donate {
-  background: url(../images/culture_club_margin.png) center center no-repeat;
+  background: url(../images/donate.jpg) center top no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1555,6 +1555,22 @@ form.donate-left {
 }
 .events {
   background: url(../images/group_wave.jpg) center bottom no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.the-school {
+  background: url(../images/theschool.jpg) center bottom no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.news {
+  background: url(../images/news.jpg) center top no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1580,7 +1596,7 @@ form.donate-left {
 }
 
 .sponsor {
-  background: url(../images/sponsor_sarahletter.jpg) center center no-repeat;
+  background: url(../images/sponsor.jpg) center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1598,7 +1614,7 @@ form.donate-left {
 }
 
 .ourfocus {
-  background: url(../images/ourfocus_banner.jpg) center center no-repeat;
+  background: url(../images/ourfocus_lo.jpg) center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1606,7 +1622,7 @@ form.donate-left {
   background-size: cover;
 }
 .volunteer {
-  background: url(../images/volunteer_banner.png) center center no-repeat;
+  background: url(../images/group_wave.jpg) center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1614,7 +1630,7 @@ form.donate-left {
   background-size: cover;
 }
 .team {
-  background: url(../images/leadership_banner.jpg) center center no-repeat;
+  background: url(../images/team.jpg) center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1623,12 +1639,12 @@ form.donate-left {
 }
 
 .redsweater {
-  background: url(../images/redsweater_banner.jpg) center center no-repeat;
+  background: url(../images/boyClassroom.jpg) center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 100%;
 }
 
 /*  2.0 - Navigations */
