@@ -7,7 +7,7 @@
 </div>
 
 <!-- Intro -->
-<div class="flex page-canvas">
+<div class="flex page-canvas etsy">
   <div class="flex-item-1col">
     <h2>LOVE TANZANIA</h2>
         <h5>Shop our Etsy Store and show your support</h5>
@@ -32,7 +32,6 @@
     <% if @listings.any? %>
       <% @listings.each do |listing| %>
       <div class="flex-item-3col space-around">
-
         <a href="<%= listing.url %>" target="_blank">
         <%= image_tag(listing.images.first.full) %>
         <h5><%=listing.title%></h5>

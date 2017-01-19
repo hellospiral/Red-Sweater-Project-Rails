@@ -37,27 +37,26 @@
     <div class="donation-details">
       <hr>
       <h2>DONATION DETAILS</h2><br/>
-      <form class="donation-type" action="" method="">
-        <label for="donation-type">Donation type</label><br/>
-        <input type="radio" name="donation-type" value="one-time"> One-time</input><br/>
-        <input type="radio" name="donation-type" value="monthly"> Monthly</input><br/>
-        <input type="radio" name="donation-type" value="annual"> Annual</input><br/>
-      </form>
+
       <%= form_tag charges_path, class:"donate-left" do %>
         <div id="error_explanation">
           <% if flash[:error].present? %>
             <p><%= flash[:error] %></p>
           <% end %>
         </div>
+
         <article>
-          <%= label_tag(:amount, 'Donation Amount:') %>
-          <%= text_field_tag(:amount, "", class:"form-control") %>
+          <label class="amount">
+            <span>Amount: $150/month</span>
+          </label>
         </article>
-        <article>
-          <%= hidden_field_tag(:stripeToken) %>
-        </article>
-        <button id='donateButton' class="btn btn-solid">Donate</button>
-      <% end %>
+
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Monthly sponsorship"
+          data-amount="15000"></script>
+    <% end %>
+
     </div>
     <div class="">
       <p>
@@ -113,7 +112,7 @@
 var handler = StripeCheckout.configure({
   key: '<%= Rails.configuration.stripe[:publishable_key] %>',
   locale: 'auto',
-  name: 'Sand Castles United',
+  name: 'Red Sweater Project',
   description: 'One-time donation',
   token: function(token) {
     $('input#stripeToken').val(token.id);
