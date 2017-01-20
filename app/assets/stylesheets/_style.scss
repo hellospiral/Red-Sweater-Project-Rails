@@ -17,46 +17,11 @@
   }
 }
 
-
-
-.admin-headline {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  font-weight: 200;
-  padding-bottom: 0;
-  color: white;
-}
-
-.admin-student-headline {
-  margin-top: 5%;
-}
-
 .mobile-nav {
   display:none;
 }
 
-.flex.admin-nav {
-  position: fixed;
-  top: 96px;
-  z-index: 1000;
-  left: 0;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;;
-  padding: 0 3%;
-  height: 30px;
-  background-color: $text-blue;
-  margin-top: 5px;
-  li a {
-    color: $body-type-grey;
-    list-style: none;
-    text-transform: uppercase;
-    padding-right: 20px;
-    padding-top: 2px;
-  }
-}
+
 
 .dropbtn {
     color: white;
@@ -77,22 +42,8 @@
 
 }
 
-.logo-wrap {
-  padding: 0px 0 0 15px;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  img {
-    width: 100%;
-  }
-}
-
 // 3 COLUMN FLEXBOX
-.flex {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0;
-}
+
 
 @media screen and (max-width: 730px) {
   .flex {
@@ -1072,120 +1023,8 @@ h3 {
   background-color: white;
 }
 
-.sponsor-students-images{
-  margin-top: 200px;
-}
-
-.sponsor-students {
-  border: 1px solid $hairline-grey;
-  border-radius: 5px;
-  margin: 15px 10px;
-  min-width: 275px;
-  width: 30%;
-  padding: 0;
-  .btn.btn-yellow {
-    margin: 10px auto;
-    width: 20%;
-  }
-  p, h5 {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  img {
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 5px 5px 0 0;
-  }
-}
-
-.flex .center {
-  justify-content: center;
-}
-
-#events-form, #position-change-form, #post-change-form {
-  margin-top: 5%;
-}
-
-#change-form {
-  margin-top: 8%;
-  margin-left: 0;
-}
-
-#events-section, #positions-section {
-  margin-bottom: 100px;
-}
-
-.sponsor-students:hover {
-  border: 1px solid $yellow;
-  .btn-default {
-    background-color: $yellow;
-    color: white;
-    margin-top: 40px;
-  }
-}
 
 
-.admin-student-view, .admin-events-view, .admin-causes-view {
-  border-radius: 10px;
-  border: 1px solid $hairline-grey;
-  margin-bottom: 2%;
-  margin-left: 1%;
-  margin-right: 1%;
-  padding: 2% 1% 2% 2%;
-  position: relative;
-  #students {
-    height: 325px;
-  }
-  h4 {
-    margin-top: 5%;
-  }
-  img {
-    width: 95%;
-    padding-bottom: 10px;
-    top: 0;
-    left: 0;
-  }
-  p {
-  padding-bottom: 10px;
-  }
-  a {
-    line-height: 1.5em;
-    text-decoration: none;
-  }
-}
-
-.admin-events-view {
-  height: 375px;
-}
-.admin-student-view {
-  height: 325px;
-}
-.admin-causes-view {
-  height: 500px;
-}
-
-
-.admin-student-view {
-  .btn-default:hover {
-    background-color: $yellow;
-    color: white;
-    border: 1px solid white;
-  }
-}
-
-
-
-
-
-
-/* header */
-header {
-  position: fixed;
-  display: block;
-  top: 0;
-  width: 100%;
-  z-index: 9998;
-}
 
 /* Section Name */
 .section-name {
@@ -1204,48 +1043,6 @@ header {
   font-weight: 300;
 }
 
-/* Parallax Maks*/
-.shadow-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1em 0 1em 0;
-  width: 100%;
-  max-height: 60%;
-  background: rgba(15, 15, 15, 0.65);
-  z-index: 1;
-}
-
-.shadow {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 0;
-  width: 100%;
-  max-height: 60%;
-  background: rgba(15, 15, 15, 0.65);
-  z-index: 1;
-}
-
-.banner-content {
-  align-self: flex-start;
-  h5 {
-    font-family: 'Proxima-nova', sans-serif;
-    font-weight: medium;
-    color: white;
-    padding: 2% 0 1% 0;
-    letter-spacing: 1px;
-    flex: 1;
-  }
-  h2  {
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    line-height: 1em;
-    color: #fff;
-    flex: 1;
-  }
-}
 
 .hidden { display: none; }
 
@@ -1298,19 +1095,6 @@ text-align: left;
   height: 250px;
   padding: 20px;
   margin: 60px 0 20px 0;
-}
-
-
-.page-canvas {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
-  height: auto;
-}
-
-.title-only {
-  width: 960px;
-  margin: 0 auto;
 }
 
 .title-mask {

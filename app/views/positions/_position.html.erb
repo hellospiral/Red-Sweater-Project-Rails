@@ -6,6 +6,7 @@
     <p>This position offers a monthly stipend of: $<%= position.stipend%>
     </p>
   <% end %>
+  <%= image_tag("#{ position.image }") %>
   <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %>
   <%= link_to "Delete #{position.title}", position_path(position), :data => {:confirm => "Are you sure you want to remove this position?", method: :delete}, remote: true %>
 </div>

@@ -34,9 +34,7 @@
       <h5><strong>PREPARATION IS THE KEY TO SUCCESS. OUR STUDENTS WORK HARD FOR:</strong></h5>
       <br/>
       <ul><strong>A COMPETITIVE, HIGH QUALITY EDUCATION</strong>
-        <li>• Our teachers hold advanced degrees and lend local and cultural perspectives.
-        </li>
-        <li>Our qualified international volunteer teachers have come from from China, Ireland, the United States, Scotland, England, Mexico and Australia to donate their time and talents. All teachers have completed an ESL, CELTA or TESOL training. </li>
+        <li>• Our teachers hold advanced degrees and lend local and cultural perspectives. Our teachers have come from from China, Ireland, the United States, Scotland, England, Mexico and Australia to donate their time and talents. All teachers have completed an ESL, CELTA or TESOL training. </li>
         <li>• Mungere students consistently score in the top quarter of schools in the region and in the top 3 in the district (out of 23 schools) on government-issued tests.</li>
         <li>• The Tanzania Ministry of Education has recognized Red Sweater Project as a successful school model that gets positive results.
         </li>
@@ -84,17 +82,17 @@
         <h5><strong>SMALL BUSINESS SKILLS</strong></h5>
         <p><em>The School Store</em></p>
         <ul>
-          <li>• Provides a valued resource for the entire community, where local families can purchase goods and sundries at reasonable prices. The next closest market is a 3km walk, is only open on select days and has a limited selection.</li>
-          <li>• Operates the first ever solar-powered mobile phone and lantern charging station for community members, keeping families connected. Introducing a variety of cost-effective, solar-powered products into local homes removes the dangerous fumes created by kerosene lanterns.
+          <li>• Provides a valued resource for the entire community, where local families can purchase goods and sundries at reasonable prices. The next closest market is a 3km walk, and is only open on select days and has a limited selection.</li>
+          <li>• Operates the first ever solar-powered mobile phone and lantern charging station for community members, keeping families connected.
           </li>
-          <li>• Gives students the opportunity to apply math and economics coursework.</li>
-          <li>• All generated income is reinvested in The Mungere School to offset operational costs.</li>
+          <li>• Gives students the opportunity to apply math and economics coursework to real life scenarios.</li>
+          <li>• All income is reinvested in The Mungere School to offset operational costs.</li>
         </ul>
       </div>
     </div>
     <div class="flex-item-3col space-second">
       <div class="img-wrapper">
-        <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+        <%= image_tag("school_nutrition.jpg", :class => "img-responsive")%>
       </div>
       <div class="focusCopy">
         <h5><strong>NUTRITION AND AGRICULTURE</strong></h5>
@@ -108,7 +106,7 @@
     </div>
     <div class="flex-item-3col space-second">
       <div class="img-wrapper">
-        <%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+        <%= image_tag("school_sports.png", :class => "img-responsive")%>
       </div>
       <div class="focusCopy">
         <h5><strong>LEADERSHIP AND TEAMWORK</strong></h5>
@@ -131,14 +129,11 @@
         Tanzania is an East African country known for its beautiful wilderness areas. They include the Serengeti National Park, a safari mecca populated by the “big five” game (elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s highest mountain. Offshore lie the lush tropical islands of Zanzibar and Mafia Marine Park.
       </p>
       <p>
-        The Mungere School is located just an hour and a half from Kilimanjaro airport, next to the great rift wall. Swahili is the national language of Tanzania, but by the time students graduate from Mungere, they are trilingual, speaking English, Swahili and their native tribal tongue such as Kimasai, Kirangi or Kichagga.
+        The Mungere School is located 3 hours from Kilimanjaro airport, next to the great rift wall. Swahili is the national language of Tanzania, but by the time students graduate from Mungere, they are trilingual, speaking English, Swahili and their native tribal tongue such as Kimasai, Kirangi or Kichagga.
       </p>
 
-      <p><em>
-        <a href="#">Download our Africa factsheet</a>
-      </em></p>
       <p>
-        <em><a href="#">See some beautiful photos by National Geographic</a>
+        <em><a href="http://travel.nationalgeographic.com/travel/countries/tanzania-photos/#/african-elephant-tanzania_3648_600x450.jpg" target='_blank'>See some beautiful photos by National Geographic</a>
       </em></p>
     </div>
     <div class="page-canvas" id="map-container">
@@ -180,12 +175,12 @@ handler.buildMap({ provider: {disableDefaultUI: true}, internal: {id: 'map'}}, f
     {
       "lat": -3.35,
       "lng": 35.85,
+      // "infowindow": "Mungere School"
       // "picture": {
       //   "url": "/images/RSPlogo_175x59.png",
       //   "width":  32,
       //   "height": 32
       // },
-      "infowindow": "Mungere School"
     }
   ]);
   handler.bounds.extendWith(markers);

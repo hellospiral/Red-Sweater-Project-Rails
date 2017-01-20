@@ -47,6 +47,6 @@ class PositionsController < ApplicationController
 
   private
   def position_params
-    params.require(:position).permit(:title, :available, :details, :term, :stipend, :location)
+    params.require(:position).permit(:title, :available, :details, :term, :stipend, :location, :image)
   end
 end
