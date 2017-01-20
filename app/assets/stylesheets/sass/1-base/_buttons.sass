@@ -1,31 +1,57 @@
 $text-blue: #2877A0
 
-.btn
+@mixin button
   width: auto
   justify-content: center
   align-items: center
   border-radius: 4px
   font-family: 'proxima-nova', sans-serif
-  margin: 20px auto 0 auto
+  margin-top: 20px 
   height: 45px
-  padding: 0 25px
+  padding: 12px 25px
+  letter-spacing: .5px
   text-transform: uppercase
   font-weight: 500
+  appearance: none
+  cursor: pointer
+  display: inline-block
+  font-size: 1em
+  -webkit-font-smoothing: antialiased
+  text-align: center
+  text-decoration: none
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  &:disabled
+    cursor: not-allowed
+    opacity: 0.5
 
-.btn
-  .btn-secondary
-    background: white
+
+.btn-secondary
+  background-color: white
+  color: $text-blue
+  overflow: hidden
+  &:hover,
+  &:focus
+    background-color: shade(white, 5%)
     color: $text-blue
-    overflow: hidden
-  .btn-solid
-    background: $text-blue
-    color: white
-    &:hover
-      background: #277096
-  .btn-yellow
-    background: white
-    color: $yellow
-    border: 1px solid $yellow
-    &:hover
-      background: $yellow
-      color: #fff
+  +button
+
+.btn-solid
+  background-color: $text-blue
+  color: white
+  border: 0
+  &:hover,
+  &:focus
+    background-color: shade($text-blue, 10%)
+    color: #fff
+  +button
+
+.btn-yellow
+  background: white
+  color: $yellow
+  border: 1px solid $yellow
+  &:hover
+    background: shade($yellow, 10%)
+    color: #fff
+  +button

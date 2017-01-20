@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -589,8 +595,8 @@ h6 {
   line-height: 13px; }
 
 p {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1em;
+  line-height: 1.5em;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   color: #6f6f6e; }
@@ -613,40 +619,107 @@ ul .padded li {
   letter-spacing: 0.5px;
   color: white;
   padding: 0 0 60px 0; }
-  .blue li, .blue p, .blue a {
+  .blue li, .blue p {
     font-weight: 300;
     color: white; }
-    .blue li a:hover, .blue p a:hover, .blue a a:hover {
+    .blue li a:hover, .blue p a:hover {
       text-decoration: underline; }
 
-.btn {
+.btn-secondary {
+  background-color: white;
+  color: #2877A0;
+  overflow: hidden;
   width: auto;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   font-family: "proxima-nova", sans-serif;
-  margin: 20px auto 0 auto;
+  margin-top: 20px;
   height: 45px;
-  padding: 0 25px;
+  padding: 12px 25px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 500;
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .btn-secondary:hover, .btn-secondary:focus {
+    background-color: #f2f2f2;
+    color: #2877A0; }
+  .btn-secondary:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
 
-.btn .btn-secondary {
-  background: white;
-  color: #2877A0;
-  overflow: hidden; }
-.btn .btn-solid {
-  background: #2877A0;
-  color: white; }
-  .btn .btn-solid:hover {
-    background: #277096; }
-.btn .btn-yellow {
+.btn-solid {
+  background-color: #2877A0;
+  color: white;
+  border: 0;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-family: "proxima-nova", sans-serif;
+  margin-top: 20px;
+  height: 45px;
+  padding: 12px 25px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .btn-solid:hover, .btn-solid:focus {
+    background-color: #246b90;
+    color: #fff; }
+  .btn-solid:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+.btn-yellow {
   background: white;
   color: #febe10;
-  border: 1px solid #febe10; }
-  .btn .btn-yellow:hover {
-    background: #febe10;
+  border: 1px solid #febe10;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-family: "proxima-nova", sans-serif;
+  margin-top: 20px;
+  height: 45px;
+  padding: 12px 25px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .btn-yellow:hover {
+    background: #e5ab0e;
     color: #fff; }
+  .btn-yellow:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
 
 .navigation {
   background: #fff;
