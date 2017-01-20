@@ -35,12 +35,98 @@
     color: #fff
     flex: 1
 
-.page-canvas
-  max-width: 960px
-  margin: 0 auto
-  padding: 0 15px
-  height: auto
-
 .title-only
   width: 960px
   margin: 0 auto
+
+.page-banner
+  display: flex
+  align-items: flex-end
+  position: relative
+  height: 400px
+  top: 0
+  left: 0
+  padding-top: 87px
+
+.title-mask
+  .banner-content
+    h2
+      padding-top: 1%
+  position: absolute
+  display: block
+  top: 75%
+  bottom: 0
+  left: 0
+  right: 0
+  width: 50%
+  height: 25%
+  background: rgba(15, 15, 15, 0.65)
+  z-index: 1
+
+// images
+.common-threads
+  height: 200px
+  background: url(../images/redsweater_commonthread.png) top center no-repeat
+  background-attachment: fixed
+  background-size: auto
+
+@mixin banner-image
+  width: 100vw
+  background-size: auto
+  background-attachment: fixed
+  -webkit-background-size: contain
+  -moz-background-size: contain
+  -o-background-size: contain
+  background-size: contain
+
+.home
+  background: url(../images/21hats.jpg) center top no-repeat
+  +banner-image
+
+.donate
+  background: url(../images/donate.jpg) center top no-repeat
+  +banner-image
+
+.events
+  background: url(../images/group_wave.jpg) center top no-repeat
+  +banner-image
+
+.the-school
+  background: url(../images/theschool.jpg) center top no-repeat
+  +banner-image
+
+.news
+  background: url(../images/news.jpg) center top no-repeat
+  +banner-image
+
+.creative
+  background: url(../images/kili.jpg) center center no-repeat
+  +banner-image
+
+.tours
+  background: url(../images/redrhinotours.jpg) center bottom no-repeat
+  +banner-image
+
+.sponsor
+  background: url(../images/sponsor.jpg) center center no-repeat
+  +banner-image
+
+.sponsor_bottom
+  background: url(../images/IMG_7055.jpg) center center no-repeat
+  +banner-image
+
+.ourfocus
+  background: url(../images/ourfocus_lo.jpg) center top no-repeat
+  +banner-image
+
+.volunteer
+  background: url(../images/group_wave.jpg) center center no-repeat
+  +banner-image
+
+.team
+  background: url(../images/team.jpg) center top no-repeat
+  +banner-image
+
+.redsweater
+  background: url(../images/boyClassroom.jpg) center top no-repeat
+  +banner-image

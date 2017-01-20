@@ -1,0 +1,155 @@
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div, {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.nav a { text-decoration: none; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.main-nav.first-child {
+  justify-content: flex-start;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 76px;
+  left: 0px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav > li > a {
+    z-index: 510;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #6f6f6f;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#nav .topnav {
+  position: relative;
+}
+
+#nav a:hover{
+    text-decoration: none;
+}
+
+#nav .topnav ul {
+    background-color: white;
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+    width: 140px;
+
+}
+
+.topnav ul li {
+    padding: 10px;
+    float: none;
+}
+#nav ul a{
+    white-space:nowrap;
+}
+
+#nav li:hover ul{
+    left:0;
+    width: 140px;
+}
+
+
+.topnav li:hover {
+  background-color: whitesmoke;
+}
+
+#nav li:hover ul a{
+  text-decoration: none;
+}
+
+.nav > li:hover > a {
+  color: $text-red;
+}
+
+.nav > li > div {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+
+  background-color: #000; opacity: 0.86; filter: alpha(opacity=.86);
+
+  -webkit-transition: all .3s ease .15s;
+  -moz-transition: all .3s ease .15s;
+  -o-transition: all .3s ease .15s;
+  -ms-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
+}
+
+.nav > li {
+  position: static;
+}
+
+#menu-icon {
+  width: 30px;
+  margin-left: 20px;
+}
+
+
+.nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    background-color: #000; opacity: 0.86; filter: alpha(opacity=.86);
+
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+
+
+.nav .nav-column {
+    width: 20%;
+    padding: 2.5% 3%;
+}
+
+.nav .nav-column h3 {
+    margin: 0;
+    line-height: 32px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: normal;
+    font-size: 1.25em;
+    color: $yellow;
+    text-transform: uppercase;
+}
+
+.nav .nav-column li a {
+    line-height: 32px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    color: #fff;
+}
+
+.nav .nav-column li a:hover { color: $yellow; }

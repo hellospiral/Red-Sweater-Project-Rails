@@ -1,0 +1,35 @@
+@media screen and (max-width: 405px) {
+  h2, p, h4 {
+    max-width: 310px;
+  }
+  .banner-content h2 {
+    font-size: 2.5em;
+    line-height: 4em;
+  }
+  .banner-content h5 {
+    font-size: 1em;
+  }
+  .btn, input {
+    min-width: 250px;
+    max-width: 90vw;
+  }
+
+  footer .footer-bar > .links {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    a:first-of-type {
+      padding-left: 0px;
+    }
+  }
+
+  .flex-item-staff {
+    .staff-photo {
+      display: none;
+    }
+  }
+
+  .flex-item-1col.intro {
+    padding-left: 0;
+  }
+}

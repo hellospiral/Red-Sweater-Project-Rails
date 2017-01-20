@@ -1,6 +1,117 @@
 $body-type-grey: #6f6f6e
+$text-blue: #2877A0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li,
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+  list-style-type: none
+  text-decoration: none
+
+a,
+button,
+input,
+textarea,
+select,
+blockquote
+  border: none
+  box-shadow: none
+  text-decoration: none
+  outline: 0
+  margin: 0
+  padding: 0
+
+body
+  background: #ffffff
+  overflow-x: hidden
+  position: relative
+  margin: 0 0
 
 body
   font-family: "proxima-nova", sans-serif
   color: $body-type-grey
   padding-bottom: 70px
+
+.quote-source
+  a
+    color: white
+    font-size: .65em
+    text-shadow: 0 0 0 #000
+
+h1
+  line-height: inherit
+
+h2
+  font-size: 36px
+  font-weight: 200
+  line-height: 34px
+  padding-bottom: 10px
+
+h3
+  font-size: 16px
+  line-height: 16px
+  text-transform: uppercase
+  font-weight: 700
+  color: $body-type-grey
+  text-transform: uppercase
+  margin-bottom: 1em
+  margin-left: 1%
+
+h4
+  font-size: 24px
+  line-height: 42px
+  color: white
+  font-weight: bold
+  letter-spacing: 1px
+
+h5
+  font-size: 16px
+  line-height: 24px
+  font-weight: 600
+  padding-top: 15px
+  line-height: 20px
+
+h6
+  font-size: 13px
+  line-height: 13px
+
+p
+  font-size: 16px
+  line-height: 22px
+  font-family: 'proxima-nova', sans-serif
+  font-weight: 400
+  color: #6f6f6e
+
+.white-text
+  color: white
+
+.yellow-text
+  color: $yellow
+
+ul
+  li
+    padding-bottom: 12px
+    line-height: 1.5em
+  .padded
+    li
+      padding: 5px 0
+
+.blue
+  background-color: $text-blue
+  height: auto
+  letter-spacing: .5px
+  color: white
+  padding: 0 0 60px 0
+  li, p, a
+    font-weight: 300
+    color: white
+    a:hover
+      text-decoration: underline
