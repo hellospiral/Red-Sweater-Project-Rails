@@ -10,19 +10,20 @@
   <%= f.text_field :bio, class: "form-control" %>
   <%= f.label :dream, 'When I grow up, I want to be a...' %>
   <%= f.text_field :dream, class: "form-control" %>
-  <%= f.radio_button :sponsored, false %>
+  <!-- <%= f.radio_button :sponsored, false %>
   <%= f.label :sponsored_no, 'Not sponsored' %>
   <%= f.radio_button :sponsored, true %>
-  <%= f.label :sponsored_yes, 'Sponsored!' %><br>
+  <%= f.label :sponsored_yes, 'Sponsored!' %><br> -->
 
   <%= f.label :image, 'Image' %>
   <%= f.file_field :image%>
 
-
-  <%= f.radio_button :gender, 'boy' %>
-  <%= f.label :gender_boy, 'boy' %>
-  <%= f.radio_button :gender, 'girl' %>
-  <%= f.label :gender_girl, 'girl' %><br>
-  <%= f.submit class: 'btn btn-default' %>
-  <button type="button" id="cancel" class="btn btn-default">Cancel</button>
+  <div class="radio">
+    <%= f.radio_button :gender, 'boy', :class => "inline" %>
+    <%= f.label :gender_boy, 'boy', :class => "inline"  %>
+    <%= f.radio_button :gender, 'girl', :class => "inline" %>
+    <%= f.label :gender_girl, 'girl', :class => "inline" %><br>
+  </div>
+  <%= f.submit class: 'btn btn-yellow' %>
+  <button type="button" id="cancel" class="btn btn-grey">Cancel</button>
 <% end %>

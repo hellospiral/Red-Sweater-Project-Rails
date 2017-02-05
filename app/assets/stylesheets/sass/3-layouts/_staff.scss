@@ -1,9 +1,5 @@
-.arrow-down, .arrow-up {
-  width: 20px;
-  height: 20px;
-  border-radius: 0;
-  margin: 10px 0 auto 10px;
-}
+
+
 #ashley-arrow-up,
 #ada-arrow-up,
 #lindsay-arrow-up,
@@ -80,4 +76,56 @@
 #check-arrow-up,
 #change-arrow-up {
   display: none;
+}
+
+.flex-item-staff {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .article {
+    width: 100%
+  }
+  .social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  h2 {
+    margin-top: 15px;
+  }
+  h2, hr, p {
+    width: 100%;
+  }
+  h5 {
+    margin-top: 0;
+    font-variant: small-caps;
+  }
+  p em {
+    padding-top: 10px;
+  }
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75%;
+    padding: 10px 0;
+    .name {
+      width: 100%;
+    }
+  }
+  img {
+    display: inline;
+    margin: 0 20px 0 0;
+    width: 125px;
+    height: 185px;
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+.arrow-down, .arrow-up {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  margin: 10px 0 auto 10px;
 }

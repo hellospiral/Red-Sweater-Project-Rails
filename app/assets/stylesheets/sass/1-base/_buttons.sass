@@ -6,7 +6,7 @@ $text-blue: #2877A0
   align-items: center
   border-radius: 4px
   font-family: 'proxima-nova', sans-serif
-  margin-top: 20px 
+  margin-top: 20px
   height: 45px
   padding: 12px 25px
   letter-spacing: .5px
@@ -52,6 +52,15 @@ $text-blue: #2877A0
   color: $yellow
   border: 1px solid $yellow
   &:hover
-    background: shade($yellow, 10%)
+    background: tint($yellow, 10%)
+    color: #fff
+  +button
+
+.btn-grey
+  background: white
+  color: $body-type-grey
+  border: 1px solid $body-type-grey
+  &:hover
+    background: tint($body-type-grey, 10%)
     color: #fff
   +button

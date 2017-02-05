@@ -9,7 +9,7 @@ source 'https://rubygems.org'
   gem 'turbolinks', '~> 5'
   gem 'jbuilder', '~> 2.5'
   gem 'paperclip', '~> 4.1'
-  gem 'bootstrap-sass'
+  gem 'bootstrap', '~> 4.0.0.alpha6'
   gem 'devise'
 
   gem 'byebug', platform: :mri

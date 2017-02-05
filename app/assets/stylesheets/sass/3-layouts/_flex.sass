@@ -2,18 +2,22 @@
   display: flex
   justify-content: space-between
   padding-top: 0
+  flex-wrap: wrap
+  .col-sm-9
+    justify-content: flex-start
   .center
     justify-content: center
+  @include outer-container
 
 
 .flex-item-1col
   min-height: 300px
   padding: auto 0
+  +span-columns(8)
+  +shift(2)
   .intro
     padding-bottom: 0
-    margin-bottom: 0
-    max-width: 960px
-    margin-left: 0
+    margin: 40px 0 0 0
 
 .flex-item-image
   margin: 0
@@ -23,38 +27,3 @@
   img
     width: 100%
     height: auto
-
-.flex-item-staff
-  width: 80vw
-  display: flex
-  justify-content: flex-start
-  flex-wrap: wrap
-  .article
-    width: 100%
-  .social-media-icons
-    display: flex
-    justify-content: space-between
-    width: 80vw
-  h2
-    margin-top: 15px
-  h2, hr, p
-    width: 100%
-  h5
-    margin-top: 0
-    font-variant: small-caps
-  p em
-    padding-top: 10px
-  .title
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    width: 75%
-    padding: 10px 0
-    .name
-      width: 100%
-  img
-    display: inline
-    margin: 0 20px 0 0
-    width: 125px
-    height: 185px
-    border-radius: 0 0 6px 6px

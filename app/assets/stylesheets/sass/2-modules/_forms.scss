@@ -1,6 +1,9 @@
+$small-spacing: 1em;
+$base-font-family: "Proxima-nova", sans-serif;
+
 .form-horizontal {
   input, textarea {
-    border: 1px solid #dddddb;
+    border: 1px solid whitesmoke;
     width: 100%;
     padding: 10px;
     border-radius: 6px;
@@ -9,4 +12,88 @@
 
 label {
   margin-top: 1em;
+}
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $base-font-family;
+  font-size: 1em;
+}
+
+#{$all-text-inputs} {
+  appearance: none;
+  background-color: white;
+  border: .5px solid whitesmoke;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin-bottom: $small-spacing;
+  padding: 10px;
+  transition: border-color 2 500;
+  width: 100%;
+
+  &:hover {
+    border-color: shade(grey, 20%);
+  }
+
+  &:focus {
+    border-color: $yellow;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($body-type-grey, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: .5px solid whitesmoke;
+    }
+  }
+
+  &::placeholder {
+    color: tint($body-type-grey, 40%);
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+  width: 25px
+}
+
+[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $small-spacing;
+  width: 100%;
 }

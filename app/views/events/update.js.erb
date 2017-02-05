@@ -1,2 +1,5 @@
 $('#event_<%= @event.id %>').html('<%= j render(@event) %>');
-$('#events-form').empty();
+$('#event-change-form').empty();
+$('#cancel').click(function(){
+  $('#change-form').empty();
+});
