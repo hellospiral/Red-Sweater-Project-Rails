@@ -1,13 +1,23 @@
 @media screen and (max-width: 405px) {
+
+  .flex {
+    flex-wrap: wrap;
+    .flex-item-1col {
+      // margin-left: auto;
+      width: auto;
+    }
+  }
   h2, p, h4 {
     max-width: 310px;
   }
   .banner-content h2 {
-    font-size: 2.5em;
-    line-height: 4em;
+    font-size: 2em;
+    line-height: normal;
   }
-  .banner-content h5 {
+  .banner-content h3 {
     font-size: 1em;
+    margin-bottom: .5em;
+    margin-left: 0;
   }
   .btn, input {
     min-width: 250px;
@@ -28,8 +38,8 @@
       display: none;
     }
   }
-
-  .flex-item-1col.intro {
-    padding-left: 0;
-  }
+  // 
+  // .flex-item-1col.intro {
+  //   padding-left: 0;
+  // }
 }

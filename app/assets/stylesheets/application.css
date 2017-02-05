@@ -462,8 +462,7 @@ header {
 .page-canvas {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 15px;
-  height: auto; }
+  padding: 0 15px; }
   .page-canvas .items-wrap {
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -578,8 +577,7 @@ h3 {
   font-weight: 700;
   color: #6f6f6e;
   text-transform: uppercase;
-  margin-bottom: 1em;
-  margin-left: 1%; }
+  margin-bottom: 1em; }
 
 h4 {
   font-size: 24px;
@@ -830,9 +828,9 @@ ul .padded li {
       font-size: 0.7em;
       font-weight: bold; }
 
-ul .flex {
+.flex {
   display: flex; }
-  ul .flex .admin-nav {
+  .flex .admin-nav {
     color: #6f6f6e;
     position: fixed;
     top: 200px;
@@ -845,7 +843,7 @@ ul .flex {
     height: 30px;
     background-color: #2877A0;
     margin-top: 5px; }
-    ul .flex .admin-nav li a {
+    .flex .admin-nav li a {
       color: #6f6f6e;
       list-style: none;
       text-transform: uppercase;
@@ -1088,132 +1086,132 @@ ul .flex {
 .home {
   background: url(../images/21hats.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .donate {
   background: url(../images/donate.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .events {
   background: url(../images/group_wave.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .the-school {
   background: url(../images/theschool.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .news {
   background: url(../images/news.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .creative {
   background: url(../images/kili.jpg) center center no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .tours {
   background: url(../images/redrhinotours.jpg) center bottom no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .sponsor {
   background: url(../images/sponsor.jpg) center center no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .sponsor_bottom {
   background: url(../images/IMG_7055.jpg) center center no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .ourfocus {
   background: url(../images/ourfocus_lo.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .volunteer {
   background: url(../images/group_wave.jpg) center center no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .team {
   background: url(../images/team.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .redsweater {
   background: url(../images/boyClassroom.jpg) center top no-repeat;
   width: 100vw;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .twocol-left-text {
   width: 480px;
@@ -1334,9 +1332,131 @@ select {
   margin-bottom: 1em;
   width: 100%; }
 
-@media screen and (min-width: 731px) {
+@media screen and (max-width: 730px) {
   .flex {
     flex-wrap: wrap;
+    justify-content: center; }
+
+  .flex.page-canvas.items-wrap {
+    justify-content: center; }
+
+  .logo-wrap img {
+    width: 100px; }
+
+  .btn, .btn-secondary, .btn-solid {
+    width: 100%;
+    max-width: 350px; }
+
+  #mobile-menu-icon {
+    order: 1;
+    display: block;
+    z-index: 1000;
+    width: 30px;
+    margin: 0 15px; }
+
+  .nav {
+    order: 3;
+    display: none; }
+
+  .navigation .main-nav {
+    height: 45px;
+    align-items: center; }
+
+  .container-body {
+    position: relative;
+    top: 35px;
+    max-width: 960; }
+
+  .flex-item-3col, .flex-item-2col {
+    width: 100%;
+    max-width: 350px;
+    padding: 0 10px; }
+
+  .flex-item-3col img {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+    border-radius: 10px; }
+
+  .flex-item-2col {
+    padding: 20px 0; }
+    .flex-item-2col p {
+      width: 330px; }
+
+  .flex-item-2col:last-of-type {
+    overflow: auto;
+    width: 100vw;
+    max-width: 100vw;
+    height: 40vh; }
+
+  .shadow.mobile {
+    display: flex; }
+
+  .shadow.nonmobile {
+    display: none; }
+
+  .flex-item-2col img {
+    width: 100%;
+    padding: 0px;
+    height: 100%; }
+
+  .flex-item-1col {
+    margin: 10px 0;
+    width: 90%;
+    padding: 5%;
+    flex-shrink: 1; }
+
+  #map-container, #volunteer-map-container {
+    height: 50vh;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 0; }
+
+  #map {
+    height: 45vh;
+    width: 100%; }
+
+  .mobile-hr {
+    border-color: white;
+    display: flex; }
+
+  .mobile-hr.yellow-hr {
+    border-color: #febe10; }
+
+  .btn, input {
+    min-width: 250px;
+    max-width: 350px; }
+
+  #small-logo, .social-media-icons {
+    margin: 0 auto;
+    padding: 0 auto; }
+
+  footer > .footer-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 200px; }
+    footer > .footer-bar .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center; } }
+@media screen and (max-width: 660px) {
+  .footer-bar > .links {
+    width: 100vw; }
+
+  #volunteer-map-container {
+    padding-top: 0; }
+
+  .social-media-icons {
+    width: 100vw; } }
+@media screen and (min-width: 731px) {
+  .flex {
+    max-width: 960px;
+    flex-wrap: nowrap;
     justify-content: flex-start; }
     .flex .col-sm-9 {
       justify-content: flex-start; }
@@ -1384,13 +1504,12 @@ select {
   .banner-content h2 {
     font-size: 3em; }
 
-  .banner-content h5 {
+  .banner-content h3 {
     font-size: 1.5em; }
 
   .container-body {
     position: relative;
-    top: 75px;
-    max-width: 960; }
+    top: 75px; }
 
   .flex-item-3col {
     width: 32%;
@@ -1433,9 +1552,13 @@ select {
     display: flex; }
 
   .flex-item-1col {
-    max-width: 800px;
     padding: 60px 0;
-    flex-shrink: 1; }
+    margin: 0 auto;
+    flex-shrink: 1;
+    max-width: 960px; }
+
+  .intro {
+    padding-bottom: 0; }
 
   .flex.btns-wrapper {
     padding: 0 0 60px 0;
@@ -1597,7 +1720,7 @@ select {
   padding-bottom: 10px; }
 
 .donate-right {
-  width: 40%;
+  width: 30%;
   color: white;
   margin-bottom: 2em;
   margin-right: 0;
@@ -1682,15 +1805,22 @@ form.donate-left {
     padding-bottom: 20px; }
 
 @media screen and (max-width: 405px) {
+  .flex {
+    flex-wrap: wrap; }
+    .flex .flex-item-1col {
+      width: auto; }
+
   h2, p, h4 {
     max-width: 310px; }
 
   .banner-content h2 {
-    font-size: 2.5em;
-    line-height: 4em; }
+    font-size: 2em;
+    line-height: normal; }
 
-  .banner-content h5 {
-    font-size: 1em; }
+  .banner-content h3 {
+    font-size: 1em;
+    margin-bottom: .5em;
+    margin-left: 0; }
 
   .btn, input {
     min-width: 250px;
@@ -1704,137 +1834,12 @@ form.donate-left {
       padding-left: 0px; }
 
   .flex-item-staff .staff-photo {
-    display: none; }
-
-  .flex-item-1col.intro {
-    padding-left: 0; } }
-@media screen and (max-width: 730px) {
-  .flex {
-    flex-wrap: wrap;
-    justify-content: center; }
-
-  .flex.page-canvas.items-wrap {
-    justify-content: center; }
-
-  .logo-wrap img {
-    width: 100px; }
-
-  .btn, .btn-secondary, .btn-solid {
-    width: 100%;
-    max-width: 350px; }
-
-  #mobile-menu-icon {
-    order: 1;
-    display: block;
-    z-index: 1000;
-    width: 30px;
-    margin: 0 15px; }
-
-  .nav {
-    order: 3;
-    display: none; }
-
-  .navigation .main-nav {
-    height: 45px;
-    align-items: center; }
-
-  .container-body {
-    position: relative;
-    top: 35px;
-    max-width: 960; }
-
-  .flex-item-3col, .flex-item-2col {
-    width: 100%;
-    max-width: 350px;
-    padding: 0 10px; }
-
-  .flex-item-3col img {
-    width: 100%;
-    padding: 0;
-    margin-top: 30px;
-    border-radius: 10px; }
-
-  .flex-item-2col {
-    padding: 20px 0; }
-    .flex-item-2col p {
-      width: 330px; }
-
-  .flex-item-2col:last-of-type {
-    overflow: auto;
-    width: 100vw;
-    max-width: 100vw;
-    height: 40vh; }
-
-  .shadow.mobile {
-    display: flex; }
-
-  .shadow.nonmobile {
-    display: none; }
-
-  .flex-item-2col img {
-    width: 100%;
-    padding: 0px;
-    height: 100%; }
-
-  .flex-item-1col {
-    margin: 10px 0;
-    width: 90%;
-    padding: 5%;
-    flex-shrink: 1; }
-
-  #map-container, #volunteer-map-container {
-    height: 50vh;
-    width: 100%;
-    padding: 10px 0;
-    margin-top: 0; }
-
-  #map {
-    height: 45vh;
-    width: 100%; }
-
-  .mobile-hr {
-    border-color: white;
-    display: flex; }
-
-  .mobile-hr.yellow-hr {
-    border-color: #febe10; }
-
-  .btn, input {
-    min-width: 250px;
-    max-width: 350px; }
-
-  #small-logo, .social-media-icons {
-    margin: 0 auto;
-    padding: 0 auto; }
-
-  footer > .footer-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-height: 200px; }
-    footer > .footer-bar .links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap; }
-
-  .social-media-icons {
-    display: flex;
-    justify-content: center; } }
-@media screen and (max-width: 660px) {
-  .footer-bar > .links {
-    width: 100vw; }
-
-  #volunteer-map-container {
-    padding-top: 0; }
-
-  .social-media-icons {
-    width: 100vw; } }
+    display: none; } }
 .flex {
+  max-width: 960px;
   display: flex;
-  justify-content: space-between;
   padding-top: 0;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
   .flex .col-sm-9 {
@@ -1847,15 +1852,7 @@ form.donate-left {
     display: block; }
 
 .flex-item-1col {
-  min-height: 300px;
-  padding: auto 0;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%; }
-  .flex-item-1col:last-child {
-    margin-right: 0; }
+  padding: auto 0; }
   .flex-item-1col .intro {
     padding-bottom: 0;
     margin: 40px 0 0 0; }

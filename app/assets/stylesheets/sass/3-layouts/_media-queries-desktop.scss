@@ -1,7 +1,8 @@
 @media screen and (min-width: 731px) {
 
   .flex {
-    flex-wrap: wrap;
+    max-width: 960px;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     .col-sm-9 {
       justify-content: flex-start;
@@ -58,14 +59,14 @@
   .banner-content h2 {
     font-size: 3em;
   }
-  .banner-content h5 {
+  .banner-content h3 {
     font-size: 1.5em;
   }
 
   .container-body {
     position: relative;
     top: 75px;
-    max-width: 960;
+    // max-width: 960px;
   }
 
   .flex-item-3col {
@@ -118,9 +119,14 @@
   }
 
   .flex-item-1col {
-    max-width: 800px;
     padding: 60px 0;
+    margin: 0 auto;
     flex-shrink: 1;
+    max-width: 960px;
+  }
+
+  .intro {
+    padding-bottom: 0;
   }
 
   .flex.btns-wrapper  {
@@ -132,14 +138,16 @@
     margin: 10px 20px;
   }
 
-  .focus-items div {
-    opacity: 0;
-    position: relative;
-    transform: translateX(20px);
-    transition: all 0.7s ease-in-out;
-    &.is-showing {
-      opacity: 1;
-      transform: translateX(0px);
+  .focus-items {
+    div {
+      opacity: 0;
+      position: relative;
+      transform: translateX(20px);
+      transition: all 0.7s ease-in-out;
+      &.is-showing {
+        opacity: 1;
+        transform: translateX(0px);
+      }
     }
   }
 
