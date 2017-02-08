@@ -41,7 +41,7 @@
                 <var class="atc_title"><%= event.name %></var>
                 <var class="atc_description"><%= event.details %></var>
                 <var class="atc_location">tbd</var>
-              
+
               </var>
             </span>
             <%= link_to "Add to cart", students_path, :class => "btn btn-solid" %>
@@ -58,11 +58,11 @@
     <div class="flex-item-2col">
       <div class="twocol-left-text">
         <h2>DON'T MISS THE LATEST</h2>
-        <p>
+        <!-- <p>
           It’s a long way from Tanzania, East Africa, to Detroit. Hear how our founder, Ashley Holmer, first saw the potential in a red sweater. And explore our timeline to see how far we’ve come since 2005.
-        </p>
+        </p> -->
         <div class="btns-wrapper">
-          <a href="#" class="btn btn-secondary"><span>CHECK OUT THE BLOG</span></a>
+          <%= link_to 'CHECK OUT THE BLOG', posts_path, :class=>"btn btn-secondary"%>
         </div>
       </div>
     </div>

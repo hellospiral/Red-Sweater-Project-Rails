@@ -10,17 +10,18 @@
   <div class="flex page-canvas">
     <div class="flex-item-1col intro">
       <h2>FUNDRAISING IDEAS</h2>
-      <p>Here are some simple, impactful ways you can fundraise for your own volunteer trip or to directly support Red Sweater Project students.</p>
+      <p>Here are some simple, impactful ways you can fundraise for your own volunteer trip or directly support Red Sweater Project students.</p>
     </div>
   </div>
   <div class="flex page-canvas">
     <div class="flex-item-3col space-second">
       <div class="img-wrapper">
-        <%= image_tag("run.jpg", :class => "img-responsive")%>
+        <%= image_tag("RUN.jpg", :class => "img-responsive")%>
       </div>
       <div class="focusCopy">
         <h5><strong>1. ORGANIZE OR RUN A RACE</strong></h5>
-        <p>Whether it's 26.2 miles, or .05k, a race is a great way to raise funds and support for the work happening in at the Mungere Schools. Wear Red Rhinos tee shirts, and collect donations by the mile or by the meter. </p>
+        <p>Whether it's 26.2 miles or .05k, a race is a great way to raise funds and support for the work happening at the Mungere School. Wear Red Rhino tee shirts and collect donations by the mile or by the meter.
+        </p>
       </div>
     </div>
     <div class="flex-item-3col space-second">
@@ -30,7 +31,8 @@
       </div>
       <div class="focusCopy">
         <h5><strong>2. DEDICATE A BIRTHDAY</strong></h5>
-        <p>In lieu of gifts, ask for donations to be made in your name, then pat yourself on the back. Your celebration just changed a life.</p>
+        <p>In lieu of gifts, ask for donations to be made in your name then pat yourself on the back. Your celebration just changed a life!
+        </p>
       </div>
     </div>
     <div class="flex-item-3col space-second">
@@ -40,7 +42,8 @@
       </div>
       <div class="focusCopy">
         <h5><strong>3. HOST AN EVENT</strong></h5>
-        <p>Make a night of it! Invite friends and family, and have a suggested donation at the door. Brent and Millie hosted a Red party, and raised $2,000 to help stock our science lab!</p>
+        <p>Make a night of it! Invite friends and family over and let us join the fun! Host your book club, poker night, or wine party and collect donations toward a particular campus project or area of interest.
+        </p>
       </div>
       <hr class="mobile-hr">
     </div>
@@ -51,59 +54,25 @@
     </div>
   </div> -->
 
-  <div class="blue">
-    <div class="flex page-canvas">
-      <div class="flex-item-2col">
-        <h2>VOLUNTEER VACATIONS</h2>
-        <p>
-          Tanzania has been rated "Best Safari Country in Africa" by both CNN Travel and SafariBookings.com. Red Sweater Project hosts groups of all sizes and ages in the ultimate Tanzanian experience, including:
-        </p>
-        <ul class="padded">
-          <li>
-            • Volunteering at the Mungere Schools. Depending on experience, volunteer projects can range from working in the community garden to leading workshops with students.
-          </li>
-          <li>
-            • Outdoor adventures such as day hikes or even summiting Mt. Kilimanjaro, Africa's tallest peak.
-          </li>
-          <li>
-            • Safari tours exploring Ngorongoro Crater Conservation Area and Serengeti National Park.
-          </li>
-          <li>
-            • Tropical beaches in Zanzibar beckon, where one can walk along turquoise waters, take a spice tour, and see rare colobus monkeys and other wildlife.
-          </li>
-        </ul>
-        <p>
-          All proceeds directly benefit Red Sweater Schools and all tours can be customized to fit your interests.
-        </p>
-        <div class="btns-wrapper">
-          <a href="#" class="btn btn-secondary"><span>Download the brochure</span></a>
-        </div>
-      </div>
-      <div class="flex-item-2col">
-        <%= image_tag("shared_photo.jpg", :class => "img-responsive")%>
-        <!-- <%= image_tag("zanzibar.jpg", :class => "img-responsive")%> -->
-      </div>
-    </div>
-  </div>
-
   <div class="yellow">
     <div class="flex page-canvas">
       <div class="flex-item-2col">
         <div class="twocol-left-text">
-          <h2>BROWSE OUR ETSY STORE AND SUPPORT EDUCATION</h2>
-          <p>
-            Find handmade jewelry from local Tanzanian artisans, photo prints from our volunteers and more on our Esty store. All proceeds directly benefit the Mungere School.
-          </p>
-          <div class="btns-wrapper btn-yellow">
-            <a href="#" class="btn btn-secondary btn-solid"><span>Browse the store</span></a>
-          </div>
+          <h2>DON'T MISS OUR NEXT EVENT</h2>
+          <p>Subscribe to our monthly newsletter to hear about upcoming events, and the latest news from the school.</p>
+          <%= form_for @subscriber, remote: true do |f| %>
+            <%= f.label :email, 'Email' %>
+            <%= f.email_field :email, class: "form-control" %>
+            <%= f.submit 'Subscribe', class: 'btn btn-solid' %>
+          <% end %>
+          <%= flash[:notice] %>
+          <%= flash[:alert] %>
         </div>
       </div>
       <div class="shadow nonmobile">
         <div class="flex-item-2col ourfocus_donate">
         </div>
       </div>
-    </div>
     </div>
   </div>
   <div class="shadow mobile">

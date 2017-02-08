@@ -12,15 +12,11 @@
   <div class="flex-item-1col">
     <h2>VOLUNTEER</h2>
     <p>
-    Red Sweater Project is made possible by the generosity of our skilled volunteers and local Tanzanian staff. We are a global community that believes that when woven together, our strengths can accomplish more than any one of us alone.
+    Red Sweater Project is made possible by the generosity of our skilled volunteers and local Tanzanian staff. We are a global community that believes when woven together, our strengths can accomplish more than any one of us alone.
     </p>
     <br/>
     <p>
-    We offer short- and long-term positions both in Tanzania and abroad. While nearly all positions are volunteer, we occasionally offer roles which include a monthly stipend. Volunteer work ranges from writers who contribute remotely, to office support, to teachers who live at our staff house for an entire school year and work in the classroom daily.
-    </p>
-    <br/>
-    <p>
-    Our volunteers have worked on a full gammut of projects: from planning and designing the solar-power system, to performing eye exams, to painting new classrooms, and running creative workshops with students.
+    We offer short- and long-term positions both in Tanzania and abroad. Volunteer work ranges from writers who contribute remotely, to office support, to teachers who live at our staff house for an entire school year and work in the classroom daily.
     </p>
   </div>
 </div>
@@ -28,6 +24,39 @@
 <div class="flex">
   <div class="flex-item-image">
     <img src="../images/volunteer_young_group.jpg" />
+  </div>
+</div>
+
+<div class="flex">
+  <div class="page-canvas">
+    <div class="flex-item-1col">
+      <h2>AVAILABLE POSITIONS</h2>
+      <p>
+        All teaching positions require an MA in teaching and ELS training. Positions are in Tanzania unless otherwise noted. Don't see a position, but you'd love to volunteer? Send an email with a CV/resume to <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering">volunteer@redsweaterproject.com</a>
+      </p>
+      <% if @positions.any? %>
+      <hr>
+        <ul>
+          <% @positions.each do |position| %>
+            <li>
+              <p><strong><%= position.title %></strong></p>
+              <p><%= position.location %></p>
+              <p><%= position.term %></p>
+              <% if position.stipend != nil && position.stipend != 0 %>
+                <p>This position offers a monthly stipend of: $<%= position.stipend%>
+                </p>
+              <% end %>
+            </li>
+            <hr>
+            <% end %>
+        </ul>
+        <% else %>
+        <br>
+        <p>
+          There are no available positions at this time.
+        </p>
+      <% end %>
+    </div>
   </div>
 </div>
 
@@ -68,38 +97,7 @@
     </em></p>
   </div>
 </div>
-<div class="flex">
-  <div class="page-canvas">
-    <div class="flex-item-1col">
-      <h2>AVAILABLE POSITIONS</h2>
-      <p>
-        All teaching positions require an MA in teaching and ELS training. Positions are in Tanzania unless otherwise noted. Don't see a position, but you'd love to volunteer? Send an email with a CV/resume to <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering">volunteer@redsweaterproject.com</a>
-      </p>
-      <% if @positions.any? %>
-      <hr>
-        <ul>
-          <% @positions.each do |position| %>
-            <li>
-              <p><strong><%= position.title %></strong></p>
-              <p><%= position.location %></p>
-              <p><%= position.term %></p>
-              <% if position.stipend != nil && position.stipend != 0 %>
-                <p>This position offers a monthly stipend of: $<%= position.stipend%>
-                </p>
-              <% end %>
-            </li>
-            <hr>
-            <% end %>
-        </ul>
-        <% else %>
-        <br>
-        <p>
-          There are no available positions at this time.
-        </p>
-      <% end %>
-    </div>
-  </div>
-</div>
+
 
 <!-- <div class="flex">
   <div class="flex-item-2col">
@@ -114,17 +112,31 @@
   <div class="flex page-canvas">
     <div class="flex-item-2col">
       <div class="twocol-left-text">
-        <h2>FUNDRAISING AND VOLUNTEER VACATIONS</h2>
-        <div class="btns-wrapper btn-yellow">
-          <a href="#" class="btn btn-secondary btn-solid"><span>GET CREATIVE</span></a>
-        </div>
+        <h2>BE A DONOR</h2>
+        <p>Help us to get kids into red sweaters, and off to school. Every dollar makes a difference.
+        </p>
+        <div class="dropdown">
+          <!-- <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Choose your gift
+            <span class="caret"></span>
+          </button> -->
+          <div class="btns-wrapper">
+            <%= link_to 'DONATE', new_charge_path, :class=>"btn btn-solid"%>
+          </div>
+          <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">25</a></li>
+            <li><a href="#">50</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">500</a></li>
+            <li><a href="#">1000</a></li>
+          </ul> -->
       </div>
     </div>
+  </div>
     <div class="shadow nonmobile">
       <div class="flex-item-2col ourfocus_donate">
       </div>
     </div>
-  </div>
   </div>
 </div>
 <div class="shadow mobile">

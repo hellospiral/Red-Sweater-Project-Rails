@@ -55,7 +55,7 @@
           <div class="main-nav">
             <a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png")%></a>
             <ul id= "nav" class="nav">
-              <li class="topnav"><%= link_to 'WHO WE ARE', "" %>
+              <li class="topnav"><%= link_to 'WHO WE ARE' %>
                 <ul>
                   <li><%= link_to "The Red Sweater", "/pages/redsweater" %></li>
                   <li><%= link_to "Our Focus", "/pages/ourfocus" %></li>
@@ -63,15 +63,15 @@
                   <li><%= link_to "The Team", "/pages/theteam" %></li>
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'WHAT WE DO', "" %>
+              <li class="topnav"><%= link_to 'WHAT WE DO' %>
                 <ul>
                   <li><%= link_to "The School", schools_path %></li>
                   <li><%= link_to "FAQ", "/pages/faq" %></li>
                   <li><%= link_to "Blog", posts_path %></li>
-                  <li><%= link_to "News + Testimonials", "/pages/news-reviews" %></li>
+                  <li><%= link_to "News + Testimonials", "/pages/news-testimonials" %></li>
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'GET INVOLVED', "" %>
+              <li class="topnav"><%= link_to 'GET INVOLVED' %>
                 <ul>
                   <li><%= link_to 'Volunteer', volunteers_path %></li>
                   <li><%= link_to 'Get Creative', "/pages/getcreative" %></li>
@@ -80,7 +80,7 @@
                   <!-- <li><%= link_to 'Visit', "/pages/redrhinotours" %></li> -->
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'SPONSOR', students_path %>
+              <li class="topnav"><%= link_to 'SPONSOR' %>
                 <ul>
                   <li><%= link_to 'Sponsor a Student', students_path %></li>
                   <li><a href="/students#causes">Invest in campus</a></li>
@@ -110,7 +110,7 @@
                       <li><%= link_to 'The School', schools_path %></li>
                       <li><%= link_to 'FAQ', "/pages/faq" %></li>
                       <li><%= link_to 'Blog', "/posts" %></li>
-                      <li><a href="/pages/news-reviews">News + Testimonials</a></li>
+                      <li><a href="/pages/news-testimonials">News + Testimonials</a></li>
                     </ul>
                   </div>
                   <div class="nav-column">
@@ -153,11 +153,9 @@
                   <!-- <li><a href="/pages/featuredstory">Featured stories</a></li> -->
                   <li><%= link_to 'FAQ', "/pages/faq" %></li>
                   <li><%= link_to 'Blog', "/posts" %></li>
-                  <li><a href="/pages/news-reviews">News + Testimonials</a></li>
+                  <li><a href="/pages/news-testimonials">News + Testimonials</a></li>
                   <hr>
                   <li><strong>GET INVOLVED</strong></li>
-                  <li><a href="#">Donate</a></li>
-                  <li><%= link_to 'Sponsor', students_path %></li>
                   <li><%= link_to 'Volunteer', volunteers_path %></li>
                   <li><%= link_to 'Get Creative', "pages/getcreative" %></li>
                   <li><%= link_to 'Events', events_path %></li>
@@ -187,13 +185,13 @@
         <div class="footer-bar">
           <%= image_tag("logo_horiz_grad_white.png", :class => "img-responsive", :id => "small-logo")%>
           <div class="links">
-              <a href="#">Blog</a>
-              <a href="#">Events</a>
-              <a href="#">Jobs</a>
-              <a href="#">Contact</a>
-              <a href="#">Privacy</a>
-              <a href="#" id="news-footer-link">News</a>
-          </div>
+            <%= link_to 'Blog', posts_path %>
+            <%= link_to 'Events', events_path %>
+            <%= link_to 'Jobs', volunteers_path %>
+            <%= link_to 'Contact', new_contact_path %>
+            <a href="#">Privacy</a>
+            <a href="/pages/news-testimonials">News</a>
+                  </div>
           <div class="social-media-icons">
             <!-- <a href="https://twitter.com/redsweaterpro" target="_blank"><%= image_tag("twitter-icon.png", :class => "img-responsive")%></a>
             <a href="https://www.facebook.com/redsweaterproject/" target="_blank"><%= image_tag("facebook-icon.png", :class => "img-responsive")%></a>
