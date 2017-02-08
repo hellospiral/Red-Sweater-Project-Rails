@@ -9,9 +9,9 @@ source 'https://rubygems.org'
   gem 'turbolinks', '~> 5'
   gem 'jbuilder', '~> 2.5'
   gem 'paperclip', '~> 4.1'
-  gem 'bootstrap', '~> 4.0.0.alpha6'
+  # gem 'bootstrap', '~> 4.0.0.alpha6'
   gem 'devise'
-
+  gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'launchy'

@@ -29,7 +29,7 @@
     <li><%= link_to "Add a student", new_student_path, remote: true %></li>
   </div>
 
-  <div class="flex col-sm-9" id="admin-students-list">
+  <div class="flex items-wrap col-sm-9" id="admin-students-list">
     <% @students.each do |student| %>
       <div class="col-sm-3 sponsor-students" id="student_<%= student.id %>">
         <%= image_tag("#{student.image_file_name}", :class => "img-responsive img-rounded") %>

@@ -39,13 +39,11 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    anjlab-bootstrap-rails (3.0.0.3)
+      railties (>= 3.0)
+      sass (>= 3.2)
     arel (7.1.1)
-    autoprefixer-rails (6.5.1.1)
-      execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.alpha6)
-      autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.4.19)
     builder (3.2.2)
     byebug (9.0.5)
     capybara (2.7.1)
@@ -280,7 +278,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0.alpha6)
+  anjlab-bootstrap-rails (~> 3.0.0.3)
   byebug
   capybara
   ckeditor

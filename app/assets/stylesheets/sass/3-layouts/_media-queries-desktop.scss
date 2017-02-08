@@ -2,11 +2,19 @@
 
   .flex {
     max-width: 960px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     .col-sm-9 {
       justify-content: flex-start;
     }
+  }
+
+  .flex + .focus-items + .items-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  #nowrap {
+    flex-wrap: nowrap;
   }
 
   .logo-wrap img {

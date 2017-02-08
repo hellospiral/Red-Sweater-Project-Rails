@@ -21,7 +21,7 @@
   }
   .btn, input {
     min-width: 250px;
-    max-width: 90vw;
+    max-width: auto;
   }
 
   footer .footer-bar > .links {
@@ -38,7 +38,7 @@
       display: none;
     }
   }
-  // 
+  //
   // .flex-item-1col.intro {
   //   padding-left: 0;
   // }

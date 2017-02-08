@@ -6,6 +6,7 @@
 
   .flex.page-canvas.items-wrap {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .logo-wrap img {
@@ -86,7 +87,10 @@
     flex-shrink: 1;
   }
 
-  .page-canvas.btns-wrapper  {
+  .page-canvas
+    .btns-wrapper  {
+      width: auto;
+      margin: 0 auto;
     // padding-bottom: 60px;
     // margin: 0 auto;
   }

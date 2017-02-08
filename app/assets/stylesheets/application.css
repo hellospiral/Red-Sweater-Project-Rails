@@ -696,6 +696,7 @@ ul .padded li {
   background: white;
   color: #febe10;
   border: 1px solid #febe10;
+  margin: 0 15px;
   width: auto;
   justify-content: center;
   align-items: center;
@@ -1338,7 +1339,8 @@ select {
     justify-content: center; }
 
   .flex.page-canvas.items-wrap {
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
 
   .logo-wrap img {
     width: 100px; }
@@ -1406,6 +1408,11 @@ select {
     padding: 5%;
     flex-shrink: 1; }
 
+  .page-canvas
+  .btns-wrapper {
+    width: auto;
+    margin: 0 auto; }
+
   #map-container, #volunteer-map-container {
     height: 50vh;
     width: 100%;
@@ -1456,10 +1463,16 @@ select {
 @media screen and (min-width: 731px) {
   .flex {
     max-width: 960px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start; }
     .flex .col-sm-9 {
       justify-content: flex-start; }
+
+  .flex + .focus-items + .items-nowrap {
+    flex-wrap: nowrap; }
+
+  #nowrap {
+    flex-wrap: nowrap; }
 
   .logo-wrap img {
     max-width: 150px; }
@@ -1648,9 +1661,6 @@ select {
   border-radius: 4px;
   margin-top: 0 !important; }
 
-#admin-students-list .col-sm-9 {
-  flex-wrap: wrap; }
-
 .dropbtn {
   color: white;
   padding: 16px;
@@ -1790,9 +1800,6 @@ form.donate-left {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 20px; }
-  .sponsor-students .btn.btn-yellow {
-    margin: 10px auto;
-    width: 20%; }
   .sponsor-students p, .sponsor-students h5 {
     padding-right: 20px;
     padding-left: 20px; }
@@ -1824,7 +1831,7 @@ form.donate-left {
 
   .btn, input {
     min-width: 250px;
-    max-width: 90vw; }
+    max-width: auto; }
 
   footer .footer-bar > .links {
     display: flex;
