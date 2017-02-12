@@ -10,9 +10,11 @@
 .admin-student-headline
   margin-top: 5%
 
-#change-form
+#change-form, #position-change-form
+  .btn-solid
+    margin-bottom: 10px
   width: 300px
-  padding: 1em 1em
+  padding: 1em 2em
   background-color: whitesmoke
   border-radius: 4px
   margin-top: 0 !important
@@ -53,8 +55,11 @@
     line-height: 1.5em
     text-decoration: none
 
-#events-form, #position-change-form, #post-change-form
+#events-form, #post-change-form
   margin-top: 5%
+
+#position-change-form
+  margin-top: -50px
 
 #change-form
   margin-top: 8%
@@ -63,8 +68,9 @@
 #events-section, #positions-section
   margin-bottom: 100px
 
+.red
+  color: $text-red
+  
 .col-sm-4
   a
     padding-top: 5px
-  .red
-    color: $text-red
