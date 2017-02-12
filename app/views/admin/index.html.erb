@@ -29,6 +29,8 @@
     <li><%= link_to "Add a student", new_student_path, remote: true %></li>
   </div>
 
+<div class="container-fluid">
+
   <div class="flex items-wrap col-sm-9" id="admin-students-list">
     <% @students.each do |student| %>
       <div class="col-sm-3 sponsor-students" id="student_<%= student.id %>">
@@ -36,6 +38,7 @@
         <h5><strong><%= student.name %></strong></h5>
         <p><em><%= student.age %> year-old <%= student.gender %></em><br>
         I want to become: A <%= student.dream %></p>
+        <br/>
         <%= link_to "Update #{student.name}", edit_student_path(student), remote: true %><br>
         <%= link_to "Delete", student_path(student), :data => {:confirm => "Are you sure you want to remove this student from the sponsorship page?", method: :delete}, remote: true, class: "red" %>
       </div>
@@ -62,6 +65,7 @@
         <h5><strong><%= event.name %></strong></h5>
         <p><%= event.time %><%= event.date %>
         <%= event.details %></p>
+        <br/>
         <%= link_to "Update #{event.name}", edit_event_path(event), remote: true %><br>
         <%= link_to "Delete", event_path(event), :data => {:confirm => "Are you sure you want to remove this event from the events page?", :method => "delete"}, remote: true, class: "red" %>
       </div>
@@ -73,31 +77,40 @@
   <div class="col-sm-9">
     <hr id="positions-section">
   </div>
-  <div class="col-sm-9">
-    <h2>EDIT POSITIONS</h2>
-  </div>
-  <div class="col-sm-9">
-    <li><%= link_to "Add a position", new_position_path, remote: true %></li>
-  </div>
-  <div class="flex col-sm-9" id="admin-positions-list">
-    <% if @positions.any?%>
-      <% @positions.each do |position| %>
-        <div class="col-sm-3 sponsor-students" id="position_<%= position.id %>">
-          <h5><strong><%= position.title %></strong></h5>
-          <p><%= position.location %></p>
-          <p><%= position.term %></p>
-          <% if position.stipend != 0 %>
-            <p>This position offers a monthly stipend of: $<%= position.stipend%>
-            </p>
+  <div class="d-flex nowrap">
+    <div class="col-sm-9">
+      <div class="col-sm-9">
+        <h2>EDIT POSITIONS</h2>
+      </div>
+      <div class="col-sm-9">
+        <li><%= link_to "Add a position", new_position_path, remote: true %></li>
+      </div>
+      <div class="flex col-sm-12" id="admin-positions-list">
+        <% if @positions.any?%>
+          <% @positions.each do |position| %>
+            <div class="col-sm-3 sponsor-students" id="position_<%= position.id %>">
+              <h5><strong><%= position.title %></strong></h5>
+              <p><%= position.location %></p>
+              <p><em><%= position.term %></em></p><br/>
+              <% if position.stipend != nil %>
+                <p>This position offers a monthly stipend of: $<%= position.stipend%>, as well as free
+                accommodation, orientation and training</p>
+              <% else %>
+                <p>This position does not include a stipend.</p>
+              <% end %>
+              <br/>
+              <%= link_to "Update", edit_position_path(position), remote: true %><br>
+              <%= link_to "Delete", position_path(position), :data => {:confirm => "Are you sure you want to remove this position?", method: :delete}, remote: true, class: "red" %>
+            </div>
           <% end %>
-          <%= link_to "Update #{position.title}", edit_position_path(position), remote: true %><br>
-          <%= link_to "Delete #{position.title}", position_path(position), :data => {:confirm => "Are you sure you want to remove this position?", method: :delete}, remote: true, class: "red" %>
-        </div>
-      <% end %>
-    <% end %>
+        <% end %>
+      </div>
   </div>
-  <div class="col-sm-3" id="position-change-form" >
+  <div class="col-sm-3">
+    <div class="" id="position-change-form" >
+    </div>
   </div>
+</div>
 
   <div class="col-sm-9">
     <hr id="causes-section">
@@ -116,7 +129,8 @@
           <h5><strong><%= goodcause.name %></strong></h5>
           <p>Cost to completion: $<%= goodcause.cost %></p>
           <p><%= goodcause.details %></p>
-          <%= link_to "Update #{goodcause.name}", edit_goodcause_path(goodcause), remote: true %><br/>
+          <br/>
+          <%= link_to "Update", edit_goodcause_path(goodcause), remote: true %><br/>
           <%= link_to "Delete", goodcause_path(goodcause), :data => {:confirm => "Are you sure you want to remove this cause?", method: :delete}, remote: true, class: "red" %>
         </div>
       <% end %>
@@ -141,6 +155,7 @@
           <h5><strong><%= post.title %></strong></h5>
           <p><%= post.created_at.strftime('%b %d, %Y') %></p>
           <p><em><%= post.author %></em></p>
+          <br/>
           <%= link_to "Update", edit_post_path(post), remote: true %> |
           <%= link_to "Delete", post_path(post), :data => {:confirm => "Are you sure you want to remove this blog post?", method: :delete}, remote: true, class: "red" %>
         </div>
@@ -153,3 +168,5 @@
   <div class="col-sm-9">
     <hr>
   </div>
+
+</div>

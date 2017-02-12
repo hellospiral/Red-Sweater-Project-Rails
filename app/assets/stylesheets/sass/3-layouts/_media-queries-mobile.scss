@@ -1,5 +1,9 @@
 @media screen and (max-width: 405px) {
-
+  .page-banner {
+    .shadow-box {
+      max-height: 80%;
+    }
+  }
   .flex {
     flex-wrap: wrap;
     .flex-item-1col {
@@ -10,14 +14,10 @@
   h2, p, h4 {
     max-width: 310px;
   }
-  .banner-content h2 {
-    font-size: 2em;
-    line-height: normal;
-  }
+
   .banner-content h3 {
-    font-size: 1em;
-    margin-bottom: .5em;
     margin-left: 0;
+    margin-bottom: .25em;
   }
   .btn, input {
     min-width: 250px;

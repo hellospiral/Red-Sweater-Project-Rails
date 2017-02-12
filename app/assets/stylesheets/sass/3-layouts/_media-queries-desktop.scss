@@ -1,4 +1,7 @@
 @media screen and (min-width: 731px) {
+  .page-title {
+    width: 960px;
+  }
 
   .flex {
     max-width: 960px;
@@ -62,13 +65,6 @@
     z-index: 500;
     height: 75px;
     width: 100%;
-  }
-
-  .banner-content h2 {
-    font-size: 3em;
-  }
-  .banner-content h3 {
-    font-size: 1.5em;
   }
 
   .container-body {

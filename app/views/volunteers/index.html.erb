@@ -1,8 +1,9 @@
 <!-- Banner -->
 <div class="page-banner volunteer">
   <div class="shadow-box">
-    <div class="banner-content page-canvas title-only">
-      <h2>"NO DOUBT THEY WILL GO ON TO DO GREAT THINGS"</h2>
+    <div class="banner-content page-canvas page-title">
+      <h2>Volunteer</h2>
+      <h3 class="white-text">"NO DOUBT THEY WILL GO ON TO DO GREAT THINGS"</h3>
       <p class="white-text"><em>—Denise D., Volunteer Office and Account Manager</em></p>
     </div>
   </div>
@@ -10,61 +11,77 @@
 
 <div class="flex page-canvas">
   <div class="flex-item-1col">
-    <h2>VOLUNTEER</h2>
-    <p>
+    <p class="lead">
     Red Sweater Project is made possible by the generosity of our skilled volunteers and local Tanzanian staff. We are a global community that believes when woven together, our strengths can accomplish more than any one of us alone.
     </p>
-    <br/>
-    <p>
+    <p class="lead">
     We offer short- and long-term positions both in Tanzania and abroad. Volunteer work ranges from writers who contribute remotely, to office support, to teachers who live at our staff house for an entire school year and work in the classroom daily.
     </p>
   </div>
 </div>
 <hr>
-<div class="flex">
+<!-- <div class="flex">
   <div class="flex-item-image">
     <img src="../images/volunteer_young_group.jpg" />
   </div>
-</div>
+</div> -->
 
-<div class="flex">
-  <div class="page-canvas">
-    <div class="flex-item-1col">
-      <h2>AVAILABLE POSITIONS</h2>
-      <p>
-        All teaching positions require an MA in teaching and ELS training. Positions are in Tanzania unless otherwise noted. Don't see a position, but you'd love to volunteer? Send an email with a CV/resume to <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering">volunteer@redsweaterproject.com</a>
-      </p>
-      <% if @positions.any? %>
-      <hr>
-        <ul>
-          <% @positions.each do |position| %>
-            <li>
-              <p><strong><%= position.title %></strong></p>
+<div class="flex page-canvas">
+  <div class="flex-item-1col">
+    <h2>AVAILABLE POSITIONS</h2>
+    <p class="lead">
+      All teaching positions require an MA in teaching and ELS training. Positions are in Tanzania unless otherwise noted. Don't see a position, but you'd love to volunteer? Send an email with a CV/resume to <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering">volunteer@redsweaterproject.com</a>
+    </p>
+    <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering"><button type="button" name="button" class="btn-yellow">Apply for a Position</button></a>
+  </div>
+<!-- </div> -->
+
+<!-- <div class="flex page-canvas"> -->
+  <div class="flex-item-1col">
+    <% if @positions.any? %>
+      <% @positions.each do |position| %>
+        <div class="col-sm-8">
+          <hr>
+          <h3><%= position.title %></h3>
+          <div class="row">
+            <div class="col-sm-3">
+              <p><strong>Location:</strong></p>
               <p><%= position.location %></p>
-              <p><%= position.term %></p>
-              <% if position.stipend != nil && position.stipend != 0 %>
-                <p>This position offers a monthly stipend of: $<%= position.stipend%>
-                </p>
+            </div>
+            <div class="col-sm-5">
+              <p><strong>Term:</strong></p>
+              <p><em><%= position.term %></em></p><br/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <p><strong>Stipend:</strong></p>
+              <% if position.stipend != nil %>
+                <p>$<%= position.stipend%>/month, as well as free
+                accommodation, orientation and training</p>
+              <% else %>
+                <p>This position does not include a stipend.</p>
               <% end %>
-            </li>
-            <hr>
-            <% end %>
-        </ul>
-        <% else %>
-        <br>
-        <p>
-          There are no available positions at this time.
-        </p>
+              <br/><p><strong>Details:</strong></p>
+              <p><%= position.details %></p>
+            </div>
+          </div>
+        </div>
       <% end %>
-    </div>
+    <% else %>
+      <br>
+      <p>
+        There are no available positions at this time.</p>
+    <% end %>
   </div>
 </div>
+
 
 <div class="blue">
   <div class="flex page-canvas">
     <div class="flex-item-1col">
       <h2>VOLUNTEER GROUPS</h2>
-      <p>
+      <p class="lead">
         Red Sweater Project partners with numerous volunteer groups each year who travel to Tanzania to complete projects at the Mungere School.</p>
         <br>
       <p><strong>

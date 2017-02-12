@@ -4,6 +4,16 @@
     justify-content: center;
   }
 
+  .banner-content {
+    h3 {
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 2.5em;
+      line-height: 1.2em;
+    }
+  }
+
   .flex.page-canvas.items-wrap {
     justify-content: center;
     flex-wrap: wrap;
