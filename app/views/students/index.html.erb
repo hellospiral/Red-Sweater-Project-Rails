@@ -75,8 +75,9 @@
         <div class="flex-item-3col sponsor-students sponsor-project">
           <%= image_tag("#{cause.image}.png") %>
           <h5><strong><%= cause.name %></strong></h5>
-          <p>Cost to completion: <br>
-            $<%= cause.cost %></p>
+          <p><%= cause.details %></p><br/>
+          <p class="copy-bottom"><strong>Suggested gift: </strong>
+          $<%= cause.cost %></p>
             <%= link_to "Contribute", students_path, :class => "btn btn-yellow" %>
         </div>
       <% end %>
@@ -88,7 +89,7 @@
 
 
 <div class="yellow">
-  <div class="flex page-canvas">
+  <div class="flex page-canvas nowrap">
     <div class="flex-item-2col">
       <div class="twocol-left-text">
         <h2>STORIES FROM STUDENTS AND STAFF</h2>
