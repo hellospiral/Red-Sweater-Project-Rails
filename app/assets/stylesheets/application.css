@@ -357,6 +357,21 @@ ul .padded li {
     cursor: not-allowed;
     opacity: 0.5; }
 
+.btn-donate {
+  background: #febe10;
+  border-radius: 25px; }
+  .btn-donate:hover {
+    background: #fec528;
+    border-radius: 25px; }
+
+#btn-donate {
+  color: white;
+  padding: 1px auto;
+  font-size: 1.25em; }
+
+li .btn-donate {
+  color: white; }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -1093,7 +1108,8 @@ select {
     float: left;
     width: 100%;
     position: relative;
-    z-index: 5; }
+    z-index: 5;
+    padding-top: 20px; }
 
   .nav {
     display: flex;
@@ -1206,13 +1222,10 @@ select {
 
   footer .footer-bar .links {
     width: 75%;
-    flex: 1;
     display: flex;
     justify-content: space-between; }
-    footer .footer-bar .links a:first-of-type {
-      margin-left: 20px; }
-  footer .footer-bar .footer-bar > .links {
-    max-width: 600px; }
+  footer .footer-bar .links {
+    max-width: 500px; }
   footer .footer-bar .social-media-icons {
     display: flex;
     flex-wrap: nowrap;

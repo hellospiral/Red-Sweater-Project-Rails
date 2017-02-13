@@ -46,7 +46,6 @@
   </div>
 
   <div class="update col-sm-3" id="change-form" >
-
   </div>
 
   <div class="col-sm-9">
@@ -58,12 +57,13 @@
   <div class="col-sm-9">
     <li><%= link_to "Add an event", new_event_path, remote: true %></li>
   </div>
-  <div class="flex col-sm-9" id="admin-events-list">
+
+  <div class="flex items-wrap col-sm-9" id="admin-events-list">
     <% @events.each do |event| %>
       <div class="col-sm-3 sponsor-students" id="event_<%= event.id %>">
         <%= image_tag("#{ event.image }", :class => "img-responsive img-rounded") %>
         <h5><strong><%= event.name %></strong></h5>
-        <p><%= event.time %><%= event.date %>
+        <p><%= event.start %>
         <%= event.details %></p>
         <br/>
         <%= link_to "Update #{event.name}", edit_event_path(event), remote: true %><br>
@@ -71,6 +71,7 @@
       </div>
     <% end %>
   </div>
+
   <div class="col-sm-3" id="event-change-form" >
   </div>
 

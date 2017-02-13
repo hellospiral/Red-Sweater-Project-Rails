@@ -21,7 +21,7 @@
 <div class="page-canvas">
   <% if @events.any? %>
     <% @events.each do |event| %>
-      <div class="flex">
+      <div class="flex nowrap">
         <div class="flex-item-2col">
             <%= image_tag("#{ event.image }")%>
         </div>
@@ -29,22 +29,21 @@
           <div>
             <h5><%= event.name %></h5>
             <p><%= event.time %></p>
-            <p><%= event.date.strftime("%B %d, %Y") %></p>
+            <p><%= event.start %></p>
             <br>
             <p><%= event.details %></p>
             <br>
             <span class="addtocalendar atc-style-blue">
               <var class="atc_event">
-                <var class="atc_date_start">2016-05-04 12:00:00</var>
-                <var class="atc_date_end">2016-05-04 18:00:00</var>
-                <var class="atc_timezone">Europe/London</var>
+                <var class="atc_date_start"><%= event.start %></var>
+                <var class="atc_date_end"><%= event.end %></var>
+                <!-- <var class="atc_timezone">Europe/London</var> -->
                 <var class="atc_title"><%= event.name %></var>
                 <var class="atc_description"><%= event.details %></var>
                 <var class="atc_location">tbd</var>
 
               </var>
             </span>
-            <%= link_to "Add to cart", students_path, :class => "btn btn-solid" %>
           </div>
           <hr class="mobile-hr yellow-hr">
         </div>

@@ -88,8 +88,8 @@
                   <li><a href="/students#causes">Invest in campus</a></li>
                 </ul>
               </li>
-              <li class="">
-                <%= link_to "DONATE", new_charge_path %>
+              <li class="btn-donate">
+                <%= link_to "DONATE", new_charge_path, id:"btn-donate" %>
               </li>
 
               <li>
@@ -184,7 +184,7 @@
       </div>
 
       <footer>
-        <div class="footer-bar fixed-bottom">
+        <div class="footer-bar">
           <%= image_tag("logo_horiz_grad_white.png", :class => "img-responsive", :id => "small-logo")%>
           <div class="links">
             <%= link_to 'Blog', posts_path %>
