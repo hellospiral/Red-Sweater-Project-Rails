@@ -82,11 +82,11 @@
                   <!-- <li><%= link_to 'Visit', "/pages/redrhinotours" %></li> -->
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'SPONSOR' %>
-                <ul>
+              <li class="topnav"><%= link_to 'SPONSOR', students_path %>
+                <!-- <ul>
                   <li><%= link_to 'Sponsor a Student', students_path %></li>
                   <li><a href="/students#causes">Invest in campus</a></li>
-                </ul>
+                </ul> -->
               </li>
               <li class="btn-donate">
                 <%= link_to "DONATE", new_charge_path, id:"btn-donate" %>
@@ -132,7 +132,7 @@
                       <li><%= link_to 'Sponsor a Student', students_path %></li>
                       <li><a href="/students#causes">Invest in campus</a></li>
                     </ul>
-                    <h3>DONATE</h3>
+                    <h3><%= link_to 'DONATE', new_charge_path%></h3>
                     <h3><%= link_to 'CONNECT WITH US', contacts_path %></h3>
                   </div>
                 </div>
