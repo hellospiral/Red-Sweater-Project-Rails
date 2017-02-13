@@ -44,7 +44,8 @@
         <%= image_tag("#{student.image}.png", :class => "img-responsive img-rounded") %>
           <h5><strong><%= student.name %></strong></h5>
           <p><em><%= student.age %> year-old <%= student.gender %></em><br>
-          I want to become: <br>A <%= student.dream %></p>
+          I want to become: <br><%= student.dream %></p>
+          <!-- <p><%= student.bio %></p> -->
           <% if student.sponsored %>
             <p><strong>Sponsored!</strong></p>
           <% else %>
