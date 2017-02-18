@@ -59,21 +59,17 @@
   </div>
 <hr>
 <!-- <div class="blue"> -->
-  <div class="flex page-canvas">
-    <div class="flex-item-1col">
-      <h2>INVEST IN A GOOD CAUSE ON CAMPUS</h2>
-      <p class="lead">
-        There are several projects underway  at the Mungere Schools that need the support of sponsors like you. Commit to a yearly lump sum, or a monthly donation to support the cause of your choosing. Project sponsorships are year-long commitments with the option to continue sponsorship of the same project, or update your gift to go toward another project on campus.
-      </p>
-    </div>
+<div class="flex page-canvas">
+  <div class="flex-item-1col">
+    <h2>INVEST IN A GOOD CAUSE ON CAMPUS</h2>
+    <p class="lead">
+      There are several projects underway  at the Mungere Schools that need the support of sponsors like you. Commit to a yearly lump sum, or a monthly donation to support the cause of your choosing. Project sponsorships are year-long commitments with the option to continue sponsorship of the same project, or update your gift to go toward another project on campus.
+    </p>
   </div>
+</div>
 
-<!-- <div class="flex page-canvas">
-  <div class="flex-item-1col intro">
-    <h2>GOOD CAUSES ON CAMPUS</h2>
-  </div>
-</div> -->
-  <div class="flex page-canvas items-wrap">
+<div class="flex page-canvas items-wrap">
+  <div class="row">
     <% if @goodcauses.any? %>
       <% @goodcauses.each do |cause| %>
         <div class="flex-item-3col sponsor-students sponsor-project">
@@ -82,15 +78,12 @@
           <p><%= cause.details %></p><br/>
           <p class="copy-bottom"><strong>Suggested gift: </strong>
           $<%= cause.cost %></p>
-            <%= link_to "Contribute", students_path, :class => "btn btn-yellow" %>
+          <%= link_to "Contribute", students_path, :class => "btn btn-yellow" %>
         </div>
       <% end %>
     <% end %>
   </div>
-
-<!-- </div> -->
-
-
+</div>
 
 <div class="yellow">
   <div class="flex page-canvas nowrap">
