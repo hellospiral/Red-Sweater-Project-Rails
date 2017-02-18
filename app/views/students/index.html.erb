@@ -1,8 +1,9 @@
 <div class="page-banner sponsor">
   <div class="shadow-box">
     <div class="banner-content page-canvas page-title">
-      <h2>"We are <span style="color:#fdbe16;">so proud</span> of our sponsored student, Ashura"</h2>
-      <p><strong class="white-text">--Don and Jessie A.</strong></p>
+      <h2>Sponsor</h2>
+        <!-- <p>"We are <span style="color:#fdbe16;">so proud</span> of our sponsored student, Ashura"</p>
+        <p><strong class="white-text">--Don and Jessie A.</strong></p> -->
     </div>
   </div>
 </div>
@@ -14,12 +15,12 @@
         <p class="lead">
           Sponsorship of a child equips them with everything they need to be successful in the classroom. It’s also an opportunity to build a lasting, meaningful friendship. $125 per month or $1,500 per year.
         </p>
-        <ul class="lead"><strong>Sponsors receive:</strong>
+        <ul class=""><strong>Sponsors receive:</strong>
           <li>• Handwritten letters and drawings from your student</li>
           <li>• A chance to exchange letters and stories, as well as to learn from a new friend</li>
         </ul>
 
-        <ul class="lead"><strong>Sponsored students receive:</strong>
+        <ul class=""><strong>Sponsored students receive:</strong>
           <li>• A quality education with certified, experienced teachers</li>
           <li>• School supplies</li>
           <li>• A school uniform, including their red sweater!</li>
@@ -39,20 +40,22 @@
     </div>
   </div>
   <div class="flex page-canvas items-wrap">
-    <% @students.each do |student| %>
-      <div class="col-sm-3 sponsor-students">
-        <%= image_tag("#{student.image}.png", :class => "img-responsive img-rounded") %>
-          <h5><strong><%= student.name %></strong></h5>
-          <p><em><%= student.age %> year-old <%= student.gender %></em><br>
-          I want to become: <br><%= student.dream %></p>
-          <!-- <p><%= student.bio %></p> -->
-          <% if student.sponsored %>
-            <p><strong>Sponsored!</strong></p>
-          <% else %>
-            <%= link_to "Sponsor", students_path, :class => "btn btn-yellow" %>
-          <% end %>
-        </div>
-    <% end %>
+    <div class="row">
+      <% @students.each do |student| %>
+        <div class="col-sm-3 sponsor-students">
+          <%= image_tag("#{student.image}.png", :class => "img-responsive img-rounded") %>
+            <h5><strong><%= student.name %></strong></h5>
+            <p><em><%= student.age %> year-old <%= student.gender %></em><br>
+            I want to become: <br><%= student.dream %></p>
+            <!-- <p><%= student.bio %></p> -->
+            <% if student.sponsored %>
+              <p><strong>Sponsored!</strong></p>
+            <% else %>
+              <%= link_to "Sponsor", students_path, :class => "btn btn-yellow" %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
   </div>
 <hr>
 <!-- <div class="blue"> -->

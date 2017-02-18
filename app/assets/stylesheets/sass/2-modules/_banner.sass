@@ -76,62 +76,72 @@
   background-size: auto
 
 @mixin banner-image
-  width: 100vw
+  width: 100%
+  // background-attachment: fixed
+  background-repeat: no-repeat
   background-size: cover
-  background-attachment: fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
-  background-size: cover
 
 .home
-  background: url(../images/21hats.jpg) center top no-repeat
+  background: url(../images/hero/hero_home.jpg) center top
   +banner-image
 
 .donate
-  background: url(../images/donate.jpg) center top no-repeat
+  background: url(../images/hero/hero_donate.jpg) center top
   +banner-image
 
 .events
-  background: url(../images/group_wave.jpg) center top no-repeat
+  background: url(../images/hero/hero_events.jpg) center top
   +banner-image
 
 .the-school
-  background: url(../images/theschool.jpg) center top no-repeat
+  background: url(../images/hero/theschool.jpg) center center
+  +banner-image
+
+.bloghero
+  background: url(../images/hero/hero_blog.jpg) center center
   +banner-image
 
 .news
-  background: url(../images/news.jpg) center top no-repeat
+  background: url(../images/hero/hero_news.jpg) center center
   +banner-image
 
 .creative
-  background: url(../images/kili.jpg) center center no-repeat
+  background: url(../images/hero/hero_getcreative.jpg) center center
   +banner-image
 
-.tours
-  background: url(../images/redrhinotours.jpg) center bottom no-repeat
-  +banner-image
+// .tours
+//   background: url(../images/redrhinotours.jpg) center bottom
+//   +banner-image
 
 .sponsor
-  background: url(../images/sponsor.jpg) center center no-repeat
+  background: url(../images/hero/hero_sponsor.jpg) center center
   +banner-image
 
-.sponsor_bottom
-  background: url(../images/IMG_7055.jpg) center center no-repeat
-  +banner-image
+// .sponsor_bottom
+//   background: url(../images/IMG_7055.jpg) center center
+//   +banner-image
 
 .ourfocus
-  background: url(../images/ourfocus_lo.jpg) center top no-repeat
+  background: url(../images/hero/hero_ourfocus_lo.jpg)
+  background-position: center bottom
+  +banner-image
+
+.ourstory
+  background: url(../images/hero/hero_ourstory.jpg)
+  background-position: right center
   +banner-image
 
 .volunteer
-  background: url(../images/group_wave.jpg) center center no-repeat
+  background: url(../images/hero/hero_volunteer_lo.jpg) center center
   +banner-image
 
 .team
-  background: url(../images/team.jpg) center top no-repeat
+  background: url(../images/hero/hero_ourteam.jpg) center center
   +banner-image
 
-.redsweater
-  background: url(../images/boyClassroom.jpg) center top no-repeat
-  +banner-image
+// .redsweater
+//   background: url(../images/boyClassroom.jpg) center top
+//   +banner-image

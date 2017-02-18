@@ -697,134 +697,114 @@ li .btn-donate {
   background-size: auto; }
 
 .home {
-  background: url(../images/21hats.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_home.jpg) center top;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .donate {
-  background: url(../images/donate.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_donate.jpg) center top;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .events {
-  background: url(../images/group_wave.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_events.jpg) center top;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .the-school {
-  background: url(../images/theschool.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/theschool.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
+
+.bloghero {
+  background: url(../images/hero/hero_blog.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
 
 .news {
-  background: url(../images/news.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_news.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .creative {
-  background: url(../images/kili.jpg) center center no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_getcreative.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.tours {
-  background: url(../images/redrhinotours.jpg) center bottom no-repeat;
-  width: 100vw;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .sponsor {
-  background: url(../images/sponsor.jpg) center center no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_sponsor.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.sponsor_bottom {
-  background: url(../images/IMG_7055.jpg) center center no-repeat;
-  width: 100vw;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .ourfocus {
-  background: url(../images/ourfocus_lo.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_ourfocus_lo.jpg);
+  background-position: center bottom;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
+
+.ourstory {
+  background: url(../images/hero/hero_ourstory.jpg);
+  background-position: right center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
 
 .volunteer {
-  background: url(../images/group_wave.jpg) center center no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_volunteer_lo.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 .team {
-  background: url(../images/team.jpg) center top no-repeat;
-  width: 100vw;
+  background: url(../images/hero/hero_ourteam.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.redsweater {
-  background: url(../images/boyClassroom.jpg) center top no-repeat;
-  width: 100vw;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -o-background-size: cover; }
 
 footer {
   height: 106px;
