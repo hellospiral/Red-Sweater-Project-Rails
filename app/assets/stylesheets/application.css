@@ -237,7 +237,6 @@ ul .padded li {
   align-items: center;
   border-radius: 4px;
   font-family: "proxima-nova", sans-serif;
-  margin-top: 20px;
   height: 45px;
   padding: 12px 25px;
   letter-spacing: 0.5px;
@@ -269,7 +268,6 @@ ul .padded li {
   align-items: center;
   border-radius: 4px;
   font-family: "proxima-nova", sans-serif;
-  margin-top: 20px;
   height: 45px;
   padding: 12px 25px;
   letter-spacing: 0.5px;
@@ -302,7 +300,6 @@ ul .padded li {
   align-items: center;
   border-radius: 4px;
   font-family: "proxima-nova", sans-serif;
-  margin-top: 20px;
   height: 45px;
   padding: 12px 25px;
   letter-spacing: 0.5px;
@@ -334,7 +331,6 @@ ul .padded li {
   align-items: center;
   border-radius: 4px;
   font-family: "proxima-nova", sans-serif;
-  margin-top: 20px;
   height: 45px;
   padding: 12px 25px;
   letter-spacing: 0.5px;
@@ -1605,66 +1601,66 @@ form.donate-left {
   width: 100px;
   margin-top: 0; }
 
-.ourfocus_donate, .sponsor_bottom, .subscribe, .be-a-donor, .ourstory, .ourfocus, .sponsor-a-student, .be-a-volunteer {
+.col-sm-8 img {
+  width: 100%; }
+
+.blog, .sponsor_bottom, .subscribe, .be-a-donor, .ourstory_CTA, .ourfocus_CTA, .sponsor-a-student, .be-a-volunteer, .blog_CTA {
   color: white;
   text-shadow: 2px 2px 8px #333;
   height: 100%; }
-  .ourfocus_donate p, .sponsor_bottom p, .subscribe p, .be-a-donor p, .ourstory p, .ourfocus p, .sponsor-a-student p, .be-a-volunteer p {
+  .blog p, .sponsor_bottom p, .subscribe p, .be-a-donor p, .ourstory_CTA p, .ourfocus_CTA p, .sponsor-a-student p, .be-a-volunteer p, .blog_CTA p {
     color: white; }
-  .ourfocus_donate .btn, .ourfocus_donate li, .sponsor_bottom .btn, .sponsor_bottom li, .subscribe .btn, .subscribe li, .be-a-donor .btn, .be-a-donor li, .ourstory .btn, .ourstory li, .ourfocus .btn, .ourfocus li, .sponsor-a-student .btn, .sponsor-a-student li, .be-a-volunteer .btn, .be-a-volunteer li {
+  .blog .btn, .blog li, .sponsor_bottom .btn, .sponsor_bottom li, .subscribe .btn, .subscribe li, .be-a-donor .btn, .be-a-donor li, .ourstory_CTA .btn, .ourstory_CTA li, .ourfocus_CTA .btn, .ourfocus_CTA li, .sponsor-a-student .btn, .sponsor-a-student li, .be-a-volunteer .btn, .be-a-volunteer li, .blog_CTA .btn, .blog_CTA li {
     text-shadow: 0 0 0 #000; }
 
-.ourfocus_donate {
-  background: url(../images/ourfocus_donate.jpg) center center no-repeat;
+.blog_CTA {
+  background: url(../images/CTA/CTA_Blog.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 .subscribe {
-  background: url(../images/CTA/CTANewsletter_SignUp.jpg) center center no-repeat;
+  background: url(../images/CTA/CTANewsletter_SignUp_lo.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 .be-a-donor {
-  background: url(../images/CTA/CTABanner_BeADonor.jpg) center center no-repeat;
+  background: url(../images/CTA/CTABanner_BeADonor_lo.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-.ourstory {
-  background: url(../images/CTA/CTAOurStory_.jpeg) center center no-repeat;
+.ourstory_CTA {
+  background: url(../images/CTA/CTAOurStory_lo.jpeg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-.ourfocus {
-  background: url(../images/CTA/CTABanner_OurFocus.jpg) center center no-repeat;
+.ourfocus_CTA {
+  background: url(../images/CTA/CTABanner_OurFocus_lo.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 .sponsor-a-student {
-  background: url(../images/CTA/CTABanner_Sponsor.JPG) center center no-repeat;
+  background: url(../images/CTA/CTABanner_Sponsor_lo.JPG) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 .be-a-volunteer {
-  background: url(../images/CTA/CTABanner_Volunteer.jpg) center center no-repeat;
+  background: url(../images/CTA/CTABanner_Volunteer_lo.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-.col-sm-8 img {
-  width: 100%; }
 
 .nivo-activator {
   display: block; }

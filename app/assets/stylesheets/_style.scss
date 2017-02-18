@@ -11,6 +11,67 @@
   }
 }
 
+.blog, .sponsor_bottom, .subscribe, .be-a-donor, .ourstory_CTA, .ourfocus_CTA, .sponsor-a-student, .be-a-volunteer, .blog_CTA {
+  color: white;
+  text-shadow: 2px 2px 8px #333;
+  p {
+    color: white;
+  }
+  height: 100%;
+  .btn, li {
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+.blog_CTA {
+  background: url(../images/CTA/CTA_Blog.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.subscribe {
+  background: url(../images/CTA/CTANewsletter_SignUp_lo.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.be-a-donor {
+  background: url(../images/CTA/CTABanner_BeADonor_lo.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.ourstory_CTA {
+  background: url(../images/CTA/CTAOurStory_lo.jpeg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.ourfocus_CTA {
+  background: url(../images/CTA/CTABanner_OurFocus_lo.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.sponsor-a-student {
+  background: url(../images/CTA/CTABanner_Sponsor_lo.JPG) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.be-a-volunteer {
+  background: url(../images/CTA/CTABanner_Volunteer_lo.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 
