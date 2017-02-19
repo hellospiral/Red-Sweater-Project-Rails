@@ -1,34 +1,55 @@
 <!-- Banner -->
 <div class="page-banner team">
   <div class="shadow-box">
-    <div class="banner-content page-canvas title-only">
-      <h2>CONTACT</h2>
+    <div class="banner-content page-canvas page-title">
+      <h2>Connect With Us</h2>
     </div>
   </div>
 </div>
 
-<!-- <div class="page-canvas">
-  <div class="flex">
-    <div class="flex-item-staff">
-      <hr class="no-margin-bottom">
-      <div class="social-media-icons">
-        <h2 class="yellow-text">CONTACT US</h2>
+  <div class="flex page-canvas">
+    <div class="flex-item-1col">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>WE'D LOVE TO HEAR FROM YOU</h2>
+        <p>
+          If you have a question about giving to Red Sweater Project, please read our <a href="pages/faq"><strong>FAQs</strong></a>. If you have additional questions or suggestions, send us a note and we'll get back to you as soon as possible.
+        </p>
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <p><a href="mailto:volunteer@redsweaterprojec.org?subject=Volunteering"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Volunteer Inquiries</a></p>
+            <p><a href="mailto:info@redsweaterprojec.org?subject=General Inquiry"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; General Questions or Ideas</a></p><br/>
+          </div>
+          <div class="col-sm-6 contact-details">
+            <!-- <p><strong>Let's Be Friends</strong></p> -->
+            <div class="social-media-icons">
+              <a href="https://twitter.com/redsweaterpro" target="_blank" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/redsweaterproject/" target="_blank" class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/redsweaterproject/" target="_blank" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://vimeo.com/user11394209" target="_blank" class="icon"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div> -->
-<div class="page-canvas">
-  <hr class="no-margin-top">
-  <div class="flex">
-    <h5 class="alert-success"><%= flash[:notice] %></h5>
-    <div class="flex-item-2col">
-      <h2>WE'D LOVE TO HEAR FROM YOU</h2>
-      <p>
-        If you have a question about giving to Red Sweater Project, please read our <a href="pages/faq"><strong>FAQs</strong></a>. If you have additional questions or suggestions, fill out the form below and we will get back to you as soon as possible.
-      </p>
+    <div class="row">
+      <hr>
+      <div class="col-sm-4">
 
 
-      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <p><strong>Ashley Holmer</strong><br/>
+        Founder &amp; Executive Director<br/>
+        (503) 956-9390<br/>
+        <a href="mailto:ashley@redsweaterproject.org?subject=RSP Question for Ashley">Email Ashley</a></p>
+        <br/>
+        <p><strong>Ada Banasik</strong><br/>
+        Programs Director<br/>
+        <a href="mailto:ada@redsweaterproject.org?subject=RSP Question for Ada">Email Ada</a></p>
+
+
+        <!-- <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
         <%= f.input :name, :required => true, :input_html => { :wrap => :soft, :rows => 2}, :label => 'Your name:', :label_html => { :class => 'type' } %>
         <%= f.input :email, :required => true %>
         <%= f.input :message, :as => :text, :required => true %>
@@ -36,16 +57,16 @@
           <%= f.input :nickname, :hint => 'Leave this field blank!' %>
         </div>
         <%= f.button :submit, 'Send message', :class=> "btn btn-solid" %>
-      <% end %>
-    </div>
-    <div class="blue rounded flex">
-      <div>
-        <h5>MAILING ADDRESS</h5>
-        <h5>Oregon Headquarters:</h5>
+        <% end %> -->
+      </div>
+
+      <div class="col-sm-6">
+        <p><strong>Oregon Mailing Address</strong></p>
         <p>
           1000 SW Forest Meadows Way <br/>Lake Oswego, OR 97034
         </p>
-        <h5>Letters for students should be sent to:</h5>
+        <br/>
+        <p><strong>Tanzania Mailing Address</strong></p>
         <p>
           PO BOX 123TanzaniaEast Africa
         </p>
@@ -53,6 +74,9 @@
     </div>
   </div>
 </div>
+<!-- </div> -->
+
+
 
 
 <div class="yellow">
