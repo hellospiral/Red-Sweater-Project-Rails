@@ -3,16 +3,18 @@
     display: flex;
     flex-wrap: nowrap;
   }
-  .icon {
-    color: $text-blue;
-    font-size: 36px;
-    max-width: 50px;
-    margin: 0px 10px;
-    &:hover {
-      color: $yellow;
-    }
+}
+.icon {
+  color: white;
+  font-size: 36px;
+  max-width: 50px;
+  margin: 0px 10px;
+  &:hover {
+    color: $yellow;
   }
 }
+
+
 
 // .nomargintop {
 //  margin-top: 0px !important;

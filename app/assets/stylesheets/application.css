@@ -88,6 +88,9 @@ header {
   .yellow h2 {
     color: white; }
 
+.blue-text {
+  color: #2877A0; }
+
 .no-top-pad {
   padding: 0 30px 0 0; }
 
@@ -1595,12 +1598,13 @@ form.donate-left {
 .contact-details .social-media-icons {
   display: flex;
   flex-wrap: nowrap; }
-.contact-details .icon {
-  color: #2877A0;
+
+.icon {
+  color: white;
   font-size: 36px;
   max-width: 50px;
   margin: 0px 10px; }
-  .contact-details .icon:hover {
+  .icon:hover {
     color: #febe10; }
 
 .donation-type {
