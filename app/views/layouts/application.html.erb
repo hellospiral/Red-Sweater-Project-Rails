@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -25,8 +29,8 @@
     <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
     <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script>
     <%= stylesheet_link_tag "application.css" %>
-    <link href="/assets/stylesheets/application.scss" media="screen" rel="stylesheet" />
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <!-- <link href="/assets/stylesheets/application.scss" media="screen" rel="stylesheet" />
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %> -->
   </head>
   <body>
     <div id="wrapper">
@@ -195,7 +199,14 @@
             <%= link_to 'Events', events_path %>
             <%= link_to 'Volunteer', volunteers_path %>
             <%= link_to 'Contact', new_contact_path %>
-            <a href="#">Privacy</a>
+            <a href="#" type="" data-toggle="modal" data-target="#privacy" id="privacylink">Privacy</a>
+            <!-- <button type="" class="" data-toggle="modal" data-target="#privacy" id="privacylink">Privacy</button> -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Launch demo modal
+            </button> -->
+
+            <!-- <a href="#">Privacy</a> -->
             <a href="/pages/news-testimonials">News</a>
                   </div>
           <div class="social-media-icons">
@@ -210,9 +221,29 @@
   </body>
 
 </html>
-<script>$(document).ready(function() {
-  $('#mobile-menu-icon').click(function() {
-    $('.mobile-menu').toggle(700);
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="privacy">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <h3 class="modal-title" id="myModalLabel">Red Sweater Project's Privacy Policy</h3>
+     </div>
+     <div class="modal-body">
+       <%= render "layouts/privacy" %>
+     </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('#mobile-menu-icon').click(function() {
+      $('.mobile-menu').toggle(700);
+    });
+    // $('#privacylink').click(function() {
+    //   $('#myModal').modal('show');
+    // });
   });
-});
 </script>
