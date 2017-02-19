@@ -145,9 +145,7 @@ body {
   background: #ffffff;
   overflow-x: hidden;
   position: relative;
-  margin: 0 0; }
-
-body {
+  margin: 0 0;
   font-family: "proxima-nova", sans-serif;
   color: #6f6f6e;
   padding-bottom: 70px; }
@@ -164,17 +162,19 @@ h2 {
   font-size: 36px;
   font-weight: 200;
   line-height: 34px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
 
 h3 {
-  font-size: 16px;
+  font-size: 22px;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
   color: #6f6f6e;
   text-transform: uppercase;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  margin-top: 2em; }
 
 h4 {
   font-size: 24px;
@@ -195,7 +195,7 @@ h6 {
   line-height: 13px; }
 
 p {
-  font-size: 1em;
+  font-size: 1.25em;
   line-height: 1.5em;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
@@ -222,10 +222,10 @@ ul .padded li {
   letter-spacing: 0.5px;
   color: white;
   padding: 0 0 60px 0; }
-  .blue li, .blue p {
+  .blue li, .blue p, .blue h3 {
     font-weight: 300;
     color: white; }
-    .blue li a:hover, .blue p a:hover {
+    .blue li a:hover, .blue p a:hover, .blue h3 a:hover {
       text-decoration: underline; }
 
 .btn-secondary {
@@ -241,7 +241,7 @@ ul .padded li {
   padding: 12px 25px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   appearance: none;
   cursor: pointer;
   display: inline-block;
@@ -272,7 +272,7 @@ ul .padded li {
   padding: 12px 25px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   appearance: none;
   cursor: pointer;
   display: inline-block;
@@ -304,7 +304,7 @@ ul .padded li {
   padding: 12px 25px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   appearance: none;
   cursor: pointer;
   display: inline-block;
@@ -335,7 +335,7 @@ ul .padded li {
   padding: 12px 25px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   appearance: none;
   cursor: pointer;
   display: inline-block;
@@ -706,7 +706,7 @@ li .btn-donate {
   -o-background-size: cover; }
 
 .donate {
-  background: url(../images/hero/hero_donate.jpg) center top;
+  background: url(../images/hero/hero_donate.jpg) center center;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1111,7 +1111,7 @@ select {
     width: 32%;
     padding: 0 0 10px 0;
     margin-top: 10px;
-    margin-bottom: 60px; }
+    margin-bottom: 20px; }
 
   .space-around {
     margin: 0 5px;
@@ -1372,7 +1372,6 @@ form.donate-left {
   border-radius: 5px;
   margin: 15px 10px;
   min-width: 275px;
-  width: 30%;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -1383,9 +1382,10 @@ form.donate-left {
     position: absolute;
     bottom: 1em;
     width: 90%; }
-  .sponsor-students p, .sponsor-students h5 {
+  .sponsor-students p, .sponsor-students h3 {
     padding-right: 20px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-top: 15px; }
   .sponsor-students img {
     width: 100%;
     margin: 0 auto;
@@ -1395,10 +1395,11 @@ form.donate-left {
     padding-bottom: 20px; }
 
 .sponsor-project {
-  height: 550px !important; }
+  min-height: 600px !important;
+  max-width: 450px; }
   .sponsor-project .copy-bottom {
     position: absolute;
-    bottom: 5em; }
+    bottom: 4em; }
 
 @media screen and (max-width: 405px) {
   .page-banner .shadow-box {
@@ -1537,7 +1538,7 @@ form.donate-left {
   display: none; }
 
 .flex-item-staff {
-  width: 80vw;
+  max-width: 960px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap; }
@@ -1545,6 +1546,7 @@ form.donate-left {
     width: 100%; }
   .flex-item-staff .social-media-icons {
     display: flex;
+    max-width: 960px;
     justify-content: space-between;
     width: 80vw; }
   .flex-item-staff h2 {
@@ -1641,6 +1643,22 @@ form.donate-left {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.startssweater img {
+  width: 100%;
+  border-radius: 10px; }
+
+.col-sm-3 .fa, .col-sm-5 .fa {
+  font-size: 72px;
+  line-height: 42px;
+  padding: 12px 0 24px 0;
+  margin: 0 auto; }
+.col-sm-3 .fa-heartbeat, .col-sm-5 .fa-heartbeat {
+  color: #e61e26; }
+.col-sm-3 .fa-cutlery, .col-sm-5 .fa-cutlery {
+  color: #febe10; }
+.col-sm-3 .fa-graduation-cap, .col-sm-5 .fa-graduation-cap {
+  color: #2877A0; }
 
 .nivo-activator {
   display: block; }

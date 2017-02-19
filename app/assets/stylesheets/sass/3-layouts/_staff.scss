@@ -79,7 +79,7 @@
 }
 
 .flex-item-staff {
-  width: 80vw;
+  max-width: 960px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -88,6 +88,7 @@
   }
   .social-media-icons {
     display: flex;
+    max-width: 960px;
     justify-content: space-between;
     width: 80vw;
   }

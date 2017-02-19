@@ -1,5 +1,9 @@
 class GoodcausesController < ApplicationController
 
+  def index
+    @goodcauses = Goodcause.all
+  end
+
   def new
     @goodcause = Goodcause.new
     respond_to do |format|

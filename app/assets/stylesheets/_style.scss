@@ -73,9 +73,32 @@
   background-size: cover;
 }
 
+// HOMEPAGE IMAGES
+.startssweater {
+  img {
+    width: 100%;
+    border-radius: 10px;
 
+  }
+}
 
-
+.col-sm-3, .col-sm-5 {
+  .fa {
+    font-size: 72px;
+    line-height: 42px;
+    padding: 12px 0 24px 0;
+    margin: 0 auto;
+  }
+  .fa-heartbeat {
+    color: $text-red;
+  }
+  .fa-cutlery {
+    color: $yellow;
+  }
+  .fa-graduation-cap {
+    color: $text-blue;
+  }
+}
 
 .nivo-activator {
   display: block;

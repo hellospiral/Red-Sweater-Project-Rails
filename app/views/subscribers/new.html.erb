@@ -2,9 +2,9 @@
 <div class="page-banner home">
   <div class="shadow-box">
     <div class="banner-content page-canvas page-title">
-          <STRONG><h3 class="ltyellow-text">BECAUSE OF RED SWEATER PROJECT:</h3></STRONG>
-          <h2>Kids in East Africa Have Access To a High School Education</h2>
-
+      <STRONG><h3 class="ltyellow-text">BECAUSE OF RED SWEATER PROJECT:</h3></STRONG>
+      <!-- <h2>Kids in East Africa Have Access To a High School Education</h2> -->
+      <h2>An entire community of children is able to complete high school for the very first time.</h2>
     </div>
   </div>
 </div>
@@ -12,114 +12,146 @@
 <!-- Intro -->
 <div class="flex page-canvas">
 	<div class="flex-item-1col">
-		<p class="lead">Red Sweater Project creates high quality middle and high schools for kids in rural East Africa. Superman has his cape and Zoro has his mask. For these kids, a school uniform is transformational. Putting on a red sweater means having the opportunity to learn and to better an entire community.</p>
+		<p class="lead">Red Sweater Project offers high-quality middle and high school education for kids in rural East Africa. Wonder Woman has her cape and Zorro has his mask. In Tanzania, a school uniform is transformational. Putting on a red sweater means having the opportunity to learn and to better an entire community.</p>
 		<div class="btns-wrapper">
-			<a href="/pages/theschool" class="btn btn-solid"><span>Check out the school</span></a>
+      <%= link_to 'Check out the school', schools_path, :class=> "btn btn-solid"%>
 		</div>
   </div>
- </div>
+</div>
+<hr>
 
-    <!-- Focus-->
-    <div class="blue">
-      <div class="flex page-canvas">
-        <div class="flex-item-1col intro">
-          <h2>A CLEAR FOCUS</h2>
-          <p class="lead">With Africa's rapidly growing population of youth, there are not enough secondary schools to accommodate all children in countries like Tanzania. </p>
-          <p>Attending these schools often costs USD $500, making them unaffordable for most families living in poverty. That's why Mungere Secondary School is so important to the community. A middle and high school education from Red Sweater Project is unique in three distinct ways.</p><br/>
-        </div>
+<!-- IT STARTS WITH A SWEATER -->
+<div class="flex page-canvas">
+    <div class="row nowrap row-space">
+      <div class="col-sm-6" style="margin-top:60px">
+        <h2>IT STARTS WITH A SWEATER</h2>
+        <p class="lead">
+          At the Mungere School, students learn creative problem solving and to use their education to invest in themselves, their families, their villages and the world. It's a ripple effect. And it starts with a red sweater.
+        </p>
+        <h3>COMMON THREADS</h3>
+        <p class="lead">
+          Red and blue colors, traditionally worn by the indigenous Masaai tribe, inspired our school uniform of red sweaters with blue skirts or pants. This design represents our commitment to enhance&mdash;not replace&mdash;tribal heritage.
+        </p>
       </div>
-      <div class="page-canvas">
-        <div class="flex focus-items items-nowrap" id="nowrap">
-      		<div class="flex-item-3col space-second is-showing">
-  					<div class="img-wrapper">
-  						<%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
-  					</div>
-  					<div class="focusCopy">
-  						<h5><strong>1. QUALITY EDUCATION</strong></h5>
-  						<p>makes a big difference. It’s not enough to build buildings. Our certified teaching staff brings the classroom to life.</p>
-  					</div>
-  				</div>
-          <div class="flex-item-3col space-second is-showing">
-            <hr class="mobile-hr">
-  				  <div class="img-wrapper">
-    					<%=image_tag("home_OurFocus_equality.png", :class => "img-responsive")%>
-  			    </div>
-    				<div class="focusCopy">
-    					<h5><strong>2. GENDER EQUALITY</strong></h5>
-    					<p>isn’t learned in a book. It’s cultivated and experienced first-hand.</p>
-    				</div>
-          </div>
-          <div class="flex-item-3col space-second is-showing">
-            <hr class="mobile-hr">
-  					<div class="img-wrapper">
-  						<%= image_tag("home_OurFocus_innovation.png", :class => "img-responsive")%>
-  					</div>
-  					<div class="focusCopy">
-  						<h5><strong>3. RESPONSIBLE INNOVATION</strong></h5>
-  						<p>means making sure our impact in the local and global community is a positive one.</p>
-  					</div>
-    			</div>
-  			</div>
+      <div class="col-sm-6 startssweater">
+        <img alt="Student in a read sweater" src="/images/home_common_threads_vert.jpg" />
       </div>
-      <div class="flex focus-items page-canvas">
-        <div class="btns-wrapper">
-          <a href="/pages/ourfocus" class="btn-secondary"><span>Learn more about our focus</span></a>
-        </div>
+      <!-- <div class="col-sm-6 startssweater">
+        <img alt="Student in a read sweater" src="/images/home_starts_sweater.png" />
+      </div> -->
+    </div>
+</div>
+<hr>
+<!-- COMMON THREADS -->
+<!-- <div class="flex page-canvas">
+  <div class="row nowrap row-space">
+    <div class="col-sm-6 startssweater">
+      <img alt="Student in a read sweater" src="/images/home_common_threads_vert.jpg" />
+    </div>
+    <div class="col-sm-6" style="margin-top:60px"> -->
+      <!-- <h2>COMMON THREADS</h2>
+      <p class="lead">
+        Red and blue colors, traditionally worn by the indigenous Masaai tribe, inspired our school uniform of red sweaters with blue skirts or pants. This design represents our commitment to enhance&mdash;not replace&mdash;tribal heritage.
+      </p> -->
+    <!-- </div>
+  </div>
+</div> -->
+
+<!-- SO MUCH MORE THAN CLOTHING -->
+<div class="flex page-canvas">
+  <div class="flex-item-1col">
+    <h2>SO MUCH MORE THAN CLOTHING</h2>
+    <p class="lead">
+      Our integrated approach helps students to thrive. In addition to a well rounded education, our students receive medicine and health care, nutritious meals at school and a safe, supportive environment within the community.
+    </p>
+    <div class="row">
+
+      <div class="col-sm-3 text-center">
+        <h3 class="" style="color:#e61e26"><i class="fa fa-heartbeat text-center" aria-hidden="true"></i><br/>Medicine and Healthcare</h3>
+      </div>
+      <div class="col-sm-5 text-center">
+        <h3 class="" style="color:#febe10"><i class="fa fa-cutlery text-center" aria-hidden="true"></i><br/>Nutritious Meals</h3>
+      </div>
+      <div class="col-sm-3 text-center">
+        <h3 class="" style="color:#2877A0"><i class="fa fa-graduation-cap text-center" aria-hidden="true"></i><br/>Supportive Learning Environment</h3>
       </div>
     </div>
 
+  </div>
+</div>
 
-<!-- Slider section -->
-<!-- <div class="slider-wrapper">
-	<div class="container-fluid">
-			<div class="section-name students">
-				<h2>Our students are changemakers</h2>
-				<p>Secondary school training for girls in the developing world has a higher return on investment than any other effort.* We’re seeing incredible impact educating girls and boys at the Mungere School:</p>
-		        <div id="owl-hero" class="owl-carousel owl-theme">
-            <div class="item" style="background-image: url(assets/sliders/Slide.jpg)">
-                <div class="caption">
-                    <h6>test</h6>
-                    <h1>slider</h1>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(assets/sliders/Slide2.jpg)">
-                <div class="caption">
-                    <h6>test</h6>
-                    <h1>slider</h1>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(assets/sliders/Slide3.jpg)">
-                <div class="caption">
-                    <h6>test</h6>
-                    <h1>slider</h1>
-                </div>
-            </div>
-        </div>
+<br>
+
+<!-- Focus-->
+<div class="blue">
+  <div class="flex page-canvas">
+    <div class="flex-item-1col intro">
+      <h2>A CLEAR FOCUS</h2>
+      <p class="lead">With Africa's rapidly growing population of youth, there are not enough secondary schools to accommodate all children in countries like Tanzania. </p>
+      <p>Attending these schools often costs USD $500, making them unaffordable for most families living in poverty. That's why Mungere Secondary School is so important to the community. A middle and high school education from Red Sweater Project is unique in three distinct ways.</p><br/>
+    </div>
+  </div>
+  <div class="page-canvas">
+    <div class="flex focus-items items-nowrap" id="nowrap">
+  		<div class="flex-item-3col space-second is-showing">
+				<div class="img-wrapper">
+					<%= image_tag("home_OurFocus_education.png", :class => "img-responsive")%>
+				</div>
+				<div class="focusCopy">
+					<h3><strong>1. QUALITY EDUCATION</strong></h3>
+					<p> It’s not enough to build buildings: Our qualified teaching staff brings the classroom to life.</p>
+				</div>
+			</div>
+      <div class="flex-item-3col space-second is-showing">
+        <hr class="mobile-hr">
+			  <div class="img-wrapper">
+					<%=image_tag("home_OurFocus_equality.png", :class => "img-responsive")%>
+		    </div>
+				<div class="focusCopy">
+					<h3><strong>2. GENDER EQUALITY</strong></h3>
+					<p>This isn’t learned in a book. It’s cultivated by first-hand experience.</p>
+				</div>
+      </div>
+      <div class="flex-item-3col space-second is-showing">
+        <hr class="mobile-hr">
+				<div class="img-wrapper">
+					<%= image_tag("home_OurFocus_innovation.png", :class => "img-responsive")%>
+				</div>
+				<div class="focusCopy">
+					<h3><strong>3. RESPONSIBLE INNOVATION</strong></h3>
+					<p>We make sure our impact in the local and global community is a positive one.</p>
+				</div>
+			</div>
 		</div>
-		</div> -->
+  </div>
+  <div class="flex focus-items page-canvas">
+    <div class="btns-wrapper">
+      <a href="/pages/ourfocus" class="btn-secondary">LEARN MORE ABOUT OUR FOCUS</a>
+    </div>
+  </div>
+</div>
 
-
-  	<!-- Subscribe section -->
-    <div class="yellow">
-      <div class="flex page-canvas nowrap">
-        <div class="flex-item-2col">
-          <div class="twocol-left-text">
-            <h2>DON'T MISS A THING</h2>
-            <p class="lead"> Subscribe to our newsletter and stay up-to-date with the school and Red Sweater Project.</p>
-            <%= form_for @subscriber, remote: true do |f| %>
-              <%= f.label :email, 'Email' %>
-              <%= f.email_field :email, class: "form-control" %>
-              <%= f.submit 'Subscribe', class: 'btn btn-solid' %>
-            <% end %>
-          </div>
-        </div>
-        <div class="shadow nonmobile">
-          <div class="flex-item-2col subscribe">
-          </div>
-        </div>
+<!-- Subscribe section -->
+<div class="yellow">
+  <div class="flex page-canvas nowrap">
+    <div class="flex-item-2col">
+      <div class="twocol-left-text">
+        <h2>DON'T MISS A THING</h2>
+        <p class="lead"> Subscribe to our newsletter and stay up-to-date with the school and Red Sweater Project.</p>
+        <%= form_for @subscriber, remote: true do |f| %>
+          <%= f.label :email, 'Email' %>
+          <%= f.email_field :email, class: "form-control" %>
+          <%= f.submit 'Subscribe', class: 'btn btn-solid' %>
+        <% end %>
       </div>
     </div>
-    <div class="shadow mobile">
+    <div class="shadow nonmobile">
       <div class="flex-item-2col subscribe">
       </div>
     </div>
+  </div>
+</div>
+<div class="shadow mobile">
+  <div class="flex-item-2col subscribe">
+  </div>
+</div>
