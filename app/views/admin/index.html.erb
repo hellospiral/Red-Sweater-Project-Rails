@@ -125,10 +125,10 @@
   <div class="flex col-sm-9" id="admin-causes-list">
     <% if @goodcauses.any?%>
       <% @goodcauses.each do |goodcause| %>
-        <div class="col-sm-3 sponsor-students" id="goodcause_<%= goodcause.id %>">
+        <div class="col-sm-3 sponsor-students sponsor-project" id="goodcause_<%= goodcause.id %>">
           <%= image_tag("#{goodcause.image}", :class => "img-responsive img-rounded") %>
           <h5><strong><%= goodcause.name %></strong></h5>
-          <p>Cost to completion: $<%= goodcause.cost %></p>
+          <p>Suggested Donation: $<%= goodcause.suggested %></p>
           <p><%= goodcause.details %></p>
           <br/>
           <%= link_to "Update", edit_goodcause_path(goodcause), remote: true %><br/>

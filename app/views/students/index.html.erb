@@ -1,7 +1,7 @@
 <div class="page-banner sponsor">
   <div class="shadow-box">
     <div class="banner-content page-canvas page-title">
-      <h2>Sponsor</h2>
+      <h2>Sponsor A Student</h2>
         <!-- <p>"We are <span style="color:#fdbe16;">so proud</span> of our sponsored student, Ashura"</p>
         <p><strong class="white-text">--Don and Jessie A.</strong></p> -->
     </div>
@@ -11,16 +11,15 @@
     <!-- Intro -->
     <div class="flex page-canvas">
     	<div class="flex-item-1col">
-				<h2>SPONSOR A STUDENT</h2>
         <p class="lead">
-          Sponsorship of a child equips them with everything they need to be successful in the classroom. It’s also an opportunity to build a lasting, meaningful friendship. $125 per month or $1,500 per year.
+          Sponsorship of a child equips them with everything they need to be successful in the classroom. It’s also an opportunity to build a lasting, meaningful friendship. USD $125 per month or USD $1,500 a year
         </p>
-        <ul class=""><strong>Sponsors receive:</strong>
+        <ul class=""><p><strong>Sponsors receive:</strong></p>
           <li>• Handwritten letters and drawings from your student</li>
           <li>• A chance to exchange letters and stories, as well as to learn from a new friend</li>
         </ul>
 
-        <ul class=""><strong>Sponsored students receive:</strong>
+        <ul class=""><p><strong>Sponsored students receive:</strong></p>
           <li>• A quality education with certified, experienced teachers</li>
           <li>• School supplies</li>
           <li>• A school uniform, including their red sweater!</li>
@@ -32,21 +31,23 @@
 				</div>
 			</div>
 
-      <hr>
+      <!-- <hr> -->
 
   <div class="flex page-canvas">
-    <div class="flex-item-1col intro">
-      <h2>SPONSOR A STUDENT</h2>
-    </div>
+    <!-- <div class="flex-item-1col intro">
+      <h2>STUDENTS IN NEED OF SPONSORSHIP</h2>
+    </div> -->
   </div>
   <div class="flex page-canvas items-wrap">
     <div class="row">
       <% @students.each do |student| %>
         <div class="col-sm-3 sponsor-students">
           <%= image_tag("#{student.image}.png", :class => "img-responsive img-rounded") %>
-            <h5><strong><%= student.name %></strong></h5>
-            <p><em><%= student.age %> year-old <%= student.gender %></em><br>
-            I want to become: <br><%= student.dream %></p>
+            <h3><strong><%= student.name %></strong></h3>
+            <p><%= student.age %> year-old <%= student.gender %></p>
+            <p><strong>I want to become: </strong><br/><%= student.dream %></p>
+            <p><a href="../images/bios/agriculture_teacher.pdf" target="_blank">Learn more about me</a></p>
+            <!-- <a href="../images/bios/#{<%= student.bio %>}"></a> -->
             <!-- <p><%= student.bio %></p> -->
             <% if student.sponsored %>
               <p><strong>Sponsored!</strong></p>

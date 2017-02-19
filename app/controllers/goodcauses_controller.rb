@@ -51,7 +51,7 @@ class GoodcausesController < ApplicationController
 
   private
   def cause_params
-    params.require(:goodcause).permit(:name, :details, :cost, :image)
+    params.require(:goodcause).permit(:name, :details, :cost, :suggested, :image)
   end
 
 end
