@@ -1418,6 +1418,8 @@ form.donate-left {
   .sponsor-students a {
     padding-left: 20px;
     padding-bottom: 20px; }
+  .sponsor-students .imagelink {
+    padding: 0 !important; }
 
 .sponsor-project {
   min-height: 600px !important;
