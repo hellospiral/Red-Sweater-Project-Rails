@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: redsweaterproject
+  api_key: '214387658932263'
+  api_secret: g8BWXJNSXJlaYTDD6U5OXXermr0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: redsweaterproject
+  api_key: '214387658932263'
+  api_secret: g8BWXJNSXJlaYTDD6U5OXXermr0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: redsweaterproject
+  api_key: '214387658932263'
+  api_secret: g8BWXJNSXJlaYTDD6U5OXXermr0
+  enhance_image_tag: true
+  static_image_support: false

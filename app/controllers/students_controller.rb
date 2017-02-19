@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
   def index
     @students = Student.all
-    @goodcauses = Goodcause.all 
+    @goodcauses = Goodcause.all
   end
 
   def new
@@ -52,6 +52,6 @@ class StudentsController < ApplicationController
 
   private
   def student_params
-    params.require(:student).permit(:name, :age, :bio, :dream, :sponsored, :image, :gender)
+    params.require(:student).permit(:name, :age, :bio, :dream, :sponsored, :image, :fullbio, :gender)
   end
 end

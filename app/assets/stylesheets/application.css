@@ -773,6 +773,15 @@ li .btn-donate {
   -moz-background-size: cover;
   -o-background-size: cover; }
 
+.connect {
+  background: url(../images/hero/hero_connect.jpg) center center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
 .sponsor {
   background: url(../images/hero/hero_sponsor.jpg) center center;
   width: 100%;

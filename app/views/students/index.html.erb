@@ -46,7 +46,7 @@
             <h3><strong><%= student.name %></strong></h3>
             <p><%= student.age %> year-old <%= student.gender %></p>
             <p><strong>I want to become: </strong><br/><%= student.dream %></p>
-            <p><a href="../images/bios/agriculture_teacher.pdf" target="_blank">Learn more about me</a></p>
+            <p><a href="../images/bios/<%= student.biolink %>" target="_blank">Learn more about me</a></p>
             <!-- <a href="../images/bios/#{<%= student.bio %>}"></a> -->
             <!-- <p><%= student.bio %></p> -->
             <% if student.sponsored %>

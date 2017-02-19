@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170219031030) do
+ActiveRecord::Schema.define(version: 20170219232023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -102,13 +102,18 @@ ActiveRecord::Schema.define(version: 20170219031030) do
     t.string   "dream"
     t.boolean  "sponsored"
     t.integer  "sponsor_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "gender"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "summarypage_file_name"
+    t.string   "summarypage_content_type"
+    t.integer  "summarypage_file_size"
+    t.datetime "summarypage_updated_at"
+    t.string   "biolink"
   end
 
   create_table "subscribers", force: :cascade do |t|
