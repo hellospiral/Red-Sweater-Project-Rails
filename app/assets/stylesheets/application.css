@@ -23,6 +23,10 @@ hr {
   margin-bottom: 30px;
   color: white; }
 
+.hr-grey {
+  border-color: #ccc;
+  color: #ccc; }
+
 #small-logo {
   width: 100px; }
 
@@ -1617,6 +1621,15 @@ form.donate-left {
   margin: 0px 10px; }
   .icon:hover {
     color: #febe10; }
+
+.timeline h1 {
+  margin-bottom: 40px; }
+.timeline h3 {
+  margin-top: 0; }
+.timeline .col-sm-4 {
+  width: 300px; }
+.timeline .col-sm-8 {
+  width: 600px; }
 
 .donation-type {
   width: 100px;
