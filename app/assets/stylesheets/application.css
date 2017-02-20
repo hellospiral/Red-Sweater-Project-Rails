@@ -377,19 +377,23 @@ ul .padded li {
   background: #febe10;
   color: white;
   padding: 1px auto;
-  font-size: 1em; }
+  font-size: 1em;
+  border-radius: 25px; }
   #btn-donate:hover {
-    background: #fec528;
-    border-radius: 25px; }
+    background-color: white;
+    color: #febe10;
+    border: 1px solid #febe10; }
 
 #btn-sponsor {
   color: #febe10;
   background-color: white;
   border: 1px solid #febe10;
   padding: 1px auto;
-  font-size: 1em; }
+  font-size: 1em;
+  border-radius: 25px; }
   #btn-sponsor:hover {
-    border-radius: 25px; }
+    background-color: #febe10;
+    color: white; }
 
 li .btn-donate {
   color: white; }
@@ -724,7 +728,7 @@ li .btn-donate {
   background-size: auto; }
 
 .home {
-  background: url(../images/hero/hero_home.jpg) center top;
+  background: url(../images/hero/hero_home.jpg) center center;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
