@@ -93,7 +93,9 @@ header {
     color: white; }
 
 .blue-text {
-  color: #2877A0; }
+  color: #2877A0 !important; }
+  .blue-text:hover {
+    color: #febe10 !important; }
 
 .no-top-pad {
   padding: 0 30px 0 0; }
