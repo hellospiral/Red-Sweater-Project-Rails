@@ -17,38 +17,31 @@
     <p class="lead">
     We offer short- and long-term positions both in Tanzania and abroad. Volunteer work ranges from writers who contribute remotely, to office support, to teachers who live at our staff house for an entire school year and work in the classroom daily.
     </p>
-  </div>
-</div>
-<hr>
-<!-- <div class="flex">
-  <div class="flex-item-image">
-    <img src="../images/volunteer_young_group.jpg" />
-  </div>
-</div> -->
-
-<div class="flex page-canvas">
-  <div class="flex-item-1col">
+<br/>
     <h2>AVAILABLE POSITIONS</h2>
-    <p class="lead">
-      All teaching positions require an MA in teaching and ELS training. Positions are in Tanzania unless otherwise noted. Don't see a position, but you'd love to volunteer? Send an email with a CV/resume to <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering">volunteer@redsweaterproject.com</a>
+    <p>
+      All teaching positions require an MA in teaching and ESL training. Positions are in Tanzania unless otherwise noted. Don't see a position, but you'd love to volunteer? Send an email with a CV/resume to <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering">volunteer@redsweaterproject.com</a>
     </p>
-    <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering"><button type="button" name="button" class="btn-yellow">Apply for a Position</button></a>
-  </div>
-<!-- </div> -->
+    <br>
+    <br>
+    <div class="row">
+      <a href="mailto:volunteer@redsweaterproject.com?Subject=Volunteering"><button type="button" name="button" class="btn-yellow">Apply for a Position</button></a>
 
-<!-- <div class="flex page-canvas"> -->
-  <div class="flex-item-1col">
+    </div>
+    <hr class="hr-grey">
+
     <% if @positions.any? %>
       <% @positions.each do |position| %>
-        <div class="col-sm-8">
-          <hr>
-          <h3><%= position.title %></h3>
+      <div class="row">
+
+        <div class="col-sm-12">
+          <p><strong><%= position.title %></strong></p>
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6">
               <p><strong>Location:</strong></p>
               <p><%= position.location %></p>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-6">
               <p><strong>Term:</strong></p>
               <p><em><%= position.term %></em></p><br/>
             </div>
@@ -62,16 +55,18 @@
               <% else %>
                 <p>This position does not include a stipend.</p>
               <% end %>
-              <br/><p><strong>Details:</strong></p>
-              <p><%= position.details %></p>
+              <!-- <br/><p><strong>Details:</strong></p>
+              <p><%= position.details %></p> -->
+              <hr class="hr-grey">
+
             </div>
           </div>
         </div>
-      <% end %>
+      </div>
+    <% end %>
     <% else %>
       <br>
-      <p>
-        There are no available positions at this time.</p>
+      <p>There are no available positions at this time.</p>
     <% end %>
   </div>
 </div>
@@ -89,15 +84,16 @@
       </strong></p>
 
       <ul class="padded">
-        <li>• Moondance Adventures</li>
+        <li>• Architects Without Borders</li>
+        <li>• Courts For Kids</li>
+        <li>• Embark Adventures</li>
         <li>• Engineers without Borders</li>
-        <li>• Pacific University's School of Optometry</li>
-        <li>• Harvard's School of Engineering</li>
+        <li>• GE Foundation</li>
+        <li>• Moondance Adventures</li>
+        <li>• Pacific University School of Optometry</li>
+        <li>• Rotary International</li>
+        <li>• UNITE</li>
       </ul>
-      <br>
-      <p>
-        Our volunteers have worked on a full gammut of projects: from planning and designing the solar-power system, to performing eye exams, to painting new classrooms, and running creative workshops with students.
-      </p>
     </div>
   </div>
 </div>

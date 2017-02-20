@@ -88,13 +88,14 @@
                   <!-- <li><%= link_to 'Visit', "/pages/redrhinotours" %></li> -->
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'SPONSOR', students_path %>
+              <li class="btn-donate">
+                <%= link_to 'SPONSOR', students_path, id:"btn-sponsor" %>
                 <!-- <ul>
                   <li><%= link_to 'Sponsor a Student', students_path %></li>
                   <li><a href="/students#causes">Invest in campus</a></li>
                 </ul> -->
               </li>
-              <li class="btn-donate">
+              <li class="">
                 <%= link_to "DONATE", new_charge_path, id:"btn-donate" %>
               </li>
 
@@ -148,7 +149,9 @@
             <li><%=image_tag("icon-menu_notext.png", id: "mobile-menu-icon")%>
               <div class="mobile-menu">
                 <ul>
-                  <li><strong>DONATE</strong></li>
+                  <li><%= link_to 'DONATE', new_charge_path %></li>
+                  <hr>
+                  <li><%= link_to 'SPONSOR', students_path%></li>
                   <hr>
                   <li><strong>WHO WE ARE</strong></li>
                   <!-- <li><a href="/pages/redsweater">The Red Sweater</a></li> -->

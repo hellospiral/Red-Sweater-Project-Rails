@@ -65,19 +65,32 @@ $text-blue: #2877A0
     background: tint($body-type-grey, 10%)
     color: #fff
   +button
+// 
+// .btn-donate
+//   border-radius: 25px
 
-.btn-donate
+
+#btn-donate
   background: $yellow
-  border-radius: 25px
+  color: white
+  padding: 1px auto
+  font-size: 1em
   &:hover
     background: tint($yellow, 10%)
     border-radius: 25px
 
-#btn-donate
-  color: white
-  // height: 2em
+#btn-sponsor
+  color: $yellow
+  background-color: white
+  border: 1px solid $yellow
   padding: 1px auto
-  font-size: 1.25em
+  font-size: 1em
+  &:hover
+    border-radius: 25px
+
+
+
+
 
 li
   .btn-donate

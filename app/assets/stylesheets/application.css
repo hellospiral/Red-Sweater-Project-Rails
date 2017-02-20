@@ -373,17 +373,23 @@ ul .padded li {
     cursor: not-allowed;
     opacity: 0.5; }
 
-.btn-donate {
+#btn-donate {
   background: #febe10;
-  border-radius: 25px; }
-  .btn-donate:hover {
+  color: white;
+  padding: 1px auto;
+  font-size: 1em; }
+  #btn-donate:hover {
     background: #fec528;
     border-radius: 25px; }
 
-#btn-donate {
-  color: white;
+#btn-sponsor {
+  color: #febe10;
+  background-color: white;
+  border: 1px solid #febe10;
   padding: 1px auto;
-  font-size: 1.25em; }
+  font-size: 1em; }
+  #btn-sponsor:hover {
+    border-radius: 25px; }
 
 li .btn-donate {
   color: white; }
@@ -516,7 +522,7 @@ li .btn-donate {
   z-index: 510;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: .75em;
   color: #6f6f6f;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -539,7 +545,8 @@ li .btn-donate {
 
 .topnav ul li {
   padding: 10px;
-  float: none; }
+  float: none;
+  font-size: .75em; }
 
 #nav ul a {
   white-space: nowrap; }
@@ -607,7 +614,7 @@ li .btn-donate {
   line-height: 32px;
   font-family: "proxima-nova", sans-serif;
   font-weight: lighter;
-  font-size: 1em;
+  font-size: .75em;
   color: #fff; }
 
 .nav .nav-column li a:hover {
