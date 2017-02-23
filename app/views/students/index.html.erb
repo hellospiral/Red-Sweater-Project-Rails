@@ -44,12 +44,10 @@
         <div class="col-sm-3 sponsor-students">
           <a href="../images/bios/<%= student.biolink %>" target="_blank" class="imagelink">
           <%= image_tag("#{student.image}.png", :class => "img-responsive img-rounded") %></a>
-            <h3><strong><%= student.name %></strong></h3>
-            <p><%= student.age %> year-old <%= student.gender %></p>
+            <h3><%= student.name %></h3>
+            <p><%= student.age %> year-old <%= student.gender %></p><br/>
             <p><strong>I want to become: </strong><br/><%= student.dream %></p>
             <p><a href="../images/bios/<%= student.biolink %>" target="_blank">Learn more about me</a></p>
-            <!-- <a href="../images/bios/#{<%= student.bio %>}"></a> -->
-            <!-- <p><%= student.bio %></p> -->
             <% if student.sponsored %>
               <p><strong>Sponsored!</strong></p>
             <% else %>
