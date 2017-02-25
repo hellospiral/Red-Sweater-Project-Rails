@@ -1385,18 +1385,6 @@ select {
   .lt-blue-donate hr {
     border: .5px solid white; }
 
-.donate-left {
-  width: 70%;
-  padding-top: 40px;
-  padding-right: 30px; }
-  .donate-left p {
-    padding-bottom: 0; }
-    .donate-left p img {
-      width: 20px;
-      padding-left: 7px; }
-  .donate-left form input {
-    text-align: left; }
-
 form.donate-left {
   width: 100%; }
 
