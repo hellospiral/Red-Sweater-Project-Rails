@@ -35,26 +35,26 @@
       <div class="row">
 
         <div class="col-sm-12">
-          <p><strong><%= position.title %></strong></p>
+          <p><strong><%= position.title %></strong></p><br/>
           <div class="row">
             <div class="col-sm-6">
-              <p><strong>Location:</strong></p>
-              <p><%= position.location %></p>
+              <p>Location:</p>
+              <p><em><%= position.location %></em></p>
             </div>
             <div class="col-sm-6">
-              <p><strong>Term:</strong></p>
+              <p>Term:</p>
               <p><em><%= position.term %></em></p><br/>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <p><strong>Stipend:</strong></p>
+              <!-- <p><strong>Stipend:</strong></p>
               <% if position.stipend != nil %>
                 <p>$<%= position.stipend%>/month, as well as free
                 accommodation, orientation and training</p>
               <% else %>
                 <p>This position does not include a stipend.</p>
-              <% end %>
+              <% end %> -->
               <!-- <br/><p><strong>Details:</strong></p>
               <p><%= position.details %></p> -->
               <hr class="hr-grey">
