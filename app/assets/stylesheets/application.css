@@ -240,7 +240,9 @@ ul .padded li {
   letter-spacing: 0.5px;
   color: white;
   padding: 0 0 60px 0; }
-  .blue a {
+  .blue a:hover {
+    text-decoration: none; }
+  .blue #natgeo {
     color: white;
     border-bottom: 1px solid white; }
   .blue li, .blue p, .blue h3 {
