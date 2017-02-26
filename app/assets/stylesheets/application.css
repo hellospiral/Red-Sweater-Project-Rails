@@ -202,21 +202,22 @@ h4 {
   letter-spacing: 1px; }
 
 h5 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: 500;
   padding-top: 15px;
-  line-height: 20px; }
+  color: #2877A0;
+  letter-spacing: 0.5px; }
 
 h6 {
   font-size: 13px;
   line-height: 13px; }
 
 p, li {
-  font-size: 1.25em;
+  font-size: 1.1em;
   line-height: 1.5em;
   font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #6f6f6e; }
 
 .white-text {
@@ -250,6 +251,14 @@ ul .padded li {
     color: white; }
     .blue li a:hover, .blue p a:hover, .blue h3 a:hover {
       text-decoration: none; }
+
+.ltgrey {
+  background-color: #f7f7f7;
+  height: auto;
+  letter-spacing: 0.5px;
+  padding: 0 0 60px 0; }
+  .ltgrey a {
+    text-decoration: none; }
 
 .btn-secondary {
   background-color: white;
@@ -848,6 +857,9 @@ li .btn-donate {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; }
+
+.img-wrapper {
+  width: 100%; }
 
 footer {
   height: 106px;
