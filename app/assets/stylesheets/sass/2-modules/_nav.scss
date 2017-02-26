@@ -13,7 +13,7 @@
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: nowrap;
   position: relative;
 }
@@ -34,7 +34,7 @@
 .nav > li > a {
     z-index: 510;
     font-family: "proxima-nova", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: .75em;
     color: #6f6f6f;
 
@@ -49,7 +49,7 @@
 }
 
 #nav a:hover{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #nav .topnav ul {
@@ -58,21 +58,23 @@
     position: absolute;
     left: -9999px;
     width: 140px;
-
+    // -moz-box-shadow:    2px 2px 3px 2px pink;
+    // -webkit-box-shadow: 2px 2px 3px 2px pink;
+    // box-shadow:         2px 2px 3px 2px pink;
 }
 
 .topnav ul li {
     padding: 10px;
     float: none;
-    font-size: .75em;
+    font-size: .9em;
 }
 #nav ul a{
-    white-space:nowrap;
+  white-space:nowrap;
 }
 
 #nav li:hover ul{
-    left:0;
-    width: 140px;
+  left:0;
+  width: 160px;
 }
 
 
@@ -85,7 +87,7 @@
 }
 
 .nav > li:hover > a {
-  color: $text-red;
+  font-weight: 600;
 }
 
 .nav > li > div {
@@ -96,9 +98,7 @@
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
-
   background-color: #000; opacity: 0.86; filter: alpha(opacity=.86);
-
   -webkit-transition: all .3s ease .15s;
   -moz-transition: all .3s ease .15s;
   -o-transition: all .3s ease .15s;
@@ -111,22 +111,21 @@
 }
 
 .nav > li:hover > div {
-    opacity: 1;
-    visibility: visible;
-    overflow: visible;
-    background-color: #000; opacity: 0.86; filter: alpha(opacity=.86);
-
-    -webkit-transition: all .3s ease .15s;
-    -moz-transition: all .3s ease .15s;
-    -o-transition: all .3s ease .15s;
-    -ms-transition: all .3s ease .15s;
-    transition: all .3s ease .15s;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  background-color: #000; opacity: 0.86; filter: alpha(opacity=.86);
+  -webkit-transition: all .3s ease .15s;
+  -moz-transition: all .3s ease .15s;
+  -o-transition: all .3s ease .15s;
+  -ms-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
 }
 
 
 .nav .nav-column {
-    width: 20%;
-    padding: 2.5% 3%;
+  width: 20%;
+  padding: 2.5% 3%;
 }
 
 .nav .nav-column h3 {
@@ -140,11 +139,13 @@
 }
 
 .nav .nav-column li a {
-    line-height: 32px;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: lighter;
-    font-size: .75em;
-    color: #fff;
+  line-height: 32px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: lighter;
+  font-size: .75em;
+  color: #fff;
 }
 
-.nav .nav-column li a:hover { color: $yellow; }
+.nav .nav-column li a:hover {
+  color: $yellow;
+}

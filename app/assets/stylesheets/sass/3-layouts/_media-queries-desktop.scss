@@ -52,7 +52,7 @@
 
   .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;;
     align-items: center;
     z-index: 500;
     height: 75px;
@@ -61,7 +61,7 @@
 
   #nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     z-index: 500;
     height: 75px;

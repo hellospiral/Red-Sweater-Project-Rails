@@ -62,7 +62,7 @@
           <div class="main-nav">
             <a class="logo-wrap" href="/"><%= image_tag("RSPlogo_175x59.png")%></a>
             <ul id= "nav" class="nav">
-              <li class="topnav"><%= link_to 'WHO WE ARE' %>
+              <li class="topnav mx-4 pl-2"><%= link_to 'WHO WE ARE' %>
                 <ul>
                   <!-- <li><%= link_to "The Red Sweater", "/pages/redsweater" %></li> -->
                   <li><%= link_to "Our Focus", "/pages/ourfocus" %></li>
@@ -70,7 +70,7 @@
                   <li><%= link_to "The Team", "/pages/theteam" %></li>
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'WHAT WE DO' %>
+              <li class="topnav mx-4 pl-2"><%= link_to 'WHAT WE DO' %>
                 <ul>
                   <li><%= link_to "The School", schools_path %></li>
                   <li><%= link_to "FAQ", "/pages/faq" %></li>
@@ -78,8 +78,8 @@
                   <li><%= link_to "News + Testimonials", "/pages/news-testimonials" %></li>
                 </ul>
               </li>
-              <li class="topnav"><%= link_to 'GET INVOLVED' %>
-                <ul>
+              <li class="topnav mx-4 pl-2"><%= link_to 'GET INVOLVED' %>
+                <ul class="">
                   <li><%= link_to 'Volunteer', volunteers_path %></li>
                   <li><%= link_to 'Invest in a Cause', goodcauses_path %></li>
                   <li><%= link_to 'Get Creative', "/pages/getcreative" %></li>
@@ -88,14 +88,14 @@
                   <!-- <li><%= link_to 'Visit', "/pages/redrhinotours" %></li> -->
                 </ul>
               </li>
-              <li class="btn-donate">
-                <%= link_to 'SPONSOR', students_path, id:"btn-sponsor" %>
+              <li class="btn-donate mx-2">
+                <%= link_to 'SPONSOR', students_path, class:"", id:"btn-sponsor" %>
                 <!-- <ul>
                   <li><%= link_to 'Sponsor a Student', students_path %></li>
                   <li><a href="/students#causes">Invest in campus</a></li>
                 </ul> -->
               </li>
-              <li class="">
+              <li class="mx-4">
                 <%= link_to "DONATE", new_charge_path, id:"btn-donate" %>
               </li>
 

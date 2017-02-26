@@ -1,56 +1,41 @@
-<div class="page-canvas">  
-  <div class="flex">
-    <div class="flex-item-2col">
+<div class="flex page-canvas">
+  <div class="flex-item-1col row">
+    <div class="col-sm-8 offset-sm-2">
+      <p>&#8592;<%= link_to 'Browse Blog', posts_path %></p><br/>
       <%= image_tag(@post.image, :class => "flex-item-image")  %>
       <br/>
       <br/>
-      <p>&#8592;<%= link_to 'See all posts', posts_path %></p>
     </div>
-    <div class="flex-item-2col">
-      <p><strong><%= @post.created_at.strftime('%b %d, %Y') %></strong> 	&nbsp;| 	&nbsp;<%= @post.author %><br/></p>
-      <br/>
-      <br/>
-      <h2><%= @post.title %></h2><br/>
-
+    <div class="col-sm-8 offset-sm-2">
+      <p><strong><%= @post.created_at.strftime('%b %d, %Y') %></strong> 	&nbsp;| 	&nbsp;<%= @post.author %></p>
+      <h2 class="my-4"><%= @post.title %></h2>
       <div class="post-content"><%= raw @post.body %></div>
     </div>
 
   </div>
 </div>
 
-
 <div class="yellow">
-  <div class="flex page-canvas">
+  <div class="flex page-canvas nowrap">
     <div class="flex-item-2col">
       <div class="twocol-left-text">
-        <h2>BE A DONOR</h2>
-        <p>Help us to get kids into red sweaters, and off to school. Every dollar makes a difference.
+        <h2>BECOME A SPONSOR</h2>
+        <p class="lead">
+          Create a unique relationship while changing a child's life.
         </p>
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Choose your gift
-            <span class="caret"></span>
-          </button>
-          <div class="btns-wrapper">
-            <a href="#" class="btn btn-solid"><span>DONATE</span></a>
-          </div>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">25</a></li>
-            <li><a href="#">50</a></li>
-            <li><a href="#">100</a></li>
-            <li><a href="#">500</a></li>
-            <li><a href="#">1000</a></li>
-          </ul>
+        <div class="btns-wrapper">
+          <%= link_to 'LEARN ABOUT SPONSORSHIPS', students_path, :class => "btn btn-solid mt-4" %>
+        </div>
+      </div>
+    </div>
+    <div class="shadow nonmobile">
+      <div class="flex-item-2col sponsor-a-student">
       </div>
     </div>
   </div>
-    <div class="shadow nonmobile">
-      <div class="flex-item-2col ourfocus_donate">
-      </div>
-    </div>
   </div>
 </div>
 <div class="shadow mobile">
-  <div class="flex-item-2col ourfocus_donate">
+  <div class="flex-item-2col sponsor-a-student">
   </div>
 </div>
