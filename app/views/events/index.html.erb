@@ -23,9 +23,9 @@
         <div class="flex-item-2col">
             <%= image_tag("#{ event.image }")%>
         </div>
-        <div class="flex-item-2col">
+        <div class="flex-item-2col d-flex align-items-center">
           <div>
-            <h5><%= event.name %></h5>
+            <h2><%= event.name %></h2>
             <p><%= event.time %></p>
             <p><%= event.start %></p>
             <br>
@@ -59,7 +59,7 @@
         <h2>KEEP UP WITH US</h2>
         <p class="lead">Check out our blog to keep track of what's happening at Mungere and beyond.</p>
         <div class="btns-wrapper">
-          <%= link_to 'EXPLORE THE BLOG', posts_path, :class => "btn btn-solid"%>
+          <%= link_to 'EXPLORE THE BLOG', posts_path, :class => "btn btn-solid mt-4"%>
         </div>
       </div>
     </div>

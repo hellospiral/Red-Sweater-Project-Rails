@@ -407,9 +407,9 @@ ul .padded li {
   color: #febe10;
   background-color: white;
   padding: 10px 20px;
-  font-size: 1em; }
+  font-size: 1em;
+  font-weight: 500; }
   #btn-sponsor:hover {
-    font-weight: 500;
     border-bottom: 1px solid #febe10;
     border-radius: 0; }
 
