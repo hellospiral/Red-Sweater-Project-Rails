@@ -47,16 +47,49 @@
             <% end %>
           </div>
 
-          <article>
-            <label class="amount">
-              <span>Amount: $150/month</span>
-            </label>
-          </article>
+          <h5>Amount:</h5>
+          <div class='form-group'>
+            <%= label_tag 'payment_amount', '$25', class: 'form-control' %>
+            <%= radio_button_tag 'payment_amount', '25', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_amount', '$50', class: 'form-control'%>
+            <%= radio_button_tag 'payment_amount', '50', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_amount', '$75', class: 'form-control' %>
+            <%= radio_button_tag 'payment_amount', '75', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_amount', '$100', class: 'form-control' %>
+            <%= radio_button_tag 'payment_amount', '100', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_amount', '$150', class: 'form-control' %>
+            <%= radio_button_tag 'payment_amount', '150', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_amount', '$200', class: 'form-control' %>
+            <%= radio_button_tag 'payment_amount', '200', class: 'form-control' %>
+          </div>
+
+          <h5>Payment frequency:</h5>
+          <div class='form-group'>
+            <%= label_tag 'payment_type', 'One Time Payment', class: 'form-control' %>
+            <%= radio_button_tag 'payment_type', 'one_time', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_type', 'Monthly Payment', class: 'form-control'%>
+            <%= radio_button_tag 'payment_type', 'monthly', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= label_tag 'payment_type', 'Annual Payment', class: 'form-control' %>
+            <%= radio_button_tag 'payment_type', 'annual', class: 'form-control' %>
+          </div>
 
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-description="Monthly sponsorship"
-            data-amount="15000"></script>
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>">
+          </script>
       <% end %>
 
       </div>
